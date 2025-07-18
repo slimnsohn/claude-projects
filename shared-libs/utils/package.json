@@ -1,0 +1,12 @@
+{
+  "name": "@claude-projects/utils",
+  "version": "1.0.0",
+  "description": "Shared utilities for Claude projects",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Building utils...'",
+    "test": "echo 'Testing utils...'",
+    "lint": "echo 'Linting utils...'"
+  }
+}

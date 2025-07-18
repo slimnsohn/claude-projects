@@ -1,0 +1,24 @@
+{
+  "name": "claude-projects",
+  "version": "1.0.0",
+  "description": "Monorepo for Claude Code projects with shared libraries",
+  "private": true,
+  "workspaces": [
+    "projects/*",
+    "shared-libs/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

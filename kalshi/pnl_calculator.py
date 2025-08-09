@@ -17,34 +17,53 @@ class PNLCalculator:
     """Calculate PNL and trading metrics from Kalshi data."""
     
     def __init__(self, data: Dict[str, Any]):
-        """Initialize with trading data."""
+        """Initialize with comprehensive trading data."""
         self.data = data
         self.orders_df = pd.DataFrame(data.get('orders', []))
         self.fills_df = pd.DataFrame(data.get('fills', []))
         self.positions_df = pd.DataFrame(data.get('positions', []))
+        self.settlements_df = pd.DataFrame(data.get('settlements', []))
+        self.transactions_df = pd.DataFrame(data.get('transactions', []))
         self.history_df = pd.DataFrame(data.get('account_history', []))
         
         # Process dataframes
         self._process_dataframes()
     
     def _process_dataframes(self):
-        """Clean and process the dataframes."""
-        # Convert timestamps and numeric columns
-        for df, df_name in [(self.orders_df, 'orders'), (self.fills_df, 'fills')]:
+        """Clean and process all dataframes."""
+        # All dataframes to process
+        dataframes = [
+            (self.orders_df, 'orders'),
+            (self.fills_df, 'fills'),
+            (self.positions_df, 'positions'),
+            (self.settlements_df, 'settlements'),
+            (self.transactions_df, 'transactions'),
+            (self.history_df, 'account_history')
+        ]
+        
+        for df, df_name in dataframes:
             if not df.empty:
                 # Convert timestamp columns
-                timestamp_cols = ['created_at', 'timestamp', 'ts']
+                timestamp_cols = ['created_at', 'timestamp', 'ts', 'settled_at', 'updated_at']
                 for col in timestamp_cols:
                     if col in df.columns:
                         df[col] = pd.to_datetime(df[col], errors='coerce')
                 
                 # Convert numeric columns
-                numeric_cols = ['price', 'count', 'size', 'payout', 'cost']
+                numeric_cols = [
+                    'price', 'count', 'size', 'payout', 'cost', 'amount',
+                    'balance', 'settlement_amount', 'fee'
+                ]
                 for col in numeric_cols:
                     if col in df.columns:
                         df[col] = pd.to_numeric(df[col], errors='coerce')
         
-        logger.info(f"Processed {len(self.orders_df)} orders, {len(self.fills_df)} fills")
+        # Log processing summary
+        record_counts = []
+        for df, df_name in dataframes:
+            record_counts.append(f"{len(df)} {df_name}")
+        
+        logger.info(f"Processed: {', '.join(record_counts)}")
     
     def calculate_trade_pnl(self) -> pd.DataFrame:
         """Calculate PNL for each trade."""

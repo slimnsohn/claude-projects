@@ -23,13 +23,11 @@ def fetch_and_store_data(output_filename: str = None) -> bool:
         client = KalshiClient()
         dm = DataManager()
         
-        # Authenticate
+        # Authenticate first
         logger.info("Authenticating with Kalshi API...")
         if not client.authenticate():
-            logger.error("Authentication failed. Please check your credentials in .env file.")
+            logger.error("❌ Authentication failed!")
             return False
-        
-        logger.info("Authentication successful!")
         
         # Fetch all data
         logger.info("Fetching all trading data...")

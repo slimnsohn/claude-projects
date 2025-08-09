@@ -72,9 +72,15 @@ class DataManager:
         exported_files = {}
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         
+        # All transaction data types to export
+        data_types_to_export = [
+            'orders', 'fills', 'positions', 'settlements', 
+            'transactions', 'account_history'
+        ]
+        
         # Export each data type
-        for data_type in ['orders', 'fills', 'positions', 'account_history']:
-            if data_type in data and data[data_type]:
+        for data_type in data_types_to_export:
+            if data_type in data and data[data_type] and isinstance(data[data_type], list):
                 df = pd.DataFrame(data[data_type])
                 filename = f"{data_type}_{timestamp}.csv"
                 filepath = os.path.join(export_dir, filename)
@@ -82,27 +88,50 @@ class DataManager:
                 exported_files[data_type] = filepath
                 logger.info(f"Exported {data_type} to {filepath}")
         
+        # Export structured data (balance, user_info) as JSON files if they have content
+        structured_data = ['balance', 'user_info']
+        for data_type in structured_data:
+            if (data_type in data and data[data_type] and 
+                isinstance(data[data_type], dict) and 
+                data[data_type] != {"status": "success", "raw_response": ""}):
+                
+                filename = f"{data_type}_{timestamp}.json"
+                filepath = os.path.join(export_dir, filename)
+                with open(filepath, 'w') as f:
+                    json.dump(data[data_type], f, indent=2, default=str)
+                exported_files[data_type] = filepath
+                logger.info(f"Exported {data_type} to {filepath}")
+        
         return exported_files
     
     def get_data_summary(self, data: Dict[str, Any]) -> Dict[str, Any]:
-        """Generate summary statistics of the data."""
+        """Generate summary statistics of all transaction data."""
         summary = {
             'fetched_at': data.get('fetched_at', 'Unknown'),
             'data_counts': {},
-            'date_ranges': {}
+            'date_ranges': {},
+            'account_info': {}
         }
         
+        # All transaction data types to summarize
+        transaction_data_types = [
+            'orders', 'fills', 'positions', 'settlements', 
+            'transactions', 'account_history'
+        ]
+        
         # Count records for each data type
-        for data_type in ['orders', 'fills', 'positions', 'account_history']:
-            if data_type in data:
+        for data_type in transaction_data_types:
+            if data_type in data and isinstance(data[data_type], list):
                 summary['data_counts'][data_type] = len(data[data_type])
                 
                 # Try to get date range for time-based data
-                if data[data_type] and isinstance(data[data_type], list):
+                if data[data_type]:
                     dates = []
                     for item in data[data_type]:
+                        if not isinstance(item, dict):
+                            continue
                         # Look for common date fields
-                        for date_field in ['created_at', 'timestamp', 'date', 'ts']:
+                        for date_field in ['created_at', 'timestamp', 'date', 'ts', 'settled_at', 'updated_at']:
                             if date_field in item and item[date_field]:
                                 try:
                                     dates.append(item[date_field])
@@ -115,6 +144,15 @@ class DataManager:
                             'earliest': min(dates),
                             'latest': max(dates)
                         }
+            else:
+                summary['data_counts'][data_type] = 0
+        
+        # Add account info summary
+        if 'balance' in data and isinstance(data['balance'], dict):
+            summary['account_info']['balance'] = data['balance']
+        
+        if 'user_info' in data and isinstance(data['user_info'], dict):
+            summary['account_info']['user_info'] = data['user_info']
         
         return summary
     

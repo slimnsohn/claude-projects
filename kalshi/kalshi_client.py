@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """
 Kalshi API Client for fetching trading data and transactions.
+Uses the working v1 API with session-based authentication.
 """
 
 import os
 import json
-import time
+import requests
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Dict, List, Optional, Any
 from dotenv import load_dotenv
-import requests
-import kalshi
 
 # Load environment variables
 load_dotenv()
@@ -24,127 +23,161 @@ logger = logging.getLogger(__name__)
 class KalshiClient:
     """Client for interacting with Kalshi API to fetch trading data."""
     
-    def __init__(self, email: Optional[str] = None, password: Optional[str] = None, api_key: Optional[str] = None):
+    def __init__(self, email: Optional[str] = None, password: Optional[str] = None):
         """Initialize the Kalshi client with credentials."""
         self.email = email or os.getenv('KALSHI_EMAIL')
         self.password = password or os.getenv('KALSHI_PASSWORD')
-        self.api_key = api_key or os.getenv('KALSHI_API_KEY')
+        self.base_url = "https://api.elections.kalshi.com/v1"
+        self.session = requests.Session()
+        self.authenticated = False
         
-        # Setup API configuration
-        self.configuration = kalshi.Configuration(
-            host="https://trading-api.kalshi.com/v1"
-        )
-        
-        # Initialize API clients
-        self.api_client = None
-        self.auth_api = None
-        self.user_api = None
-        self.portfolio_api = None
-        
-        self._setup_clients()
-        
-    def _setup_clients(self):
-        """Setup the various API clients."""
-        try:
-            self.api_client = kalshi.ApiClient(self.configuration)
-            self.auth_api = kalshi.AuthApi(self.api_client)
-            self.user_api = kalshi.UserApi(self.api_client)
-            self.portfolio_api = kalshi.PortfolioApi(self.api_client)
-            logger.info("Kalshi API clients initialized successfully")
-        except Exception as e:
-            logger.error(f"Failed to initialize API clients: {e}")
-            raise
+        if not self.email or not self.password:
+            raise ValueError("KALSHI_EMAIL and KALSHI_PASSWORD must be set in .env")
     
     def authenticate(self) -> bool:
-        """Authenticate with Kalshi API using email/password or API key."""
+        """Authenticate with Kalshi using email/password and session cookies."""
+        logger.info("🔐 Starting session authentication...")
+        
+        login_data = {"email": self.email, "password": self.password}
+        
         try:
-            if self.email and self.password:
-                # Login with email/password
-                login_request = kalshi.LoginRequest(
-                    email=self.email,
-                    password=self.password
-                )
-                response = self.auth_api.login(login_request)
-                logger.info("Successfully authenticated with email/password")
-                return True
+            response = self.session.post(
+                f"{self.base_url}/login",
+                json=login_data,
+                headers={
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                timeout=10
+            )
+            
+            logger.info(f"Login response: {response.status_code}")
+            
+            if response.status_code == 200:
+                # Test authentication by trying to access a protected endpoint
+                test_response = self.session.get(f"{self.base_url}/me", timeout=10)
                 
-            elif self.api_key:
-                # Use API key authentication
-                self.configuration.api_key['cookie'] = self.api_key
-                logger.info("API key configured for authentication")
-                return True
-                
+                if test_response.status_code == 200:
+                    self.authenticated = True
+                    logger.info("✅ Session authentication successful!")
+                    return True
+                else:
+                    logger.error(f"❌ Auth test failed: {test_response.status_code}")
+                    return False
             else:
-                logger.error("No valid credentials provided. Please set KALSHI_EMAIL/KALSHI_PASSWORD or KALSHI_API_KEY")
+                logger.error(f"❌ Login failed: {response.status_code} - {response.text}")
                 return False
                 
         except Exception as e:
-            logger.error(f"Authentication failed: {e}")
+            logger.error(f"❌ Authentication error: {e}")
             return False
+    
+    def _make_request(self, method: str, endpoint: str, **kwargs):
+        """Make authenticated request using session."""
+        if not self.authenticated:
+            logger.error("❌ Not authenticated! Call authenticate() first.")
+            return None
+        
+        try:
+            url = f"{self.base_url}/{endpoint.lstrip('/')}"
+            response = self.session.request(method, url, timeout=30, **kwargs)
+            
+            logger.info(f"{method} {endpoint}: {response.status_code}")
+            
+            if response.status_code == 200:
+                if response.text:
+                    try:
+                        return response.json()
+                    except:
+                        return response.text
+                else:
+                    return {"status": "success", "empty_response": True}
+            else:
+                logger.error(f"Request failed {endpoint}: {response.status_code} - {response.text}")
+                return None
+                
+        except Exception as e:
+            logger.error(f"Request error {endpoint}: {e}")
+            return None
+    
+    def get_user_info(self):
+        """Get user profile information."""
+        logger.info("Fetching user info...")
+        return self._make_request('GET', '/me')
     
     def get_user_orders(self, limit: int = 1000, cursor: Optional[str] = None) -> List[Dict]:
         """Fetch all user orders."""
-        try:
-            logger.info("Fetching user orders...")
-            response = self.user_api.user_orders_get(limit=limit, cursor=cursor)
-            orders = response.orders if hasattr(response, 'orders') else []
-            logger.info(f"Retrieved {len(orders)} orders")
-            return [order.to_dict() for order in orders]
-        except Exception as e:
-            logger.error(f"Failed to fetch orders: {e}")
-            return []
+        logger.info("Fetching portfolio orders...")
+        response = self._make_request('GET', '/portfolio/orders', params={'limit': limit})
+        if isinstance(response, dict) and 'orders' in response:
+            return response['orders']
+        return response if isinstance(response, list) else []
     
     def get_user_fills(self, limit: int = 1000, cursor: Optional[str] = None) -> List[Dict]:
         """Fetch all user fills/trades."""
-        try:
-            logger.info("Fetching user fills...")
-            response = self.user_api.user_trades_get(limit=limit, cursor=cursor)
-            fills = response.trades if hasattr(response, 'trades') else []
-            logger.info(f"Retrieved {len(fills)} fills")
-            return [fill.to_dict() for fill in fills]
-        except Exception as e:
-            logger.error(f"Failed to fetch fills: {e}")
-            return []
+        logger.info("Fetching portfolio fills...")
+        response = self._make_request('GET', '/portfolio/fills', params={'limit': limit})
+        if isinstance(response, dict) and 'fills' in response:
+            return response['fills']
+        return response if isinstance(response, list) else []
     
     def get_user_positions(self) -> List[Dict]:
         """Fetch all user market positions."""
-        try:
-            logger.info("Fetching user positions...")
-            response = self.user_api.user_get_market_positions()
-            positions = response.market_positions if hasattr(response, 'market_positions') else []
-            logger.info(f"Retrieved {len(positions)} positions")
-            return [pos.to_dict() for pos in positions]
-        except Exception as e:
-            logger.error(f"Failed to fetch positions: {e}")
-            return []
+        logger.info("Fetching portfolio positions...")
+        response = self._make_request('GET', '/portfolio/positions')
+        if isinstance(response, dict) and 'positions' in response:
+            return response['positions']
+        return response if isinstance(response, list) else []
     
     def get_account_history(self, limit: int = 1000, cursor: Optional[str] = None) -> List[Dict]:
         """Fetch account transaction history."""
-        try:
-            logger.info("Fetching account history...")
-            response = self.user_api.user_get_account_history(limit=limit, cursor=cursor)
-            history = response.history if hasattr(response, 'history') else []
-            logger.info(f"Retrieved {len(history)} account history entries")
-            return [entry.to_dict() for entry in history]
-        except Exception as e:
-            logger.error(f"Failed to fetch account history: {e}")
-            return []
+        logger.info("Fetching portfolio settlements...")
+        response = self._make_request('GET', '/portfolio/settlements', params={'limit': limit})
+        if isinstance(response, dict) and 'settlements' in response:
+            return response['settlements']
+        return response if isinstance(response, list) else []
     
-    def fetch_all_data(self) -> Dict[str, List[Dict]]:
+    def get_portfolio_balance(self):
+        """Get portfolio balance."""
+        logger.info("Fetching portfolio balance...")
+        return self._make_request('GET', '/portfolio/balance')
+    
+    def fetch_all_data(self) -> Dict[str, Any]:
         """Fetch all trading data (orders, fills, positions, history)."""
-        logger.info("Starting complete data fetch...")
+        logger.info("🚀 Starting comprehensive data fetch...")
+        
+        if not self.authenticated:
+            logger.error("❌ Must authenticate first!")
+            return None
         
         data = {
+            'user_info': self.get_user_info(),
+            'balance': self.get_portfolio_balance(),
             'orders': self.get_user_orders(),
             'fills': self.get_user_fills(),
             'positions': self.get_user_positions(),
             'account_history': self.get_account_history(),
-            'fetched_at': datetime.now().isoformat()
+            'fetched_at': datetime.now().isoformat(),
+            'api_base': self.base_url
         }
         
-        total_records = sum(len(data[key]) for key in data if key != 'fetched_at')
-        logger.info(f"Data fetch complete. Total records: {total_records}")
+        # Count records
+        record_counts = {}
+        total_records = 0
         
+        for key, value in data.items():
+            if isinstance(value, list):
+                count = len(value)
+                record_counts[key] = count
+                total_records += count
+                logger.info(f"  📊 {key}: {count} records")
+            elif isinstance(value, dict) and value and not value.get('empty_response'):
+                record_counts[key] = 1
+                logger.info(f"  📊 {key}: retrieved")
+            else:
+                record_counts[key] = 0
+        
+        logger.info(f"✅ Data fetch complete! Total records: {total_records}")
         return data
 
 
@@ -156,11 +189,15 @@ def main():
         
         # Authenticate
         if not client.authenticate():
-            logger.error("Authentication failed. Please check your credentials.")
+            logger.error("❌ Authentication failed. Please check your credentials.")
             return
         
         # Fetch all data
         all_data = client.fetch_all_data()
+        
+        if not all_data:
+            logger.error("❌ Failed to fetch data!")
+            return
         
         # Save to file
         os.makedirs('data', exist_ok=True)
@@ -169,18 +206,37 @@ def main():
         with open(filename, 'w') as f:
             json.dump(all_data, f, indent=2, default=str)
         
-        logger.info(f"Data saved to {filename}")
+        logger.info(f"💾 Data saved to {filename}")
         
         # Print summary
-        print("\n=== Data Fetch Summary ===")
-        print(f"Orders: {len(all_data['orders'])}")
-        print(f"Fills/Trades: {len(all_data['fills'])}")
-        print(f"Positions: {len(all_data['positions'])}")
-        print(f"Account History: {len(all_data['account_history'])}")
-        print(f"Saved to: {filename}")
+        print("\n" + "="*60)
+        print("🎉 KALSHI DATA SUCCESSFULLY RETRIEVED!")
+        print("="*60)
+        
+        user_info = all_data.get('user_info', {})
+        balance = all_data.get('balance', {})
+        orders = all_data.get('orders', [])
+        fills = all_data.get('fills', [])
+        positions = all_data.get('positions', [])
+        account_history = all_data.get('account_history', [])
+        
+        if user_info and isinstance(user_info, dict):
+            print(f"User: {user_info.get('email', 'N/A')}")
+        
+        if balance and isinstance(balance, dict):
+            print(f"Balance: {balance}")
+        
+        print(f"\n📊 Portfolio Summary:")
+        print(f"  Orders: {len(orders) if isinstance(orders, list) else 'N/A'}")
+        print(f"  Fills/Trades: {len(fills) if isinstance(fills, list) else 'N/A'}")
+        print(f"  Positions: {len(positions) if isinstance(positions, list) else 'N/A'}")
+        print(f"  Account History: {len(account_history) if isinstance(account_history, list) else 'N/A'}")
+        
+        print(f"\n💾 Full data saved to: {filename}")
+        print("✅ Your Kalshi data retrieval is working!")
         
     except Exception as e:
-        logger.error(f"Error in main: {e}")
+        logger.error(f"❌ Error in main: {e}")
 
 
 if __name__ == "__main__":

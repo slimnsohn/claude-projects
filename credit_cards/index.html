@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Statement Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Credit Card Statement Analyzer</h1>
+            <p>Upload your CSV statement to analyze your spending</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <div id="dropZone" class="drop-zone">
+                    <div class="drop-zone-content">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        <h3>Drop your CSV files here</h3>
+                        <p>or <button id="browseBtn" class="browse-btn">browse files</button></p>
+                        <input type="file" id="fileInput" accept=".csv" multiple hidden>
+                    </div>
+                </div>
+            </section>
+
+            <section id="analysisSection" class="analysis-section" style="display: none;">
+                <div class="files-manager">
+                    <div class="files-header">
+                        <h3>Loaded Files</h3>
+                        <button id="addMoreFilesBtn" class="add-more-btn">Add More Files</button>
+                    </div>
+                    <div id="filesList" class="files-list">
+                    </div>
+                </div>
+
+                <div class="summary-cards">
+                    <div class="card">
+                        <h3>Total Spent</h3>
+                        <div id="totalSpent" class="amount">$0.00</div>
+                    </div>
+                    <div class="card">
+                        <h3>Transactions</h3>
+                        <div id="totalTransactions" class="amount">0</div>
+                    </div>
+                    <div class="card">
+                        <h3>Top Category</h3>
+                        <div id="topCategory" class="amount">-</div>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <h3>Spending by Category</h3>
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Spending Trends</h3>
+                            <div class="time-period-controls">
+                                <button class="period-btn active" data-period="day">Daily</button>
+                                <button class="period-btn" data-period="week">Weekly</button>
+                                <button class="period-btn" data-period="month">Monthly</button>
+                            </div>
+                        </div>
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="restaurants-table">
+                    <div class="table-header">
+                        <h3>Top 10 Restaurants</h3>
+                        <div id="restaurantDateRange" class="date-range"></div>
+                    </div>
+                    <div class="table-container">
+                        <table id="restaurantsTable">
+                            <thead>
+                                <tr>
+                                    <th>Restaurant</th>
+                                    <th>Total Spent</th>
+                                    <th>Visits</th>
+                                    <th>Avg per Visit</th>
+                                </tr>
+                            </thead>
+                            <tbody id="restaurantsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="transactions-table">
+                    <h3>Recent Transactions</h3>
+                    <div class="table-container">
+                        <table id="transactionsTable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactionsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

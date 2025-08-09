@@ -1,0 +1,23 @@
+# Environment files
+.env
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Data files
+data/
+*.json
+*.csv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

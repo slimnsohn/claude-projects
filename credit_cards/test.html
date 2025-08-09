@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CSV Upload</title>
+    <style>
+        .drop-zone {
+            border: 3px dashed #bdc3c7;
+            border-radius: 10px;
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px;
+        }
+        .drop-zone.drag-over {
+            border-color: #3498db;
+            background-color: #f8f9fa;
+        }
+        .browse-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="dropZone" class="drop-zone">
+        <h3>Drop your CSV files here</h3>
+        <p>or <button id="browseBtn" class="browse-btn">browse files</button></p>
+        <input type="file" id="fileInput" accept=".csv" multiple>
+    </div>
+    
+    <div id="output"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropZone = document.getElementById('dropZone');
+            const fileInput = document.getElementById('fileInput');
+            const browseBtn = document.getElementById('browseBtn');
+            const output = document.getElementById('output');
+
+            console.log('Elements found:', {
+                dropZone: !!dropZone,
+                fileInput: !!fileInput,
+                browseBtn: !!browseBtn
+            });
+
+            browseBtn.addEventListener('click', (e) => {
+                console.log('Browse button clicked');
+                e.preventDefault();
+                e.stopPropagation();
+                fileInput.click();
+            });
+
+            fileInput.addEventListener('change', (e) => {
+                console.log('Files selected:', e.target.files.length);
+                output.innerHTML = `<p>Selected ${e.target.files.length} files:</p>`;
+                Array.from(e.target.files).forEach(file => {
+                    output.innerHTML += `<p>- ${file.name} (${file.size} bytes)</p>`;
+                });
+            });
+
+            // Simple drag and drop
+            dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropZone.classList.add('drag-over');
+            });
+
+            dropZone.addEventListener('dragleave', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('drag-over');
+            });
+
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('drag-over');
+                console.log('Files dropped:', e.dataTransfer.files.length);
+                
+                // Simulate file input change
+                fileInput.files = e.dataTransfer.files;
+                const changeEvent = new Event('change', { bubbles: true });
+                fileInput.dispatchEvent(changeEvent);
+            });
+        });
+    </script>
+</body>
+</html>

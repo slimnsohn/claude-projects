@@ -147,6 +147,22 @@ class KalshiHttpClient(KalshiBaseClient):
     def get_balance(self) -> Dict[str, Any]:
         """Retrieves the account balance."""
         return self.get(self.portfolio_url + '/balance')
+    
+    def get_account_history(self, limit: Optional[int] = None) -> Dict[str, Any]:
+        """Retrieves account history (includes deposits, withdrawals, settlements)."""
+        params = {'limit': limit} if limit else {}
+        params = {k: v for k, v in params.items() if v is not None}
+        return self.get(self.portfolio_url + '/history', params=params)
+    
+    def get_fills(self, limit: Optional[int] = None) -> Dict[str, Any]:
+        """Retrieves portfolio fills."""
+        params = {'limit': limit} if limit else {}
+        params = {k: v for k, v in params.items() if v is not None}
+        return self.get(self.portfolio_url + '/fills', params=params)
+    
+    def get_market(self, ticker: str) -> Dict[str, Any]:
+        """Retrieves market information by ticker."""
+        return self.get(self.markets_url + f'/{ticker}')
 
     def get_exchange_status(self) -> Dict[str, Any]:
         """Retrieves the exchange status."""

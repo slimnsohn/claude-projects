@@ -1,13 +1,17 @@
-# Python
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+
+# Environment variables
 .env
 
-# Node / Web
-node_modules/
-dist/
-
-# OS junk
-.DS_Store
+# Windows
 Thumbs.db
-
+Desktop.ini

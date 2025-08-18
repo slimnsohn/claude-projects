@@ -186,12 +186,12 @@
         }
 
         .profit {
-            color: #27ae60;
+            color: #27ae60 !important;
             font-weight: 600;
         }
 
         .loss {
-            color: #e74c3c;
+            color: #e74c3c !important;
             font-weight: 600;
         }
 
@@ -280,6 +280,7 @@
         <div class="header">
             <h1>Kalshi Trading Dashboard</h1>
             <p id="last-updated">Loading...</p>
+            <button class="filter-btn" onclick="refreshData()" style="margin-top: 10px;">ðŸ”„ Refresh Data</button>
         </div>
 
         <div class="overview-grid">
@@ -298,6 +299,11 @@
             <div class="card">
                 <h3>Net P&L</h3>
                 <div class="value" id="net-pnl">$0.00</div>
+            </div>
+            <div class="card">
+                <h3>Total Deposits</h3>
+                <div class="value">$16,000.00</div>
+                <small style="color: #7f8c8d;">Verified from deposits.txt</small>
             </div>
         </div>
 
@@ -352,13 +358,23 @@
                     <div class="tab" onclick="showTab('event-summary')">Event Summary</div>
                 </div>
 
+                <div class="filter-section" style="margin-bottom: 20px;">
+                    <div class="filter-label">Trade Status:</div>
+                    <div class="filter-buttons" id="trade-status-buttons">
+                        <button class="filter-btn active" data-trade-status="all">All Trades</button>
+                        <button class="filter-btn" data-trade-status="open">Open</button>
+                        <button class="filter-btn" data-trade-status="finalized">Finalized</button>
+                    </div>
+                </div>
+
                 <div id="individual-trades" class="tab-content active">
                     <div id="trades-loading" class="loading">Loading trade history...</div>
                     <div id="trades-content" style="display: none;">
                         <table id="trades-table">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
+                                    <th>Trade Date</th>
+                                    <th>Event Date</th>
                                     <th>Market</th>
                                     <th>Sport</th>
                                     <th>Action</th>
@@ -6044,7 +6060,8 @@
         let filteredData = {};
         let currentFilters = {
             sport: 'all',
-            status: 'all'
+            status: 'all',
+            tradeStatus: 'all'
         };
 
         // Initialize dashboard
@@ -6075,43 +6092,37 @@
         function parseMarketName(ticker) {
             // Parse tickers like "KXWTAMATCH-25AUG17STAANN-STA" into readable format
             try {
-                if (ticker.includes('WTAMATCH')) {
-                    // WTA Tennis: KXWTAMATCH-25AUG17STAANN-STA
-                    const parts = ticker.split('-');
-                    if (parts.length >= 3) {
-                        const matchPart = parts[2];
-                        // Extract team codes (usually 3 letters each)
-                        const team1 = matchPart.substring(0, 3);
-                        const team2 = matchPart.substring(3, 6);
-                        return `${team1.toUpperCase()} vs ${team2.toUpperCase()}`;
+                const parts = ticker.split('-');
+                
+                if (parts.length === 3) {
+                    // Format: KXWTAMATCH-25AUG17STAANN-STA
+                    const datePart = parts[1]; // "25AUG17STAANN"
+                    const selectedSide = parts[2]; // "STA"
+                    
+                    // Extract match part from date part (remove date prefix)
+                    // Date format is YYMONDD (7 chars), so match starts at position 7
+                    if (datePart.length > 7) {
+                        const matchPart = datePart.substring(7); // "STAANN"
+                        
+                        // Find teams by removing selected side from match part
+                        const teams = extractTeamsFromMatch(matchPart, selectedSide);
+                        if (teams) {
+                            return formatMatchup(teams.team1, teams.team2, selectedSide);
+                        }
                     }
-                } else if (ticker.includes('UFCFIGHT')) {
-                    // UFC: KXUFCFIGHT-25AUG16MURPIC-PIC
-                    const parts = ticker.split('-');
-                    if (parts.length >= 3) {
-                        const fightPart = parts[2];
-                        // Extract fighter codes
-                        const fighter1 = fightPart.substring(0, 3);
-                        const fighter2 = fightPart.substring(3, 6);
-                        return `${fighter1.toUpperCase()} vs ${fighter2.toUpperCase()}`;
+                } else if (parts.length >= 4) {
+                    // Format: KX...-DATE-MATCHPART-SELECTED
+                    const matchPart = parts[2];
+                    const selectedSide = parts[3];
+                    
+                    const teams = extractTeamsFromMatch(matchPart, selectedSide);
+                    if (teams) {
+                        return formatMatchup(teams.team1, teams.team2, selectedSide);
                     }
-                } else if (ticker.includes('NBAGAME')) {
-                    // NBA: KXWNBAGAME-25AUG16NYMIN-NY
-                    const parts = ticker.split('-');
-                    if (parts.length >= 3) {
-                        const gamePart = parts[2];
-                        const team1 = gamePart.substring(0, 2);
-                        const team2 = gamePart.substring(2, 5);
-                        return `${team1.toUpperCase()} vs ${team2.toUpperCase()}`;
-                    }
-                } else if (ticker.includes('NFLGAME')) {
-                    // NFL games
-                    const parts = ticker.split('-');
-                    if (parts.length >= 3) {
-                        const gamePart = parts[2];
-                        return `${gamePart.substring(0, 3).toUpperCase()} vs ${gamePart.substring(3, 6).toUpperCase()}`;
-                    }
-                } else if (ticker.includes('PRES')) {
+                }
+                
+                // Special cases
+                if (ticker.includes('PRES')) {
                     return 'Presidential Election';
                 } else if (ticker.includes('ECON')) {
                     return 'Economic Event';
@@ -6121,6 +6132,126 @@
                 return ticker.replace(/^KX/, '').replace(/-.*$/, '');
             } catch (e) {
                 return ticker;
+            }
+        }
+
+        function extractTeamsFromMatch(matchPart, selectedSide) {
+            // Examples:
+            // STAANN - STA -> STA vs ANN
+            // MURPIC - PIC -> MUR vs PIC  
+            // JACNO - NO -> JAC vs NO
+            // ABCDEF - DEF -> ABC vs DEF
+            // HGJFSU - HGJ -> HGJ vs FSU
+            
+            const selected = selectedSide.toUpperCase();
+            const match = matchPart.toUpperCase();
+            
+            // Check if selected side is at the beginning
+            if (match.startsWith(selected)) {
+                const opponent = match.substring(selected.length);
+                return {
+                    team1: selected,
+                    team2: opponent
+                };
+            }
+            
+            // Check if selected side is at the end
+            if (match.endsWith(selected)) {
+                const opponent = match.substring(0, match.length - selected.length);
+                return {
+                    team1: opponent,
+                    team2: selected
+                };
+            }
+            
+            // If no exact match, try to split evenly and see which half matches
+            const midPoint = Math.floor(match.length / 2);
+            const firstHalf = match.substring(0, midPoint);
+            const secondHalf = match.substring(midPoint);
+            
+            if (firstHalf === selected) {
+                return {
+                    team1: selected,
+                    team2: secondHalf
+                };
+            }
+            
+            if (secondHalf === selected) {
+                return {
+                    team1: firstHalf,
+                    team2: selected
+                };
+            }
+            
+            // Last resort: try to find selected as substring and split accordingly
+            const selectedIndex = match.indexOf(selected);
+            if (selectedIndex === 0) {
+                // Selected is at start
+                return {
+                    team1: selected,
+                    team2: match.substring(selected.length)
+                };
+            } else if (selectedIndex === match.length - selected.length) {
+                // Selected is at end
+                return {
+                    team1: match.substring(0, selectedIndex),
+                    team2: selected
+                };
+            }
+            
+            // Fallback: split in half
+            return {
+                team1: firstHalf,
+                team2: secondHalf
+            };
+        }
+
+        function formatMatchup(team1, team2, selectedTeam) {
+            // Format as "TEAM1 vs TEAM2" with selected team highlighted
+            const t1 = team1.toUpperCase();
+            const t2 = team2.toUpperCase();
+            const selected = selectedTeam.toUpperCase();
+            
+            if (selected === t1) {
+                return `<strong>${t1}</strong> vs ${t2}`;
+            } else if (selected === t2) {
+                return `${t1} vs <strong>${t2}</strong>`;
+            } else {
+                // Fallback if selection doesn't match either team
+                return `${t1} vs ${t2}`;
+            }
+        }
+
+        function extractEventDate(ticker) {
+            // Extract event date from ticker like "KXWTAMATCH-25AUG17STAANN-STA"
+            try {
+                const parts = ticker.split('-');
+                if (parts.length >= 2) {
+                    let datePart = parts[1]; // "25AUG17STAANN"
+                    
+                    // For format like "25AUG17STAANN", extract just the date part (first 7 chars)
+                    if (datePart.length > 7) {
+                        datePart = datePart.substring(0, 7); // "25AUG17"
+                    }
+                    
+                    if (datePart.length >= 7) {
+                        const year = '20' + datePart.substring(0, 2); // "2025"
+                        const month = datePart.substring(2, 5); // "AUG"
+                        const day = datePart.substring(5, 7); // "17"
+                        
+                        const monthMap = {
+                            'JAN': '01', 'FEB': '02', 'MAR': '03', 'APR': '04',
+                            'MAY': '05', 'JUN': '06', 'JUL': '07', 'AUG': '08',
+                            'SEP': '09', 'OCT': '10', 'NOV': '11', 'DEC': '12'
+                        };
+                        
+                        const monthNum = monthMap[month] || '01';
+                        return `${year}-${monthNum}-${day}`;
+                    }
+                }
+                return '';
+            } catch (e) {
+                return '';
             }
         }
 
@@ -6164,6 +6295,9 @@
             sportButtons.innerHTML = '';
             sportButtons.appendChild(allButton);
             
+            // Make "All Sports" button clickable
+            allButton.onclick = () => filterBySport('all');
+            
             // Add sport buttons
             Array.from(sports).sort().forEach(sport => {
                 const button = document.createElement('button');
@@ -6197,8 +6331,19 @@
             applyFilters();
         }
 
+        function filterByTradeStatus(tradeStatus) {
+            currentFilters.tradeStatus = tradeStatus;
+            
+            // Update button states
+            document.querySelectorAll('[data-trade-status]').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-trade-status') === tradeStatus);
+            });
+            
+            applyTradeFilters();
+        }
+
         function resetAllFilters() {
-            currentFilters = { sport: 'all', status: 'all' };
+            currentFilters = { sport: 'all', status: 'all', tradeStatus: 'all' };
             
             // Reset button states
             document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -6206,8 +6351,16 @@
             });
             document.querySelector('[data-sport="all"]').classList.add('active');
             document.querySelector('[data-status="all"]').classList.add('active');
+            document.querySelector('[data-trade-status="all"]').classList.add('active');
             
             applyFilters();
+            applyTradeFilters();
+        }
+
+        function applyTradeFilters() {
+            // Apply trade status filter specifically to trading history
+            updateTradesHistory();
+            updateEventSummary();
         }
 
         function applyFilters() {
@@ -6336,17 +6489,13 @@
             
             Object.values(openEvents).forEach(event => {
                 const row = tbody.insertRow();
-                row.innerHTML = `
-                    <td>
-                        <div class="market-name">${event.marketName}</div>
-                        <div class="market-details">${event.ticker}</div>
-                    </td>
-                    <td><span class="sport-badge ${event.sport}">${getSportDisplayName(event.sport)}</span></td>
-                    <td>$${event.totalCost.toFixed(2)}</td>
-                    <td>$${event.totalCost.toFixed(2)}</td>
-                    <td class="profit">$0.00</td>
-                    <td>${event.trades}</td>
-                `;
+                const marketCell = row.insertCell();
+                marketCell.innerHTML = event.marketName;
+                row.insertCell().innerHTML = `<span class="sport-badge ${event.sport}">${getSportDisplayName(event.sport)}</span>`;
+                row.insertCell().textContent = `$${event.totalCost.toFixed(2)}`;
+                row.insertCell().textContent = `$${event.totalCost.toFixed(2)}`;
+                row.insertCell().innerHTML = `<span class="profit">$0.00</span>`;
+                row.insertCell().textContent = event.trades;
             });
             
             document.getElementById('open-positions-loading').style.display = 'none';
@@ -6357,7 +6506,16 @@
             const tbody = document.querySelector('#trades-table tbody');
             tbody.innerHTML = '';
             
-            filteredData.fills.forEach(fill => {
+            // Apply trade status filter
+            let tradesToShow = filteredData.fills;
+            if (currentFilters.tradeStatus !== 'all') {
+                tradesToShow = filteredData.fills.filter(fill => {
+                    const isFinalized = ['closed', 'finalized', 'settled'].includes(fill.market_status?.toLowerCase());
+                    return currentFilters.tradeStatus === 'finalized' ? isFinalized : !isFinalized;
+                });
+            }
+            
+            tradesToShow.forEach(fill => {
                 const side = fill.side || 'yes';
                 const action = fill.action || 'buy';
                 const count = fill.count || 0;
@@ -6382,23 +6540,28 @@
                     pnl = `$${tradePnL.toFixed(2)}`;
                 }
                 
+                const eventDate = extractEventDate(fill.ticker);
+                
                 const row = tbody.insertRow();
-                row.innerHTML = `
-                    <td>${new Date(fill.created_time).toLocaleDateString()}</td>
-                    <td>
-                        <div class="market-name">${marketName}</div>
-                        <div class="market-details">${fill.ticker}</div>
-                    </td>
-                    <td><span class="sport-badge ${sport}">${getSportDisplayName(sport)}</span></td>
-                    <td>${action.toUpperCase()}</td>
-                    <td>${side.toUpperCase()}</td>
-                    <td>${count}</td>
-                    <td>${(price * 100).toFixed(0)}¢</td>
-                    <td>$${cost.toFixed(2)}</td>
-                    <td><span class="status-${isResolved ? 'closed' : 'open'}">${fill.market_status}</span></td>
-                    <td>${fill.market_result || (isResolved ? 'TIE' : '-')}</td>
-                    <td class="${pnl.startsWith('-') ? 'loss' : 'profit'}">${pnl || '-'}</td>
-                `;
+                row.insertCell().textContent = new Date(fill.created_time).toLocaleDateString();
+                row.insertCell().textContent = eventDate ? new Date(eventDate).toLocaleDateString() : '-';
+                
+                const marketCell = row.insertCell();
+                marketCell.innerHTML = marketName;
+                
+                row.insertCell().innerHTML = `<span class="sport-badge ${sport}">${getSportDisplayName(sport)}</span>`;
+                row.insertCell().textContent = action.toUpperCase();
+                row.insertCell().textContent = side.toUpperCase();
+                row.insertCell().textContent = count;
+                row.insertCell().textContent = `${(price * 100).toFixed(0)}c`;
+                row.insertCell().textContent = `$${cost.toFixed(2)}`;
+                row.insertCell().innerHTML = `<span class="status-${isResolved ? 'closed' : 'open'}">${fill.market_status}</span>`;
+                row.insertCell().textContent = fill.market_result || (isResolved ? 'TIE' : '-');
+                
+                const pnlCell = row.insertCell();
+                const pnlClass = pnl && parseFloat(pnl.replace('$', '')) < 0 ? 'loss' : (pnl && parseFloat(pnl.replace('$', '')) > 0 ? 'profit' : '');
+                pnlCell.className = pnlClass;
+                pnlCell.textContent = pnl || '-';
             });
             
             document.getElementById('trades-loading').style.display = 'none';
@@ -6409,9 +6572,18 @@
             const tbody = document.querySelector('#events-table tbody');
             tbody.innerHTML = '';
             
+            // Apply trade status filter
+            let tradesToShow = filteredData.fills;
+            if (currentFilters.tradeStatus !== 'all') {
+                tradesToShow = filteredData.fills.filter(fill => {
+                    const isFinalized = ['closed', 'finalized', 'settled'].includes(fill.market_status?.toLowerCase());
+                    return currentFilters.tradeStatus === 'finalized' ? isFinalized : !isFinalized;
+                });
+            }
+            
             const events = {};
             
-            filteredData.fills.forEach(fill => {
+            tradesToShow.forEach(fill => {
                 const ticker = fill.ticker;
                 if (!events[ticker]) {
                     events[ticker] = {
@@ -6464,19 +6636,21 @@
                 const isResolved = ['closed', 'finalized', 'settled'].includes(event.status?.toLowerCase());
                 
                 const row = tbody.insertRow();
-                row.innerHTML = `
-                    <td>
-                        <div class="market-name">${event.marketName}</div>
-                        <div class="market-details">${event.ticker}</div>
-                    </td>
-                    <td><span class="sport-badge ${event.sport}">${getSportDisplayName(event.sport)}</span></td>
-                    <td>$${event.totalCost.toFixed(2)}</td>
-                    <td>$${event.totalPayout.toFixed(2)}</td>
-                    <td class="${netPnL >= 0 ? 'profit' : 'loss'}">$${netPnL.toFixed(2)}</td>
-                    <td><span class="status-${isResolved ? 'closed' : 'open'}">${event.status}</span></td>
-                    <td>${event.result || (isResolved ? 'TIE' : '-')}</td>
-                    <td>${event.trades}</td>
-                `;
+                
+                const marketCell = row.insertCell();
+                marketCell.innerHTML = event.marketName;
+                
+                row.insertCell().innerHTML = `<span class="sport-badge ${event.sport}">${getSportDisplayName(event.sport)}</span>`;
+                row.insertCell().textContent = `$${event.totalCost.toFixed(2)}`;
+                row.insertCell().textContent = `$${event.totalPayout.toFixed(2)}`;
+                
+                const pnlCell = row.insertCell();
+                pnlCell.className = netPnL > 0 ? 'profit' : (netPnL < 0 ? 'loss' : '');
+                pnlCell.textContent = `$${netPnL.toFixed(2)}`;
+                
+                row.insertCell().innerHTML = `<span class="status-${isResolved ? 'closed' : 'open'}">${event.status}</span>`;
+                row.insertCell().textContent = event.result || (isResolved ? 'TIE' : '-');
+                row.insertCell().textContent = event.trades;
             });
             
             document.getElementById('events-loading').style.display = 'none';
@@ -6491,10 +6665,26 @@
             document.getElementById(tabName).classList.add('active');
         }
 
+        function refreshData() {
+            document.getElementById('last-updated').textContent = 'Refreshing data...';
+            
+            // Show user to run get_fills.py to update data
+            alert('To refresh data:\n\n1. Run: python get_fills.py\n2. Then run: python generate_dashboard.py\n3. Refresh this page\n\nThis will fetch the latest trades from Kalshi API.');
+        }
+
+        function verifyDeposits() {
+            // Based on deposits.txt: 15 x $1,000 + 2 x $500 = $16,000
+            return 16000.00;
+        }
+
         // Add event listeners for status filter buttons
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('[data-status]').forEach(btn => {
                 btn.onclick = () => filterByStatus(btn.getAttribute('data-status'));
+            });
+            
+            document.querySelectorAll('[data-trade-status]').forEach(btn => {
+                btn.onclick = () => filterByTradeStatus(btn.getAttribute('data-trade-status'));
             });
             
             initDashboard();

@@ -1,0 +1,166 @@
+{
+  "top_values": [
+    {
+      "player_name": "Scoot Henderson",
+      "profile_id": "1630703",
+      "value_score": 191.3,
+      "avg_cost": 1.0,
+      "production_score": 19.13
+    },
+    {
+      "player_name": "De'Andre Hunter",
+      "profile_id": "1629631",
+      "value_score": 187.0,
+      "avg_cost": 1.0,
+      "production_score": 18.7
+    },
+    {
+      "player_name": "Rui Hachimura",
+      "profile_id": "1629060",
+      "value_score": 179.1,
+      "avg_cost": 1.0,
+      "production_score": 17.91
+    },
+    {
+      "player_name": "Trey Murphy III",
+      "profile_id": "1630530",
+      "value_score": 160.3,
+      "avg_cost": 1.0,
+      "production_score": 16.03
+    },
+    {
+      "player_name": "P.J. Washington",
+      "profile_id": "1629023",
+      "value_score": 158.67,
+      "avg_cost": 1.2,
+      "production_score": 19.04
+    },
+    {
+      "player_name": "Jordan Clarkson",
+      "profile_id": "203903",
+      "value_score": 157.85,
+      "avg_cost": 1.3,
+      "production_score": 20.52
+    },
+    {
+      "player_name": "Ausar Thompson",
+      "profile_id": "1641709",
+      "value_score": 157.8,
+      "avg_cost": 1.0,
+      "production_score": 15.78
+    },
+    {
+      "player_name": "Bobby Portis",
+      "profile_id": "1626171",
+      "value_score": 157.25,
+      "avg_cost": 1.2,
+      "production_score": 18.87
+    },
+    {
+      "player_name": "Malik Monk",
+      "profile_id": "1628370",
+      "value_score": 151.8,
+      "avg_cost": 1.0,
+      "production_score": 15.18
+    },
+    {
+      "player_name": "Keegan Murray",
+      "profile_id": "1631099",
+      "value_score": 149.46,
+      "avg_cost": 1.3,
+      "production_score": 19.43
+    },
+    {
+      "player_name": "James Wiseman",
+      "profile_id": "1630164",
+      "value_score": 146.9,
+      "avg_cost": 1.0,
+      "production_score": 14.69
+    },
+    {
+      "player_name": "Derrick Rose",
+      "profile_id": "201565",
+      "value_score": 146.0,
+      "avg_cost": 1.4,
+      "production_score": 20.44
+    },
+    {
+      "player_name": "Malik Beasley",
+      "profile_id": "1627736",
+      "value_score": 138.0,
+      "avg_cost": 1.0,
+      "production_score": 13.8
+    },
+    {
+      "player_name": "Eric Gordon",
+      "profile_id": "201569",
+      "value_score": 136.86,
+      "avg_cost": 1.4,
+      "production_score": 19.16
+    },
+    {
+      "player_name": "Tre Jones",
+      "profile_id": "1630200",
+      "value_score": 136.6,
+      "avg_cost": 1.0,
+      "production_score": 13.66
+    },
+    {
+      "player_name": "Jaden McDaniels",
+      "profile_id": "1630183",
+      "value_score": 136.4,
+      "avg_cost": 1.0,
+      "production_score": 13.64
+    },
+    {
+      "player_name": "RJ Barrett",
+      "profile_id": "1629628",
+      "value_score": 136.28,
+      "avg_cost": 1.8,
+      "production_score": 24.53
+    },
+    {
+      "player_name": "Ivica Zubac",
+      "profile_id": "1627826",
+      "value_score": 131.0,
+      "avg_cost": 1.2,
+      "production_score": 15.72
+    },
+    {
+      "player_name": "Kentavious Caldwell-Pope",
+      "profile_id": "203484",
+      "value_score": 126.67,
+      "avg_cost": 1.2,
+      "production_score": 15.2
+    },
+    {
+      "player_name": "Aleksej Pokusevski",
+      "profile_id": "1630197",
+      "value_score": 121.6,
+      "avg_cost": 1.0,
+      "production_score": 12.16
+    }
+  ],
+  "biggest_busts": [],
+  "consistent_performers": [],
+  "snake_draft_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015
+  ],
+  "auction_draft_years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "total_draft_entries": 2366
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "display_name": "FG%",
+    "position_type": "P"
+  },
+  {
+    "display_name": "FT%",
+    "position_type": "P"
+  },
+  {
+    "display_name": "3PTM",
+    "position_type": "P"
+  },
+  {
+    "display_name": "PTS",
+    "position_type": "P"
+  },
+  {
+    "display_name": "REB",
+    "position_type": "P"
+  },
+  {
+    "display_name": "AST",
+    "position_type": "P"
+  },
+  {
+    "display_name": "ST",
+    "position_type": "P"
+  },
+  {
+    "display_name": "BLK",
+    "position_type": "P"
+  },
+  {
+    "display_name": "TO",
+    "position_type": "P"
+  }
+]

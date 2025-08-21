@@ -1,0 +1,132 @@
+[
+  {
+    "team_key": "249.l.40919.t.4",
+    "name": "Lebrocalypse",
+    "rank": 1,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "95",
+      "losses": "90",
+      "ties": "4",
+      "percentage": ".513"
+    },
+    "games_back": "15.5"
+  },
+  {
+    "team_key": "249.l.40919.t.10",
+    "name": "dlo",
+    "rank": 2,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "97",
+      "losses": "89",
+      "ties": "3",
+      "percentage": ".521"
+    },
+    "games_back": "14"
+  },
+  {
+    "team_key": "249.l.40919.t.1",
+    "name": "Mr. Wiggles",
+    "rank": 3,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "111",
+      "losses": "75",
+      "ties": "3",
+      "percentage": ".595"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "249.l.40919.t.9",
+    "name": "NZallBlacks",
+    "rank": 4,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "109",
+      "losses": "80",
+      "ties": 0,
+      "percentage": ".577"
+    },
+    "games_back": "3.5"
+  },
+  {
+    "team_key": "249.l.40919.t.8",
+    "name": "Chris Kaman HisPants",
+    "rank": 5,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "108",
+      "losses": "79",
+      "ties": "2",
+      "percentage": ".577"
+    },
+    "games_back": "3.5"
+  },
+  {
+    "team_key": "249.l.40919.t.5",
+    "name": "lawless",
+    "rank": 6,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "101",
+      "losses": "88",
+      "ties": 0,
+      "percentage": ".534"
+    },
+    "games_back": "11.5"
+  },
+  {
+    "team_key": "249.l.40919.t.2",
+    "name": "Showty Me",
+    "rank": 7,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "70",
+      "losses": "115",
+      "ties": "4",
+      "percentage": ".381"
+    },
+    "games_back": "40.5"
+  },
+  {
+    "team_key": "249.l.40919.t.3",
+    "name": "Double Trouble",
+    "rank": 8,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "78",
+      "losses": "108",
+      "ties": "3",
+      "percentage": ".421"
+    },
+    "games_back": "33"
+  },
+  {
+    "team_key": "249.l.40919.t.6",
+    "name": "hersheysquirt",
+    "rank": 9,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "92",
+      "losses": "95",
+      "ties": "2",
+      "percentage": ".492"
+    },
+    "games_back": "19.5"
+  },
+  {
+    "team_key": "249.l.40919.t.7",
+    "name": "The Krappers",
+    "rank": 10,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "73",
+      "losses": "115",
+      "ties": "1",
+      "percentage": ".389"
+    },
+    "games_back": "39"
+  }
+]

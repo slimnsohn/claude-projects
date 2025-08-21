@@ -1,0 +1,132 @@
+[
+  {
+    "team_key": "402.l.121244.t.7",
+    "name": "Team Hoof Hearted",
+    "rank": 1,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "68",
+      "losses": "75",
+      "ties": "1",
+      "percentage": ".476"
+    },
+    "games_back": "23.5"
+  },
+  {
+    "team_key": "402.l.121244.t.9",
+    "name": "The Krappers",
+    "rank": 2,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "65",
+      "losses": "75",
+      "ties": "4",
+      "percentage": ".465"
+    },
+    "games_back": "25"
+  },
+  {
+    "team_key": "402.l.121244.t.5",
+    "name": "hersheysquirt",
+    "rank": 3,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "92",
+      "losses": "52",
+      "ties": 0,
+      "percentage": ".639"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "402.l.121244.t.6",
+    "name": "LetsBall",
+    "rank": 4,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "84",
+      "losses": "59",
+      "ties": "1",
+      "percentage": ".587"
+    },
+    "games_back": "7.5"
+  },
+  {
+    "team_key": "402.l.121244.t.1",
+    "name": "KATmandu",
+    "rank": 5,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "83",
+      "losses": "59",
+      "ties": "2",
+      "percentage": ".583"
+    },
+    "games_back": "8"
+  },
+  {
+    "team_key": "402.l.121244.t.4",
+    "name": "Suns Out Guns Out",
+    "rank": 6,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "83",
+      "losses": "58",
+      "ties": "3",
+      "percentage": ".587"
+    },
+    "games_back": "7.5"
+  },
+  {
+    "team_key": "402.l.121244.t.3",
+    "name": "Dirty South Asia",
+    "rank": 7,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "60",
+      "losses": "84",
+      "ties": 0,
+      "percentage": ".417"
+    },
+    "games_back": "32"
+  },
+  {
+    "team_key": "402.l.121244.t.10",
+    "name": "White Chocolate",
+    "rank": 8,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "45",
+      "losses": "96",
+      "ties": "3",
+      "percentage": ".323"
+    },
+    "games_back": "45.5"
+  },
+  {
+    "team_key": "402.l.121244.t.2",
+    "name": "Bzzzzznatch",
+    "rank": 9,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "64",
+      "losses": "74",
+      "ties": "6",
+      "percentage": ".465"
+    },
+    "games_back": "25"
+  },
+  {
+    "team_key": "402.l.121244.t.8",
+    "name": "The Bandwagon",
+    "rank": 10,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "64",
+      "losses": "76",
+      "ties": "4",
+      "percentage": ".458"
+    },
+    "games_back": "26"
+  }
+]

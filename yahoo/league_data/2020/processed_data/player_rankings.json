@@ -1,0 +1,2780 @@
+{
+  "year": 2020,
+  "league_key": "402.l.121244",
+  "season_status": "completed",
+  "extraction_timestamp": "2025-08-18T15:52:34.786688",
+  "player_ownership_rankings": [
+    {
+      "player_id": 6022,
+      "player_name": "Shai Gilgeous-Alexander",
+      "position": "PG",
+      "ownership_percentage": 77.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 1
+    },
+    {
+      "player_id": 6022,
+      "player_name": "Shai Gilgeous-Alexander",
+      "position": "SG",
+      "ownership_percentage": 77.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 2
+    },
+    {
+      "player_id": 6022,
+      "player_name": "Shai Gilgeous-Alexander",
+      "position": "SF",
+      "ownership_percentage": 77.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 3
+    },
+    {
+      "player_id": 5836,
+      "player_name": "OG Anunoby",
+      "position": "SF",
+      "ownership_percentage": 76.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 4
+    },
+    {
+      "player_id": 5836,
+      "player_name": "OG Anunoby",
+      "position": "PF",
+      "ownership_percentage": 76.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 5
+    },
+    {
+      "player_id": 5187,
+      "player_name": "Dennis Schröder",
+      "position": "PG",
+      "ownership_percentage": 71.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 6
+    },
+    {
+      "player_id": 5295,
+      "player_name": "Aaron Gordon",
+      "position": "SF",
+      "ownership_percentage": 69.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 7
+    },
+    {
+      "player_id": 5295,
+      "player_name": "Aaron Gordon",
+      "position": "PF",
+      "ownership_percentage": 69.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 8
+    },
+    {
+      "player_id": 5475,
+      "player_name": "Kelly Oubre Jr.",
+      "position": "SG",
+      "ownership_percentage": 68.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 9
+    },
+    {
+      "player_id": 5475,
+      "player_name": "Kelly Oubre Jr.",
+      "position": "SF",
+      "ownership_percentage": 68.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 10
+    },
+    {
+      "player_id": 5475,
+      "player_name": "Kelly Oubre Jr.",
+      "position": "PF",
+      "ownership_percentage": 68.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 11
+    },
+    {
+      "player_id": 5769,
+      "player_name": "Lauri Markkanen",
+      "position": "PF",
+      "ownership_percentage": 64.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 12
+    },
+    {
+      "player_id": 5894,
+      "player_name": "Chris Boucher",
+      "position": "PF",
+      "ownership_percentage": 63.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 13
+    },
+    {
+      "player_id": 6028,
+      "player_name": "Donte DiVincenzo",
+      "position": "PG",
+      "ownership_percentage": 60.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 14
+    },
+    {
+      "player_id": 6028,
+      "player_name": "Donte DiVincenzo",
+      "position": "SG",
+      "ownership_percentage": 60.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 15
+    },
+    {
+      "player_id": 5638,
+      "player_name": "Jamal Murray",
+      "position": "PG",
+      "ownership_percentage": 55.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 16
+    },
+    {
+      "player_id": 5638,
+      "player_name": "Jamal Murray",
+      "position": "SG",
+      "ownership_percentage": 55.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 17
+    },
+    {
+      "player_id": 6404,
+      "player_name": "Tyrese Haliburton",
+      "position": "PG",
+      "ownership_percentage": 54.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 18
+    },
+    {
+      "player_id": 6404,
+      "player_name": "Tyrese Haliburton",
+      "position": "SG",
+      "ownership_percentage": 54.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 19
+    },
+    {
+      "player_id": 5842,
+      "player_name": "Derrick White",
+      "position": "PG",
+      "ownership_percentage": 53.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 20
+    },
+    {
+      "player_id": 5842,
+      "player_name": "Derrick White",
+      "position": "SG",
+      "ownership_percentage": 53.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 21
+    },
+    {
+      "player_id": 6030,
+      "player_name": "Kevin Huerter",
+      "position": "SG",
+      "ownership_percentage": 52.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 22
+    },
+    {
+      "player_id": 6463,
+      "player_name": "Jae'Sean Tate",
+      "position": "SG",
+      "ownership_percentage": 52.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 23
+    },
+    {
+      "player_id": 6030,
+      "player_name": "Kevin Huerter",
+      "position": "SF",
+      "ownership_percentage": 52.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 24
+    },
+    {
+      "player_id": 6463,
+      "player_name": "Jae'Sean Tate",
+      "position": "SF",
+      "ownership_percentage": 52.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 25
+    },
+    {
+      "player_id": 6463,
+      "player_name": "Jae'Sean Tate",
+      "position": "PF",
+      "ownership_percentage": 52.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 26
+    },
+    {
+      "player_id": 5482,
+      "player_name": "Bobby Portis",
+      "position": "PF",
+      "ownership_percentage": 45.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 27
+    },
+    {
+      "player_id": 6217,
+      "player_name": "Keldon Johnson",
+      "position": "SF",
+      "ownership_percentage": 44.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 28
+    },
+    {
+      "player_id": 6217,
+      "player_name": "Keldon Johnson",
+      "position": "PF",
+      "ownership_percentage": 44.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 29
+    },
+    {
+      "player_id": 6048,
+      "player_name": "Gary Trent Jr.",
+      "position": "SG",
+      "ownership_percentage": 43.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 30
+    },
+    {
+      "player_id": 6048,
+      "player_name": "Gary Trent Jr.",
+      "position": "SF",
+      "ownership_percentage": 43.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 31
+    },
+    {
+      "player_id": 5192,
+      "player_name": "Mason Plumlee",
+      "position": "PF",
+      "ownership_percentage": 42.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 32
+    },
+    {
+      "player_id": 4487,
+      "player_name": "Nicolas Batum",
+      "position": "SF",
+      "ownership_percentage": 27.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 33
+    },
+    {
+      "player_id": 6166,
+      "player_name": "De'Andre Hunter",
+      "position": "SF",
+      "ownership_percentage": 27.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 34
+    },
+    {
+      "player_id": 4487,
+      "player_name": "Nicolas Batum",
+      "position": "PF",
+      "ownership_percentage": 27.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 35
+    },
+    {
+      "player_id": 6166,
+      "player_name": "De'Andre Hunter",
+      "position": "PF",
+      "ownership_percentage": 27.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 36
+    },
+    {
+      "player_id": 5905,
+      "player_name": "Royce O'Neale",
+      "position": "SF",
+      "ownership_percentage": 26.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 37
+    },
+    {
+      "player_id": 5905,
+      "player_name": "Royce O'Neale",
+      "position": "PF",
+      "ownership_percentage": 26.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 38
+    },
+    {
+      "player_id": 6044,
+      "player_name": "Jalen Brunson",
+      "position": "PG",
+      "ownership_percentage": 25.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 39
+    },
+    {
+      "player_id": 6044,
+      "player_name": "Jalen Brunson",
+      "position": "SG",
+      "ownership_percentage": 25.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 40
+    },
+    {
+      "player_id": 4469,
+      "player_name": "Eric Gordon",
+      "position": "SG",
+      "ownership_percentage": 20.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 41
+    },
+    {
+      "player_id": 4469,
+      "player_name": "Eric Gordon",
+      "position": "SF",
+      "ownership_percentage": 20.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 42
+    },
+    {
+      "player_id": 4893,
+      "player_name": "Alec Burks",
+      "position": "SG",
+      "ownership_percentage": 19.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 43
+    },
+    {
+      "player_id": 4893,
+      "player_name": "Alec Burks",
+      "position": "SF",
+      "ownership_percentage": 19.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 44
+    },
+    {
+      "player_id": 5356,
+      "player_name": "Dwight Powell",
+      "position": "PF",
+      "ownership_percentage": 18.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 45
+    },
+    {
+      "player_id": 6208,
+      "player_name": "Matisse Thybulle",
+      "position": "SG",
+      "ownership_percentage": 16.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 46
+    },
+    {
+      "player_id": 6397,
+      "player_name": "Isaac Okoro",
+      "position": "SG",
+      "ownership_percentage": 16.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 47
+    },
+    {
+      "player_id": 6208,
+      "player_name": "Matisse Thybulle",
+      "position": "SF",
+      "ownership_percentage": 16.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 48
+    },
+    {
+      "player_id": 6397,
+      "player_name": "Isaac Okoro",
+      "position": "SF",
+      "ownership_percentage": 16.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 49
+    },
+    {
+      "player_id": 6417,
+      "player_name": "Immanuel Quickley",
+      "position": "PG",
+      "ownership_percentage": 15.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 50
+    },
+    {
+      "player_id": 5843,
+      "player_name": "Josh Hart",
+      "position": "SG",
+      "ownership_percentage": 15.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 51
+    },
+    {
+      "player_id": 6032,
+      "player_name": "Grayson Allen",
+      "position": "SG",
+      "ownership_percentage": 15.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 52
+    },
+    {
+      "player_id": 6053,
+      "player_name": "Bruce Brown",
+      "position": "SG",
+      "ownership_percentage": 15.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 53
+    },
+    {
+      "player_id": 5843,
+      "player_name": "Josh Hart",
+      "position": "SF",
+      "ownership_percentage": 15.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 54
+    },
+    {
+      "player_id": 6032,
+      "player_name": "Grayson Allen",
+      "position": "SF",
+      "ownership_percentage": 15.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 55
+    },
+    {
+      "player_id": 6205,
+      "player_name": "Nickeil Alexander-Walker",
+      "position": "SG",
+      "ownership_percentage": 14.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 56
+    },
+    {
+      "player_id": 5322,
+      "player_name": "Doug McDermott",
+      "position": "SF",
+      "ownership_percentage": 14.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 57
+    },
+    {
+      "player_id": 6205,
+      "player_name": "Nickeil Alexander-Walker",
+      "position": "SF",
+      "ownership_percentage": 14.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 58
+    },
+    {
+      "player_id": 5322,
+      "player_name": "Doug McDermott",
+      "position": "PF",
+      "ownership_percentage": 14.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 59
+    },
+    {
+      "player_id": 6396,
+      "player_name": "Patrick Williams",
+      "position": "SF",
+      "ownership_percentage": 13.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 60
+    },
+    {
+      "player_id": 6400,
+      "player_name": "Obi Toppin",
+      "position": "SF",
+      "ownership_percentage": 13.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 61
+    },
+    {
+      "player_id": 6396,
+      "player_name": "Patrick Williams",
+      "position": "PF",
+      "ownership_percentage": 13.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 62
+    },
+    {
+      "player_id": 6400,
+      "player_name": "Obi Toppin",
+      "position": "PF",
+      "ownership_percentage": 13.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 63
+    },
+    {
+      "player_id": 5824,
+      "player_name": "Malik Monk",
+      "position": "PG",
+      "ownership_percentage": 12.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 64
+    },
+    {
+      "player_id": 5824,
+      "player_name": "Malik Monk",
+      "position": "SG",
+      "ownership_percentage": 12.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 65
+    },
+    {
+      "player_id": 6280,
+      "player_name": "Terence Davis",
+      "position": "SG",
+      "ownership_percentage": 12.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 66
+    },
+    {
+      "player_id": 6052,
+      "player_name": "Jarred Vanderbilt",
+      "position": "SF",
+      "ownership_percentage": 12.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 67
+    },
+    {
+      "player_id": 6280,
+      "player_name": "Terence Davis",
+      "position": "SF",
+      "ownership_percentage": 12.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 68
+    },
+    {
+      "player_id": 6052,
+      "player_name": "Jarred Vanderbilt",
+      "position": "PF",
+      "ownership_percentage": 12.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 69
+    },
+    {
+      "player_id": 6173,
+      "player_name": "Cameron Johnson",
+      "position": "SF",
+      "ownership_percentage": 11.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 70
+    },
+    {
+      "player_id": 6173,
+      "player_name": "Cameron Johnson",
+      "position": "PF",
+      "ownership_percentage": 11.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 71
+    },
+    {
+      "player_id": 6216,
+      "player_name": "Jordan Poole",
+      "position": "PG",
+      "ownership_percentage": 10.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 72
+    },
+    {
+      "player_id": 6216,
+      "player_name": "Jordan Poole",
+      "position": "SG",
+      "ownership_percentage": 10.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 73
+    },
+    {
+      "player_id": 6212,
+      "player_name": "Ty Jerome",
+      "position": "PG",
+      "ownership_percentage": 8.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 74
+    },
+    {
+      "player_id": 6212,
+      "player_name": "Ty Jerome",
+      "position": "SG",
+      "ownership_percentage": 8.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 75
+    },
+    {
+      "player_id": 4911,
+      "player_name": "Cory Joseph",
+      "position": "PG",
+      "ownership_percentage": 7.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 76
+    },
+    {
+      "player_id": 5349,
+      "player_name": "Spencer Dinwiddie",
+      "position": "PG",
+      "ownership_percentage": 7.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 77
+    },
+    {
+      "player_id": 5349,
+      "player_name": "Spencer Dinwiddie",
+      "position": "SG",
+      "ownership_percentage": 7.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 78
+    },
+    {
+      "player_id": 5825,
+      "player_name": "Luke Kennard",
+      "position": "SG",
+      "ownership_percentage": 7.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 79
+    },
+    {
+      "player_id": 5825,
+      "player_name": "Luke Kennard",
+      "position": "SF",
+      "ownership_percentage": 7.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 80
+    },
+    {
+      "player_id": 6427,
+      "player_name": "Xavier Tillman",
+      "position": "PF",
+      "ownership_percentage": 7.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 81
+    },
+    {
+      "player_id": 6418,
+      "player_name": "Payton Pritchard",
+      "position": "PG",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 82
+    },
+    {
+      "player_id": 4892,
+      "player_name": "Klay Thompson",
+      "position": "SG",
+      "ownership_percentage": 6.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 83
+    },
+    {
+      "player_id": 5501,
+      "player_name": "Pat Connaughton",
+      "position": "SG",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 84
+    },
+    {
+      "player_id": 5747,
+      "player_name": "Derrick Jones Jr.",
+      "position": "SG",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 85
+    },
+    {
+      "player_id": 4892,
+      "player_name": "Klay Thompson",
+      "position": "SF",
+      "ownership_percentage": 6.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 86
+    },
+    {
+      "player_id": 5501,
+      "player_name": "Pat Connaughton",
+      "position": "SF",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 87
+    },
+    {
+      "player_id": 5747,
+      "player_name": "Derrick Jones Jr.",
+      "position": "SF",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 88
+    },
+    {
+      "player_id": 6499,
+      "player_name": "Naji Marshall",
+      "position": "SF",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 89
+    },
+    {
+      "player_id": 6036,
+      "player_name": "Moritz Wagner",
+      "position": "PF",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 90
+    },
+    {
+      "player_id": 6420,
+      "player_name": "Jaden McDaniels",
+      "position": "PF",
+      "ownership_percentage": 6.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 91
+    },
+    {
+      "player_id": 5754,
+      "player_name": "Alex Caruso",
+      "position": "PG",
+      "ownership_percentage": 5.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 92
+    },
+    {
+      "player_id": 5754,
+      "player_name": "Alex Caruso",
+      "position": "SG",
+      "ownership_percentage": 5.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 93
+    },
+    {
+      "player_id": 6401,
+      "player_name": "Deni Avdija",
+      "position": "SG",
+      "ownership_percentage": 5.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 94
+    },
+    {
+      "player_id": 6076,
+      "player_name": "Kenrich Williams",
+      "position": "SF",
+      "ownership_percentage": 5.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 95
+    },
+    {
+      "player_id": 6401,
+      "player_name": "Deni Avdija",
+      "position": "SF",
+      "ownership_percentage": 5.0,
+      "status": "GTD",
+      "is_free_agent": true,
+      "ownership_rank": 96
+    },
+    {
+      "player_id": 5323,
+      "player_name": "Dario Šarić",
+      "position": "PF",
+      "ownership_percentage": 5.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 97
+    },
+    {
+      "player_id": 6076,
+      "player_name": "Kenrich Williams",
+      "position": "PF",
+      "ownership_percentage": 5.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 98
+    },
+    {
+      "player_id": 6256,
+      "player_name": "Dean Wade",
+      "position": "PG",
+      "ownership_percentage": 4.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 99
+    },
+    {
+      "player_id": 6422,
+      "player_name": "Desmond Bane",
+      "position": "PG",
+      "ownership_percentage": 4.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 100
+    },
+    {
+      "player_id": 6422,
+      "player_name": "Desmond Bane",
+      "position": "SG",
+      "ownership_percentage": 4.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 101
+    },
+    {
+      "player_id": 5643,
+      "player_name": "Taurean Prince",
+      "position": "SF",
+      "ownership_percentage": 4.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 102
+    },
+    {
+      "player_id": 5490,
+      "player_name": "Kevon Looney",
+      "position": "PF",
+      "ownership_percentage": 4.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 103
+    },
+    {
+      "player_id": 5643,
+      "player_name": "Taurean Prince",
+      "position": "PF",
+      "ownership_percentage": 4.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 104
+    },
+    {
+      "player_id": 6256,
+      "player_name": "Dean Wade",
+      "position": "PF",
+      "ownership_percentage": 4.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 105
+    },
+    {
+      "player_id": 5484,
+      "player_name": "Tyus Jones",
+      "position": "PG",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 106
+    },
+    {
+      "player_id": 6413,
+      "player_name": "Tyrese Maxey",
+      "position": "PG",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 107
+    },
+    {
+      "player_id": 6406,
+      "player_name": "Aaron Nesmith",
+      "position": "SG",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 108
+    },
+    {
+      "player_id": 6413,
+      "player_name": "Tyrese Maxey",
+      "position": "SG",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 109
+    },
+    {
+      "player_id": 5768,
+      "player_name": "Jonathan Isaac",
+      "position": "SF",
+      "ownership_percentage": 3.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 110
+    },
+    {
+      "player_id": 6058,
+      "player_name": "Svi Mykhailiuk",
+      "position": "SF",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 111
+    },
+    {
+      "player_id": 6236,
+      "player_name": "Terance Mann",
+      "position": "SF",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 112
+    },
+    {
+      "player_id": 6406,
+      "player_name": "Aaron Nesmith",
+      "position": "SF",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 113
+    },
+    {
+      "player_id": 5768,
+      "player_name": "Jonathan Isaac",
+      "position": "PF",
+      "ownership_percentage": 3.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 114
+    },
+    {
+      "player_id": 5856,
+      "player_name": "Isaiah Hartenstein",
+      "position": "PF",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 115
+    },
+    {
+      "player_id": 6109,
+      "player_name": "Drew Eubanks",
+      "position": "PF",
+      "ownership_percentage": 3.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 116
+    },
+    {
+      "player_id": 6034,
+      "player_name": "Aaron Holiday",
+      "position": "PG",
+      "ownership_percentage": 2.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 117
+    },
+    {
+      "player_id": 6035,
+      "player_name": "Anfernee Simons",
+      "position": "PG",
+      "ownership_percentage": 2.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 118
+    },
+    {
+      "player_id": 6035,
+      "player_name": "Anfernee Simons",
+      "position": "SG",
+      "ownership_percentage": 2.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 119
+    },
+    {
+      "player_id": 6403,
+      "player_name": "Devin Vassell",
+      "position": "SG",
+      "ownership_percentage": 2.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 120
+    },
+    {
+      "player_id": 5681,
+      "player_name": "Georges Niang",
+      "position": "SF",
+      "ownership_percentage": 2.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 121
+    },
+    {
+      "player_id": 5681,
+      "player_name": "Georges Niang",
+      "position": "PF",
+      "ownership_percentage": 2.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 122
+    },
+    {
+      "player_id": 5823,
+      "player_name": "Zach Collins",
+      "position": "PF",
+      "ownership_percentage": 2.0,
+      "status": "INJ",
+      "is_free_agent": true,
+      "ownership_rank": 123
+    },
+    {
+      "player_id": 6398,
+      "player_name": "Onyeka Okongwu",
+      "position": "PF",
+      "ownership_percentage": 2.0,
+      "status": "O",
+      "is_free_agent": true,
+      "ownership_rank": 124
+    },
+    {
+      "player_id": 4682,
+      "player_name": "Garrett Temple",
+      "position": "PG",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 125
+    },
+    {
+      "player_id": 5636,
+      "player_name": "Kris Dunn",
+      "position": "PG",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 126
+    },
+    {
+      "player_id": 4682,
+      "player_name": "Garrett Temple",
+      "position": "SG",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 127
+    },
+    {
+      "player_id": 5636,
+      "player_name": "Kris Dunn",
+      "position": "SG",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 128
+    },
+    {
+      "player_id": 6031,
+      "player_name": "Josh Okogie",
+      "position": "SG",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 129
+    },
+    {
+      "player_id": 6275,
+      "player_name": "Caleb Martin",
+      "position": "SG",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 130
+    },
+    {
+      "player_id": 6020,
+      "player_name": "Kevin Knox II",
+      "position": "SF",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 131
+    },
+    {
+      "player_id": 6031,
+      "player_name": "Josh Okogie",
+      "position": "SF",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 132
+    },
+    {
+      "player_id": 6210,
+      "player_name": "Grant Williams",
+      "position": "SF",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 133
+    },
+    {
+      "player_id": 6275,
+      "player_name": "Caleb Martin",
+      "position": "SF",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 134
+    },
+    {
+      "player_id": 6020,
+      "player_name": "Kevin Knox II",
+      "position": "PF",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 135
+    },
+    {
+      "player_id": 6210,
+      "player_name": "Grant Williams",
+      "position": "PF",
+      "ownership_percentage": 1.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 136
+    },
+    {
+      "player_id": 6043,
+      "player_name": "Jevon Carter",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 137
+    },
+    {
+      "player_id": 6133,
+      "player_name": "Jordan McLaughlin",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 138
+    },
+    {
+      "player_id": 6269,
+      "player_name": "Javonte Green",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 139
+    },
+    {
+      "player_id": 6276,
+      "player_name": "DaQuan Jeffries",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 140
+    },
+    {
+      "player_id": 6353,
+      "player_name": "Gabe Vincent",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 141
+    },
+    {
+      "player_id": 6429,
+      "player_name": "Vít Krejčí",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 142
+    },
+    {
+      "player_id": 6433,
+      "player_name": "Tre Jones",
+      "position": "PG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 143
+    },
+    {
+      "player_id": 5316,
+      "player_name": "Danté Exum",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 144
+    },
+    {
+      "player_id": 6155,
+      "player_name": "Haywood Highsmith",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 145
+    },
+    {
+      "player_id": 6255,
+      "player_name": "John Konchar",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 146
+    },
+    {
+      "player_id": 6267,
+      "player_name": "Max Strus",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 147
+    },
+    {
+      "player_id": 6410,
+      "player_name": "Josh Green",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 148
+    },
+    {
+      "player_id": 6441,
+      "player_name": "Isaiah Joe",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 149
+    },
+    {
+      "player_id": 6452,
+      "player_name": "Sam Merrill",
+      "position": "SG",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 150
+    },
+    {
+      "player_id": 5316,
+      "player_name": "Danté Exum",
+      "position": "SF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 151
+    },
+    {
+      "player_id": 6315,
+      "player_name": "Amir Coffey",
+      "position": "SF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 152
+    },
+    {
+      "player_id": 6410,
+      "player_name": "Josh Green",
+      "position": "SF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 153
+    },
+    {
+      "player_id": 6450,
+      "player_name": "Paul Reed",
+      "position": "SF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 154
+    },
+    {
+      "player_id": 6471,
+      "player_name": "Anthony Gill",
+      "position": "SF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 155
+    },
+    {
+      "player_id": 6402,
+      "player_name": "Jalen Smith",
+      "position": "PF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 156
+    },
+    {
+      "player_id": 6414,
+      "player_name": "Zeke Nnaji",
+      "position": "PF",
+      "ownership_percentage": 0.0,
+      "status": "",
+      "is_free_agent": true,
+      "ownership_rank": 157
+    }
+  ],
+  "advanced_stat_rankings": [],
+  "draft_order_rankings": [
+    {
+      "player_id": 5432,
+      "player_name": "Karl-Anthony Towns",
+      "draft_pick": 1,
+      "draft_round": 1,
+      "draft_cost": 64,
+      "preseason_rank": 1,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 4244,
+      "player_name": "Kevin Durant",
+      "draft_pick": 2,
+      "draft_round": 1,
+      "draft_cost": 55,
+      "preseason_rank": 2,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 4563,
+      "player_name": "James Harden",
+      "draft_pick": 3,
+      "draft_round": 1,
+      "draft_cost": 60,
+      "preseason_rank": 3,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5007,
+      "player_name": "Anthony Davis",
+      "draft_pick": 4,
+      "draft_round": 1,
+      "draft_cost": 65,
+      "preseason_rank": 4,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 5352,
+      "player_name": "Nikola Jokić",
+      "draft_pick": 5,
+      "draft_round": 1,
+      "draft_cost": 67,
+      "preseason_rank": 5,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 6014,
+      "player_name": "Luka Dončić",
+      "draft_pick": 6,
+      "draft_round": 1,
+      "draft_cost": 70,
+      "preseason_rank": 6,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 4912,
+      "player_name": "Jimmy Butler III",
+      "draft_pick": 7,
+      "draft_round": 1,
+      "draft_cost": 38,
+      "preseason_rank": 7,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5294,
+      "player_name": "Joel Embiid",
+      "draft_pick": 8,
+      "draft_round": 1,
+      "draft_cost": 40,
+      "preseason_rank": 8,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 4612,
+      "player_name": "Stephen Curry",
+      "draft_pick": 9,
+      "draft_round": 1,
+      "draft_cost": 66,
+      "preseason_rank": 9,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 6163,
+      "player_name": "Zion Williamson",
+      "draft_pick": 10,
+      "draft_round": 1,
+      "draft_cost": 39,
+      "preseason_rank": 10,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 4390,
+      "player_name": "Russell Westbrook",
+      "draft_pick": 11,
+      "draft_round": 2,
+      "draft_cost": 33,
+      "preseason_rank": 11,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 3704,
+      "player_name": "LeBron James",
+      "draft_pick": 12,
+      "draft_round": 2,
+      "draft_cost": 41,
+      "preseason_rank": 12,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5185,
+      "player_name": "Giannis Antetokounmpo",
+      "draft_pick": 13,
+      "draft_round": 2,
+      "draft_cost": 59,
+      "preseason_rank": 13,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5765,
+      "player_name": "Jayson Tatum",
+      "draft_pick": 14,
+      "draft_round": 2,
+      "draft_cost": 47,
+      "preseason_rank": 14,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 4840,
+      "player_name": "Kyrie Irving",
+      "draft_pick": 15,
+      "draft_round": 2,
+      "draft_cost": 33,
+      "preseason_rank": 15,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5012,
+      "player_name": "Damian Lillard",
+      "draft_pick": 16,
+      "draft_round": 2,
+      "draft_cost": 58,
+      "preseason_rank": 16,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 5197,
+      "player_name": "Rudy Gobert",
+      "draft_pick": 17,
+      "draft_round": 2,
+      "draft_cost": 30,
+      "preseason_rank": 17,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5015,
+      "player_name": "Andre Drummond",
+      "draft_pick": 18,
+      "draft_round": 2,
+      "draft_cost": 21,
+      "preseason_rank": 18,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 5958,
+      "player_name": "Deandre Ayton",
+      "draft_pick": 19,
+      "draft_round": 2,
+      "draft_cost": 37,
+      "preseason_rank": 19,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 5600,
+      "player_name": "Ben Simmons",
+      "draft_pick": 20,
+      "draft_round": 2,
+      "draft_cost": 27,
+      "preseason_rank": 20,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 6016,
+      "player_name": "Trae Young",
+      "draft_pick": 21,
+      "draft_round": 3,
+      "draft_cost": 52,
+      "preseason_rank": 21,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5638,
+      "player_name": "Jamal Murray",
+      "draft_pick": 22,
+      "draft_round": 3,
+      "draft_cost": 21,
+      "preseason_rank": 22,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 4896,
+      "player_name": "Kawhi Leonard",
+      "draft_pick": 23,
+      "draft_round": 3,
+      "draft_cost": 46,
+      "preseason_rank": 23,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5658,
+      "player_name": "Pascal Siakam",
+      "draft_pick": 24,
+      "draft_round": 3,
+      "draft_cost": 20,
+      "preseason_rank": 24,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 4897,
+      "player_name": "Nikola Vučević",
+      "draft_pick": 25,
+      "draft_round": 3,
+      "draft_cost": 25,
+      "preseason_rank": 25,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5473,
+      "player_name": "Devin Booker",
+      "draft_pick": 26,
+      "draft_round": 3,
+      "draft_cost": 39,
+      "preseason_rank": 26,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 4890,
+      "player_name": "Kemba Walker",
+      "draft_pick": 27,
+      "draft_round": 3,
+      "draft_cost": 25,
+      "preseason_rank": 27,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 5009,
+      "player_name": "Bradley Beal",
+      "draft_pick": 28,
+      "draft_round": 3,
+      "draft_cost": 41,
+      "preseason_rank": 28,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 4507,
+      "player_name": "Goran Dragić",
+      "draft_pick": 29,
+      "draft_round": 3,
+      "draft_cost": 3,
+      "preseason_rank": 29,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 6164,
+      "player_name": "Ja Morant",
+      "draft_pick": 30,
+      "draft_round": 3,
+      "draft_cost": 20,
+      "preseason_rank": 30,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 3930,
+      "player_name": "Chris Paul",
+      "draft_pick": 31,
+      "draft_round": 4,
+      "draft_cost": 21,
+      "preseason_rank": 31,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5826,
+      "player_name": "Donovan Mitchell",
+      "draft_pick": 32,
+      "draft_round": 4,
+      "draft_cost": 24,
+      "preseason_rank": 32,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 4716,
+      "player_name": "John Wall",
+      "draft_pick": 33,
+      "draft_round": 4,
+      "draft_cost": 16,
+      "preseason_rank": 33,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 5827,
+      "player_name": "Bam Adebayo",
+      "draft_pick": 34,
+      "draft_round": 4,
+      "draft_cost": 33,
+      "preseason_rank": 34,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5602,
+      "player_name": "Jaylen Brown",
+      "draft_pick": 35,
+      "draft_round": 4,
+      "draft_cost": 15,
+      "preseason_rank": 35,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 4725,
+      "player_name": "Paul George",
+      "draft_pick": 36,
+      "draft_round": 4,
+      "draft_cost": 33,
+      "preseason_rank": 36,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 6047,
+      "player_name": "Mitchell Robinson",
+      "draft_pick": 37,
+      "draft_round": 4,
+      "draft_cost": 10,
+      "preseason_rank": 37,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5324,
+      "player_name": "Zach LaVine",
+      "draft_pick": 38,
+      "draft_round": 4,
+      "draft_cost": 24,
+      "preseason_rank": 38,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5317,
+      "player_name": "Marcus Smart",
+      "draft_pick": 39,
+      "draft_round": 4,
+      "draft_cost": 4,
+      "preseason_rank": 39,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5832,
+      "player_name": "John Collins",
+      "draft_pick": 40,
+      "draft_round": 4,
+      "draft_cost": 31,
+      "preseason_rank": 40,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5471,
+      "player_name": "Myles Turner",
+      "draft_pick": 41,
+      "draft_round": 5,
+      "draft_cost": 6,
+      "preseason_rank": 41,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 6022,
+      "player_name": "Shai Gilgeous-Alexander",
+      "draft_pick": 42,
+      "draft_round": 5,
+      "draft_cost": 27,
+      "preseason_rank": 42,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5464,
+      "player_name": "Kristaps Porziņģis",
+      "draft_pick": 43,
+      "draft_round": 5,
+      "draft_cost": 11,
+      "preseason_rank": 43,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5637,
+      "player_name": "Buddy Hield",
+      "draft_pick": 44,
+      "draft_round": 5,
+      "draft_cost": 7,
+      "preseason_rank": 44,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5601,
+      "player_name": "Brandon Ingram",
+      "draft_pick": 45,
+      "draft_round": 5,
+      "draft_cost": 18,
+      "preseason_rank": 45,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 4622,
+      "player_name": "Jrue Holiday",
+      "draft_pick": 46,
+      "draft_round": 5,
+      "draft_cost": 19,
+      "preseason_rank": 46,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 4391,
+      "player_name": "Kevin Love",
+      "draft_pick": 47,
+      "draft_round": 5,
+      "draft_cost": 8,
+      "preseason_rank": 47,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 4614,
+      "player_name": "DeMar DeRozan",
+      "draft_pick": 48,
+      "draft_round": 5,
+      "draft_cost": 8,
+      "preseason_rank": 48,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 6019,
+      "player_name": "Collin Sexton",
+      "draft_pick": 49,
+      "draft_round": 5,
+      "draft_cost": 8,
+      "preseason_rank": 49,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5073,
+      "player_name": "Khris Middleton",
+      "draft_pick": 50,
+      "draft_round": 5,
+      "draft_cost": 18,
+      "preseason_rank": 50,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5497,
+      "player_name": "Richaun Holmes",
+      "draft_pick": 51,
+      "draft_round": 6,
+      "draft_cost": 2,
+      "preseason_rank": 51,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5767,
+      "player_name": "De'Aaron Fox",
+      "draft_pick": 52,
+      "draft_round": 6,
+      "draft_cost": 19,
+      "preseason_rank": 52,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 4152,
+      "player_name": "Kyle Lowry",
+      "draft_pick": 53,
+      "draft_round": 6,
+      "draft_cost": 15,
+      "preseason_rank": 53,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 5433,
+      "player_name": "D'Angelo Russell",
+      "draft_pick": 54,
+      "draft_round": 6,
+      "draft_cost": 12,
+      "preseason_rank": 54,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 5651,
+      "player_name": "Caris LeVert",
+      "draft_pick": 55,
+      "draft_round": 6,
+      "draft_cost": 2,
+      "preseason_rank": 55,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 4764,
+      "player_name": "Hassan Whiteside",
+      "draft_pick": 56,
+      "draft_round": 6,
+      "draft_cost": 6,
+      "preseason_rank": 56,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5336,
+      "player_name": "Clint Capela",
+      "draft_pick": 57,
+      "draft_round": 6,
+      "draft_cost": 4,
+      "preseason_rank": 57,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 5327,
+      "player_name": "Jusuf Nurkić",
+      "draft_pick": 58,
+      "draft_round": 6,
+      "draft_cost": 14,
+      "preseason_rank": 58,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5187,
+      "player_name": "Dennis Schröder",
+      "draft_pick": 59,
+      "draft_round": 6,
+      "draft_cost": 1,
+      "preseason_rank": 59,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 6015,
+      "player_name": "Jaren Jackson Jr.",
+      "draft_pick": 60,
+      "draft_round": 6,
+      "draft_cost": 11,
+      "preseason_rank": 60,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 4245,
+      "player_name": "Al Horford",
+      "draft_pick": 61,
+      "draft_round": 7,
+      "draft_cost": 5,
+      "preseason_rank": 61,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 6018,
+      "player_name": "Wendell Carter Jr.",
+      "draft_pick": 62,
+      "draft_round": 7,
+      "draft_cost": 5,
+      "preseason_rank": 62,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5069,
+      "player_name": "Draymond Green",
+      "draft_pick": 63,
+      "draft_round": 7,
+      "draft_cost": 10,
+      "preseason_rank": 63,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5642,
+      "player_name": "Domantas Sabonis",
+      "draft_pick": 64,
+      "draft_round": 7,
+      "draft_cost": 9,
+      "preseason_rank": 64,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5338,
+      "player_name": "Bogdan Bogdanović",
+      "draft_pick": 65,
+      "draft_round": 7,
+      "draft_cost": 3,
+      "preseason_rank": 65,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 4130,
+      "player_name": "LaMarcus Aldridge",
+      "draft_pick": 66,
+      "draft_round": 7,
+      "draft_cost": 6,
+      "preseason_rank": 66,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5393,
+      "player_name": "Joe Ingles",
+      "draft_pick": 67,
+      "draft_round": 7,
+      "draft_cost": 2,
+      "preseason_rank": 67,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 5764,
+      "player_name": "Lonzo Ball",
+      "draft_pick": 68,
+      "draft_round": 7,
+      "draft_cost": 6,
+      "preseason_rank": 68,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5763,
+      "player_name": "Markelle Fultz",
+      "draft_pick": 69,
+      "draft_round": 7,
+      "draft_cost": 3,
+      "preseason_rank": 69,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5161,
+      "player_name": "CJ McCollum",
+      "draft_pick": 70,
+      "draft_round": 7,
+      "draft_cost": 11,
+      "preseason_rank": 70,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 4561,
+      "player_name": "Blake Griffin",
+      "draft_pick": 71,
+      "draft_round": 8,
+      "draft_cost": 4,
+      "preseason_rank": 71,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 5318,
+      "player_name": "Julius Randle",
+      "draft_pick": 72,
+      "draft_round": 8,
+      "draft_cost": 4,
+      "preseason_rank": 72,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5855,
+      "player_name": "Thomas Bryant",
+      "draft_pick": 73,
+      "draft_round": 8,
+      "draft_cost": 3,
+      "preseason_rank": 73,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5727,
+      "player_name": "Fred VanVleet",
+      "draft_pick": 74,
+      "draft_round": 8,
+      "draft_cost": 13,
+      "preseason_rank": 74,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5769,
+      "player_name": "Lauri Markkanen",
+      "draft_pick": 75,
+      "draft_round": 8,
+      "draft_cost": 4,
+      "preseason_rank": 75,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 4886,
+      "player_name": "Jonas Valančiūnas",
+      "draft_pick": 76,
+      "draft_round": 8,
+      "draft_cost": 8,
+      "preseason_rank": 76,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5245,
+      "player_name": "Seth Curry",
+      "draft_pick": 77,
+      "draft_round": 8,
+      "draft_cost": 3,
+      "preseason_rank": 77,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 6025,
+      "player_name": "Michael Porter Jr.",
+      "draft_pick": 78,
+      "draft_round": 8,
+      "draft_cost": 10,
+      "preseason_rank": 78,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 4724,
+      "player_name": "Gordon Hayward",
+      "draft_pick": 79,
+      "draft_round": 8,
+      "draft_cost": 8,
+      "preseason_rank": 79,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 4468,
+      "player_name": "Danilo Gallinari",
+      "draft_pick": 80,
+      "draft_round": 8,
+      "draft_cost": 4,
+      "preseason_rank": 80,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 5487,
+      "player_name": "Larry Nance Jr.",
+      "draft_pick": 81,
+      "draft_round": 9,
+      "draft_cost": 2,
+      "preseason_rank": 81,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 6021,
+      "player_name": "Mikal Bridges",
+      "draft_pick": 82,
+      "draft_round": 9,
+      "draft_cost": 3,
+      "preseason_rank": 82,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5500,
+      "player_name": "Josh Richardson",
+      "draft_pick": 83,
+      "draft_round": 9,
+      "draft_cost": 2,
+      "preseason_rank": 83,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 4901,
+      "player_name": "Tobias Harris",
+      "draft_pick": 84,
+      "draft_round": 9,
+      "draft_cost": 10,
+      "preseason_rank": 84,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5660,
+      "player_name": "Dejounte Murray",
+      "draft_pick": 85,
+      "draft_round": 9,
+      "draft_cost": 7,
+      "preseason_rank": 85,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5325,
+      "player_name": "T.J. Warren",
+      "draft_pick": 86,
+      "draft_round": 9,
+      "draft_cost": 6,
+      "preseason_rank": 86,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 6169,
+      "player_name": "Coby White",
+      "draft_pick": 87,
+      "draft_round": 9,
+      "draft_cost": 5,
+      "preseason_rank": 87,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 4926,
+      "player_name": "Dāvis Bertāns",
+      "draft_pick": 88,
+      "draft_round": 9,
+      "draft_cost": 7,
+      "preseason_rank": 88,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 4624,
+      "player_name": "Jeff Teague",
+      "draft_pick": 89,
+      "draft_round": 9,
+      "draft_cost": 1,
+      "preseason_rank": 89,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 5253,
+      "player_name": "Robert Covington",
+      "draft_pick": 90,
+      "draft_round": 9,
+      "draft_cost": 4,
+      "preseason_rank": 90,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5295,
+      "player_name": "Aaron Gordon",
+      "draft_pick": 91,
+      "draft_round": 10,
+      "draft_cost": 3,
+      "preseason_rank": 91,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 6171,
+      "player_name": "Rui Hachimura",
+      "draft_pick": 92,
+      "draft_round": 10,
+      "draft_cost": 1,
+      "preseason_rank": 92,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 4749,
+      "player_name": "Eric Bledsoe",
+      "draft_pick": 93,
+      "draft_round": 10,
+      "draft_cost": 2,
+      "preseason_rank": 93,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 6045,
+      "player_name": "Devonte' Graham",
+      "draft_pick": 94,
+      "draft_round": 10,
+      "draft_cost": 5,
+      "preseason_rank": 94,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5344,
+      "player_name": "Joe Harris",
+      "draft_pick": 95,
+      "draft_round": 10,
+      "draft_cost": 2,
+      "preseason_rank": 95,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 4246,
+      "player_name": "Mike Conley",
+      "draft_pick": 96,
+      "draft_round": 10,
+      "draft_cost": 2,
+      "preseason_rank": 96,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 3971,
+      "player_name": "Lou Williams",
+      "draft_pick": 97,
+      "draft_round": 10,
+      "draft_cost": 1,
+      "preseason_rank": 97,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5475,
+      "player_name": "Kelly Oubre Jr.",
+      "draft_pick": 98,
+      "draft_round": 10,
+      "draft_cost": 9,
+      "preseason_rank": 98,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5667,
+      "player_name": "Malcolm Brogdon",
+      "draft_pick": 99,
+      "draft_round": 10,
+      "draft_cost": 6,
+      "preseason_rank": 99,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5153,
+      "player_name": "Victor Oladipo",
+      "draft_pick": 100,
+      "draft_round": 10,
+      "draft_cost": 6,
+      "preseason_rank": 100,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 4610,
+      "player_name": "Ricky Rubio",
+      "draft_pick": 101,
+      "draft_round": 11,
+      "draft_cost": 2,
+      "preseason_rank": 101,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5836,
+      "player_name": "OG Anunoby",
+      "draft_pick": 102,
+      "draft_round": 11,
+      "draft_cost": 3,
+      "preseason_rank": 102,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5583,
+      "player_name": "Christian Wood",
+      "draft_pick": 103,
+      "draft_round": 11,
+      "draft_cost": 13,
+      "preseason_rank": 103,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 4913,
+      "player_name": "Bojan Bogdanović",
+      "draft_pick": 104,
+      "draft_round": 11,
+      "draft_cost": 7,
+      "preseason_rank": 104,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 5292,
+      "player_name": "Andrew Wiggins",
+      "draft_pick": 105,
+      "draft_round": 11,
+      "draft_cost": 9,
+      "preseason_rank": 105,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 4472,
+      "player_name": "Brook Lopez",
+      "draft_pick": 106,
+      "draft_round": 11,
+      "draft_cost": 2,
+      "preseason_rank": 106,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5054,
+      "player_name": "Evan Fournier",
+      "draft_pick": 107,
+      "draft_round": 11,
+      "draft_cost": 6,
+      "preseason_rank": 107,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 5506,
+      "player_name": "Norman Powell",
+      "draft_pick": 108,
+      "draft_round": 11,
+      "draft_cost": 3,
+      "preseason_rank": 108,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 6175,
+      "player_name": "Tyler Herro",
+      "draft_pick": 109,
+      "draft_round": 11,
+      "draft_cost": 5,
+      "preseason_rank": 109,
+      "team_key": "402.l.121244.t.2"
+    },
+    {
+      "player_id": 6073,
+      "player_name": "Duncan Robinson",
+      "draft_pick": 110,
+      "draft_round": 11,
+      "draft_cost": 5,
+      "preseason_rank": 110,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 6209,
+      "player_name": "Brandon Clarke",
+      "draft_pick": 111,
+      "draft_round": 12,
+      "draft_cost": 2,
+      "preseason_rank": 111,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 6395,
+      "player_name": "LaMelo Ball",
+      "draft_pick": 112,
+      "draft_round": 12,
+      "draft_cost": 2,
+      "preseason_rank": 112,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 6399,
+      "player_name": "Killian Hayes",
+      "draft_pick": 113,
+      "draft_round": 12,
+      "draft_cost": 1,
+      "preseason_rank": 113,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5842,
+      "player_name": "Derrick White",
+      "draft_pick": 114,
+      "draft_round": 12,
+      "draft_cost": 4,
+      "preseason_rank": 114,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 6165,
+      "player_name": "RJ Barrett",
+      "draft_pick": 115,
+      "draft_round": 12,
+      "draft_cost": 2,
+      "preseason_rank": 115,
+      "team_key": "402.l.121244.t.10"
+    },
+    {
+      "player_id": 5350,
+      "player_name": "Jerami Grant",
+      "draft_pick": 116,
+      "draft_round": 12,
+      "draft_cost": 2,
+      "preseason_rank": 116,
+      "team_key": "402.l.121244.t.4"
+    },
+    {
+      "player_id": 5154,
+      "player_name": "Otto Porter Jr.",
+      "draft_pick": 117,
+      "draft_round": 12,
+      "draft_cost": 2,
+      "preseason_rank": 117,
+      "team_key": "402.l.121244.t.7"
+    },
+    {
+      "player_id": 4175,
+      "player_name": "Paul Millsap",
+      "draft_pick": 118,
+      "draft_round": 12,
+      "draft_cost": 5,
+      "preseason_rank": 118,
+      "team_key": "402.l.121244.t.6"
+    },
+    {
+      "player_id": 6211,
+      "player_name": "Darius Bazley",
+      "draft_pick": 119,
+      "draft_round": 12,
+      "draft_cost": 5,
+      "preseason_rank": 119,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 4720,
+      "player_name": "DeMarcus Cousins",
+      "draft_pick": 120,
+      "draft_round": 12,
+      "draft_cost": 3,
+      "preseason_rank": 120,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5163,
+      "player_name": "Steven Adams",
+      "draft_pick": 121,
+      "draft_round": 13,
+      "draft_cost": 2,
+      "preseason_rank": 121,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 4387,
+      "player_name": "Derrick Rose",
+      "draft_pick": 122,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 122,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5349,
+      "player_name": "Spencer Dinwiddie",
+      "draft_pick": 123,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 123,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 6218,
+      "player_name": "Kevin Porter Jr.",
+      "draft_pick": 124,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 124,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5747,
+      "player_name": "Derrick Jones Jr.",
+      "draft_pick": 125,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 125,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 5480,
+      "player_name": "Delon Wright",
+      "draft_pick": 126,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 126,
+      "team_key": "402.l.121244.t.9"
+    },
+    {
+      "player_id": 5492,
+      "player_name": "Montrezl Harrell",
+      "draft_pick": 127,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 127,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5476,
+      "player_name": "Terry Rozier",
+      "draft_pick": 128,
+      "draft_round": 13,
+      "draft_cost": 4,
+      "preseason_rank": 128,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 4893,
+      "player_name": "Alec Burks",
+      "draft_pick": 129,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 129,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 4469,
+      "player_name": "Eric Gordon",
+      "draft_pick": 130,
+      "draft_round": 13,
+      "draft_cost": 1,
+      "preseason_rank": 130,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 5650,
+      "player_name": "Malik Beasley",
+      "draft_pick": 131,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 131,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5835,
+      "player_name": "Jarrett Allen",
+      "draft_pick": 132,
+      "draft_round": 14,
+      "draft_cost": 3,
+      "preseason_rank": 132,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 5894,
+      "player_name": "Chris Boucher",
+      "draft_pick": 133,
+      "draft_round": 14,
+      "draft_cost": 2,
+      "preseason_rank": 133,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 6355,
+      "player_name": "Anthony Edwards",
+      "draft_pick": 134,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 134,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 5194,
+      "player_name": "Tim Hardaway Jr.",
+      "draft_pick": 135,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 135,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5959,
+      "player_name": "Marvin Bagley III",
+      "draft_pick": 136,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 136,
+      "team_key": "402.l.121244.t.1"
+    },
+    {
+      "player_id": 4486,
+      "player_name": "Serge Ibaka",
+      "draft_pick": 137,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 137,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 6401,
+      "player_name": "Deni Avdija",
+      "draft_pick": 138,
+      "draft_round": 14,
+      "draft_cost": 2,
+      "preseason_rank": 138,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 6174,
+      "player_name": "P.J. Washington",
+      "draft_pick": 139,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 139,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5074,
+      "player_name": "Will Barton",
+      "draft_pick": 140,
+      "draft_round": 14,
+      "draft_cost": 1,
+      "preseason_rank": 140,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5824,
+      "player_name": "Malik Monk",
+      "draft_pick": 141,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 141,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 5892,
+      "player_name": "Maxi Kleber",
+      "draft_pick": 142,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 142,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 6356,
+      "player_name": "James Wiseman",
+      "draft_pick": 143,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 143,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 6203,
+      "player_name": "Sekou Doumbouya",
+      "draft_pick": 144,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 144,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 6172,
+      "player_name": "Cam Reddish",
+      "draft_pick": 145,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 145,
+      "team_key": "402.l.121244.t.5"
+    },
+    {
+      "player_id": 5640,
+      "player_name": "Jakob Poeltl",
+      "draft_pick": 146,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 146,
+      "team_key": "402.l.121244.t.8"
+    },
+    {
+      "player_id": 5351,
+      "player_name": "Glenn Robinson III",
+      "draft_pick": 147,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 147,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 6397,
+      "player_name": "Isaac Okoro",
+      "draft_pick": 148,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 148,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 4139,
+      "player_name": "JJ Redick",
+      "draft_pick": 149,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 149,
+      "team_key": "402.l.121244.t.3"
+    },
+    {
+      "player_id": 6170,
+      "player_name": "Jaxson Hayes",
+      "draft_pick": 150,
+      "draft_round": 15,
+      "draft_cost": 1,
+      "preseason_rank": 150,
+      "team_key": "402.l.121244.t.3"
+    }
+  ],
+  "stat_id_analysis": {},
+  "extraction_notes": [
+    "Extracted ownership data for 157 free agents",
+    "Extracted preseason rankings for 150 drafted players",
+    "Analyzed 2 high-ID stats"
+  ]
+}

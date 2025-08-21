@@ -1,0 +1,28 @@
+{
+  "season": "2018-19",
+  "league_year": 2019,
+  "total_players": 530,
+  "players_with_10_plus_games": 469,
+  "data_files": {
+    "comprehensive": "nba_season_stats.csv",
+    "fantasy_focused": "fantasy_relevant_stats.csv"
+  },
+  "stat_categories": {
+    "percentages": [
+      "field_goal_percentage",
+      "free_throw_percentage"
+    ],
+    "per_game_averages": [
+      "threepointers_per_game",
+      "points_per_game",
+      "rebounds_per_game",
+      "assists_per_game",
+      "steals_per_game",
+      "blocks_per_game",
+      "turnovers_per_game"
+    ],
+    "counting_stat": [
+      "games_played"
+    ]
+  }
+}

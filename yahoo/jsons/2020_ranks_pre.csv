@@ -1,0 +1,1001 @@
+rank,name_team_pos,name_team,name,first_letter,last_name
+1,"J. Harden Hou - PG,SG",J. Harden Hou,J. Harden ,J,Harden
+2,"L. Doncic Dal - PG,SG",L. Doncic Dal,L. Doncic ,L,Doncic
+3,"A. Davis LAL - PF,C",A. Davis LAL,A. Davis ,A,Davis
+4,K. Towns Min - C,K. Towns Min,K. Towns ,K,Towns
+5,"S. Curry GS - PG,SG",S. Curry GS,S. Curry ,S,Curry
+6,"G. Antetokounmpo Mil - PF,C",G. Antetokounmpo Mil,G. Antetokounmpo ,G,Antetokounmpo
+7,"N. Jokic Den - PF,C",N. Jokic Den,N. Jokic ,N,Jokic
+8,D. Lillard Por - PG,D. Lillard Por,D. Lillard ,D,Lillard
+9,T. Young Atl - PG,T. Young Atl,T. Young ,T,Young
+10,"D. Booker Pho - SG,SF",D. Booker Pho,D. Booker ,D,Booker
+11,"J. Tatum Bos - SF,PF",J. Tatum Bos,J. Tatum ,J,Tatum
+12,"L. James LAL - PG,SG,SF",L. James LAL,L. James ,L,James
+13,"K. Leonard LAC - SG,SF",K. Leonard LAC,K. Leonard ,K,Leonard
+14,"K. Durant Bkn - SF,PF",K. Durant Bkn,K. Durant ,K,Durant
+15,"J. Embiid Phi - PF,C",J. Embiid Phi,J. Embiid ,J,Embiid
+16,"B. Beal Was - SG,SF",B. Beal Was,B. Beal ,B,Beal
+17,"B. Adebayo Mia - PF,C",B. Adebayo Mia,B. Adebayo ,B,Adebayo
+18,"J. Butler Mia - SF,PF",J. Butler Mia,J. Butler ,J,Butler
+19,D. Ayton Pho - C,D. Ayton Pho,D. Ayton ,D,Ayton
+20,"P. George LAC - SF,PF",P. George LAC,P. George ,P,George
+21,"J. Collins Atl - PF,C",J. Collins Atl,J. Collins ,J,Collins
+22,R. Westbrook Was - PG,R. Westbrook Was,R. Westbrook ,R,Westbrook
+23,"D. Mitchell Uta - PG,SG",D. Mitchell Uta,D. Mitchell ,D,Mitchell
+24,K. Irving Bkn - PG,K. Irving Bkn,K. Irving ,K,Irving
+25,B. Simmons Phi - PG,B. Simmons Phi,B. Simmons ,B,Simmons
+26,"S. Gilgeous-Alexander OKC - SG,SF",S. Gilgeous,S. Gilgeous,S,Gilgeous
+27,J. Morant Mem - PG,J. Morant Mem,J. Morant ,J,Morant
+28,R. Gobert Uta - C,R. Gobert Uta,R. Gobert ,R,Gobert
+29,N. Vucevic Orl - C,N. Vucevic Orl,N. Vucevic ,N,Vucevic
+30,"Z. LaVine Chi - SG,SF",Z. LaVine Chi,Z. LaVine ,Z,LaVine
+31,Z. Williamson NO - PF,Z. Williamson NO,Z. Williamson ,Z,Williamson
+32,"P. Siakam Tor - PF,C",P. Siakam Tor,P. Siakam ,P,Siakam
+33,C. Paul Pho - PG,C. Paul Pho,C. Paul ,C,Paul
+34,J. Nurkic Por - C,J. Nurkic Por,J. Nurkic ,J,Nurkic
+35,"J. Murray Den - PG,SG",J. Murray Den,J. Murray ,J,Murray
+36,"F. VanVleet Tor - PG,SG",F. VanVleet Tor,F. VanVleet ,F,VanVleet
+37,A. Drummond Cle - C,A. Drummond Cle,A. Drummond ,A,Drummond
+38,D. Fox Sac - PG,D. Fox Sac,D. Fox ,D,Fox
+39,"B. Ingram NO - SF,PF",B. Ingram NO,B. Ingram ,B,Ingram
+40,"D. Russell Min - PG,SG",D. Russell Min,D. Russell ,D,Russell
+41,K. Lowry Tor - PG,K. Lowry Tor,K. Lowry ,K,Lowry
+42,"K. Middleton Mil - SF,PF",K. Middleton Mil,K. Middleton ,K,Middleton
+43,"J. Holiday Mil - PG,SG",J. Holiday Mil,J. Holiday ,J,Holiday
+44,"D. Sabonis Ind - PF,C",D. Sabonis Ind,D. Sabonis ,D,Sabonis
+45,"C. Wood Hou - PF,C",C. Wood Hou,C. Wood ,C,Wood
+46,"J. Brown Bos - SG,SF",J. Brown Bos,J. Brown ,J,Brown
+47,M. Robinson NY - C,M. Robinson NY,M. Robinson ,M,Robinson
+48,"L. Aldridge SA - PF,C",L. Aldridge SA,L. Aldridge ,L,Aldridge
+49,J. Valanciunas Mem - C,J. Valanciunas Mem,J. Valanciunas ,J,Valanciunas
+50,"H. Whiteside Sac - PF,C",H. Whiteside Sac,H. Whiteside ,H,Whiteside
+51,"G. Hayward Cha - SG,SF",G. Hayward Cha,G. Hayward ,G,Hayward
+52,"M. Turner Ind - PF,C",M. Turner Ind,M. Turner ,M,Turner
+53,"D. DeRozan SA - SG,SF",D. DeRozan SA,D. DeRozan ,D,DeRozan
+54,"C. McCollum Por - PG,SG",C. McCollum Por,C. McCollum ,C,McCollum
+55,"M. Brogdon Ind - PG,SG",M. Brogdon Ind,M. Brogdon ,M,Brogdon
+56,B. Hield Sac - SG,B. Hield Sac,B. Hield ,B,Hield
+57,"M. Porter Jr. Den - SF,PF",M. Porter Jr. Den,M. Porter ,M,Porter
+58,"T. Warren Ind - SF,PF",T. Warren Ind,T. Warren ,T,Warren
+59,"D. Green GS - PF,C",D. Green GS,D. Green ,D,Green
+60,C. Capela Atl - C,C. Capela Atl,C. Capela ,C,Capela
+61,"D. Murray SA - PG,SG",D. Murray SA,D. Murray ,D,Murray
+62,"T. Harris Phi - SF,PF",T. Harris Phi,T. Harris ,T,Harris
+63,"L. Ball NO - PG,SG",L. Ball NO,L. Ball ,L,Ball
+64,"K. Porzingis Dal - PF,C",K. Porzingis Dal,K. Porzingis ,K,Porzingis
+65,"R. Covington Por - PF,C",R. Covington Por,R. Covington ,R,Covington
+66,"K. Oubre Jr. GS - SF,PF",K. Oubre Jr. GS,K. Oubre ,K,Oubre
+67,"J. Jackson Jr. Mem - PF,C",J. Jackson Jr. Mem,J. Jackson ,J,Jackson
+68,T. Bryant Was - C,T. Bryant Was,T. Bryant ,T,Bryant
+69,"C. White Chi - PG,SG",C. White Chi,C. White ,C,White
+70,J. Wall Hou - PG,J. Wall Hou,J. Wall ,J,Wall
+71,"E. Bledsoe NO - PG,SG",E. Bledsoe NO,E. Bledsoe ,E,Bledsoe
+72,"D. White SA - PG,SG",D. White SA,D. White ,D,White
+73,"L. Markkanen Chi - PF,C",L. Markkanen Chi,L. Markkanen ,L,Markkanen
+74,S. Adams NO - C,S. Adams NO,S. Adams ,S,Adams
+75,"M. Smart Bos - PG,SG",M. Smart Bos,M. Smart ,M,Smart
+76,"A. Wiggins GS - SG,SF",A. Wiggins GS,A. Wiggins ,A,Wiggins
+77,W. Carter Jr. Chi - C,W. Carter Jr. Chi,W. Carter ,W,Carter
+78,"K. Love Cle - PF,C",K. Love Cle,K. Love ,K,Love
+79,"C. Sexton Cle - PG,SG",C. Sexton Cle,C. Sexton ,C,Sexton
+80,"J. Randle NY - PF,C",J. Randle NY,J. Randle ,J,Randle
+81,"D. Gallinari Atl - SF,PF",D. Gallinari Atl,D. Gallinari ,D,Gallinari
+82,"A. Horford OKC - PF,C",A. Horford OKC,A. Horford ,A,Horford
+83,"V. Oladipo Ind - SG,SF",V. Oladipo Ind,V. Oladipo ,V,Oladipo
+84,"M. Bridges Pho - SG,SF",M. Bridges Pho,M. Bridges ,M,Bridges
+85,"A. Gordon Orl - SF,PF",A. Gordon Orl,A. Gordon ,A,Gordon
+86,M. Conley Uta - PG,M. Conley Uta,M. Conley ,M,Conley
+87,"O. Anunoby Tor - SF,PF",O. Anunoby Tor,O. Anunoby ,O,Anunoby
+88,B. Lopez Mil - C,B. Lopez Mil,B. Lopez ,B,Lopez
+89,R. Rubio Min - PG,R. Rubio Min,R. Rubio ,R,Rubio
+90,"B. Clarke Mem - SF,PF",B. Clarke Mem,B. Clarke ,B,Clarke
+91,K. Walker Bos - PG,K. Walker Bos,K. Walker ,K,Walker
+92,"R. Holmes Sac - PF,C",R. Holmes Sac,R. Holmes ,R,Holmes
+93,"B. Griffin Det - PF,C",B. Griffin Det,B. Griffin ,B,Griffin
+94,"M. Fultz Orl - PG,SG",M. Fultz Orl,M. Fultz ,M,Fultz
+95,"J. Grant Det - SF,PF",J. Grant Det,J. Grant ,J,Grant
+96,"D. Bertans Was - PF,C",D. Bertans Was,D. Bertans ,D,Bertans
+97,"T. Herro Mia - PG,SG,SF",T. Herro Mia,T. Herro ,T,Herro
+98,"M. Bagley III Sac - PF,C",M. Bagley III Sac,M. Bagley ,M,Bagley
+99,"D. Graham Cha - PG,SG",D. Graham Cha,D. Graham ,D,Graham
+100,"B. Bogdanovic Atl - SG,SF,PF",B. Bogdanovic Atl,B. Bogdanovic ,B,Bogdanovic
+101,"C. LeVert Bkn - SG,SF",C. LeVert Bkn,C. LeVert ,C,LeVert
+102,"E. Fournier Orl - SG,SF",E. Fournier Orl,E. Fournier ,E,Fournier
+103,J. Wiseman GS - C,J. Wiseman GS,J. Wiseman ,J,Wiseman
+104,"B. Bogdanovic Uta - SF,PF",B. Bogdanovic Uta,B. Bogdanovic ,B,Bogdanovic
+105,"D. Rose Det - PG,SG",D. Rose Det,D. Rose ,D,Rose
+106,"N. Powell Tor - SG,SF",N. Powell Tor,N. Powell ,N,Powell
+107,"O. Porter Jr. Chi - SF,PF",O. Porter Jr. Chi,O. Porter ,O,Porter
+108,"L. Ball Cha - PG,SG",L. Ball Cha,L. Ball ,L,Ball
+109,"P. Washington Cha - SF,PF",P. Washington Cha,P. Washington ,P,Washington
+110,"D. DiVincenzo Mil - PG,SG",D. DiVincenzo Mil,D. DiVincenzo ,D,DiVincenzo
+111,D. Schroder LAL - PG,D. Schroder LAL,D. Schroder ,D,Schroder
+112,"M. Harrell LAL - PF,C",M. Harrell LAL,M. Harrell ,M,Harrell
+113,"S. Ibaka LAC - PF,C",S. Ibaka LAC,S. Ibaka ,S,Ibaka
+114,"G. Dragic Mia - PG,SG",G. Dragic Mia,G. Dragic ,G,Dragic
+115,D. Theis Bos - C,D. Theis Bos,D. Theis ,D,Theis
+116,"N. Noel NY - PF,C",N. Noel NY,N. Noel ,N,Noel
+117,"D. Robinson Mia - SG,SF",D. Robinson Mia,D. Robinson ,D,Robinson
+118,J. Allen Bkn - C,J. Allen Bkn,J. Allen ,J,Allen
+119,"S. Curry Phi - PG,SG",S. Curry Phi,S. Curry ,S,Curry
+120,D. Jordan Bkn - C,D. Jordan Bkn,D. Jordan ,D,Jordan
+121,"L. Nance Jr. Cle - PF,C",L. Nance Jr. Cle,L. Nance ,L,Nance
+122,"J. Richardson Dal - SG,SF",J. Richardson Dal,J. Richardson ,J,Richardson
+123,"L. Williams LAC - PG,SG",L. Williams LAC,L. Williams ,L,Williams
+124,"K. Huerter Atl - SG,SF",K. Huerter Atl,K. Huerter ,K,Huerter
+125,"W. Barton Den - SG,SF",W. Barton Den,W. Barton ,W,Barton
+126,"J. Teague Bos - PG,SG",J. Teague Bos,J. Teague ,J,Teague
+127,"C. Reddish Atl - SF,PF",C. Reddish Atl,C. Reddish ,C,Reddish
+128,E. Payton NY - PG,E. Payton NY,E. Payton ,E,Payton
+129,"K. Hayes Det - PG,SG",K. Hayes Det,K. Hayes ,K,Hayes
+130,"R. Hachimura Was - SF,PF",R. Hachimura Was,R. Hachimura ,R,Hachimura
+131,"R. Barrett NY - SG,SF",R. Barrett NY,R. Barrett ,R,Barrett
+132,"C. Boucher Tor - PF,C",C. Boucher Tor,C. Boucher ,C,Boucher
+133,"D. Wright Det - SG,SF",D. Wright Det,D. Wright ,D,Wright
+134,"M. Bridges Cha - SF,PF",M. Bridges Cha,M. Bridges ,M,Bridges
+135,"J. Harris Bkn - SG,SF",J. Harris Bkn,J. Harris ,J,Harris
+136,"P. Millsap Den - PF,C",P. Millsap Den,P. Millsap ,P,Millsap
+137,D. Garland Cle - PG,D. Garland Cle,D. Garland ,D,Garland
+138,A. Edwards Min - SG,A. Edwards Min,A. Edwards ,A,Edwards
+139,"D. Cousins Hou - PF,C",D. Cousins Hou,D. Cousins ,D,Cousins
+140,"J. Ingles Uta - SG,SF",J. Ingles Uta,J. Ingles ,J,Ingles
+141,"O. Toppin NY - SF,PF",O. Toppin NY,O. Toppin ,O,Toppin
+142,"M. Beasley Min - PG,SG",M. Beasley Min,M. Beasley ,M,Beasley
+143,J. Poeltl SA - C,J. Poeltl SA,J. Poeltl ,J,Poeltl
+144,T. Rozier Cha - PG,T. Rozier Cha,T. Rozier ,T,Rozier
+145,"M. Chriss GS - PF,C",M. Chriss GS,M. Chriss ,M,Chriss
+146,"T. Ross Orl - SG,SF",T. Ross Orl,T. Ross ,T,Ross
+147,"K. Porter Jr. Cle - SG,SF",K. Porter Jr. Cle,K. Porter ,K,Porter
+148,"T. Hardaway Jr. Dal - SG,SF",T. Hardaway Jr. Dal,T. Hardaway ,T,Hardaway
+149,"T. Haliburton Sac - PG,SG",T. Haliburton Sac,T. Haliburton ,T,Haliburton
+150,"J. Crowder Pho - SF,PF",J. Crowder Pho,J. Crowder ,J,Crowder
+151,M. Gasol LAL - C,M. Gasol LAL,M. Gasol ,M,Gasol
+152,I. Zubac LAC - C,I. Zubac LAC,I. Zubac ,I,Zubac
+153,"S. Dinwiddie Bkn - PG,SG",S. Dinwiddie Bkn,S. Dinwiddie ,S,Dinwiddie
+154,"D. Hunter Atl - SF,PF",D. Hunter Atl,D. Hunter ,D,Hunter
+155,"L. Kennard LAC - SG,SF",L. Kennard LAC,L. Kennard ,L,Kennard
+156,"P. Tucker Hou - PF,C",P. Tucker Hou,P. Tucker ,P,Tucker
+157,"H. Barnes Sac - SF,PF",H. Barnes Sac,H. Barnes ,H,Barnes
+158,"D. Bazley OKC - SF,PF",D. Bazley OKC,D. Bazley ,D,Bazley
+159,J. Winslow Mem - PF,J. Winslow Mem,J. Winslow ,J,Winslow
+160,J. Hayes NO - C,J. Hayes NO,J. Hayes ,J,Hayes
+161,"D. Favors Uta - PF,C",D. Favors Uta,D. Favors ,D,Favors
+162,"T. Ariza OKC - SG,SF",T. Ariza OKC,T. Ariza ,T,Ariza
+163,"D. Melton Mem - PG,SG",D. Melton Mem,D. Melton ,D,Melton
+164,"A. Burks NY - SG,SF",A. Burks NY,A. Burks ,A,Burks
+165,"D. Green Phi - SG,SF",D. Green Phi,D. Green ,D,Green
+166,"C. Johnson Pho - SF,PF",C. Johnson Pho,C. Johnson ,C,Johnson
+167,"M. Kleber Dal - PF,C",M. Kleber Dal,M. Kleber ,M,Kleber
+168,"D. Powell Dal - PF,C",D. Powell Dal,D. Powell ,D,Powell
+169,"K. Kuzma LAL - SF,PF",K. Kuzma LAL,K. Kuzma ,K,Kuzma
+170,"P. Beverley LAC - PG,SG",P. Beverley LAC,P. Beverley ,P,Beverley
+171,"T. Brown Jr. Was - SG,SF",T. Brown Jr. Was,T. Brown ,T,Brown
+172,"D. Jones Jr. Por - SG,SF",D. Jones Jr. Por,D. Jones ,D,Jones
+173,"G. Harris Den - SG,SF",G. Harris Den,G. Harris ,G,Harris
+174,"J. Lamb Ind - SG,SF",J. Lamb Ind,J. Lamb ,J,Lamb
+175,A. Baynes Tor - C,A. Baynes Tor,A. Baynes ,A,Baynes
+176,R. Williams Bos - C,R. Williams Bos,R. Williams ,R,Williams
+177,D. Dedmon Det - C,D. Dedmon Det,D. Dedmon ,D,Dedmon
+178,"M. Morris Sr. LAC - PF,C",M. Morris Sr. LAC,M. Morris ,M,Morris
+179,"C. Anthony Por - SF,PF",C. Anthony Por,C. Anthony ,C,Anthony
+180,"Z. Collins Por - PF,C",Z. Collins Por,Z. Collins ,Z,Collins
+181,"D. Saric Pho - PF,C",D. Saric Pho,D. Saric ,D,Saric
+182,"D. Brooks Mem - SG,SF",D. Brooks Mem,D. Brooks ,D,Brooks
+183,J. Redick NO - SG,J. Redick NO,J. Redick ,J,Redick
+184,"E. Gordon Hou - SG,SF",E. Gordon Hou,E. Gordon ,E,Gordon
+185,I. Okoro Cle - SF,I. Okoro Cle,I. Okoro ,I,Okoro
+186,"J. Clarkson Uta - PG,SG",J. Clarkson Uta,J. Clarkson ,J,Clarkson
+187,"T. Thompson Bos - PF,C",T. Thompson Bos,T. Thompson ,T,Thompson
+188,"T. Satoransky Chi - PG,SG",T. Satoransky Chi,T. Satoransky ,T,Satoransky
+189,K. Johnson SA - SF,K. Johnson SA,K. Johnson ,K,Johnson
+190,"J. Holiday Ind - SG,SF",J. Holiday Ind,J. Holiday ,J,Holiday
+191,T. Young Chi - PF,T. Young Chi,T. Young ,T,Young
+192,"S. Milton Phi - PG,SG",S. Milton Phi,S. Milton ,S,Milton
+193,"M. Harkless Mia - SF,PF",M. Harkless Mia,M. Harkless ,M,Harkless
+194,"M. Thybulle Phi - SG,SF",M. Thybulle Phi,M. Thybulle ,M,Thybulle
+195,"K. Nunn Mia - PG,SG",K. Nunn Mia,K. Nunn ,K,Nunn
+196,"D. House Jr. Hou - SF,PF",D. House Jr. Hou,D. House ,D,House
+197,"J. Culver Min - PG,SG",J. Culver Min,J. Culver ,J,Culver
+198,"K. Looney GS - PF,C",K. Looney GS,K. Looney ,K,Looney
+199,"L. Walker IV SA - SG,SF",L. Walker IV SA,L. Walker ,L,Walker
+200,S. Mykhailiuk Det - SF,S. Mykhailiuk Det,S. Mykhailiuk ,S,Mykhailiuk
+201,"G. Williams Bos - SF,PF",G. Williams Bos,G. Williams ,G,Williams
+202,"J. Jackson Det - SG,SF",J. Jackson Det,J. Jackson ,J,Jackson
+203,"C. Osman Cle - SF,PF",C. Osman Cle,C. Osman ,C,Osman
+204,"A. Rivers NY - PG,SG",A. Rivers NY,A. Rivers ,A,Rivers
+205,C. Zeller Cha - C,C. Zeller Cha,C. Zeller ,C,Zeller
+206,"K. Dunn Atl - PG,SG",K. Dunn Atl,K. Dunn ,K,Dunn
+207,"R. O'Neale Uta - SF,PF",R. O'Neale Uta,R. O'Neale ,R,O'Neale
+208,"G. Trent Jr. Por - SG,SF",G. Trent Jr. Por,G. Trent ,G,Trent
+209,"D. Finney-Smith Dal - SF,PF",D. Finney,D. Finney,D,Finney
+210,N. Claxton Bkn - C,N. Claxton Bkn,N. Claxton ,N,Claxton
+211,"M. Leonard Mia - PF,C",M. Leonard Mia,M. Leonard ,M,Leonard
+212,"N. Batum LAC - SF,PF",N. Batum LAC,N. Batum ,N,Batum
+213,F. Jackson OKC - PG,F. Jackson OKC,F. Jackson ,F,Jackson
+214,"S. Doumbouya Det - SF,PF",S. Doumbouya Det,S. Doumbouya ,S,Doumbouya
+215,"L. Dort OKC - SG,SF",L. Dort OKC,L. Dort ,L,Dort
+216,"E. Paschall GS - SF,PF",E. Paschall GS,E. Paschall ,E,Paschall
+217,"J. Hernangómez Min - PF,C",J. Hernangómez Min,J. Hernangómez ,J,Hernangómez
+218,"J. Okogie Min - SG,SF",J. Okogie Min,J. Okogie ,J,Okogie
+219,J. McGee Cle - C,J. McGee Cle,J. McGee ,J,McGee
+220,E. Kanter Por - C,E. Kanter Por,E. Kanter ,E,Kanter
+221,"G. Dieng Mem - PF,C",G. Dieng Mem,G. Dieng ,G,Dieng
+222,"H. Giles III Por - PF,C",H. Giles III Por,H. Giles ,H,Giles
+223,G. Bitadze Ind - C,G. Bitadze Ind,G. Bitadze ,G,Bitadze
+224,"T. Prince Bkn - SF,PF",T. Prince Bkn,T. Prince ,T,Prince
+225,D. Howard Phi - C,D. Howard Phi,D. Howard ,D,Howard
+226,"B. Portis Mil - PF,C",B. Portis Mil,B. Portis ,B,Portis
+227,"M. Plumlee Det - PF,C",M. Plumlee Det,M. Plumlee ,M,Plumlee
+228,"W. Cauley-Stein Dal - PF,C",W. Cauley,W. Cauley,W,Cauley
+229,"R. Gay SA - SF,PF",R. Gay SA,R. Gay ,R,Gay
+230,"K. Olynyk Mia - PF,C",K. Olynyk Mia,K. Olynyk ,K,Olynyk
+231,"J. Hart NO - SG,SF",J. Hart NO,J. Hart ,J,Hart
+232,"K. Anderson Mem - SF,PF",K. Anderson Mem,K. Anderson ,K,Anderson
+233,I. Smith Was - PG,I. Smith Was,I. Smith ,I,Smith
+234,N. Bjelica Sac - PF,N. Bjelica Sac,N. Bjelica ,N,Bjelica
+235,T. Jones Mem - PG,T. Jones Mem,T. Jones ,T,Jones
+236,D. Augustin Mil - PG,D. Augustin Mil,D. Augustin ,D,Augustin
+237,"K. Caldwell-Pope LAL - PG,SG",K. Caldwell,K. Caldwell,K,Caldwell
+238,"A. Len Tor - PF,C",A. Len Tor,A. Len ,A,Len
+239,"L. Shamet Bkn - PG,SG",L. Shamet Bkn,L. Shamet ,L,Shamet
+240,"M. Morris Den - PG,SG",M. Morris Den,M. Morris ,M,Morris
+241,"R. Jackson LAC - PG,SG",R. Jackson LAC,R. Jackson ,R,Jackson
+242,R. Rondo Atl - PG,R. Rondo Atl,R. Rondo ,R,Rondo
+243,"M. Morris LAL - PF,C",M. Morris LAL,M. Morris ,M,Morris
+244,"J. Parker Sac - SF,PF",J. Parker Sac,J. Parker ,J,Parker
+245,"K. Bazemore GS - SG,SF",K. Bazemore GS,K. Bazemore ,K,Bazemore
+246,"M. Monk Cha - PG,SG",M. Monk Cha,M. Monk ,M,Monk
+247,"J. Johnson Dal - PF,C",J. Johnson Dal,J. Johnson ,J,Johnson
+248,"M. Williams Mil - SF,PF",M. Williams Mil,M. Williams ,M,Williams
+249,"J. Green Den - PF,C",J. Green Den,J. Green ,J,Green
+250,D. Bacon Orl - SG,D. Bacon Orl,D. Bacon ,D,Bacon
+251,"R. Hood Por - SG,SF",R. Hood Por,R. Hood ,R,Hood
+252,S. Bey Det - SF,S. Bey Det,S. Bey ,S,Bey
+253,"K. Knox II NY - SF,PF",K. Knox II NY,K. Knox ,K,Knox
+254,D. Smith Jr. NY - PG,D. Smith Jr. NY,D. Smith ,D,Smith
+255,"R. Kurucs Bkn - PF,C",R. Kurucs Bkn,R. Kurucs ,R,Kurucs
+256,"A. Aminu Orl - SF,PF",A. Aminu Orl,A. Aminu ,A,Aminu
+257,"W. Matthews LAL - SG,SF",W. Matthews LAL,W. Matthews ,W,Matthews
+258,"D. Avdija Was - SG,SF",D. Avdija Was,D. Avdija ,D,Avdija
+259,"J. Green Bkn - SF,PF,C",J. Green Bkn,J. Green ,J,Green
+260,"G. Hill OKC - PG,SG",G. Hill OKC,G. Hill ,G,Hill
+261,"T. Leaf OKC - PF,C",T. Leaf OKC,T. Leaf ,T,Leaf
+262,"N. Alexander-Walker NO - SG,SF",N. Alexander,N. Alexander,N,Alexander
+263,B. Brown Bkn - SG,B. Brown Bkn,B. Brown ,B,Brown
+264,M. Bamba Orl - C,M. Bamba Orl,M. Bamba ,M,Bamba
+265,"D. Waiters LAL - SG,SF",D. Waiters LAL,D. Waiters ,D,Waiters
+266,B. Marjanovic Dal - C,B. Marjanovic Dal,B. Marjanovic ,B,Marjanovic
+267,"M. Wagner Was - PF,C",M. Wagner Was,M. Wagner ,M,Wagner
+268,C. Joseph Sac - PG,C. Joseph Sac,C. Joseph ,C,Joseph
+269,"T. Johnson Bkn - PG,SG",T. Johnson Bkn,T. Johnson ,T,Johnson
+270,"A. Simons Por - PG,SG",A. Simons Por,A. Simons ,A,Simons
+271,"J. Bell LAL - PF,C",J. Bell LAL,J. Bell ,J,Bell
+272,"M. Kidd-Gilchrist NY - SF,PF",M. Kidd,M. Kidd,M,Kidd
+273,A. Holiday Ind - PG,A. Holiday Ind,A. Holiday ,A,Holiday
+274,"G. Robinson III Sac - SG,SF",G. Robinson III Sac,G. Robinson ,G,Robinson
+275,"A. Bradley Mia - SG,SF",A. Bradley Mia,A. Bradley ,A,Bradley
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

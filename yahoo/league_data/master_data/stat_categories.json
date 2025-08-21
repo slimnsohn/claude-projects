@@ -1,0 +1,56 @@
+{
+  "description": "Fantasy league statistical categories",
+  "total_categories": 10,
+  "categories": {
+    "games_played": {
+      "name": "Games Played",
+      "type": "counting",
+      "higher_better": true
+    },
+    "fg_pct": {
+      "name": "Field Goal %",
+      "type": "percentage",
+      "higher_better": true
+    },
+    "ft_pct": {
+      "name": "Free Throw %",
+      "type": "percentage",
+      "higher_better": true
+    },
+    "threes_made": {
+      "name": "3-Pointers Made",
+      "type": "average",
+      "higher_better": true
+    },
+    "points": {
+      "name": "Points",
+      "type": "average",
+      "higher_better": true
+    },
+    "rebounds": {
+      "name": "Rebounds",
+      "type": "average",
+      "higher_better": true
+    },
+    "assists": {
+      "name": "Assists",
+      "type": "average",
+      "higher_better": true
+    },
+    "steals": {
+      "name": "Steals",
+      "type": "average",
+      "higher_better": true
+    },
+    "blocks": {
+      "name": "Blocks",
+      "type": "average",
+      "higher_better": true
+    },
+    "turnovers": {
+      "name": "Turnovers",
+      "type": "average",
+      "higher_better": false
+    }
+  }
+}

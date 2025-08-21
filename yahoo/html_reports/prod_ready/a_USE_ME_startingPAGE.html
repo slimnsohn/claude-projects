@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Basketball Analysis - Production Tools</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border-color: #667eea;
+        }
+
+        .tool-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .tool-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tool-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .tool-stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .tool-stats strong {
+            color: #667eea;
+        }
+
+        .tool-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .tool-button:hover {
+            background: linear-gradient(135deg, #5a6fd8, #6a42a0);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .data-summary {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .summary-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .summary-stat {
+            padding: 20px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .summary-number {
+            font-size: 2.2em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .summary-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tool-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏀 Fantasy Basketball Analysis</h1>
+            <p>Production-Ready Analysis Tools • 15 Years of Data (2010-2024)</p>
+        </div>
+
+        <!-- Analysis Tools -->
+        <div class="tools-grid">
+            <!-- Player Database -->
+            <div class="tool-card">
+                <span class="tool-icon">👥</span>
+                <div class="tool-title">Player Database</div>
+                <div class="tool-description">
+                    Comprehensive player analysis with search, filtering, and expandable details. 
+                    Features complete draft history, season stats, and value analysis.
+                </div>
+                <div class="tool-stats">
+                    <strong>547</strong> drafted players • <strong>Full stats</strong> with 9 categories • <strong>Value scoring</strong>
+                </div>
+                <a href="simple_working.html" class="tool-button">Open Player Database</a>
+            </div>
+
+            <!-- Draft Results -->
+            <div class="tool-card">
+                <span class="tool-icon">📋</span>
+                <div class="tool-title">Draft Results by Year</div>
+                <div class="tool-description">
+                    Historical draft results for all 15 seasons. Navigate by year to see 
+                    complete draft order, costs, and team selections.
+                </div>
+                <div class="tool-stats">
+                    <strong>2,366</strong> total picks • <strong>15</strong> seasons • <strong>All player names</strong>
+                </div>
+                <a href="draft_results_standalone.html" class="tool-button">View Draft History</a>
+            </div>
+
+            <!-- Owner Analysis -->
+            <div class="tool-card">
+                <span class="tool-icon">🏆</span>
+                <div class="tool-title">Owner Performance Tracking</div>
+                <div class="tool-description">
+                    Track owner performance across seasons. View win percentages, playoff 
+                    appearances, and year-by-year standings history.
+                </div>
+                <div class="tool-stats">
+                    <strong>22</strong> unique owners • <strong>15</strong> seasons tracked • <strong>Color-coded</strong> standings
+                </div>
+                <a href="owner_analysis.html" class="tool-button">Analyze Owners</a>
+            </div>
+
+            <!-- Player Analytics -->
+            <div class="tool-card">
+                <span class="tool-icon">📈</span>
+                <div class="tool-title">Advanced Player Analytics</div>
+                <div class="tool-description">
+                    Machine learning models and regression analysis for auction years. 
+                    Identify undervalued players and predict performance trends.
+                </div>
+                <div class="tool-stats">
+                    <strong>1,033</strong> player-seasons • <strong>ML models</strong> • <strong>Auction data</strong> (2016-2024)
+                </div>
+                <a href="player_analysis.html" class="tool-button">View Analytics</a>
+            </div>
+        </div>
+
+        <!-- Data Summary -->
+        <div class="data-summary">
+            <div class="summary-title">📊 Complete Data Coverage</div>
+            <div class="summary-grid">
+                <div class="summary-stat">
+                    <span class="summary-number">15</span>
+                    <div class="summary-label">Seasons</div>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-number">2,366</span>
+                    <div class="summary-label">Draft Picks</div>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-number">547</span>
+                    <div class="summary-label">Drafted Players</div>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-number">2,024</span>
+                    <div class="summary-label">Total Players</div>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-number">22</span>
+                    <div class="summary-label">Owners Tracked</div>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-number">96.3%</span>
+                    <div class="summary-label">Mapping Success</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Analysis based on "The Best Time of Year" Yahoo Fantasy Basketball League</p>
+            <p>Data extracted August 2025 • All tools work offline</p>
+        </div>
+    </div>
+</body>
+</html>

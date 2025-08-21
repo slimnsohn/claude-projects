@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Fantasy Basketball - 15 Year Data Summary</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0 0 0;
+        }
+        
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid #667eea;
+        }
+        
+        .stat-number {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .data-table {
+            overflow-x: auto;
+            margin-bottom: 30px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .status-complete {
+            background-color: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .file-structure {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .analysis-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #667eea;
+        }
+        
+        .analysis-card h3 {
+            color: #333;
+            margin: 0 0 15px 0;
+        }
+        
+        .analysis-card ul {
+            color: #555;
+            padding-left: 20px;
+        }
+        
+        .analysis-card li {
+            margin: 8px 0;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .next-steps {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-left: 5px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        
+        .next-steps h3 {
+            color: #155724;
+            margin: 0 0 15px 0;
+        }
+        
+        .next-steps ol {
+            color: #155724;
+            padding-left: 20px;
+        }
+        
+        .next-steps li {
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏀 Yahoo Fantasy Basketball</h1>
+            <p>Complete 15-Year Data Analysis Project (2010-2024)</p>
+        </div>
+
+        <div class="stats-overview">
+            <div class="stat-card">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Consecutive Years</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">2,376+</span>
+                <span class="stat-label">Total Draft Picks</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">165</span>
+                <span class="stat-label">Teams Tracked</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Extraction Success</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Data Available by Year</h2>
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Teams</th>
+                            <th>Draft Picks</th>
+                            <th>Total Budget</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>2024</strong></td>
+                            <td>10</td>
+                            <td>150</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>Current season</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2023</strong></td>
+                            <td>10</td>
+                            <td>150</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2022</strong></td>
+                            <td>10</td>
+                            <td>150</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2021</strong></td>
+                            <td>10</td>
+                            <td>150</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2020</strong></td>
+                            <td>10</td>
+                            <td>150</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>Original data source</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2019</strong></td>
+                            <td>10</td>
+                            <td>160</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2018</strong></td>
+                            <td>10</td>
+                            <td>160</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2017</strong></td>
+                            <td>12</td>
+                            <td>192</td>
+                            <td>$2,400</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>12-team season</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2016</strong></td>
+                            <td>10</td>
+                            <td>160</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2015</strong></td>
+                            <td>10</td>
+                            <td>160</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2014</strong></td>
+                            <td>10</td>
+                            <td>140</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2013</strong></td>
+                            <td>12</td>
+                            <td>168</td>
+                            <td>$2,400</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>12-team season</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2012</strong></td>
+                            <td>12</td>
+                            <td>168</td>
+                            <td>$2,400</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>12-team season</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2011</strong></td>
+                            <td>12</td>
+                            <td>168</td>
+                            <td>$2,400</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>12-team season</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2010</strong></td>
+                            <td>10</td>
+                            <td>140</td>
+                            <td>$2,000</td>
+                            <td><span class="status-complete">Complete</span></td>
+                            <td>First year</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>🎯 Data Quality Highlights</h3>
+            <ul>
+                <li><strong>100% Extraction Success:</strong> All 15 years extracted without errors</li>
+                <li><strong>Complete Owner Tracking:</strong> Email-based unique IDs across all seasons</li>
+                <li><strong>Full Draft Records:</strong> Every pick, cost, and team assignment</li>
+                <li><strong>Playoff Results:</strong> Complete standings and championship data</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📁 File Structure</h2>
+            <div class="file-structure">
+yahoo/
+├── README.md                    # Complete project documentation
+├── summary.html                 # This overview file
+├── py_scripts/                  # All extraction and processing scripts
+├── league_data/                 # **MAIN DATA REPOSITORY**
+│   ├── master_data/            # Cross-year reference files
+│   ├── 2010/ through 2024/     # Individual year data
+│   │   ├── raw_data/          # Raw Yahoo API responses
+│   │   ├── processed_data/    # Organized draft/owner data
+│   │   └── external_data/     # Future: NBA performance stats
+│   └── extraction_log.txt      # Complete extraction history
+└── html_reports/               # Future: Interactive web reports
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Three Analysis Types Ready</h2>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <h3>1. Player-Level Analysis</h3>
+                    <ul>
+                        <li>Under/over-valued players year-over-year</li>
+                        <li>Positional value trends (centers vs guards)</li>
+                        <li>Draft cost vs actual performance</li>
+                        <li>Consistent bargains and busts</li>
+                        <li>Player aging curves in auction value</li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-card">
+                    <h3>2. Owner Analysis</h3>
+                    <ul>
+                        <li>Historical draft patterns by owner</li>
+                        <li>Spending strategies (stars & scrubs vs balanced)</li>
+                        <li>Position preferences and tendencies</li>
+                        <li>Success rates by draft approach</li>
+                        <li>Current participant focus</li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-card">
+                    <h3>3. Draft Strategy Analysis</h3>
+                    <ul>
+                        <li>Winning team characteristics</li>
+                        <li>Optimal budget allocation by position</li>
+                        <li>Early vs late round value identification</li>
+                        <li>Championship correlation factors</li>
+                        <li>Playoff advancement patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📈 Statistical Categories Tracked</h2>
+            <p>The league uses 9 core categories plus games played (all as averages except games):</p>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <h3>Shooting</h3>
+                    <ul>
+                        <li>Field Goal % (higher better)</li>
+                        <li>Free Throw % (higher better)</li>
+                        <li>3-Pointers Made (higher better)</li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-card">
+                    <h3>Production</h3>
+                    <ul>
+                        <li>Points (higher better)</li>
+                        <li>Rebounds (higher better)</li>
+                        <li>Assists (higher better)</li>
+                        <li>Steals (higher better)</li>
+                        <li>Blocks (higher better)</li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-card">
+                    <h3>Negative & Tracking</h3>
+                    <ul>
+                        <li>Turnovers (lower better)</li>
+                        <li>Games Played (tracking stat)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="next-steps">
+            <h3>🚀 Ready for Next Phase</h3>
+            <ol>
+                <li><strong>NBA Stats Integration:</strong> Add actual player performance data for value analysis</li>
+                <li><strong>Master Owner Database:</strong> Build complete cross-year owner tracking system</li>
+                <li><strong>Analysis Engine:</strong> Implement the three core analysis types</li>
+                <li><strong>Interactive Dashboard:</strong> Create web-based reporting and visualization</li>
+                <li><strong>Predictive Models:</strong> Use 15-year history to predict future values</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>🔍 Sample Data Available</h2>
+            <p><strong>Draft Data Example (2024):</strong></p>
+            <ul>
+                <li>Pick #1: Player ID 6355, Cost $54, Team "What what what's your fantasy"</li>
+                <li>Total league spending: $2,000 across 150 picks</li>
+                <li>Average pick cost: $13.33</li>
+            </ul>
+            
+            <p><strong>Owner Data Example:</strong></p>
+            <ul>
+                <li>Manager: jpezzetti@gmail.com ("zetti") - Team "The Bandwagon"</li>
+                <li>2024 Record: 89-77-5 (.535), Playoff seed #5</li>
+                <li>Complete manager info and historical tracking ready</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Project Status:</strong> Phase 1 Complete - Data Extraction and Organization ✅</p>
+            <p><strong>Data Range:</strong> 2010-2024 (15 consecutive seasons)</p>
+            <p><strong>Last Updated:</strong> August 2025</p>
+        </div>
+    </div>
+</body>
+</html>

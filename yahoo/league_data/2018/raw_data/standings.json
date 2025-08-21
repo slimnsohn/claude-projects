@@ -1,0 +1,132 @@
+[
+  {
+    "team_key": "385.l.42210.t.6",
+    "name": "LetsBall",
+    "rank": 1,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "110",
+      "losses": "70",
+      "ties": 0,
+      "percentage": ".611"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "385.l.42210.t.5",
+    "name": "hersheysquirt",
+    "rank": 2,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "86",
+      "losses": "92",
+      "ties": "2",
+      "percentage": ".483"
+    },
+    "games_back": "23"
+  },
+  {
+    "team_key": "385.l.42210.t.8",
+    "name": "The Bandwagon",
+    "rank": 3,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "89",
+      "losses": "88",
+      "ties": "3",
+      "percentage": ".503"
+    },
+    "games_back": "19.5"
+  },
+  {
+    "team_key": "385.l.42210.t.9",
+    "name": "The Krappers",
+    "rank": 4,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "102",
+      "losses": "78",
+      "ties": 0,
+      "percentage": ".567"
+    },
+    "games_back": "8"
+  },
+  {
+    "team_key": "385.l.42210.t.2",
+    "name": "Bzzzzznatch",
+    "rank": 5,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "96",
+      "losses": "82",
+      "ties": "2",
+      "percentage": ".539"
+    },
+    "games_back": "13"
+  },
+  {
+    "team_key": "385.l.42210.t.3",
+    "name": "Dirty South Asia",
+    "rank": 6,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "99",
+      "losses": "78",
+      "ties": "3",
+      "percentage": ".558"
+    },
+    "games_back": "9.5"
+  },
+  {
+    "team_key": "385.l.42210.t.10",
+    "name": "White Chocolate",
+    "rank": 7,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "85",
+      "losses": "94",
+      "ties": "1",
+      "percentage": ".475"
+    },
+    "games_back": "24.5"
+  },
+  {
+    "team_key": "385.l.42210.t.7",
+    "name": "Make it Drizzle",
+    "rank": 8,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "81",
+      "losses": "98",
+      "ties": "1",
+      "percentage": ".453"
+    },
+    "games_back": "28.5"
+  },
+  {
+    "team_key": "385.l.42210.t.1",
+    "name": "curry cavaliers",
+    "rank": 9,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "71",
+      "losses": "105",
+      "ties": "4",
+      "percentage": ".406"
+    },
+    "games_back": "37"
+  },
+  {
+    "team_key": "385.l.42210.t.4",
+    "name": "Get Schwifty",
+    "rank": 10,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "72",
+      "losses": "106",
+      "ties": "2",
+      "percentage": ".406"
+    },
+    "games_back": "37"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "team_key": "304.l.62665.t.2",
+    "name": "Sarcastaballers",
+    "rank": 1,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "110",
+      "losses": "75",
+      "ties": "4",
+      "percentage": ".593"
+    },
+    "games_back": "14"
+  },
+  {
+    "team_key": "304.l.62665.t.6",
+    "name": "The Krappers",
+    "rank": 2,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "123",
+      "losses": "60",
+      "ties": "6",
+      "percentage": ".667"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "304.l.62665.t.5",
+    "name": "The Bandwagon",
+    "rank": 3,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "113",
+      "losses": "73",
+      "ties": "3",
+      "percentage": ".606"
+    },
+    "games_back": "11.5"
+  },
+  {
+    "team_key": "304.l.62665.t.11",
+    "name": "LetsBall",
+    "rank": 4,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "104",
+      "losses": "83",
+      "ties": "2",
+      "percentage": ".556"
+    },
+    "games_back": "21"
+  },
+  {
+    "team_key": "304.l.62665.t.9",
+    "name": "Chicago Lakers",
+    "rank": 5,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "98",
+      "losses": "90",
+      "ties": "1",
+      "percentage": ".521"
+    },
+    "games_back": "27.5"
+  },
+  {
+    "team_key": "304.l.62665.t.7",
+    "name": "Los Angeles Lakers",
+    "rank": 6,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "99",
+      "losses": "86",
+      "ties": "4",
+      "percentage": ".534"
+    },
+    "games_back": "25"
+  },
+  {
+    "team_key": "304.l.62665.t.4",
+    "name": "Dirty South Asia",
+    "rank": 7,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "92",
+      "losses": "95",
+      "ties": "2",
+      "percentage": ".492"
+    },
+    "games_back": "33"
+  },
+  {
+    "team_key": "304.l.62665.t.10",
+    "name": "#6",
+    "rank": 8,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "97",
+      "losses": "89",
+      "ties": "3",
+      "percentage": ".521"
+    },
+    "games_back": "27.5"
+  },
+  {
+    "team_key": "304.l.62665.t.1",
+    "name": "Mr. Wiggles",
+    "rank": 9,
+    "playoff_seed": "11",
+    "outcome_totals": {
+      "wins": "69",
+      "losses": "117",
+      "ties": "3",
+      "percentage": ".373"
+    },
+    "games_back": "55.5"
+  },
+  {
+    "team_key": "304.l.62665.t.8",
+    "name": "hersheysquirt",
+    "rank": 10,
+    "playoff_seed": "12",
+    "outcome_totals": {
+      "wins": "58",
+      "losses": "131",
+      "ties": 0,
+      "percentage": ".307"
+    },
+    "games_back": "68"
+  },
+  {
+    "team_key": "304.l.62665.t.12",
+    "name": "Silky J's",
+    "rank": 11,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "74",
+      "losses": "110",
+      "ties": "5",
+      "percentage": ".405"
+    },
+    "games_back": "49.5"
+  },
+  {
+    "team_key": "304.l.62665.t.3",
+    "name": "NZallBlacks",
+    "rank": 12,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "79",
+      "losses": "107",
+      "ties": "3",
+      "percentage": ".426"
+    },
+    "games_back": "45.5"
+  }
+]

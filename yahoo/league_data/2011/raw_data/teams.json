@@ -1,0 +1,466 @@
+{
+  "265.l.40720.t.11": {
+    "team_key": "265.l.40720.t.11",
+    "team_id": "11",
+    "name": "The Bandwagon",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/11",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/dh/ap/fantasy/img/profile_96.png"
+        }
+      }
+    ],
+    "waiver_priority": 10,
+    "number_of_moves": 41,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "5"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "draft_position": 9,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "11",
+          "nickname": "zetti",
+          "guid": "RL4ONIPMS5BGKH2WCYBTMFS7KM",
+          "email": "jpezzetti@gmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4691/38763830186_3c2d80_64sq.jpg",
+          "felo_score": "753",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.1": {
+    "team_key": "265.l.40720.t.1",
+    "team_id": "1",
+    "name": "Mr. Wiggles",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/1",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/dh/ap/fantasy/img/profile_96.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 3,
+    "waiver_priority": 9,
+    "number_of_moves": 37,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "5"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "draft_position": 1,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "1",
+          "nickname": "Bzznatch",
+          "guid": "UP7PBD6EQZK45LRSL2NAET3V44",
+          "is_commissioner": "1",
+          "email": "bryantsze@yahoo.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "820",
+          "felo_tier": "platinum"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.7": {
+    "team_key": "265.l.40720.t.7",
+    "team_id": "7",
+    "name": "NZallBlacks",
+    "is_owned_by_current_login": 1,
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/7",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_7.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 4,
+    "waiver_priority": 6,
+    "number_of_moves": 35,
+    "number_of_trades": "1",
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "4"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "draft_position": 7,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "7",
+          "nickname": "Slims",
+          "guid": "GGBRSMOI6K3R3Z73FG4ZRMRBFM",
+          "is_current_login": "1",
+          "image_url": "https://s.yimg.com/ag/images/4732/38238437590_bcba8f_64sq.jpg",
+          "felo_score": "812",
+          "felo_tier": "platinum"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.8": {
+    "team_key": "265.l.40720.t.8",
+    "team_id": "8",
+    "name": "Showty Me",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/8",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_12.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 7,
+    "waiver_priority": 11,
+    "number_of_moves": 40,
+    "number_of_trades": "1",
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "draft_position": 11,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "8",
+          "nickname": "Dirty South",
+          "guid": "NREHJO4Z5FWMC7JNKGPIP2GGHY",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "575",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.5": {
+    "team_key": "265.l.40720.t.5",
+    "team_id": "5",
+    "name": "The Krappers",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/5",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_1.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 10,
+    "waiver_priority": 5,
+    "number_of_moves": 13,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "draft_position": 10,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "5",
+          "nickname": "Mike",
+          "guid": "C4OWKIIMIEL47GU7EB4Z3EDNE4",
+          "image_url": "https://s.yimg.com/ag/images/4505/23843010757_838e67_64sq.jpg",
+          "felo_score": "639",
+          "felo_tier": "silver"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.3": {
+    "team_key": "265.l.40720.t.3",
+    "team_id": "3",
+    "name": "lawless",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/3",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_3.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 6,
+    "waiver_priority": 4,
+    "number_of_moves": 1,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "draft_position": 3,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "3",
+          "nickname": "--hidden--",
+          "guid": "--",
+          "felo_score": "631",
+          "felo_tier": "silver"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.10": {
+    "team_key": "265.l.40720.t.10",
+    "team_id": "10",
+    "name": "Gimme The Hot Sauce",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/10",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/dh/ap/fantasy/img/profile_96.png"
+        }
+      }
+    ],
+    "waiver_priority": 1,
+    "number_of_moves": 4,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "draft_position": 4,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "10",
+          "nickname": "sammysosa",
+          "guid": "KEOEUD4K63XHZ5NBROAOI24TUE",
+          "email": "air62089@yahoo.com",
+          "image_url": "https://s.yimg.com/ag/images/4577/24419054308_bd0dca_64sq.jpg",
+          "felo_score": "596",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.12": {
+    "team_key": "265.l.40720.t.12",
+    "team_id": "12",
+    "name": "Here4 the Deng Bang",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/12",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/dh/ap/fantasy/img/profile_96.png"
+        }
+      }
+    ],
+    "waiver_priority": 7,
+    "number_of_moves": 13,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "draft_position": 2,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "12",
+          "nickname": "Ryan",
+          "guid": "ENGUV26FTRY5I5DYIEDFZTHZGM",
+          "email": "ryantrevorlarson@gmail.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "590",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.2": {
+    "team_key": "265.l.40720.t.2",
+    "team_id": "2",
+    "name": "Rex Ryan's Nightmare",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/2",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_3.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 1,
+    "waiver_priority": 12,
+    "number_of_moves": 15,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "draft_position": 6,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "2",
+          "nickname": "David",
+          "guid": "JK5X7F3CGGAEKHHJCJ6MQ2VOWY",
+          "image_url": "https://s.yimg.com/ag/images/4576/37442752763_c85e01_64sq.jpg",
+          "felo_score": "753",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.9": {
+    "team_key": "265.l.40720.t.9",
+    "team_id": "9",
+    "name": "Wright Supremacy",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/9",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_3.png"
+        }
+      }
+    ],
+    "waiver_priority": 3,
+    "number_of_moves": 6,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "draft_position": 12,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "9",
+          "nickname": "--hidden--",
+          "guid": "--",
+          "email": "--hidden--",
+          "felo_score": "566",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.4": {
+    "team_key": "265.l.40720.t.4",
+    "team_id": "4",
+    "name": "hersheysquirt",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/4",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_3.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 9,
+    "waiver_priority": 8,
+    "number_of_moves": 22,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "draft_position": 5,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "4",
+          "nickname": "Lil Kim",
+          "guid": "BCEAAICGF3LPCTXRUR7GPPH4SE",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "613",
+          "felo_tier": "silver"
+        }
+      }
+    ]
+  },
+  "265.l.40720.t.6": {
+    "team_key": "265.l.40720.t.6",
+    "team_id": "6",
+    "name": "Chris Kaman HisPants",
+    "url": "https://basketball.fantasysports.yahoo.com/2011/nba/40720/6",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/dh/ap/fantasy/img/profile_96.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 5,
+    "waiver_priority": 2,
+    "number_of_moves": 21,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "draft_position": 8,
+    "has_draft_grade": 0,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "6",
+          "nickname": "Johnny Blaze",
+          "guid": "D4PQ365UBJJZRDXFWQ2HFEBNC4",
+          "image_url": "https://s.yimg.com/ag/images/4589/27243398199_e53344_64sq.jpg",
+          "felo_score": "547",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,574 @@
+#!/usr/bin/env python3
+"""
+Create a standalone draft results page with embedded data.
+"""
+
+import json
+import os
+from collections import defaultdict
+
+def create_draft_results_page():
+    """
+    Create a standalone draft results HTML page with embedded data.
+    """
+    
+    print("Creating draft results page with embedded data...")
+    
+    # Load all draft data for available years
+    all_draft_data = {}
+    years_with_data = []
+    
+    for year in range(2010, 2025):
+        draft_file = f'league_data/{year}/processed_data/draft_analysis.json'
+        if os.path.exists(draft_file):
+            try:
+                with open(draft_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    all_draft_data[str(year)] = data
+                    years_with_data.append(year)
+                    print(f"  Loaded {year}: {len(data.get('picks', []))} picks")
+            except Exception as e:
+                print(f"  Error loading {year}: {e}")
+    
+    print(f"Successfully loaded draft data for {len(years_with_data)} years: {years_with_data}")
+    
+    # Create the HTML with embedded data
+    html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Basketball Draft Results by Year</title>
+    <style>
+        * {{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }}
+
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }}
+
+        .container {{
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }}
+
+        .main-content {{
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }}
+
+        .page-header {{
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }}
+
+        .page-header h1 {{
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }}
+
+        .page-header p {{
+            color: #666;
+            font-size: 1.1em;
+        }}
+
+        .year-selector {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }}
+
+        .year-button {{
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }}
+
+        .year-button:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }}
+
+        .year-button.active {{
+            background: linear-gradient(135deg, #28a745, #20c997);
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.3);
+        }}
+
+        .draft-info {{
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: none;
+        }}
+
+        .draft-info.active {{
+            display: block;
+        }}
+
+        .draft-stats {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }}
+
+        .stat-card {{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }}
+
+        .stat-number {{
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }}
+
+        .stat-label {{
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }}
+
+        .draft-table-container {{
+            margin-top: 30px;
+            overflow-x: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }}
+
+        .draft-table {{
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }}
+
+        .draft-table th {{
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }}
+
+        .draft-table td {{
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }}
+
+        .draft-table tr:hover {{
+            background: #f8f9fa;
+        }}
+
+        .pick-cell {{
+            font-weight: 600;
+            color: #667eea;
+            text-align: center;
+        }}
+
+        .player-cell {{
+            font-weight: 600;
+        }}
+
+        .cost-cell {{
+            font-weight: 600;
+            text-align: center;
+        }}
+
+        .cost-auction {{
+            color: #28a745;
+        }}
+
+        .cost-snake {{
+            color: #ffc107;
+        }}
+
+        .team-cell {{
+            color: #666;
+            font-size: 0.9em;
+        }}
+
+        .round-cell {{
+            text-align: center;
+            color: #666;
+        }}
+
+        .loading {{
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.1em;
+        }}
+
+        .no-data {{
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }}
+
+        .sort-indicator {{
+            margin-left: 5px;
+            opacity: 0.6;
+        }}
+
+        .sortable {{
+            cursor: pointer;
+            user-select: none;
+        }}
+
+        .sortable:hover {{
+            background: rgba(255,255,255,0.1);
+        }}
+
+        .back-link {{
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.9);
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }}
+
+        .back-link:hover {{
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }}
+
+        @media (max-width: 768px) {{
+            .container {{
+                padding: 10px;
+            }}
+            
+            .main-content {{
+                padding: 20px;
+            }}
+            
+            .year-selector {{
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }}
+            
+            .draft-table th,
+            .draft-table td {{
+                padding: 8px 6px;
+                font-size: 0.9em;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Back Link -->
+            <a href="standalone.html" class="back-link">← Back to Player Database</a>
+            
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>🏀 Draft Results by Year</h1>
+                <p>Complete draft history with rankings and costs (2010-2024)</p>
+            </div>
+            
+            <!-- Year Selector -->
+            <div class="year-selector" id="year-selector">
+                <!-- Years will be populated by JavaScript -->
+            </div>
+            
+            <!-- Draft Information -->
+            <div class="draft-info" id="draft-info">
+                <div class="draft-stats" id="draft-stats">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+                <div class="draft-table-container">
+                    <table class="draft-table">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-sort="pick">Pick #<span class="sort-indicator">▼</span></th>
+                                <th class="sortable" data-sort="player">Player</th>
+                                <th class="sortable" data-sort="cost">Cost<span class="sort-indicator"></span></th>
+                                <th class="sortable" data-sort="round">Round</th>
+                                <th class="sortable" data-sort="team">Team</th>
+                            </tr>
+                        </thead>
+                        <tbody id="draft-table-body">
+                            <!-- Draft picks will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Embed draft data directly in the HTML
+        window.DRAFT_DATA = {json.dumps(all_draft_data, separators=(',', ':'))};
+        
+        class DraftResultsApp {{
+            constructor() {{
+                this.allDraftData = window.DRAFT_DATA;
+                this.currentYear = null;
+                this.currentSort = {{ column: 'cost', direction: 'desc' }};
+                this.init();
+            }}
+
+            init() {{
+                this.setupEventListeners();
+                this.renderYearSelector();
+            }}
+
+            setupEventListeners() {{
+                // Sort functionality
+                document.addEventListener('click', (e) => {{
+                    if (e.target.classList.contains('sortable') || e.target.closest('.sortable')) {{
+                        const header = e.target.classList.contains('sortable') ? e.target : e.target.closest('.sortable');
+                        const column = header.dataset.sort;
+                        this.sortDraftResults(column);
+                    }}
+                }});
+            }}
+
+            renderYearSelector() {{
+                const container = document.getElementById('year-selector');
+                const years = Object.keys(this.allDraftData).sort((a, b) => b - a); // Newest first
+
+                if (years.length === 0) {{
+                    container.innerHTML = '<div class="no-data">No draft data found</div>';
+                    return;
+                }}
+
+                container.innerHTML = years.map(year => {{
+                    const picks = this.allDraftData[year].picks || [];
+                    const draftType = picks.length > 0 && picks[0].draft_cost > 0 ? 'Auction' : 'Snake';
+                    return `<button class="year-button" data-year="${{year}}">
+                        ${{year}}<br>
+                        <small style="font-size: 0.8em; opacity: 0.8;">${{draftType}} (${{picks.length}} picks)</small>
+                    </button>`;
+                }}).join('');
+
+                // Add click listeners to year buttons
+                container.addEventListener('click', (e) => {{
+                    if (e.target.classList.contains('year-button') || e.target.closest('.year-button')) {{
+                        const button = e.target.classList.contains('year-button') ? e.target : e.target.closest('.year-button');
+                        const year = button.dataset.year;
+                        this.selectYear(year);
+                    }}
+                }});
+
+                // Auto-select the most recent year
+                if (years.length > 0) {{
+                    this.selectYear(years[0]);
+                }}
+            }}
+
+            selectYear(year) {{
+                this.currentYear = year;
+                
+                // Update active year button
+                document.querySelectorAll('.year-button').forEach(btn => {{
+                    btn.classList.remove('active');
+                }});
+                document.querySelector(`[data-year="${{year}}"]`).classList.add('active');
+
+                // Show draft info and render data
+                const draftInfo = document.getElementById('draft-info');
+                draftInfo.classList.add('active');
+
+                this.renderDraftStats(year);
+                this.renderDraftResults(year);
+            }}
+
+            renderDraftStats(year) {{
+                const data = this.allDraftData[year];
+                const picks = data.picks || [];
+                
+                const totalCost = picks.reduce((sum, pick) => sum + (pick.draft_cost || 0), 0);
+                const auctionPicks = picks.filter(pick => pick.draft_cost > 0);
+                const snakePicks = picks.filter(pick => pick.draft_cost === 0);
+                const avgCost = auctionPicks.length > 0 ? (totalCost / auctionPicks.length).toFixed(1) : '0';
+                const maxCost = picks.length > 0 ? Math.max(...picks.map(p => p.draft_cost || 0)) : 0;
+
+                const isDraftType = picks.length > 0 && picks[0].draft_cost > 0 ? 'Auction' : 'Snake';
+
+                const statsHtml = `
+                    <div class="stat-card">
+                        <span class="stat-number">${{picks.length}}</span>
+                        <span class="stat-label">Total Picks</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${{isDraftType}}</span>
+                        <span class="stat-label">Draft Type</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$${{totalCost.toLocaleString()}}</span>
+                        <span class="stat-label">Total Spent</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$${{avgCost}}</span>
+                        <span class="stat-label">Avg Cost</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$${{maxCost}}</span>
+                        <span class="stat-label">Highest Pick</span>
+                    </div>
+                `;
+
+                document.getElementById('draft-stats').innerHTML = statsHtml;
+            }}
+
+            renderDraftResults(year) {{
+                const data = this.allDraftData[year];
+                const picks = data.picks || [];
+
+                // Sort picks based on current sort settings
+                const sortedPicks = this.sortPicks(picks);
+
+                const tbody = document.getElementById('draft-table-body');
+                
+                if (sortedPicks.length === 0) {{
+                    tbody.innerHTML = '<tr><td colspan="5" class="no-data">No draft picks found for this year</td></tr>';
+                    return;
+                }}
+
+                tbody.innerHTML = sortedPicks.map((pick, index) => {{
+                    const costClass = pick.draft_cost > 0 ? 'cost-auction' : 'cost-snake';
+                    const costDisplay = pick.draft_cost > 0 ? `$${{pick.draft_cost}}` : 'Snake';
+                    
+                    return `
+                        <tr>
+                            <td class="pick-cell">#${{pick.pick_number || index + 1}}</td>
+                            <td class="player-cell">${{pick.player_name || `Player ${{pick.player_id}}`}}</td>
+                            <td class="cost-cell ${{costClass}}">${{costDisplay}}</td>
+                            <td class="round-cell">${{pick.round || '-'}}</td>
+                            <td class="team-cell">${{pick.fantasy_team || 'Unknown'}}</td>
+                        </tr>
+                    `;
+                }}).join('');
+
+                // Update sort indicators
+                this.updateSortIndicators();
+            }}
+
+            sortPicks(picks) {{
+                const column = this.currentSort.column;
+                const direction = this.currentSort.direction;
+
+                return [...picks].sort((a, b) => {{
+                    let valueA, valueB;
+
+                    switch (column) {{
+                        case 'pick':
+                            valueA = a.pick_number || 999;
+                            valueB = b.pick_number || 999;
+                            break;
+                        case 'player':
+                            valueA = (a.player_name || `Player ${{a.player_id}}`).toLowerCase();
+                            valueB = (b.player_name || `Player ${{b.player_id}}`).toLowerCase();
+                            break;
+                        case 'cost':
+                            valueA = a.draft_cost || 0;
+                            valueB = b.draft_cost || 0;
+                            break;
+                        case 'round':
+                            valueA = a.round || 999;
+                            valueB = b.round || 999;
+                            break;
+                        case 'team':
+                            valueA = (a.fantasy_team || 'Unknown').toLowerCase();
+                            valueB = (b.fantasy_team || 'Unknown').toLowerCase();
+                            break;
+                        default:
+                            return 0;
+                    }}
+
+                    if (typeof valueA === 'string') {{
+                        return direction === 'asc' ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
+                    }} else {{
+                        return direction === 'asc' ? valueA - valueB : valueB - valueA;
+                    }}
+                }});
+            }}
+
+            sortDraftResults(column) {{
+                if (this.currentSort.column === column) {{
+                    // Toggle direction if same column
+                    this.currentSort.direction = this.currentSort.direction === 'asc' ? 'desc' : 'asc';
+                }} else {{
+                    // New column, default to desc for cost/pick, asc for others
+                    this.currentSort.column = column;
+                    this.currentSort.direction = (column === 'cost' || column === 'pick') ? 'desc' : 'asc';
+                }}
+
+                if (this.currentYear) {{
+                    this.renderDraftResults(this.currentYear);
+                }}
+            }}
+
+            updateSortIndicators() {{
+                // Clear all indicators
+                document.querySelectorAll('.sort-indicator').forEach(indicator => {{
+                    indicator.textContent = '';
+                }});
+
+                // Set current sort indicator
+                const currentHeader = document.querySelector(`[data-sort="${{this.currentSort.column}}"] .sort-indicator`);
+                if (currentHeader) {{
+                    currentHeader.textContent = this.currentSort.direction === 'asc' ? '▲' : '▼';
+                }}
+            }}
+        }}
+
+        // Initialize app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {{
+            new DraftResultsApp();
+        }});
+    </script>
+</body>
+</html>"""
+
+    # Write the file
+    output_file = 'html_reports/draft_results_standalone.html'
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(html_content)
+    
+    print(f"\\nDraft results page created: {output_file}")
+    print(f"File size: {os.path.getsize(output_file) / 1024 / 1024:.1f} MB")
+    print(f"Years with data: {sorted(years_with_data)}")
+    
+    return output_file
+
+if __name__ == "__main__":
+    create_draft_results_page()

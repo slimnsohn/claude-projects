@@ -1,0 +1,158 @@
+[
+  {
+    "team_key": "375.l.111279.t.10",
+    "name": "The Krappers",
+    "rank": 1,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "105",
+      "losses": "73",
+      "ties": "2",
+      "percentage": ".589"
+    },
+    "games_back": "2.5"
+  },
+  {
+    "team_key": "375.l.111279.t.9",
+    "name": "The Bandwagon",
+    "rank": 2,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "91",
+      "losses": "84",
+      "ties": "5",
+      "percentage": ".519"
+    },
+    "games_back": "15"
+  },
+  {
+    "team_key": "375.l.111279.t.3",
+    "name": "Dirty South Asia",
+    "rank": 3,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "107",
+      "losses": "70",
+      "ties": "3",
+      "percentage": ".603"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "375.l.111279.t.4",
+    "name": "Get Schwifty",
+    "rank": 4,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "101",
+      "losses": "72",
+      "ties": "7",
+      "percentage": ".581"
+    },
+    "games_back": "4"
+  },
+  {
+    "team_key": "375.l.111279.t.11",
+    "name": "White Chocolate",
+    "rank": 5,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "93",
+      "losses": "85",
+      "ties": "2",
+      "percentage": ".522"
+    },
+    "games_back": "14.5"
+  },
+  {
+    "team_key": "375.l.111279.t.5",
+    "name": "hersheysquirt",
+    "rank": 6,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "87",
+      "losses": "89",
+      "ties": "4",
+      "percentage": ".494"
+    },
+    "games_back": "19.5"
+  },
+  {
+    "team_key": "375.l.111279.t.7",
+    "name": "LetsBall",
+    "rank": 7,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "86",
+      "losses": "92",
+      "ties": "2",
+      "percentage": ".483"
+    },
+    "games_back": "21.5"
+  },
+  {
+    "team_key": "375.l.111279.t.12",
+    "name": "jin's Team",
+    "rank": 8,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "80",
+      "losses": "93",
+      "ties": "7",
+      "percentage": ".464"
+    },
+    "games_back": "25"
+  },
+  {
+    "team_key": "375.l.111279.t.8",
+    "name": "Make it Drizzle",
+    "rank": 9,
+    "playoff_seed": "11",
+    "outcome_totals": {
+      "wins": "82",
+      "losses": "95",
+      "ties": "3",
+      "percentage": ".464"
+    },
+    "games_back": "25"
+  },
+  {
+    "team_key": "375.l.111279.t.2",
+    "name": "Bzzzzznatch",
+    "rank": 10,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "85",
+      "losses": "92",
+      "ties": "3",
+      "percentage": ".481"
+    },
+    "games_back": "22"
+  },
+  {
+    "team_key": "375.l.111279.t.1",
+    "name": "2012 easternAllstars",
+    "rank": 11,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "82",
+      "losses": "95",
+      "ties": "3",
+      "percentage": ".464"
+    },
+    "games_back": "25"
+  },
+  {
+    "team_key": "375.l.111279.t.6",
+    "name": "Tormund's Icy Boner",
+    "rank": 12,
+    "playoff_seed": "12",
+    "outcome_totals": {
+      "wins": "60",
+      "losses": "119",
+      "ties": "1",
+      "percentage": ".336"
+    },
+    "games_back": "48"
+  }
+]

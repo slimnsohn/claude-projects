@@ -1,0 +1,17 @@
+{
+  "years_with_data": [
+    2022,
+    2023,
+    2024
+  ],
+  "total_players_per_year": {
+    "2022": 150,
+    "2023": 150,
+    "2024": 150
+  },
+  "total_ranking_entries": 450,
+  "integration_stats": {
+    "players_updated": 198,
+    "ranking_entries_added": 436
+  }
+}

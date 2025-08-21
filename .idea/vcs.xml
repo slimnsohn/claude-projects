@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yahoo/historical_nba_stats/raw_downloads/NBA-Data-2010-2024" vcs="Git" />
   </component>
 </project>

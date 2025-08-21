@@ -1,0 +1,1122 @@
+[
+  {
+    "pick": 1,
+    "round": 1,
+    "cost": 41,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 4725
+  },
+  {
+    "pick": 2,
+    "round": 1,
+    "cost": 70,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5432
+  },
+  {
+    "pick": 3,
+    "round": 1,
+    "cost": 55,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5012
+  },
+  {
+    "pick": 4,
+    "round": 1,
+    "cost": 53,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5352
+  },
+  {
+    "pick": 5,
+    "round": 1,
+    "cost": 74,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5007
+  },
+  {
+    "pick": 6,
+    "round": 1,
+    "cost": 73,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 4612
+  },
+  {
+    "pick": 7,
+    "round": 1,
+    "cost": 67,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5185
+  },
+  {
+    "pick": 8,
+    "round": 1,
+    "cost": 66,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 4563
+  },
+  {
+    "pick": 9,
+    "round": 1,
+    "cost": 53,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5294
+  },
+  {
+    "pick": 10,
+    "round": 1,
+    "cost": 44,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 4390
+  },
+  {
+    "pick": 11,
+    "round": 2,
+    "cost": 48,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 4840
+  },
+  {
+    "pick": 12,
+    "round": 2,
+    "cost": 31,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 6163
+  },
+  {
+    "pick": 13,
+    "round": 2,
+    "cost": 24,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5658
+  },
+  {
+    "pick": 14,
+    "round": 2,
+    "cost": 49,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 4896
+  },
+  {
+    "pick": 15,
+    "round": 2,
+    "cost": 50,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 3704
+  },
+  {
+    "pick": 16,
+    "round": 2,
+    "cost": 44,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5009
+  },
+  {
+    "pick": 17,
+    "round": 2,
+    "cost": 37,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 6014
+  },
+  {
+    "pick": 18,
+    "round": 2,
+    "cost": 39,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4912
+  },
+  {
+    "pick": 19,
+    "round": 2,
+    "cost": 35,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 6016
+  },
+  {
+    "pick": 20,
+    "round": 2,
+    "cost": 21,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5600
+  },
+  {
+    "pick": 21,
+    "round": 3,
+    "cost": 26,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 6047
+  },
+  {
+    "pick": 22,
+    "round": 3,
+    "cost": 28,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5015
+  },
+  {
+    "pick": 23,
+    "round": 3,
+    "cost": 10,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5500
+  },
+  {
+    "pick": 24,
+    "round": 3,
+    "cost": 19,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 3930
+  },
+  {
+    "pick": 25,
+    "round": 3,
+    "cost": 29,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 4897
+  },
+  {
+    "pick": 26,
+    "round": 3,
+    "cost": 28,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 4622
+  },
+  {
+    "pick": 27,
+    "round": 3,
+    "cost": 35,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5473
+  },
+  {
+    "pick": 28,
+    "round": 3,
+    "cost": 28,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 4890
+  },
+  {
+    "pick": 29,
+    "round": 3,
+    "cost": 30,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5958
+  },
+  {
+    "pick": 30,
+    "round": 3,
+    "cost": 16,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5827
+  },
+  {
+    "pick": 31,
+    "round": 4,
+    "cost": 15,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 4391
+  },
+  {
+    "pick": 32,
+    "round": 4,
+    "cost": 23,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5767
+  },
+  {
+    "pick": 33,
+    "round": 4,
+    "cost": 15,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5253
+  },
+  {
+    "pick": 34,
+    "round": 4,
+    "cost": 16,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5433
+  },
+  {
+    "pick": 35,
+    "round": 4,
+    "cost": 24,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5471
+  },
+  {
+    "pick": 36,
+    "round": 4,
+    "cost": 23,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5069
+  },
+  {
+    "pick": 37,
+    "round": 4,
+    "cost": 18,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5769
+  },
+  {
+    "pick": 38,
+    "round": 4,
+    "cost": 29,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5197
+  },
+  {
+    "pick": 39,
+    "round": 4,
+    "cost": 16,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5637
+  },
+  {
+    "pick": 40,
+    "round": 4,
+    "cost": 14,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5638
+  },
+  {
+    "pick": 41,
+    "round": 5,
+    "cost": 24,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5826
+  },
+  {
+    "pick": 42,
+    "round": 5,
+    "cost": 14,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 4130
+  },
+  {
+    "pick": 43,
+    "round": 5,
+    "cost": 21,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 6015
+  },
+  {
+    "pick": 44,
+    "round": 5,
+    "cost": 8,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 4152
+  },
+  {
+    "pick": 45,
+    "round": 5,
+    "cost": 8,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5153
+  },
+  {
+    "pick": 46,
+    "round": 5,
+    "cost": 4,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 6030
+  },
+  {
+    "pick": 47,
+    "round": 5,
+    "cost": 18,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5832
+  },
+  {
+    "pick": 48,
+    "round": 5,
+    "cost": 17,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5464
+  },
+  {
+    "pick": 49,
+    "round": 5,
+    "cost": 10,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 4749
+  },
+  {
+    "pick": 50,
+    "round": 5,
+    "cost": 14,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5161
+  },
+  {
+    "pick": 51,
+    "round": 6,
+    "cost": 9,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4561
+  },
+  {
+    "pick": 52,
+    "round": 6,
+    "cost": 7,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5667
+  },
+  {
+    "pick": 53,
+    "round": 6,
+    "cost": 9,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5959
+  },
+  {
+    "pick": 54,
+    "round": 6,
+    "cost": 11,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 4246
+  },
+  {
+    "pick": 55,
+    "round": 6,
+    "cost": 5,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 4245
+  },
+  {
+    "pick": 56,
+    "round": 6,
+    "cost": 2,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 4507
+  },
+  {
+    "pick": 57,
+    "round": 6,
+    "cost": 14,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5324
+  },
+  {
+    "pick": 58,
+    "round": 6,
+    "cost": 12,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5765
+  },
+  {
+    "pick": 59,
+    "round": 6,
+    "cost": 18,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5855
+  },
+  {
+    "pick": 60,
+    "round": 6,
+    "cost": 15,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 4614
+  },
+  {
+    "pick": 61,
+    "round": 7,
+    "cost": 11,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5154
+  },
+  {
+    "pick": 62,
+    "round": 7,
+    "cost": 9,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5073
+  },
+  {
+    "pick": 63,
+    "round": 7,
+    "cost": 12,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 6022
+  },
+  {
+    "pick": 64,
+    "round": 7,
+    "cost": 8,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5642
+  },
+  {
+    "pick": 65,
+    "round": 7,
+    "cost": 12,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5336
+  },
+  {
+    "pick": 66,
+    "round": 7,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 6037
+  },
+  {
+    "pick": 67,
+    "round": 7,
+    "cost": 12,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 4901
+  },
+  {
+    "pick": 68,
+    "round": 7,
+    "cost": 6,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4472
+  },
+  {
+    "pick": 69,
+    "round": 7,
+    "cost": 7,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 4718
+  },
+  {
+    "pick": 70,
+    "round": 7,
+    "cost": 5,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5601
+  },
+  {
+    "pick": 71,
+    "round": 8,
+    "cost": 4,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5764
+  },
+  {
+    "pick": 72,
+    "round": 8,
+    "cost": 7,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 4724
+  },
+  {
+    "pick": 73,
+    "round": 8,
+    "cost": 7,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5295
+  },
+  {
+    "pick": 74,
+    "round": 8,
+    "cost": 9,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 4764
+  },
+  {
+    "pick": 75,
+    "round": 8,
+    "cost": 9,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 6018
+  },
+  {
+    "pick": 76,
+    "round": 8,
+    "cost": 2,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 4175
+  },
+  {
+    "pick": 77,
+    "round": 8,
+    "cost": 5,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 4468
+  },
+  {
+    "pick": 78,
+    "round": 8,
+    "cost": 9,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5768
+  },
+  {
+    "pick": 79,
+    "round": 8,
+    "cost": 4,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 6023
+  },
+  {
+    "pick": 80,
+    "round": 8,
+    "cost": 1,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 4136
+  },
+  {
+    "pick": 81,
+    "round": 9,
+    "cost": 4,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5475
+  },
+  {
+    "pick": 82,
+    "round": 9,
+    "cost": 8,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5476
+  },
+  {
+    "pick": 83,
+    "round": 9,
+    "cost": 10,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 6164
+  },
+  {
+    "pick": 84,
+    "round": 9,
+    "cost": 11,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5651
+  },
+  {
+    "pick": 85,
+    "round": 9,
+    "cost": 7,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 4610
+  },
+  {
+    "pick": 86,
+    "round": 9,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 4487
+  },
+  {
+    "pick": 87,
+    "round": 9,
+    "cost": 4,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5835
+  },
+  {
+    "pick": 88,
+    "round": 9,
+    "cost": 11,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5318
+  },
+  {
+    "pick": 89,
+    "round": 9,
+    "cost": 1,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5356
+  },
+  {
+    "pick": 90,
+    "round": 9,
+    "cost": 1,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 4290
+  },
+  {
+    "pick": 91,
+    "round": 10,
+    "cost": 5,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 4624
+  },
+  {
+    "pick": 92,
+    "round": 10,
+    "cost": 2,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5018
+  },
+  {
+    "pick": 93,
+    "round": 10,
+    "cost": 5,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5338
+  },
+  {
+    "pick": 94,
+    "round": 10,
+    "cost": 2,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 6019
+  },
+  {
+    "pick": 95,
+    "round": 10,
+    "cost": 4,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5393
+  },
+  {
+    "pick": 96,
+    "round": 10,
+    "cost": 2,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4139
+  },
+  {
+    "pick": 97,
+    "round": 10,
+    "cost": 2,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 3971
+  },
+  {
+    "pick": 98,
+    "round": 10,
+    "cost": 6,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 4886
+  },
+  {
+    "pick": 99,
+    "round": 10,
+    "cost": 5,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5492
+  },
+  {
+    "pick": 100,
+    "round": 10,
+    "cost": 3,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5163
+  },
+  {
+    "pick": 101,
+    "round": 11,
+    "cost": 1,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5487
+  },
+  {
+    "pick": 102,
+    "round": 11,
+    "cost": 2,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5842
+  },
+  {
+    "pick": 103,
+    "round": 11,
+    "cost": 1,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5292
+  },
+  {
+    "pick": 104,
+    "round": 11,
+    "cost": 3,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5256
+  },
+  {
+    "pick": 105,
+    "round": 11,
+    "cost": 3,
+    "team_key": "395.l.98368.t.9",
+    "player_id": 5480
+  },
+  {
+    "pick": 106,
+    "round": 11,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 4647
+  },
+  {
+    "pick": 107,
+    "round": 11,
+    "cost": 3,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4497
+  },
+  {
+    "pick": 108,
+    "round": 11,
+    "cost": 4,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4325
+  },
+  {
+    "pick": 109,
+    "round": 11,
+    "cost": 3,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5330
+  },
+  {
+    "pick": 110,
+    "round": 11,
+    "cost": 1,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5323
+  },
+  {
+    "pick": 111,
+    "round": 12,
+    "cost": 5,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 6021
+  },
+  {
+    "pick": 112,
+    "round": 12,
+    "cost": 2,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5660
+  },
+  {
+    "pick": 113,
+    "round": 12,
+    "cost": 1,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5823
+  },
+  {
+    "pick": 114,
+    "round": 12,
+    "cost": 1,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5066
+  },
+  {
+    "pick": 115,
+    "round": 12,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 3818
+  },
+  {
+    "pick": 116,
+    "round": 12,
+    "cost": 3,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 6165
+  },
+  {
+    "pick": 117,
+    "round": 12,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5727
+  },
+  {
+    "pick": 118,
+    "round": 12,
+    "cost": 2,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 4899
+  },
+  {
+    "pick": 119,
+    "round": 12,
+    "cost": 3,
+    "team_key": "395.l.98368.t.1",
+    "player_id": 5325
+  },
+  {
+    "pick": 120,
+    "round": 12,
+    "cost": 1,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5317
+  },
+  {
+    "pick": 121,
+    "round": 13,
+    "cost": 2,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5840
+  },
+  {
+    "pick": 122,
+    "round": 13,
+    "cost": 3,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5156
+  },
+  {
+    "pick": 123,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 6026
+  },
+  {
+    "pick": 124,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5602
+  },
+  {
+    "pick": 125,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 5643
+  },
+  {
+    "pick": 126,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5014
+  },
+  {
+    "pick": 127,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.8",
+    "player_id": 5490
+  },
+  {
+    "pick": 128,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5484
+  },
+  {
+    "pick": 129,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 4913
+  },
+  {
+    "pick": 130,
+    "round": 13,
+    "cost": 1,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5836
+  },
+  {
+    "pick": 131,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5880
+  },
+  {
+    "pick": 132,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 4651
+  },
+  {
+    "pick": 133,
+    "round": 14,
+    "cost": 5,
+    "team_key": "395.l.98368.t.6",
+    "player_id": 4486
+  },
+  {
+    "pick": 134,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5470
+  },
+  {
+    "pick": 135,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5349
+  },
+  {
+    "pick": 136,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 6175
+  },
+  {
+    "pick": 137,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 4480
+  },
+  {
+    "pick": 138,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 5663
+  },
+  {
+    "pick": 139,
+    "round": 14,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5013
+  },
+  {
+    "pick": 140,
+    "round": 14,
+    "cost": 2,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 6209
+  },
+  {
+    "pick": 141,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 4163
+  },
+  {
+    "pick": 142,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 6169
+  },
+  {
+    "pick": 143,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 5262
+  },
+  {
+    "pick": 144,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.7",
+    "player_id": 6168
+  },
+  {
+    "pick": 145,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5491
+  },
+  {
+    "pick": 146,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5054
+  },
+  {
+    "pick": 147,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.4",
+    "player_id": 5164
+  },
+  {
+    "pick": 148,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 6025
+  },
+  {
+    "pick": 149,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.3",
+    "player_id": 6171
+  },
+  {
+    "pick": 150,
+    "round": 15,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 4387
+  },
+  {
+    "pick": 151,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5155
+  },
+  {
+    "pick": 152,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.10",
+    "player_id": 5344
+  },
+  {
+    "pick": 153,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5506
+  },
+  {
+    "pick": 154,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 4469
+  },
+  {
+    "pick": 155,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.2",
+    "player_id": 5350
+  },
+  {
+    "pick": 156,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5892
+  },
+  {
+    "pick": 157,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 4471
+  },
+  {
+    "pick": 158,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5074
+  },
+  {
+    "pick": 159,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 5466
+  },
+  {
+    "pick": 160,
+    "round": 16,
+    "cost": 1,
+    "team_key": "395.l.98368.t.5",
+    "player_id": 4926
+  }
+]

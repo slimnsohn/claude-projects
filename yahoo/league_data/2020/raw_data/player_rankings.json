@@ -1,0 +1,381 @@
+{
+  "year": "2020",
+  "league_key": "402.l.121244",
+  "season_status": "completed",
+  "player_rankings": [],
+  "extraction_notes": [
+    "Found 157 free agents with ownership data",
+    "Player Karl-Anthony Towns: Found high stat ID 9004003 = -/-",
+    "Player Karl-Anthony Towns: Found high stat ID 9007006 = -/-",
+    "Player Kevin Durant: Found high stat ID 9004003 = -/-",
+    "Player Kevin Durant: Found high stat ID 9007006 = -/-",
+    "Player James Harden: Found high stat ID 9004003 = -/-",
+    "Player James Harden: Found high stat ID 9007006 = -/-",
+    "Player Anthony Davis: Found high stat ID 9004003 = -/-",
+    "Player Anthony Davis: Found high stat ID 9007006 = -/-",
+    "Player Nikola Joki\u0107: Found high stat ID 9004003 = -/-",
+    "Player Nikola Joki\u0107: Found high stat ID 9007006 = -/-",
+    "Player Luka Don\u010di\u0107: Found high stat ID 9004003 = -/-",
+    "Player Luka Don\u010di\u0107: Found high stat ID 9007006 = -/-",
+    "Player Jimmy Butler III: Found high stat ID 9004003 = -/-",
+    "Player Jimmy Butler III: Found high stat ID 9007006 = -/-",
+    "Player Joel Embiid: Found high stat ID 9004003 = -/-",
+    "Player Joel Embiid: Found high stat ID 9007006 = -/-",
+    "Player Stephen Curry: Found high stat ID 9004003 = -/-",
+    "Player Stephen Curry: Found high stat ID 9007006 = -/-",
+    "Player Zion Williamson: Found high stat ID 9004003 = -/-",
+    "Player Zion Williamson: Found high stat ID 9007006 = -/-"
+  ],
+  "free_agent_popularity": [
+    {
+      "player_id": 6022,
+      "name": "Shai Gilgeous-Alexander",
+      "position": "PG",
+      "percent_owned": 77.0,
+      "status": "O"
+    },
+    {
+      "player_id": 6022,
+      "name": "Shai Gilgeous-Alexander",
+      "position": "SG",
+      "percent_owned": 77.0,
+      "status": "O"
+    },
+    {
+      "player_id": 6022,
+      "name": "Shai Gilgeous-Alexander",
+      "position": "SF",
+      "percent_owned": 77.0,
+      "status": "O"
+    },
+    {
+      "player_id": 5836,
+      "name": "OG Anunoby",
+      "position": "SF",
+      "percent_owned": 76.0,
+      "status": ""
+    },
+    {
+      "player_id": 5836,
+      "name": "OG Anunoby",
+      "position": "PF",
+      "percent_owned": 76.0,
+      "status": ""
+    },
+    {
+      "player_id": 5187,
+      "name": "Dennis Schr\u00f6der",
+      "position": "PG",
+      "percent_owned": 71.0,
+      "status": ""
+    },
+    {
+      "player_id": 5295,
+      "name": "Aaron Gordon",
+      "position": "SF",
+      "percent_owned": 69.0,
+      "status": ""
+    },
+    {
+      "player_id": 5295,
+      "name": "Aaron Gordon",
+      "position": "PF",
+      "percent_owned": 69.0,
+      "status": ""
+    },
+    {
+      "player_id": 5475,
+      "name": "Kelly Oubre Jr.",
+      "position": "SG",
+      "percent_owned": 68.0,
+      "status": "GTD"
+    },
+    {
+      "player_id": 5475,
+      "name": "Kelly Oubre Jr.",
+      "position": "SF",
+      "percent_owned": 68.0,
+      "status": "GTD"
+    },
+    {
+      "player_id": 5475,
+      "name": "Kelly Oubre Jr.",
+      "position": "PF",
+      "percent_owned": 68.0,
+      "status": "GTD"
+    },
+    {
+      "player_id": 5769,
+      "name": "Lauri Markkanen",
+      "position": "PF",
+      "percent_owned": 64.0,
+      "status": ""
+    },
+    {
+      "player_id": 5894,
+      "name": "Chris Boucher",
+      "position": "PF",
+      "percent_owned": 63.0,
+      "status": ""
+    },
+    {
+      "player_id": 6028,
+      "name": "Donte DiVincenzo",
+      "position": "PG",
+      "percent_owned": 60.0,
+      "status": "O"
+    },
+    {
+      "player_id": 6028,
+      "name": "Donte DiVincenzo",
+      "position": "SG",
+      "percent_owned": 60.0,
+      "status": "O"
+    },
+    {
+      "player_id": 5638,
+      "name": "Jamal Murray",
+      "position": "PG",
+      "percent_owned": 55.0,
+      "status": "INJ"
+    },
+    {
+      "player_id": 5638,
+      "name": "Jamal Murray",
+      "position": "SG",
+      "percent_owned": 55.0,
+      "status": "INJ"
+    },
+    {
+      "player_id": 6404,
+      "name": "Tyrese Haliburton",
+      "position": "PG",
+      "percent_owned": 54.0,
+      "status": ""
+    },
+    {
+      "player_id": 6404,
+      "name": "Tyrese Haliburton",
+      "position": "SG",
+      "percent_owned": 54.0,
+      "status": ""
+    },
+    {
+      "player_id": 5842,
+      "name": "Derrick White",
+      "position": "PG",
+      "percent_owned": 53.0,
+      "status": ""
+    },
+    {
+      "player_id": 5842,
+      "name": "Derrick White",
+      "position": "SG",
+      "percent_owned": 53.0,
+      "status": ""
+    },
+    {
+      "player_id": 6030,
+      "name": "Kevin Huerter",
+      "position": "SG",
+      "percent_owned": 52.0,
+      "status": ""
+    },
+    {
+      "player_id": 6463,
+      "name": "Jae'Sean Tate",
+      "position": "SG",
+      "percent_owned": 52.0,
+      "status": ""
+    },
+    {
+      "player_id": 6030,
+      "name": "Kevin Huerter",
+      "position": "SF",
+      "percent_owned": 52.0,
+      "status": ""
+    },
+    {
+      "player_id": 6463,
+      "name": "Jae'Sean Tate",
+      "position": "SF",
+      "percent_owned": 52.0,
+      "status": ""
+    },
+    {
+      "player_id": 6463,
+      "name": "Jae'Sean Tate",
+      "position": "PF",
+      "percent_owned": 52.0,
+      "status": ""
+    },
+    {
+      "player_id": 5482,
+      "name": "Bobby Portis",
+      "position": "PF",
+      "percent_owned": 45.0,
+      "status": ""
+    },
+    {
+      "player_id": 6217,
+      "name": "Keldon Johnson",
+      "position": "SF",
+      "percent_owned": 44.0,
+      "status": ""
+    },
+    {
+      "player_id": 6217,
+      "name": "Keldon Johnson",
+      "position": "PF",
+      "percent_owned": 44.0,
+      "status": ""
+    },
+    {
+      "player_id": 6048,
+      "name": "Gary Trent Jr.",
+      "position": "SG",
+      "percent_owned": 43.0,
+      "status": ""
+    },
+    {
+      "player_id": 6048,
+      "name": "Gary Trent Jr.",
+      "position": "SF",
+      "percent_owned": 43.0,
+      "status": ""
+    },
+    {
+      "player_id": 5192,
+      "name": "Mason Plumlee",
+      "position": "PF",
+      "percent_owned": 42.0,
+      "status": ""
+    },
+    {
+      "player_id": 4487,
+      "name": "Nicolas Batum",
+      "position": "SF",
+      "percent_owned": 27.0,
+      "status": ""
+    },
+    {
+      "player_id": 6166,
+      "name": "De'Andre Hunter",
+      "position": "SF",
+      "percent_owned": 27.0,
+      "status": "GTD"
+    },
+    {
+      "player_id": 4487,
+      "name": "Nicolas Batum",
+      "position": "PF",
+      "percent_owned": 27.0,
+      "status": ""
+    },
+    {
+      "player_id": 6166,
+      "name": "De'Andre Hunter",
+      "position": "PF",
+      "percent_owned": 27.0,
+      "status": "GTD"
+    },
+    {
+      "player_id": 5905,
+      "name": "Royce O'Neale",
+      "position": "SF",
+      "percent_owned": 26.0,
+      "status": ""
+    },
+    {
+      "player_id": 5905,
+      "name": "Royce O'Neale",
+      "position": "PF",
+      "percent_owned": 26.0,
+      "status": ""
+    },
+    {
+      "player_id": 6044,
+      "name": "Jalen Brunson",
+      "position": "PG",
+      "percent_owned": 25.0,
+      "status": ""
+    },
+    {
+      "player_id": 6044,
+      "name": "Jalen Brunson",
+      "position": "SG",
+      "percent_owned": 25.0,
+      "status": ""
+    },
+    {
+      "player_id": 4469,
+      "name": "Eric Gordon",
+      "position": "SG",
+      "percent_owned": 20.0,
+      "status": ""
+    },
+    {
+      "player_id": 4469,
+      "name": "Eric Gordon",
+      "position": "SF",
+      "percent_owned": 20.0,
+      "status": ""
+    },
+    {
+      "player_id": 4893,
+      "name": "Alec Burks",
+      "position": "SG",
+      "percent_owned": 19.0,
+      "status": ""
+    },
+    {
+      "player_id": 4893,
+      "name": "Alec Burks",
+      "position": "SF",
+      "percent_owned": 19.0,
+      "status": ""
+    },
+    {
+      "player_id": 5356,
+      "name": "Dwight Powell",
+      "position": "PF",
+      "percent_owned": 18.0,
+      "status": ""
+    },
+    {
+      "player_id": 6208,
+      "name": "Matisse Thybulle",
+      "position": "SG",
+      "percent_owned": 16.0,
+      "status": ""
+    },
+    {
+      "player_id": 6397,
+      "name": "Isaac Okoro",
+      "position": "SG",
+      "percent_owned": 16.0,
+      "status": ""
+    },
+    {
+      "player_id": 6208,
+      "name": "Matisse Thybulle",
+      "position": "SF",
+      "percent_owned": 16.0,
+      "status": ""
+    },
+    {
+      "player_id": 6397,
+      "name": "Isaac Okoro",
+      "position": "SF",
+      "percent_owned": 16.0,
+      "status": ""
+    },
+    {
+      "player_id": 6417,
+      "name": "Immanuel Quickley",
+      "position": "PG",
+      "percent_owned": 15.0,
+      "status": ""
+    }
+  ]
+}

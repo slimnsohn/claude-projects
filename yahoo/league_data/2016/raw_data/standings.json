@@ -1,0 +1,132 @@
+[
+  {
+    "team_key": "364.l.90263.t.7",
+    "name": "Make it Drizzle",
+    "rank": 1,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "95",
+      "losses": "70",
+      "ties": "6",
+      "percentage": ".573"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "364.l.90263.t.4",
+    "name": "hersheysquirt",
+    "rank": 2,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "95",
+      "losses": "73",
+      "ties": "3",
+      "percentage": ".564"
+    },
+    "games_back": "1.5"
+  },
+  {
+    "team_key": "364.l.90263.t.1",
+    "name": "Bzzzzznatch",
+    "rank": 3,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "91",
+      "losses": "76",
+      "ties": "4",
+      "percentage": ".544"
+    },
+    "games_back": "5"
+  },
+  {
+    "team_key": "364.l.90263.t.6",
+    "name": "LetsBall",
+    "rank": 4,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "92",
+      "losses": "76",
+      "ties": "3",
+      "percentage": ".547"
+    },
+    "games_back": "4.5"
+  },
+  {
+    "team_key": "364.l.90263.t.8",
+    "name": "2012 easternAllstars",
+    "rank": 5,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "90",
+      "losses": "79",
+      "ties": "2",
+      "percentage": ".532"
+    },
+    "games_back": "7"
+  },
+  {
+    "team_key": "364.l.90263.t.10",
+    "name": "The Krappers",
+    "rank": 6,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "90",
+      "losses": "79",
+      "ties": "2",
+      "percentage": ".532"
+    },
+    "games_back": "7"
+  },
+  {
+    "team_key": "364.l.90263.t.2",
+    "name": "Dirty South Asia",
+    "rank": 7,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "60",
+      "losses": "109",
+      "ties": "2",
+      "percentage": ".357"
+    },
+    "games_back": "37"
+  },
+  {
+    "team_key": "364.l.90263.t.3",
+    "name": "Get Schwifty",
+    "rank": 8,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "78",
+      "losses": "90",
+      "ties": "3",
+      "percentage": ".465"
+    },
+    "games_back": "18.5"
+  },
+  {
+    "team_key": "364.l.90263.t.9",
+    "name": "The Bandwagon",
+    "rank": 9,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "79",
+      "losses": "90",
+      "ties": "2",
+      "percentage": ".468"
+    },
+    "games_back": "18"
+  },
+  {
+    "team_key": "364.l.90263.t.5",
+    "name": "Johnny Blaze's Team",
+    "rank": 10,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "68",
+      "losses": "96",
+      "ties": "7",
+      "percentage": ".418"
+    },
+    "games_back": "26.5"
+  }
+]

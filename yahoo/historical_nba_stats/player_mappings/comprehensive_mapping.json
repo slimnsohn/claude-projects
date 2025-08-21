@@ -1,0 +1,6825 @@
+{
+  "mapped_players": {
+    "6355": {
+      "nba_id": "1630162",
+      "player_name": "Anthony Edwards",
+      "match_confidence": "exact"
+    },
+    "10094": {
+      "nba_id": "1641705",
+      "player_name": "Victor Wembanyama",
+      "match_confidence": "exact"
+    },
+    "6022": {
+      "nba_id": "1628983",
+      "player_name": "Shai Gilgeous-Alexander",
+      "match_confidence": "exact"
+    },
+    "6395": {
+      "nba_id": "1630163",
+      "player_name": "LaMelo Ball",
+      "match_confidence": "exact"
+    },
+    "5007": {
+      "nba_id": "203076",
+      "player_name": "Anthony Davis",
+      "match_confidence": "exact"
+    },
+    "5432": {
+      "nba_id": "1626157",
+      "player_name": "Karl-Anthony Towns",
+      "match_confidence": "exact"
+    },
+    "6692": {
+      "nba_id": "1631096",
+      "player_name": "Chet Holmgren",
+      "match_confidence": "exact"
+    },
+    "5294": {
+      "nba_id": "203954",
+      "player_name": "Joel Embiid",
+      "match_confidence": "exact"
+    },
+    "5642": {
+      "nba_id": "1627734",
+      "player_name": "Domantas Sabonis",
+      "match_confidence": "exact"
+    },
+    "6404": {
+      "nba_id": "1630169",
+      "player_name": "Tyrese Haliburton",
+      "match_confidence": "exact"
+    },
+    "5185": {
+      "nba_id": "203507",
+      "player_name": "Giannis Antetokounmpo",
+      "match_confidence": "exact"
+    },
+    "3704": {
+      "nba_id": "2544",
+      "player_name": "LeBron James",
+      "match_confidence": "exact"
+    },
+    "5765": {
+      "nba_id": "1628369",
+      "player_name": "Jayson Tatum",
+      "match_confidence": "exact"
+    },
+    "6548": {
+      "nba_id": "1630581",
+      "player_name": "Josh Giddey",
+      "match_confidence": "exact"
+    },
+    "6702": {
+      "nba_id": "1631114",
+      "player_name": "Jalen Williams",
+      "match_confidence": "exact"
+    },
+    "4725": {
+      "nba_id": "202331",
+      "player_name": "Paul George",
+      "match_confidence": "exact"
+    },
+    "6550": {
+      "nba_id": "1630532",
+      "player_name": "Franz Wagner",
+      "match_confidence": "exact"
+    },
+    "4563": {
+      "nba_id": "201935",
+      "player_name": "James Harden",
+      "match_confidence": "exact"
+    },
+    "6164": {
+      "nba_id": "1629630",
+      "player_name": "Ja Morant",
+      "match_confidence": "exact"
+    },
+    "6016": {
+      "nba_id": "1629027",
+      "player_name": "Trae Young",
+      "match_confidence": "exact"
+    },
+    "6558": {
+      "nba_id": "1630578",
+      "player_name": "Alperen Sengun",
+      "match_confidence": "exact"
+    },
+    "4244": {
+      "nba_id": "201142",
+      "player_name": "Kevin Durant",
+      "match_confidence": "exact"
+    },
+    "6691": {
+      "nba_id": "1631094",
+      "player_name": "Paolo Banchero",
+      "match_confidence": "exact"
+    },
+    "6515": {
+      "nba_id": "1630567",
+      "player_name": "Scottie Barnes",
+      "match_confidence": "exact"
+    },
+    "5767": {
+      "nba_id": "1628368",
+      "player_name": "De'Aaron Fox",
+      "match_confidence": "exact"
+    },
+    "5843": {
+      "nba_id": "1628404",
+      "player_name": "Josh Hart",
+      "match_confidence": "exact"
+    },
+    "5473": {
+      "nba_id": "1626164",
+      "player_name": "Devin Booker",
+      "match_confidence": "exact"
+    },
+    "6044": {
+      "nba_id": "1628973",
+      "player_name": "Jalen Brunson",
+      "match_confidence": "exact"
+    },
+    "4612": {
+      "nba_id": "201939",
+      "player_name": "Stephen Curry",
+      "match_confidence": "exact"
+    },
+    "4840": {
+      "nba_id": "202681",
+      "player_name": "Kyrie Irving",
+      "match_confidence": "exact"
+    },
+    "4896": {
+      "nba_id": "202695",
+      "player_name": "Kawhi Leonard",
+      "match_confidence": "exact"
+    },
+    "5826": {
+      "nba_id": "1628378",
+      "player_name": "Donovan Mitchell",
+      "match_confidence": "exact"
+    },
+    "6025": {
+      "nba_id": "1629008",
+      "player_name": "Michael Porter Jr.",
+      "match_confidence": "exact"
+    },
+    "5658": {
+      "nba_id": "1627783",
+      "player_name": "Pascal Siakam",
+      "match_confidence": "exact"
+    },
+    "6512": {
+      "nba_id": "1630595",
+      "player_name": "Cade Cunningham",
+      "match_confidence": "exact"
+    },
+    "6569": {
+      "nba_id": "1630560",
+      "player_name": "Cam Thomas",
+      "match_confidence": "exact"
+    },
+    "5012": {
+      "nba_id": "203081",
+      "player_name": "Damian Lillard",
+      "match_confidence": "exact"
+    },
+    "5197": {
+      "nba_id": "203497",
+      "player_name": "Rudy Gobert",
+      "match_confidence": "exact"
+    },
+    "6413": {
+      "nba_id": "1630178",
+      "player_name": "Tyrese Maxey",
+      "match_confidence": "exact"
+    },
+    "5727": {
+      "nba_id": "1627832",
+      "player_name": "Fred VanVleet",
+      "match_confidence": "exact"
+    },
+    "6163": {
+      "nba_id": "1629627",
+      "player_name": "Zion Williamson",
+      "match_confidence": "exact"
+    },
+    "6514": {
+      "nba_id": "1630596",
+      "player_name": "Evan Mobley",
+      "match_confidence": "exact"
+    },
+    "5638": {
+      "nba_id": "1627750",
+      "player_name": "Jamal Murray",
+      "match_confidence": "exact"
+    },
+    "5324": {
+      "nba_id": "203897",
+      "player_name": "Zach LaVine",
+      "match_confidence": "exact"
+    },
+    "6703": {
+      "nba_id": "1631105",
+      "player_name": "Jalen Duren",
+      "match_confidence": "exact"
+    },
+    "5637": {
+      "nba_id": "1627741",
+      "player_name": "Buddy Hield",
+      "match_confidence": "exact"
+    },
+    "5769": {
+      "nba_id": "1628374",
+      "player_name": "Lauri Markkanen",
+      "match_confidence": "exact"
+    },
+    "5660": {
+      "nba_id": "1627749",
+      "player_name": "Dejounte Murray",
+      "match_confidence": "exact"
+    },
+    "6562": {
+      "nba_id": "1630552",
+      "player_name": "Jalen Johnson",
+      "match_confidence": "exact"
+    },
+    "6015": {
+      "nba_id": "1628991",
+      "player_name": "Jaren Jackson Jr.",
+      "match_confidence": "exact"
+    },
+    "5958": {
+      "nba_id": "1629028",
+      "player_name": "Deandre Ayton",
+      "match_confidence": "exact"
+    },
+    "5471": {
+      "nba_id": "1626167",
+      "player_name": "Myles Turner",
+      "match_confidence": "exact"
+    },
+    "5009": {
+      "nba_id": "203078",
+      "player_name": "Bradley Beal",
+      "match_confidence": "exact"
+    },
+    "6167": {
+      "nba_id": "1629636",
+      "player_name": "Darius Garland",
+      "match_confidence": "exact"
+    },
+    "10048": {
+      "nba_id": "1630703",
+      "player_name": "Scoot Henderson",
+      "match_confidence": "exact"
+    },
+    "4614": {
+      "nba_id": "201942",
+      "player_name": "DeMar DeRozan",
+      "match_confidence": "exact"
+    },
+    "5827": {
+      "nba_id": "1628389",
+      "player_name": "Bam Adebayo",
+      "match_confidence": "exact"
+    },
+    "6422": {
+      "nba_id": "1630217",
+      "player_name": "Desmond Bane",
+      "match_confidence": "exact"
+    },
+    "5842": {
+      "nba_id": "1628401",
+      "player_name": "Derrick White",
+      "match_confidence": "exact"
+    },
+    "5602": {
+      "nba_id": "1627759",
+      "player_name": "Jaylen Brown",
+      "match_confidence": "exact"
+    },
+    "5318": {
+      "nba_id": "203944",
+      "player_name": "Julius Randle",
+      "match_confidence": "exact"
+    },
+    "5601": {
+      "nba_id": "1627742",
+      "player_name": "Brandon Ingram",
+      "match_confidence": "exact"
+    },
+    "6021": {
+      "nba_id": "1628969",
+      "player_name": "Mikal Bridges",
+      "match_confidence": "exact"
+    },
+    "5159": {
+      "nba_id": "203484",
+      "player_name": "Kentavious Caldwell-Pope",
+      "match_confidence": "exact"
+    },
+    "6417": {
+      "nba_id": "1630193",
+      "player_name": "Immanuel Quickley",
+      "match_confidence": "exact"
+    },
+    "4901": {
+      "nba_id": "202699",
+      "player_name": "Tobias Harris",
+      "match_confidence": "exact"
+    },
+    "5835": {
+      "nba_id": "1628386",
+      "player_name": "Jarrett Allen",
+      "match_confidence": "exact"
+    },
+    "10104": {
+      "nba_id": "1641706",
+      "player_name": "Brandon Miller",
+      "match_confidence": "exact"
+    },
+    "5836": {
+      "nba_id": "1628384",
+      "player_name": "OG Anunoby",
+      "match_confidence": "exact"
+    },
+    "6693": {
+      "nba_id": "1631095",
+      "player_name": "Jabari Smith Jr.",
+      "match_confidence": "exact"
+    },
+    "6253": {
+      "nba_id": "1629675",
+      "player_name": "Naz Reid",
+      "match_confidence": "exact"
+    },
+    "4892": {
+      "nba_id": "202691",
+      "player_name": "Klay Thompson",
+      "match_confidence": "exact"
+    },
+    "6606": {
+      "nba_id": "1630559",
+      "player_name": "Austin Reaves",
+      "match_confidence": "exact"
+    },
+    "4472": {
+      "nba_id": "201572",
+      "player_name": "Brook Lopez",
+      "match_confidence": "exact"
+    },
+    "6023": {
+      "nba_id": "1628970",
+      "player_name": "Miles Bridges",
+      "match_confidence": "exact"
+    },
+    "6219": {
+      "nba_id": "1629651",
+      "player_name": "Nic Claxton",
+      "match_confidence": "exact"
+    },
+    "6549": {
+      "nba_id": "1630228",
+      "player_name": "Jonathan Kuminga",
+      "match_confidence": "exact"
+    },
+    "6216": {
+      "nba_id": "1629673",
+      "player_name": "Jordan Poole",
+      "match_confidence": "exact"
+    },
+    "10097": {
+      "nba_id": "1641726",
+      "player_name": "Dereck Lively II",
+      "match_confidence": "exact"
+    },
+    "6694": {
+      "nba_id": "1631099",
+      "player_name": "Keegan Murray",
+      "match_confidence": "exact"
+    },
+    "6712": {
+      "nba_id": "1631117",
+      "player_name": "Walker Kessler",
+      "match_confidence": "exact"
+    },
+    "5433": {
+      "nba_id": "1626156",
+      "player_name": "D'Angelo Russell",
+      "match_confidence": "exact"
+    },
+    "6169": {
+      "nba_id": "1629632",
+      "player_name": "Coby White",
+      "match_confidence": "exact"
+    },
+    "5856": {
+      "nba_id": "1628392",
+      "player_name": "Isaiah Hartenstein",
+      "match_confidence": "exact"
+    },
+    "6035": {
+      "nba_id": "1629014",
+      "player_name": "Anfernee Simons",
+      "match_confidence": "exact"
+    },
+    "5161": {
+      "nba_id": "203468",
+      "player_name": "CJ McCollum",
+      "match_confidence": "exact"
+    },
+    "5840": {
+      "nba_id": "1628398",
+      "player_name": "Kyle Kuzma",
+      "match_confidence": "exact"
+    },
+    "6403": {
+      "nba_id": "1630170",
+      "player_name": "Devin Vassell",
+      "match_confidence": "exact"
+    },
+    "6516": {
+      "nba_id": "1630591",
+      "player_name": "Jalen Suggs",
+      "match_confidence": "exact"
+    },
+    "6705": {
+      "nba_id": "1631109",
+      "player_name": "Mark Williams",
+      "match_confidence": "exact"
+    },
+    "4622": {
+      "nba_id": "201950",
+      "player_name": "Jrue Holiday",
+      "match_confidence": "exact"
+    },
+    "5663": {
+      "nba_id": "1627826",
+      "player_name": "Ivica Zubac",
+      "match_confidence": "exact"
+    },
+    "5640": {
+      "nba_id": "1627751",
+      "player_name": "Jakob Poeltl",
+      "match_confidence": "exact"
+    },
+    "6559": {
+      "nba_id": "1630530",
+      "player_name": "Trey Murphy III",
+      "match_confidence": "exact"
+    },
+    "6513": {
+      "nba_id": "1630224",
+      "player_name": "Jalen Green",
+      "match_confidence": "exact"
+    },
+    "6175": {
+      "nba_id": "1629639",
+      "player_name": "Tyler Herro",
+      "match_confidence": "exact"
+    },
+    "6577": {
+      "nba_id": "1630529",
+      "player_name": "Herbert Jones",
+      "match_confidence": "exact"
+    },
+    "5350": {
+      "nba_id": "203924",
+      "player_name": "Jerami Grant",
+      "match_confidence": "exact"
+    },
+    "6019": {
+      "nba_id": "1629012",
+      "player_name": "Collin Sexton",
+      "match_confidence": "exact"
+    },
+    "5754": {
+      "nba_id": "1627936",
+      "player_name": "Alex Caruso",
+      "match_confidence": "exact"
+    },
+    "5832": {
+      "nba_id": "1628381",
+      "player_name": "John Collins",
+      "match_confidence": "exact"
+    },
+    "6226": {
+      "nba_id": "1629655",
+      "player_name": "Daniel Gafford",
+      "match_confidence": "exact"
+    },
+    "6028": {
+      "nba_id": "1628978",
+      "player_name": "Donte DiVincenzo",
+      "match_confidence": "exact"
+    },
+    "6165": {
+      "nba_id": "1629628",
+      "player_name": "RJ Barrett",
+      "match_confidence": "exact"
+    },
+    "5069": {
+      "nba_id": "203110",
+      "player_name": "Draymond Green",
+      "match_confidence": "exact"
+    },
+    "3930": {
+      "nba_id": "101108",
+      "player_name": "Chris Paul",
+      "match_confidence": "exact"
+    },
+    "6398": {
+      "nba_id": "1630168",
+      "player_name": "Onyeka Okongwu",
+      "match_confidence": "exact"
+    },
+    "6171": {
+      "nba_id": "1629060",
+      "player_name": "Rui Hachimura",
+      "match_confidence": "exact"
+    },
+    "10108": {
+      "nba_id": "1641708",
+      "player_name": "Amen Thompson",
+      "match_confidence": "exact"
+    },
+    "5476": {
+      "nba_id": "1626179",
+      "player_name": "Terry Rozier",
+      "match_confidence": "exact"
+    },
+    "5073": {
+      "nba_id": "203114",
+      "player_name": "Khris Middleton",
+      "match_confidence": "exact"
+    },
+    "6048": {
+      "nba_id": "1629018",
+      "player_name": "Gary Trent Jr.",
+      "match_confidence": "exact"
+    },
+    "6433": {
+      "nba_id": "1630200",
+      "player_name": "Tre Jones",
+      "match_confidence": "exact"
+    },
+    "6173": {
+      "nba_id": "1629661",
+      "player_name": "Cameron Johnson",
+      "match_confidence": "exact"
+    },
+    "5336": {
+      "nba_id": "203991",
+      "player_name": "Clint Capela",
+      "match_confidence": "exact"
+    },
+    "10115": {
+      "nba_id": "1641764",
+      "player_name": "Brandin Podziemski",
+      "match_confidence": "exact"
+    },
+    "10080": {
+      "nba_id": "1631218",
+      "player_name": "Trayce Jackson-Davis",
+      "match_confidence": "exact"
+    },
+    "5667": {
+      "nba_id": "1627763",
+      "player_name": "Malcolm Brogdon",
+      "match_confidence": "exact"
+    },
+    "5600": {
+      "nba_id": "1627732",
+      "player_name": "Ben Simmons",
+      "match_confidence": "exact"
+    },
+    "5482": {
+      "nba_id": "1626171",
+      "player_name": "Bobby Portis",
+      "match_confidence": "exact"
+    },
+    "5484": {
+      "nba_id": "1626145",
+      "player_name": "Tyus Jones",
+      "match_confidence": "exact"
+    },
+    "5015": {
+      "nba_id": "203083",
+      "player_name": "Andre Drummond",
+      "match_confidence": "exact"
+    },
+    "5295": {
+      "nba_id": "203932",
+      "player_name": "Aaron Gordon",
+      "match_confidence": "exact"
+    },
+    "10110": {
+      "nba_id": "1641707",
+      "player_name": "Taylor Hendricks",
+      "match_confidence": "exact"
+    },
+    "4245": {
+      "nba_id": "201143",
+      "player_name": "Al Horford",
+      "match_confidence": "exact"
+    },
+    "6401": {
+      "nba_id": "1630166",
+      "player_name": "Deni Avdija",
+      "match_confidence": "exact"
+    },
+    "6217": {
+      "nba_id": "1629640",
+      "player_name": "Keldon Johnson",
+      "match_confidence": "exact"
+    },
+    "6174": {
+      "nba_id": "1629023",
+      "player_name": "P.J. Washington",
+      "match_confidence": "exact"
+    },
+    "6695": {
+      "nba_id": "1631093",
+      "player_name": "Jaden Ivey",
+      "match_confidence": "exact"
+    },
+    "10100": {
+      "nba_id": "1641718",
+      "player_name": "Keyonte George",
+      "match_confidence": "exact"
+    },
+    "6166": {
+      "nba_id": "1629631",
+      "player_name": "De'Andre Hunter",
+      "match_confidence": "exact"
+    },
+    "10096": {
+      "nba_id": "1641709",
+      "player_name": "Ausar Thompson",
+      "match_confidence": "exact"
+    },
+    "4246": {
+      "nba_id": "201144",
+      "player_name": "Mike Conley",
+      "match_confidence": "exact"
+    },
+    "5506": {
+      "nba_id": "1626181",
+      "player_name": "Norman Powell",
+      "match_confidence": "exact"
+    },
+    "5317": {
+      "nba_id": "203935",
+      "player_name": "Marcus Smart",
+      "match_confidence": "exact"
+    },
+    "5824": {
+      "nba_id": "1628370",
+      "player_name": "Malik Monk",
+      "match_confidence": "exact"
+    },
+    "6032": {
+      "nba_id": "1628960",
+      "player_name": "Grayson Allen",
+      "match_confidence": "exact"
+    },
+    "6406": {
+      "nba_id": "1630174",
+      "player_name": "Aaron Nesmith",
+      "match_confidence": "exact"
+    },
+    "6018": {
+      "nba_id": "1628976",
+      "player_name": "Wendell Carter Jr.",
+      "match_confidence": "exact"
+    },
+    "4390": {
+      "nba_id": "201566",
+      "player_name": "Russell Westbrook",
+      "match_confidence": "exact"
+    },
+    "6402": {
+      "nba_id": "1630188",
+      "player_name": "Jalen Smith",
+      "match_confidence": "exact"
+    },
+    "5583": {
+      "nba_id": "1626174",
+      "player_name": "Christian Wood",
+      "match_confidence": "exact"
+    },
+    "4724": {
+      "nba_id": "202330",
+      "player_name": "Gordon Hayward",
+      "match_confidence": "exact"
+    },
+    "6038": {
+      "nba_id": "1629057",
+      "player_name": "Robert Williams III",
+      "match_confidence": "exact"
+    },
+    "6411": {
+      "nba_id": "1630180",
+      "player_name": "Saddiq Bey",
+      "match_confidence": "exact"
+    },
+    "5858": {
+      "nba_id": "1628415",
+      "player_name": "Dillon Brooks",
+      "match_confidence": "exact"
+    },
+    "6564": {
+      "nba_id": "1630543",
+      "player_name": "Isaiah Jackson",
+      "match_confidence": "exact"
+    },
+    "6408": {
+      "nba_id": "1630191",
+      "player_name": "Isaiah Stewart",
+      "match_confidence": "exact"
+    },
+    "5292": {
+      "nba_id": "203952",
+      "player_name": "Andrew Wiggins",
+      "match_confidence": "exact"
+    },
+    "6218": {
+      "nba_id": "1629645",
+      "player_name": "Kevin Porter Jr.",
+      "match_confidence": "exact"
+    },
+    "4152": {
+      "nba_id": "200768",
+      "player_name": "Kyle Lowry",
+      "match_confidence": "exact"
+    },
+    "5013": {
+      "nba_id": "203084",
+      "player_name": "Harrison Barnes",
+      "match_confidence": "exact"
+    },
+    "6047": {
+      "nba_id": "1629011",
+      "player_name": "Mitchell Robinson",
+      "match_confidence": "exact"
+    },
+    "6356": {
+      "nba_id": "1630164",
+      "player_name": "James Wiseman",
+      "match_confidence": "exact"
+    },
+    "6407": {
+      "nba_id": "1630175",
+      "player_name": "Cole Anthony",
+      "match_confidence": "exact"
+    },
+    "5357": {
+      "nba_id": "203903",
+      "player_name": "Jordan Clarkson",
+      "match_confidence": "exact"
+    },
+    "6568": {
+      "nba_id": "1630538",
+      "player_name": "Bones Hyland",
+      "match_confidence": "exact"
+    },
+    "5163": {
+      "nba_id": "203500",
+      "player_name": "Steven Adams",
+      "match_confidence": "exact"
+    },
+    "5894": {
+      "nba_id": "1628449",
+      "player_name": "Chris Boucher",
+      "match_confidence": "exact"
+    },
+    "6209": {
+      "nba_id": "1629634",
+      "player_name": "Brandon Clarke",
+      "match_confidence": "exact"
+    },
+    "6420": {
+      "nba_id": "1630183",
+      "player_name": "Jaden McDaniels",
+      "match_confidence": "exact"
+    },
+    "5349": {
+      "nba_id": "203915",
+      "player_name": "Spencer Dinwiddie",
+      "match_confidence": "exact"
+    },
+    "6057": {
+      "nba_id": "1629001",
+      "player_name": "De'Anthony Melton",
+      "match_confidence": "exact"
+    },
+    "5074": {
+      "nba_id": "203115",
+      "player_name": "Will Barton",
+      "match_confidence": "exact"
+    },
+    "5253": {
+      "nba_id": "203496",
+      "player_name": "Robert Covington",
+      "match_confidence": "exact"
+    },
+    "4716": {
+      "nba_id": "202322",
+      "player_name": "John Wall",
+      "match_confidence": "exact"
+    },
+    "6580": {
+      "nba_id": "1630245",
+      "player_name": "Ayo Dosunmu",
+      "match_confidence": "exact"
+    },
+    "6052": {
+      "nba_id": "1629020",
+      "player_name": "Jarred Vanderbilt",
+      "match_confidence": "exact"
+    },
+    "6555": {
+      "nba_id": "1630537",
+      "player_name": "Chris Duarte",
+      "match_confidence": "exact"
+    },
+    "6017": {
+      "nba_id": "1628964",
+      "player_name": "Mo Bamba",
+      "match_confidence": "exact"
+    },
+    "5475": {
+      "nba_id": "1626162",
+      "player_name": "Kelly Oubre Jr.",
+      "match_confidence": "exact"
+    },
+    "5693": {
+      "nba_id": "1627827",
+      "player_name": "Dorian Finney-Smith",
+      "match_confidence": "exact"
+    },
+    "5480": {
+      "nba_id": "1626153",
+      "player_name": "Delon Wright",
+      "match_confidence": "exact"
+    },
+    "4391": {
+      "nba_id": "201567",
+      "player_name": "Kevin Love",
+      "match_confidence": "exact"
+    },
+    "6030": {
+      "nba_id": "1628989",
+      "player_name": "Kevin Huerter",
+      "match_confidence": "exact"
+    },
+    "6396": {
+      "nba_id": "1630172",
+      "player_name": "Patrick Williams",
+      "match_confidence": "exact"
+    },
+    "5054": {
+      "nba_id": "203095",
+      "player_name": "Evan Fournier",
+      "match_confidence": "exact"
+    },
+    "6254": {
+      "nba_id": "1629652",
+      "player_name": "Luguentz Dort",
+      "match_confidence": "exact"
+    },
+    "6412": {
+      "nba_id": "1630173",
+      "player_name": "Precious Achiuwa",
+      "match_confidence": "exact"
+    },
+    "4906": {
+      "nba_id": "202704",
+      "player_name": "Reggie Jackson",
+      "match_confidence": "exact"
+    },
+    "6053": {
+      "nba_id": "1628971",
+      "player_name": "Bruce Brown",
+      "match_confidence": "exact"
+    },
+    "5651": {
+      "nba_id": "1627747",
+      "player_name": "Caris LeVert",
+      "match_confidence": "exact"
+    },
+    "4890": {
+      "nba_id": "202689",
+      "player_name": "Kemba Walker",
+      "match_confidence": "exact"
+    },
+    "5497": {
+      "nba_id": "1626158",
+      "player_name": "Richaun Holmes",
+      "match_confidence": "exact"
+    },
+    "4764": {
+      "nba_id": "202355",
+      "player_name": "Hassan Whiteside",
+      "match_confidence": "exact"
+    },
+    "4130": {
+      "nba_id": "200746",
+      "player_name": "LaMarcus Aldridge",
+      "match_confidence": "exact"
+    },
+    "5393": {
+      "nba_id": "204060",
+      "player_name": "Joe Ingles",
+      "match_confidence": "exact"
+    },
+    "5764": {
+      "nba_id": "1628366",
+      "player_name": "Lonzo Ball",
+      "match_confidence": "exact"
+    },
+    "5763": {
+      "nba_id": "1628365",
+      "player_name": "Markelle Fultz",
+      "match_confidence": "exact"
+    },
+    "4561": {
+      "nba_id": "201933",
+      "player_name": "Blake Griffin",
+      "match_confidence": "exact"
+    },
+    "5855": {
+      "nba_id": "1628418",
+      "player_name": "Thomas Bryant",
+      "match_confidence": "exact"
+    },
+    "5245": {
+      "nba_id": "203552",
+      "player_name": "Seth Curry",
+      "match_confidence": "exact"
+    },
+    "4468": {
+      "nba_id": "201568",
+      "player_name": "Danilo Gallinari",
+      "match_confidence": "exact"
+    },
+    "5487": {
+      "nba_id": "1626204",
+      "player_name": "Larry Nance Jr.",
+      "match_confidence": "exact"
+    },
+    "5500": {
+      "nba_id": "1626196",
+      "player_name": "Josh Richardson",
+      "match_confidence": "exact"
+    },
+    "5325": {
+      "nba_id": "203933",
+      "player_name": "T.J. Warren",
+      "match_confidence": "exact"
+    },
+    "4624": {
+      "nba_id": "201952",
+      "player_name": "Jeff Teague",
+      "match_confidence": "exact"
+    },
+    "4749": {
+      "nba_id": "202339",
+      "player_name": "Eric Bledsoe",
+      "match_confidence": "exact"
+    },
+    "6045": {
+      "nba_id": "1628984",
+      "player_name": "Devonte' Graham",
+      "match_confidence": "exact"
+    },
+    "5344": {
+      "nba_id": "203925",
+      "player_name": "Joe Harris",
+      "match_confidence": "exact"
+    },
+    "3971": {
+      "nba_id": "101150",
+      "player_name": "Lou Williams",
+      "match_confidence": "exact"
+    },
+    "5153": {
+      "nba_id": "203506",
+      "player_name": "Victor Oladipo",
+      "match_confidence": "exact"
+    },
+    "4610": {
+      "nba_id": "201937",
+      "player_name": "Ricky Rubio",
+      "match_confidence": "exact"
+    },
+    "6073": {
+      "nba_id": "1629130",
+      "player_name": "Duncan Robinson",
+      "match_confidence": "exact"
+    },
+    "6399": {
+      "nba_id": "1630165",
+      "player_name": "Killian Hayes",
+      "match_confidence": "exact"
+    },
+    "5154": {
+      "nba_id": "203490",
+      "player_name": "Otto Porter Jr.",
+      "match_confidence": "exact"
+    },
+    "4175": {
+      "nba_id": "200794",
+      "player_name": "Paul Millsap",
+      "match_confidence": "exact"
+    },
+    "6211": {
+      "nba_id": "1629647",
+      "player_name": "Darius Bazley",
+      "match_confidence": "exact"
+    },
+    "4720": {
+      "nba_id": "202326",
+      "player_name": "DeMarcus Cousins",
+      "match_confidence": "exact"
+    },
+    "4387": {
+      "nba_id": "201565",
+      "player_name": "Derrick Rose",
+      "match_confidence": "exact"
+    },
+    "5747": {
+      "nba_id": "1627884",
+      "player_name": "Derrick Jones Jr.",
+      "match_confidence": "exact"
+    },
+    "5492": {
+      "nba_id": "1626149",
+      "player_name": "Montrezl Harrell",
+      "match_confidence": "exact"
+    },
+    "4893": {
+      "nba_id": "202692",
+      "player_name": "Alec Burks",
+      "match_confidence": "exact"
+    },
+    "4469": {
+      "nba_id": "201569",
+      "player_name": "Eric Gordon",
+      "match_confidence": "exact"
+    },
+    "5650": {
+      "nba_id": "1627736",
+      "player_name": "Malik Beasley",
+      "match_confidence": "exact"
+    },
+    "5194": {
+      "nba_id": "203501",
+      "player_name": "Tim Hardaway Jr.",
+      "match_confidence": "exact"
+    },
+    "5959": {
+      "nba_id": "1628963",
+      "player_name": "Marvin Bagley III",
+      "match_confidence": "exact"
+    },
+    "4486": {
+      "nba_id": "201586",
+      "player_name": "Serge Ibaka",
+      "match_confidence": "exact"
+    },
+    "5892": {
+      "nba_id": "1628467",
+      "player_name": "Maxi Kleber",
+      "match_confidence": "exact"
+    },
+    "6203": {
+      "nba_id": "1629635",
+      "player_name": "Sekou Doumbouya",
+      "match_confidence": "exact"
+    },
+    "6172": {
+      "nba_id": "1629629",
+      "player_name": "Cam Reddish",
+      "match_confidence": "exact"
+    },
+    "5351": {
+      "nba_id": "203922",
+      "player_name": "Glenn Robinson III",
+      "match_confidence": "exact"
+    },
+    "6397": {
+      "nba_id": "1630171",
+      "player_name": "Isaac Okoro",
+      "match_confidence": "exact"
+    },
+    "4139": {
+      "nba_id": "200755",
+      "player_name": "JJ Redick",
+      "match_confidence": "exact"
+    },
+    "6170": {
+      "nba_id": "1629637",
+      "player_name": "Jaxson Hayes",
+      "match_confidence": "exact"
+    },
+    "5352": {
+      "nba_id": "203999",
+      "player_name": "Nikola Joki\u0107",
+      "match_confidence": "high"
+    },
+    "5338": {
+      "nba_id": "203992",
+      "player_name": "Bogdan Bogdanovi\u0107",
+      "match_confidence": "high"
+    },
+    "5327": {
+      "nba_id": "203994",
+      "player_name": "Jusuf Nurki\u0107",
+      "match_confidence": "high"
+    },
+    "5864": {
+      "nba_id": "1628420",
+      "player_name": "Mont\u00e9 Morris",
+      "match_confidence": "high"
+    },
+    "4913": {
+      "nba_id": "202711",
+      "player_name": "Bojan Bogdanovi\u0107",
+      "match_confidence": "high"
+    },
+    "6409": {
+      "nba_id": "1630197",
+      "player_name": "Aleksej Poku\u0161evski",
+      "match_confidence": "high"
+    },
+    "4507": {
+      "nba_id": "201609",
+      "player_name": "Goran Dragi\u0107",
+      "match_confidence": "high"
+    },
+    "5187": {
+      "nba_id": "203471",
+      "player_name": "Dennis Schr\u00f6der",
+      "match_confidence": "high"
+    }
+  },
+  "all_yahoo_players": {
+    "4244": {
+      "player_id": "4244",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 14
+    },
+    "3704": {
+      "player_id": "3704",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "3818": {
+      "player_id": "3818",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 10
+    },
+    "3930": {
+      "player_id": "3930",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "3252": {
+      "player_id": "3252",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 9
+    },
+    "3708": {
+      "player_id": "3708",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 8
+    },
+    "3943": {
+      "player_id": "3943",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3118": {
+      "player_id": "3118",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "4149": {
+      "player_id": "4149",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 8
+    },
+    "4612": {
+      "player_id": "4612",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "3929": {
+      "player_id": "3929",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 7
+    },
+    "3834": {
+      "player_id": "3834",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3513": {
+      "player_id": "3513",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 8
+    },
+    "3607": {
+      "player_id": "3607",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3956": {
+      "player_id": "3956",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3533": {
+      "player_id": "3533",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4472": {
+      "player_id": "4472",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "3707": {
+      "player_id": "3707",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3706": {
+      "player_id": "3706",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 9
+    },
+    "3103": {
+      "player_id": "3103",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4134": {
+      "player_id": "4134",
+      "draft_years": [
+        2010,
+        2012
+      ],
+      "total_drafts": 2
+    },
+    "2625": {
+      "player_id": "2625",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3826": {
+      "player_id": "3826",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017
+      ],
+      "total_drafts": 7
+    },
+    "3174": {
+      "player_id": "3174",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "4245": {
+      "player_id": "4245",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "3832": {
+      "player_id": "3832",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 7
+    },
+    "4564": {
+      "player_id": "4564",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 9
+    },
+    "3966": {
+      "player_id": "3966",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 8
+    },
+    "4390": {
+      "player_id": "4390",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 14
+    },
+    "3520": {
+      "player_id": "3520",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "4129": {
+      "player_id": "4129",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4387": {
+      "player_id": "4387",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 11
+    },
+    "3173": {
+      "player_id": "3173",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3605": {
+      "player_id": "3605",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "3721": {
+      "player_id": "3721",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "3380": {
+      "player_id": "3380",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3253": {
+      "player_id": "3253",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "4287": {
+      "player_id": "4287",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 7
+    },
+    "4626": {
+      "player_id": "4626",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 8
+    },
+    "4391": {
+      "player_id": "4391",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 12
+    },
+    "3531": {
+      "player_id": "3531",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 8
+    },
+    "4325": {
+      "player_id": "4325",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 10
+    },
+    "4136": {
+      "player_id": "4136",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 10
+    },
+    "3750": {
+      "player_id": "3750",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2015
+      ],
+      "total_drafts": 4
+    },
+    "3084": {
+      "player_id": "3084",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3843": {
+      "player_id": "3843",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "4468": {
+      "player_id": "4468",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 11
+    },
+    "3247": {
+      "player_id": "3247",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "4561": {
+      "player_id": "4561",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 11
+    },
+    "3210": {
+      "player_id": "3210",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3524": {
+      "player_id": "3524",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3709": {
+      "player_id": "3709",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3927": {
+      "player_id": "3927",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 7
+    },
+    "4304": {
+      "player_id": "4304",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3515": {
+      "player_id": "3515",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3931": {
+      "player_id": "3931",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4130": {
+      "player_id": "4130",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 12
+    },
+    "3632": {
+      "player_id": "3632",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "3007": {
+      "player_id": "3007",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4716": {
+      "player_id": "4716",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022
+      ],
+      "total_drafts": 12
+    },
+    "3326": {
+      "player_id": "3326",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3822": {
+      "player_id": "3822",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3080": {
+      "player_id": "3080",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3975": {
+      "player_id": "3975",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3936": {
+      "player_id": "3936",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4247": {
+      "player_id": "4247",
+      "draft_years": [
+        2010,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 4
+    },
+    "4175": {
+      "player_id": "4175",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 11
+    },
+    "3540": {
+      "player_id": "3540",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "4476": {
+      "player_id": "4476",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "4469": {
+      "player_id": "4469",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 11
+    },
+    "4720": {
+      "player_id": "4720",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "total_drafts": 10
+    },
+    "3415": {
+      "player_id": "3415",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3653": {
+      "player_id": "3653",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4389": {
+      "player_id": "4389",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "3333": {
+      "player_id": "3333",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3934": {
+      "player_id": "3934",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2014
+      ],
+      "total_drafts": 4
+    },
+    "3860": {
+      "player_id": "3860",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 9
+    },
+    "3599": {
+      "player_id": "3599",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3275": {
+      "player_id": "3275",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4615": {
+      "player_id": "4615",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "4622": {
+      "player_id": "4622",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "4479": {
+      "player_id": "4479",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3824": {
+      "player_id": "3824",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 7
+    },
+    "3347": {
+      "player_id": "3347",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3608": {
+      "player_id": "3608",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3534": {
+      "player_id": "3534",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3624": {
+      "player_id": "3624",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3837": {
+      "player_id": "3837",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3527": {
+      "player_id": "3527",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3819": {
+      "player_id": "3819",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "4480": {
+      "player_id": "4480",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2018,
+        2019
+      ],
+      "total_drafts": 6
+    },
+    "3331": {
+      "player_id": "3331",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3268": {
+      "player_id": "3268",
+      "draft_years": [
+        2010,
+        2012
+      ],
+      "total_drafts": 2
+    },
+    "3828": {
+      "player_id": "3828",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3407": {
+      "player_id": "3407",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 6
+    },
+    "3324": {
+      "player_id": "3324",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "4132": {
+      "player_id": "4132",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4246": {
+      "player_id": "4246",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "4388": {
+      "player_id": "4388",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "4648": {
+      "player_id": "4648",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4243": {
+      "player_id": "4243",
+      "draft_years": [
+        2010,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "3248": {
+      "player_id": "3248",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4487": {
+      "player_id": "4487",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 10
+    },
+    "4309": {
+      "player_id": "4309",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3327": {
+      "player_id": "3327",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4527": {
+      "player_id": "4527",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3845": {
+      "player_id": "3845",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3336": {
+      "player_id": "3336",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4477": {
+      "player_id": "4477",
+      "draft_years": [
+        2010,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 6
+    },
+    "4293": {
+      "player_id": "4293",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "4481": {
+      "player_id": "4481",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3724": {
+      "player_id": "3724",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4717": {
+      "player_id": "4717",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2015,
+        2016
+      ],
+      "total_drafts": 6
+    },
+    "3731": {
+      "player_id": "3731",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3847": {
+      "player_id": "3847",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "3404": {
+      "player_id": "3404",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3835": {
+      "player_id": "3835",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 7
+    },
+    "4471": {
+      "player_id": "4471",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2018,
+        2019
+      ],
+      "total_drafts": 5
+    },
+    "4616": {
+      "player_id": "4616",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3602": {
+      "player_id": "3602",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "4614": {
+      "player_id": "4614",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 15
+    },
+    "3820": {
+      "player_id": "3820",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "3332": {
+      "player_id": "3332",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 4
+    },
+    "3989": {
+      "player_id": "3989",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 5
+    },
+    "4710": {
+      "player_id": "4710",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3547": {
+      "player_id": "3547",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3705": {
+      "player_id": "3705",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3330": {
+      "player_id": "3330",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "3523": {
+      "player_id": "3523",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "4611": {
+      "player_id": "4611",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3953": {
+      "player_id": "3953",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "4333": {
+      "player_id": "4333",
+      "draft_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "total_drafts": 3
+    },
+    "4478": {
+      "player_id": "4478",
+      "draft_years": [
+        2010,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "4301": {
+      "player_id": "4301",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 7
+    },
+    "3532": {
+      "player_id": "3532",
+      "draft_years": [
+        2010,
+        2011
+      ],
+      "total_drafts": 2
+    },
+    "4290": {
+      "player_id": "4290",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "total_drafts": 11
+    },
+    "4488": {
+      "player_id": "4488",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 8
+    },
+    "4631": {
+      "player_id": "4631",
+      "draft_years": [
+        2010,
+        2011,
+        2013,
+        2014,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 7
+    },
+    "4486": {
+      "player_id": "4486",
+      "draft_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 11
+    },
+    "3963": {
+      "player_id": "3963",
+      "draft_years": [
+        2010
+      ],
+      "total_drafts": 1
+    },
+    "3836": {
+      "player_id": "3836",
+      "draft_years": [
+        2011,
+        2012
+      ],
+      "total_drafts": 2
+    },
+    "4152": {
+      "player_id": "4152",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "total_drafts": 12
+    },
+    "4623": {
+      "player_id": "4623",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 5
+    },
+    "4722": {
+      "player_id": "4722",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 7
+    },
+    "3983": {
+      "player_id": "3983",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 8
+    },
+    "4563": {
+      "player_id": "4563",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 14
+    },
+    "4694": {
+      "player_id": "4694",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 7
+    },
+    "4497": {
+      "player_id": "4497",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 9
+    },
+    "4305": {
+      "player_id": "4305",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 5
+    },
+    "4840": {
+      "player_id": "4840",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 14
+    },
+    "3842": {
+      "player_id": "3842",
+      "draft_years": [
+        2011,
+        2012,
+        2015
+      ],
+      "total_drafts": 3
+    },
+    "3948": {
+      "player_id": "3948",
+      "draft_years": [
+        2011,
+        2013,
+        2015
+      ],
+      "total_drafts": 3
+    },
+    "3831": {
+      "player_id": "3831",
+      "draft_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 3
+    },
+    "4294": {
+      "player_id": "4294",
+      "draft_years": [
+        2011,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "3512": {
+      "player_id": "3512",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 5
+    },
+    "4624": {
+      "player_id": "4624",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 10
+    },
+    "4890": {
+      "player_id": "4890",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 11
+    },
+    "3933": {
+      "player_id": "3933",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4300": {
+      "player_id": "4300",
+      "draft_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 3
+    },
+    "4023": {
+      "player_id": "4023",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4649": {
+      "player_id": "4649",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "3960": {
+      "player_id": "3960",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "3728": {
+      "player_id": "3728",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4725": {
+      "player_id": "4725",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "4634": {
+      "player_id": "4634",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4620": {
+      "player_id": "4620",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "3982": {
+      "player_id": "3982",
+      "draft_years": [
+        2011,
+        2013,
+        2014,
+        2015
+      ],
+      "total_drafts": 4
+    },
+    "4483": {
+      "player_id": "4483",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 8
+    },
+    "4728": {
+      "player_id": "4728",
+      "draft_years": [
+        2011,
+        2015
+      ],
+      "total_drafts": 2
+    },
+    "4610": {
+      "player_id": "4610",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 10
+    },
+    "4883": {
+      "player_id": "4883",
+      "draft_years": [
+        2011,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "3516": {
+      "player_id": "3516",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4628": {
+      "player_id": "4628",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4642": {
+      "player_id": "4642",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "3959": {
+      "player_id": "3959",
+      "draft_years": [
+        2011,
+        2012
+      ],
+      "total_drafts": 2
+    },
+    "4719": {
+      "player_id": "4719",
+      "draft_years": [
+        2011,
+        2014
+      ],
+      "total_drafts": 2
+    },
+    "4306": {
+      "player_id": "4306",
+      "draft_years": [
+        2011,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "4891": {
+      "player_id": "4891",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "3765": {
+      "player_id": "3765",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4904": {
+      "player_id": "4904",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 6
+    },
+    "4618": {
+      "player_id": "4618",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4770": {
+      "player_id": "4770",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4617": {
+      "player_id": "4617",
+      "draft_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "total_drafts": 3
+    },
+    "3730": {
+      "player_id": "3730",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4646": {
+      "player_id": "4646",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4313": {
+      "player_id": "4313",
+      "draft_years": [
+        2011,
+        2012
+      ],
+      "total_drafts": 2
+    },
+    "4889": {
+      "player_id": "4889",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 6
+    },
+    "3125": {
+      "player_id": "3125",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4796": {
+      "player_id": "4796",
+      "draft_years": [
+        2011
+      ],
+      "total_drafts": 1
+    },
+    "4473": {
+      "player_id": "4473",
+      "draft_years": [
+        2011,
+        2016
+      ],
+      "total_drafts": 2
+    },
+    "4718": {
+      "player_id": "4718",
+      "draft_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "total_drafts": 10
+    },
+    "4507": {
+      "player_id": "4507",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 9
+    },
+    "5007": {
+      "player_id": "5007",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "4892": {
+      "player_id": "4892",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 11
+    },
+    "3962": {
+      "player_id": "3962",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 6
+    },
+    "4795": {
+      "player_id": "4795",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 6
+    },
+    "5012": {
+      "player_id": "5012",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "5008": {
+      "player_id": "5008",
+      "draft_years": [
+        2012,
+        2013,
+        2016,
+        2017
+      ],
+      "total_drafts": 4
+    },
+    "4942": {
+      "player_id": "4942",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 7
+    },
+    "3971": {
+      "player_id": "3971",
+      "draft_years": [
+        2012,
+        2013,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 6
+    },
+    "4724": {
+      "player_id": "4724",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 12
+    },
+    "4493": {
+      "player_id": "4493",
+      "draft_years": [
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 3
+    },
+    "5009": {
+      "player_id": "5009",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "5010": {
+      "player_id": "5010",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2017
+      ],
+      "total_drafts": 5
+    },
+    "4759": {
+      "player_id": "4759",
+      "draft_years": [
+        2012,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "4896": {
+      "player_id": "4896",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "4884": {
+      "player_id": "4884",
+      "draft_years": [
+        2012,
+        2013,
+        2016,
+        2017
+      ],
+      "total_drafts": 4
+    },
+    "4499": {
+      "player_id": "4499",
+      "draft_years": [
+        2012,
+        2013
+      ],
+      "total_drafts": 2
+    },
+    "4750": {
+      "player_id": "4750",
+      "draft_years": [
+        2012,
+        2013,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 6
+    },
+    "4888": {
+      "player_id": "4888",
+      "draft_years": [
+        2012,
+        2016
+      ],
+      "total_drafts": 2
+    },
+    "4886": {
+      "player_id": "4886",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "3710": {
+      "player_id": "3710",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4484": {
+      "player_id": "4484",
+      "draft_years": [
+        2012,
+        2016,
+        2017
+      ],
+      "total_drafts": 3
+    },
+    "3717": {
+      "player_id": "3717",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4629": {
+      "player_id": "4629",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "5013": {
+      "player_id": "5013",
+      "draft_years": [
+        2012,
+        2013,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 10
+    },
+    "5004": {
+      "player_id": "5004",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4288": {
+      "player_id": "4288",
+      "draft_years": [
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 3
+    },
+    "4203": {
+      "player_id": "4203",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4686": {
+      "player_id": "4686",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "5015": {
+      "player_id": "5015",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2024
+      ],
+      "total_drafts": 10
+    },
+    "5016": {
+      "player_id": "5016",
+      "draft_years": [
+        2012,
+        2017
+      ],
+      "total_drafts": 2
+    },
+    "4758": {
+      "player_id": "4758",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4475": {
+      "player_id": "4475",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "5011": {
+      "player_id": "5011",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4897": {
+      "player_id": "4897",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 13
+    },
+    "4496": {
+      "player_id": "4496",
+      "draft_years": [
+        2012,
+        2013,
+        2014
+      ],
+      "total_drafts": 3
+    },
+    "4139": {
+      "player_id": "4139",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 9
+    },
+    "4160": {
+      "player_id": "4160",
+      "draft_years": [
+        2012
+      ],
+      "total_drafts": 1
+    },
+    "4920": {
+      "player_id": "4920",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 5
+    },
+    "4651": {
+      "player_id": "4651",
+      "draft_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 8
+    },
+    "4730": {
+      "player_id": "4730",
+      "draft_years": [
+        2013,
+        2014
+      ],
+      "total_drafts": 2
+    },
+    "4749": {
+      "player_id": "4749",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 8
+    },
+    "4901": {
+      "player_id": "4901",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 12
+    },
+    "5153": {
+      "player_id": "5153",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 8
+    },
+    "4912": {
+      "player_id": "4912",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 12
+    },
+    "4899": {
+      "player_id": "4899",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 7
+    },
+    "5155": {
+      "player_id": "5155",
+      "draft_years": [
+        2013,
+        2017,
+        2019
+      ],
+      "total_drafts": 3
+    },
+    "5162": {
+      "player_id": "5162",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 4
+    },
+    "3754": {
+      "player_id": "3754",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 4
+    },
+    "4906": {
+      "player_id": "4906",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022
+      ],
+      "total_drafts": 8
+    },
+    "5158": {
+      "player_id": "5158",
+      "draft_years": [
+        2013,
+        2015
+      ],
+      "total_drafts": 2
+    },
+    "5018": {
+      "player_id": "5018",
+      "draft_years": [
+        2013,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 4
+    },
+    "5021": {
+      "player_id": "5021",
+      "draft_years": [
+        2013,
+        2017
+      ],
+      "total_drafts": 2
+    },
+    "4647": {
+      "player_id": "4647",
+      "draft_years": [
+        2013,
+        2014,
+        2016,
+        2017,
+        2019
+      ],
+      "total_drafts": 5
+    },
+    "4894": {
+      "player_id": "4894",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 5
+    },
+    "5164": {
+      "player_id": "5164",
+      "draft_years": [
+        2013,
+        2014,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021
+      ],
+      "total_drafts": 7
+    },
+    "5020": {
+      "player_id": "5020",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "5152": {
+      "player_id": "5152",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "4145": {
+      "player_id": "4145",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "5160": {
+      "player_id": "5160",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2018
+      ],
+      "total_drafts": 4
+    },
+    "5060": {
+      "player_id": "5060",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "4632": {
+      "player_id": "4632",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 6
+    },
+    "4771": {
+      "player_id": "4771",
+      "draft_years": [
+        2013,
+        2014,
+        2017
+      ],
+      "total_drafts": 3
+    },
+    "4729": {
+      "player_id": "4729",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "5159": {
+      "player_id": "5159",
+      "draft_years": [
+        2013,
+        2015,
+        2016,
+        2017,
+        2018,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "4893": {
+      "player_id": "4893",
+      "draft_years": [
+        2013,
+        2014,
+        2015,
+        2020
+      ],
+      "total_drafts": 4
+    },
+    "4296": {
+      "player_id": "4296",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "5234": {
+      "player_id": "5234",
+      "draft_years": [
+        2013
+      ],
+      "total_drafts": 1
+    },
+    "3944": {
+      "player_id": "3944",
+      "draft_years": [
+        2013,
+        2015
+      ],
+      "total_drafts": 2
+    },
+    "5157": {
+      "player_id": "5157",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2021
+      ],
+      "total_drafts": 5
+    },
+    "5293": {
+      "player_id": "5293",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 5
+    },
+    "5292": {
+      "player_id": "5292",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 10
+    },
+    "4794": {
+      "player_id": "4794",
+      "draft_years": [
+        2014,
+        2015
+      ],
+      "total_drafts": 2
+    },
+    "5024": {
+      "player_id": "5024",
+      "draft_years": [
+        2014,
+        2015,
+        2016
+      ],
+      "total_drafts": 3
+    },
+    "5321": {
+      "player_id": "5321",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 5
+    },
+    "5185": {
+      "player_id": "5185",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 11
+    },
+    "5055": {
+      "player_id": "5055",
+      "draft_years": [
+        2014,
+        2016
+      ],
+      "total_drafts": 2
+    },
+    "5191": {
+      "player_id": "5191",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 4
+    },
+    "5192": {
+      "player_id": "5192",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2021
+      ],
+      "total_drafts": 5
+    },
+    "4613": {
+      "player_id": "4613",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "5295": {
+      "player_id": "5295",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 11
+    },
+    "5111": {
+      "player_id": "5111",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "4314": {
+      "player_id": "4314",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "5343": {
+      "player_id": "5343",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "5069": {
+      "player_id": "5069",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 11
+    },
+    "5197": {
+      "player_id": "5197",
+      "draft_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 11
+    },
+    "3643": {
+      "player_id": "3643",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "5095": {
+      "player_id": "5095",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "5059": {
+      "player_id": "5059",
+      "draft_years": [
+        2014
+      ],
+      "total_drafts": 1
+    },
+    "4764": {
+      "player_id": "4764",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 6
+    },
+    "5432": {
+      "player_id": "5432",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 10
+    },
+    "4905": {
+      "player_id": "4905",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 4
+    },
+    "5073": {
+      "player_id": "5073",
+      "draft_years": [
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5161": {
+      "player_id": "5161",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 10
+    },
+    "5357": {
+      "player_id": "5357",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 7
+    },
+    "5253": {
+      "player_id": "5253",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "total_drafts": 8
+    },
+    "5434": {
+      "player_id": "5434",
+      "draft_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 3
+    },
+    "5017": {
+      "player_id": "5017",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "5467": {
+      "player_id": "5467",
+      "draft_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 3
+    },
+    "5154": {
+      "player_id": "5154",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 6
+    },
+    "5468": {
+      "player_id": "5468",
+      "draft_years": [
+        2015,
+        2016
+      ],
+      "total_drafts": 2
+    },
+    "5464": {
+      "player_id": "5464",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "4723": {
+      "player_id": "4723",
+      "draft_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 3
+    },
+    "5433": {
+      "player_id": "5433",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 10
+    },
+    "5334": {
+      "player_id": "5334",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 4
+    },
+    "4913": {
+      "player_id": "4913",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 9
+    },
+    "5317": {
+      "player_id": "5317",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "4895": {
+      "player_id": "4895",
+      "draft_years": [
+        2015,
+        2017
+      ],
+      "total_drafts": 2
+    },
+    "3954": {
+      "player_id": "3954",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "5327": {
+      "player_id": "5327",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5318": {
+      "player_id": "5318",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 10
+    },
+    "5068": {
+      "player_id": "5068",
+      "draft_years": [
+        2015,
+        2016,
+        2017
+      ],
+      "total_drafts": 3
+    },
+    "5479": {
+      "player_id": "5479",
+      "draft_years": [
+        2015,
+        2017
+      ],
+      "total_drafts": 2
+    },
+    "5156": {
+      "player_id": "5156",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 5
+    },
+    "5322": {
+      "player_id": "5322",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "5320": {
+      "player_id": "5320",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "5325": {
+      "player_id": "5325",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 6
+    },
+    "5083": {
+      "player_id": "5083",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "5465": {
+      "player_id": "5465",
+      "draft_years": [
+        2015,
+        2018
+      ],
+      "total_drafts": 2
+    },
+    "5471": {
+      "player_id": "5471",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 10
+    },
+    "5023": {
+      "player_id": "5023",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "4286": {
+      "player_id": "4286",
+      "draft_years": [
+        2015
+      ],
+      "total_drafts": 1
+    },
+    "5482": {
+      "player_id": "5482",
+      "draft_years": [
+        2015,
+        2017,
+        2018,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5466": {
+      "player_id": "5466",
+      "draft_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 5
+    },
+    "5352": {
+      "player_id": "5352",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5054": {
+      "player_id": "5054",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 6
+    },
+    "5336": {
+      "player_id": "5336",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5163": {
+      "player_id": "5163",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 6
+    },
+    "5324": {
+      "player_id": "5324",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5294": {
+      "player_id": "5294",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5187": {
+      "player_id": "5187",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2020,
+        2023
+      ],
+      "total_drafts": 5
+    },
+    "5102": {
+      "player_id": "5102",
+      "draft_years": [
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 3
+    },
+    "5483": {
+      "player_id": "5483",
+      "draft_years": [
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 3
+    },
+    "5323": {
+      "player_id": "5323",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 4
+    },
+    "5473": {
+      "player_id": "5473",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5637": {
+      "player_id": "5637",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5330": {
+      "player_id": "5330",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 4
+    },
+    "3928": {
+      "player_id": "3928",
+      "draft_years": [
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 3
+    },
+    "4800": {
+      "player_id": "4800",
+      "draft_years": [
+        2016,
+        2017
+      ],
+      "total_drafts": 2
+    },
+    "5470": {
+      "player_id": "5470",
+      "draft_years": [
+        2016,
+        2017,
+        2019
+      ],
+      "total_drafts": 3
+    },
+    "5414": {
+      "player_id": "5414",
+      "draft_years": [
+        2016
+      ],
+      "total_drafts": 1
+    },
+    "5601": {
+      "player_id": "5601",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "4754": {
+      "player_id": "4754",
+      "draft_years": [
+        2016,
+        2017
+      ],
+      "total_drafts": 2
+    },
+    "5636": {
+      "player_id": "5636",
+      "draft_years": [
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 3
+    },
+    "5316": {
+      "player_id": "5316",
+      "draft_years": [
+        2016
+      ],
+      "total_drafts": 1
+    },
+    "5472": {
+      "player_id": "5472",
+      "draft_years": [
+        2016
+      ],
+      "total_drafts": 1
+    },
+    "5500": {
+      "player_id": "5500",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 6
+    },
+    "5376": {
+      "player_id": "5376",
+      "draft_years": [
+        2016,
+        2017,
+        2018
+      ],
+      "total_drafts": 3
+    },
+    "5638": {
+      "player_id": "5638",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5193": {
+      "player_id": "5193",
+      "draft_years": [
+        2016
+      ],
+      "total_drafts": 1
+    },
+    "5600": {
+      "player_id": "5600",
+      "draft_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 9
+    },
+    "5249": {
+      "player_id": "5249",
+      "draft_years": [
+        2016
+      ],
+      "total_drafts": 1
+    },
+    "5764": {
+      "player_id": "5764",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 5
+    },
+    "5763": {
+      "player_id": "5763",
+      "draft_years": [
+        2017,
+        2018,
+        2020,
+        2022,
+        2023
+      ],
+      "total_drafts": 5
+    },
+    "5822": {
+      "player_id": "5822",
+      "draft_years": [
+        2017,
+        2018
+      ],
+      "total_drafts": 2
+    },
+    "5495": {
+      "player_id": "5495",
+      "draft_years": [
+        2017,
+        2018
+      ],
+      "total_drafts": 2
+    },
+    "5765": {
+      "player_id": "5765",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5194": {
+      "player_id": "5194",
+      "draft_years": [
+        2017,
+        2018,
+        2020,
+        2021
+      ],
+      "total_drafts": 4
+    },
+    "4621": {
+      "player_id": "4621",
+      "draft_years": [
+        2017,
+        2018
+      ],
+      "total_drafts": 2
+    },
+    "5667": {
+      "player_id": "5667",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5766": {
+      "player_id": "5766",
+      "draft_years": [
+        2017,
+        2018
+      ],
+      "total_drafts": 2
+    },
+    "5643": {
+      "player_id": "5643",
+      "draft_years": [
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 3
+    },
+    "5201": {
+      "player_id": "5201",
+      "draft_years": [
+        2017,
+        2018
+      ],
+      "total_drafts": 2
+    },
+    "5393": {
+      "player_id": "5393",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 5
+    },
+    "5875": {
+      "player_id": "5875",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5142": {
+      "player_id": "5142",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5639": {
+      "player_id": "5639",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5767": {
+      "player_id": "5767",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "4660": {
+      "player_id": "4660",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5245": {
+      "player_id": "5245",
+      "draft_years": [
+        2017,
+        2020,
+        2021
+      ],
+      "total_drafts": 3
+    },
+    "5074": {
+      "player_id": "5074",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 4
+    },
+    "5469": {
+      "player_id": "5469",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5262": {
+      "player_id": "5262",
+      "draft_years": [
+        2017,
+        2019
+      ],
+      "total_drafts": 2
+    },
+    "5256": {
+      "player_id": "5256",
+      "draft_years": [
+        2017,
+        2018,
+        2019
+      ],
+      "total_drafts": 3
+    },
+    "5602": {
+      "player_id": "5602",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5840": {
+      "player_id": "5840",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5769": {
+      "player_id": "5769",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5475": {
+      "player_id": "5475",
+      "draft_years": [
+        2017,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 4
+    },
+    "5659": {
+      "player_id": "5659",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5641": {
+      "player_id": "5641",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5506": {
+      "player_id": "5506",
+      "draft_years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5824": {
+      "player_id": "5824",
+      "draft_years": [
+        2017,
+        2020,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "5526": {
+      "player_id": "5526",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5014": {
+      "player_id": "5014",
+      "draft_years": [
+        2017,
+        2019,
+        2021
+      ],
+      "total_drafts": 3
+    },
+    "4922": {
+      "player_id": "4922",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5497": {
+      "player_id": "5497",
+      "draft_years": [
+        2017,
+        2020,
+        2021
+      ],
+      "total_drafts": 3
+    },
+    "5645": {
+      "player_id": "5645",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5487": {
+      "player_id": "5487",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 5
+    },
+    "5196": {
+      "player_id": "5196",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5665": {
+      "player_id": "5665",
+      "draft_years": [
+        2017
+      ],
+      "total_drafts": 1
+    },
+    "5832": {
+      "player_id": "5832",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5651": {
+      "player_id": "5651",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "total_drafts": 6
+    },
+    "5642": {
+      "player_id": "5642",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5826": {
+      "player_id": "5826",
+      "draft_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 8
+    },
+    "5350": {
+      "player_id": "5350",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5835": {
+      "player_id": "5835",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "6014": {
+      "player_id": "6014",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5958": {
+      "player_id": "5958",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5341": {
+      "player_id": "5341",
+      "draft_years": [
+        2018,
+        2021,
+        2023
+      ],
+      "total_drafts": 3
+    },
+    "6017": {
+      "player_id": "6017",
+      "draft_years": [
+        2018,
+        2021,
+        2022
+      ],
+      "total_drafts": 3
+    },
+    "5768": {
+      "player_id": "5768",
+      "draft_years": [
+        2018,
+        2019,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 5
+    },
+    "5843": {
+      "player_id": "5843",
+      "draft_years": [
+        2018,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "5492": {
+      "player_id": "5492",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "total_drafts": 4
+    },
+    "6018": {
+      "player_id": "6018",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "6015": {
+      "player_id": "6015",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "6016": {
+      "player_id": "6016",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5349": {
+      "player_id": "5349",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 6
+    },
+    "5640": {
+      "player_id": "5640",
+      "draft_years": [
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5959": {
+      "player_id": "5959",
+      "draft_years": [
+        2018,
+        2019,
+        2020
+      ],
+      "total_drafts": 3
+    },
+    "5827": {
+      "player_id": "5827",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5851": {
+      "player_id": "5851",
+      "draft_years": [
+        2018
+      ],
+      "total_drafts": 1
+    },
+    "5338": {
+      "player_id": "5338",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5727": {
+      "player_id": "5727",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "4633": {
+      "player_id": "4633",
+      "draft_years": [
+        2018
+      ],
+      "total_drafts": 1
+    },
+    "5476": {
+      "player_id": "5476",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 7
+    },
+    "5344": {
+      "player_id": "5344",
+      "draft_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "total_drafts": 5
+    },
+    "6163": {
+      "player_id": "6163",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5658": {
+      "player_id": "5658",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "6047": {
+      "player_id": "6047",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 5
+    },
+    "6030": {
+      "player_id": "6030",
+      "draft_years": [
+        2019,
+        2021,
+        2023
+      ],
+      "total_drafts": 3
+    },
+    "5855": {
+      "player_id": "5855",
+      "draft_years": [
+        2019,
+        2020,
+        2022
+      ],
+      "total_drafts": 3
+    },
+    "6022": {
+      "player_id": "6022",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "6037": {
+      "player_id": "6037",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "6023": {
+      "player_id": "6023",
+      "draft_years": [
+        2019,
+        2021,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6164": {
+      "player_id": "6164",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5356": {
+      "player_id": "5356",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "6019": {
+      "player_id": "6019",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5842": {
+      "player_id": "5842",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ],
+      "total_drafts": 5
+    },
+    "5480": {
+      "player_id": "5480",
+      "draft_years": [
+        2019,
+        2020
+      ],
+      "total_drafts": 2
+    },
+    "6021": {
+      "player_id": "6021",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5660": {
+      "player_id": "5660",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5823": {
+      "player_id": "5823",
+      "draft_years": [
+        2019,
+        2023
+      ],
+      "total_drafts": 2
+    },
+    "5066": {
+      "player_id": "5066",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "6165": {
+      "player_id": "6165",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "6026": {
+      "player_id": "6026",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "5490": {
+      "player_id": "5490",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "5484": {
+      "player_id": "5484",
+      "draft_years": [
+        2019,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "5836": {
+      "player_id": "5836",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5880": {
+      "player_id": "5880",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "6175": {
+      "player_id": "6175",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "5663": {
+      "player_id": "5663",
+      "draft_years": [
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 5
+    },
+    "6209": {
+      "player_id": "6209",
+      "draft_years": [
+        2019,
+        2020,
+        2022
+      ],
+      "total_drafts": 3
+    },
+    "4163": {
+      "player_id": "4163",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "6169": {
+      "player_id": "6169",
+      "draft_years": [
+        2019,
+        2020,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6168": {
+      "player_id": "6168",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "5491": {
+      "player_id": "5491",
+      "draft_years": [
+        2019
+      ],
+      "total_drafts": 1
+    },
+    "6025": {
+      "player_id": "6025",
+      "draft_years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 6
+    },
+    "6171": {
+      "player_id": "6171",
+      "draft_years": [
+        2019,
+        2020,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "5892": {
+      "player_id": "5892",
+      "draft_years": [
+        2019,
+        2020
+      ],
+      "total_drafts": 2
+    },
+    "4926": {
+      "player_id": "4926",
+      "draft_years": [
+        2019,
+        2020
+      ],
+      "total_drafts": 2
+    },
+    "6045": {
+      "player_id": "6045",
+      "draft_years": [
+        2020,
+        2021
+      ],
+      "total_drafts": 2
+    },
+    "5583": {
+      "player_id": "5583",
+      "draft_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 4
+    },
+    "6073": {
+      "player_id": "6073",
+      "draft_years": [
+        2020,
+        2021
+      ],
+      "total_drafts": 2
+    },
+    "6395": {
+      "player_id": "6395",
+      "draft_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 5
+    },
+    "6399": {
+      "player_id": "6399",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "6211": {
+      "player_id": "6211",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "6218": {
+      "player_id": "6218",
+      "draft_years": [
+        2020,
+        2021,
+        2022
+      ],
+      "total_drafts": 3
+    },
+    "5747": {
+      "player_id": "5747",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "5650": {
+      "player_id": "5650",
+      "draft_years": [
+        2020,
+        2023
+      ],
+      "total_drafts": 2
+    },
+    "5894": {
+      "player_id": "5894",
+      "draft_years": [
+        2020,
+        2021
+      ],
+      "total_drafts": 2
+    },
+    "6355": {
+      "player_id": "6355",
+      "draft_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 5
+    },
+    "6401": {
+      "player_id": "6401",
+      "draft_years": [
+        2020,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6174": {
+      "player_id": "6174",
+      "draft_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 5
+    },
+    "6356": {
+      "player_id": "6356",
+      "draft_years": [
+        2020,
+        2022
+      ],
+      "total_drafts": 2
+    },
+    "6203": {
+      "player_id": "6203",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "6172": {
+      "player_id": "6172",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "5351": {
+      "player_id": "5351",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "6397": {
+      "player_id": "6397",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "6170": {
+      "player_id": "6170",
+      "draft_years": [
+        2020
+      ],
+      "total_drafts": 1
+    },
+    "6516": {
+      "player_id": "6516",
+      "draft_years": [
+        2021,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6513": {
+      "player_id": "6513",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6038": {
+      "player_id": "6038",
+      "draft_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 3
+    },
+    "6404": {
+      "player_id": "6404",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6167": {
+      "player_id": "6167",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6512": {
+      "player_id": "6512",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6226": {
+      "player_id": "6226",
+      "draft_years": [
+        2021,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6408": {
+      "player_id": "6408",
+      "draft_years": [
+        2021,
+        2022
+      ],
+      "total_drafts": 2
+    },
+    "6166": {
+      "player_id": "6166",
+      "draft_years": [
+        2021,
+        2022,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6205": {
+      "player_id": "6205",
+      "draft_years": [
+        2021
+      ],
+      "total_drafts": 1
+    },
+    "6514": {
+      "player_id": "6514",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6548": {
+      "player_id": "6548",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6409": {
+      "player_id": "6409",
+      "draft_years": [
+        2021,
+        2022
+      ],
+      "total_drafts": 2
+    },
+    "6463": {
+      "player_id": "6463",
+      "draft_years": [
+        2021
+      ],
+      "total_drafts": 1
+    },
+    "6420": {
+      "player_id": "6420",
+      "draft_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "total_drafts": 3
+    },
+    "6411": {
+      "player_id": "6411",
+      "draft_years": [
+        2021,
+        2022
+      ],
+      "total_drafts": 2
+    },
+    "6396": {
+      "player_id": "6396",
+      "draft_years": [
+        2021,
+        2023
+      ],
+      "total_drafts": 2
+    },
+    "6208": {
+      "player_id": "6208",
+      "draft_years": [
+        2021
+      ],
+      "total_drafts": 1
+    },
+    "6216": {
+      "player_id": "6216",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6413": {
+      "player_id": "6413",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "5582": {
+      "player_id": "5582",
+      "draft_years": [
+        2021
+      ],
+      "total_drafts": 1
+    },
+    "6515": {
+      "player_id": "6515",
+      "draft_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 4
+    },
+    "6254": {
+      "player_id": "6254",
+      "draft_years": [
+        2021
+      ],
+      "total_drafts": 1
+    },
+    "6219": {
+      "player_id": "6219",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6691": {
+      "player_id": "6691",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6422": {
+      "player_id": "6422",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6044": {
+      "player_id": "6044",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6035": {
+      "player_id": "6035",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6402": {
+      "player_id": "6402",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "6558": {
+      "player_id": "6558",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6403": {
+      "player_id": "6403",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6564": {
+      "player_id": "6564",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "6693": {
+      "player_id": "6693",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6550": {
+      "player_id": "6550",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6217": {
+      "player_id": "6217",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6577": {
+      "player_id": "6577",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6433": {
+      "player_id": "6433",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6048": {
+      "player_id": "6048",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6694": {
+      "player_id": "6694",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6057": {
+      "player_id": "6057",
+      "draft_years": [
+        2022,
+        2023
+      ],
+      "total_drafts": 2
+    },
+    "6173": {
+      "player_id": "6173",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6549": {
+      "player_id": "6549",
+      "draft_years": [
+        2022,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "5864": {
+      "player_id": "5864",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "5754": {
+      "player_id": "5754",
+      "draft_years": [
+        2022,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6052": {
+      "player_id": "6052",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "6398": {
+      "player_id": "6398",
+      "draft_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "total_drafts": 3
+    },
+    "6568": {
+      "player_id": "6568",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "5856": {
+      "player_id": "5856",
+      "draft_years": [
+        2022,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6407": {
+      "player_id": "6407",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "5693": {
+      "player_id": "5693",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "6555": {
+      "player_id": "6555",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "6696": {
+      "player_id": "6696",
+      "draft_years": [
+        2022,
+        2023
+      ],
+      "total_drafts": 2
+    },
+    "5858": {
+      "player_id": "5858",
+      "draft_years": [
+        2022
+      ],
+      "total_drafts": 1
+    },
+    "6053": {
+      "player_id": "6053",
+      "draft_years": [
+        2022,
+        2023
+      ],
+      "total_drafts": 2
+    },
+    "10094": {
+      "player_id": "10094",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6697": {
+      "player_id": "6697",
+      "draft_years": [
+        2023
+      ],
+      "total_drafts": 1
+    },
+    "6692": {
+      "player_id": "6692",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6712": {
+      "player_id": "6712",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6695": {
+      "player_id": "6695",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6702": {
+      "player_id": "6702",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6400": {
+      "player_id": "6400",
+      "draft_years": [
+        2023
+      ],
+      "total_drafts": 1
+    },
+    "6705": {
+      "player_id": "6705",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6606": {
+      "player_id": "6606",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6703": {
+      "player_id": "6703",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "10048": {
+      "player_id": "10048",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "10096": {
+      "player_id": "10096",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "10103": {
+      "player_id": "10103",
+      "draft_years": [
+        2023
+      ],
+      "total_drafts": 1
+    },
+    "6559": {
+      "player_id": "6559",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6234": {
+      "player_id": "6234",
+      "draft_years": [
+        2023
+      ],
+      "total_drafts": 1
+    },
+    "6417": {
+      "player_id": "6417",
+      "draft_years": [
+        2023,
+        2024
+      ],
+      "total_drafts": 2
+    },
+    "6707": {
+      "player_id": "6707",
+      "draft_years": [
+        2023
+      ],
+      "total_drafts": 1
+    },
+    "6569": {
+      "player_id": "6569",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "6562": {
+      "player_id": "6562",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10287": {
+      "player_id": "10287",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10104": {
+      "player_id": "10104",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "6253": {
+      "player_id": "6253",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10097": {
+      "player_id": "10097",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10285": {
+      "player_id": "10285",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "6028": {
+      "player_id": "6028",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10294": {
+      "player_id": "10294",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10108": {
+      "player_id": "10108",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10115": {
+      "player_id": "10115",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10080": {
+      "player_id": "10080",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10110": {
+      "player_id": "10110",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "10100": {
+      "player_id": "10100",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "6032": {
+      "player_id": "6032",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    },
+    "6406": {
+      "player_id": "6406",
+      "draft_years": [
+        2024
+      ],
+      "total_drafts": 1
+    }
+  },
+  "mapping_stats": {
+    "total_yahoo_players": 547,
+    "mapped_players": 233,
+    "coverage_percentage": 42.59597806215722,
+    "years_covered": "2010-2024"
+  }
+}

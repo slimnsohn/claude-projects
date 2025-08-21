@@ -1,0 +1,132 @@
+[
+  {
+    "team_key": "353.l.93240.t.8",
+    "name": "Get Schwifty",
+    "rank": 1,
+    "playoff_seed": "2",
+    "outcome_totals": {
+      "wins": "98",
+      "losses": "72",
+      "ties": "1",
+      "percentage": ".576"
+    },
+    "games_back": "1.5"
+  },
+  {
+    "team_key": "353.l.93240.t.6",
+    "name": "The Krappers",
+    "rank": 2,
+    "playoff_seed": "4",
+    "outcome_totals": {
+      "wins": "91",
+      "losses": "76",
+      "ties": "4",
+      "percentage": ".544"
+    },
+    "games_back": "7"
+  },
+  {
+    "team_key": "353.l.93240.t.10",
+    "name": "Dirty South Asia",
+    "rank": 3,
+    "playoff_seed": "1",
+    "outcome_totals": {
+      "wins": "100",
+      "losses": "71",
+      "ties": 0,
+      "percentage": ".585"
+    },
+    "games_back": "-"
+  },
+  {
+    "team_key": "353.l.93240.t.5",
+    "name": "mike Lawwwwrrry",
+    "rank": 4,
+    "playoff_seed": "6",
+    "outcome_totals": {
+      "wins": "87",
+      "losses": "83",
+      "ties": "1",
+      "percentage": ".512"
+    },
+    "games_back": "12.5"
+  },
+  {
+    "team_key": "353.l.93240.t.7",
+    "name": "Make it Drizzle",
+    "rank": 5,
+    "playoff_seed": "5",
+    "outcome_totals": {
+      "wins": "90",
+      "losses": "77",
+      "ties": "4",
+      "percentage": ".538"
+    },
+    "games_back": "8"
+  },
+  {
+    "team_key": "353.l.93240.t.3",
+    "name": "LetsBall",
+    "rank": 6,
+    "playoff_seed": "3",
+    "outcome_totals": {
+      "wins": "93",
+      "losses": "73",
+      "ties": "5",
+      "percentage": ".558"
+    },
+    "games_back": "4.5"
+  },
+  {
+    "team_key": "353.l.93240.t.1",
+    "name": "The First Order",
+    "rank": 7,
+    "playoff_seed": "7",
+    "outcome_totals": {
+      "wins": "79",
+      "losses": "89",
+      "ties": "3",
+      "percentage": ".471"
+    },
+    "games_back": "19.5"
+  },
+  {
+    "team_key": "353.l.93240.t.4",
+    "name": "The Bandwagon",
+    "rank": 8,
+    "playoff_seed": "9",
+    "outcome_totals": {
+      "wins": "78",
+      "losses": "92",
+      "ties": "1",
+      "percentage": ".459"
+    },
+    "games_back": "21.5"
+  },
+  {
+    "team_key": "353.l.93240.t.2",
+    "name": "hersheysquirt",
+    "rank": 9,
+    "playoff_seed": "8",
+    "outcome_totals": {
+      "wins": "78",
+      "losses": "90",
+      "ties": "3",
+      "percentage": ".465"
+    },
+    "games_back": "20.5"
+  },
+  {
+    "team_key": "353.l.93240.t.9",
+    "name": "Johnny Blaze's Team",
+    "rank": 10,
+    "playoff_seed": "10",
+    "outcome_totals": {
+      "wins": "48",
+      "losses": "119",
+      "ties": "4",
+      "percentage": ".292"
+    },
+    "games_back": "50"
+  }
+]

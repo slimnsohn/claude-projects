@@ -1,0 +1,511 @@
+{
+  "375.l.111279.t.10": {
+    "team_key": "375.l.111279.t.10",
+    "team_id": "10",
+    "name": "The Krappers",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/10",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_1.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 6,
+    "waiver_priority": 4,
+    "faab_balance": "38",
+    "number_of_moves": 17,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "10",
+          "nickname": "Mike",
+          "guid": "C4OWKIIMIEL47GU7EB4Z3EDNE4",
+          "email": "mikeypark1@gmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4505/23843010757_838e67_64sq.jpg",
+          "felo_score": "862",
+          "felo_tier": "platinum"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.9": {
+    "team_key": "375.l.111279.t.9",
+    "team_id": "9",
+    "name": "The Bandwagon",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/9",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_3.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 9,
+    "waiver_priority": 3,
+    "faab_balance": "0",
+    "number_of_moves": 35,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "9",
+          "nickname": "zetti",
+          "guid": "RL4ONIPMS5BGKH2WCYBTMFS7KM",
+          "email": "jpezzetti@gmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4691/38763830186_3c2d80_64sq.jpg",
+          "felo_score": "717",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.3": {
+    "team_key": "375.l.111279.t.3",
+    "team_id": "3",
+    "name": "Dirty South Asia",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/3",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_2.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 7,
+    "waiver_priority": 1,
+    "faab_balance": "67",
+    "number_of_moves": 33,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 198,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "3",
+          "nickname": "Dirty South",
+          "guid": "NREHJO4Z5FWMC7JNKGPIP2GGHY",
+          "email": "edsohn80@yahoo.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "736",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.4": {
+    "team_key": "375.l.111279.t.4",
+    "team_id": "4",
+    "name": "Get Schwifty",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/4",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/25039826540_323201cc5a.jpg"
+        }
+      }
+    ],
+    "previous_season_team_rank": 8,
+    "waiver_priority": 6,
+    "faab_balance": "100",
+    "number_of_moves": 5,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "4",
+          "nickname": "David",
+          "guid": "JK5X7F3CGGAEKHHJCJ6MQ2VOWY",
+          "email": "dave.fotopoulos@gmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4576/37442752763_c85e01_64sq.jpg",
+          "felo_score": "717",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.11": {
+    "team_key": "375.l.111279.t.11",
+    "team_id": "11",
+    "name": "White Chocolate",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/11",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/24665707153_5b0f499a81.jpg"
+        }
+      }
+    ],
+    "waiver_priority": 8,
+    "faab_balance": "95",
+    "number_of_moves": 33,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "11",
+          "nickname": "Jay",
+          "guid": "E5KCCCYW54U4FPF32ZF2WSRWWI",
+          "email": "jayj3102@hotmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4583/25143578398_84e972_64sq.jpg",
+          "felo_score": "564",
+          "felo_tier": "bronze"
+        }
+      },
+      {
+        "manager": {
+          "manager_id": "13",
+          "nickname": "--hidden--",
+          "guid": "--",
+          "is_comanager": "1",
+          "email": "--hidden--",
+          "felo_score": "744",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.5": {
+    "team_key": "375.l.111279.t.5",
+    "team_id": "5",
+    "name": "hersheysquirt",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/5",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_6.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 2,
+    "waiver_priority": 12,
+    "faab_balance": "0",
+    "number_of_moves": 56,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "clinched_playoffs": 1,
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "5",
+          "nickname": "Lil Kim",
+          "guid": "BCEAAICGF3LPCTXRUR7GPPH4SE",
+          "email": "ushang83@yahoo.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "673",
+          "felo_tier": "silver"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.7": {
+    "team_key": "375.l.111279.t.7",
+    "team_id": "7",
+    "name": "LetsBall",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/7",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_4.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 4,
+    "waiver_priority": 11,
+    "faab_balance": "0",
+    "number_of_moves": 37,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "7",
+          "nickname": "GarP",
+          "guid": "NOWAGDGVBQN7BNFRO5FSBAM2XQ",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "790",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.12": {
+    "team_key": "375.l.111279.t.12",
+    "team_id": "12",
+    "name": "jin's Team",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/12",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_7.png"
+        }
+      }
+    ],
+    "waiver_priority": 2,
+    "faab_balance": "100",
+    "number_of_moves": 13,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "12",
+          "nickname": "jin",
+          "guid": "Q64V4SCKVJTEXLDZUYT6I4DPYM",
+          "email": "jingyukim123@yahoo.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "594",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.8": {
+    "team_key": "375.l.111279.t.8",
+    "team_id": "8",
+    "name": "Make it Drizzle",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/8",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_1.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 1,
+    "waiver_priority": 9,
+    "faab_balance": "100",
+    "number_of_moves": 6,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 191,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "8",
+          "nickname": "Dan",
+          "guid": "MUAY237VH5YK3V75IMWXGXWUE4",
+          "email": "dantorres82@hotmail.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "820",
+          "felo_tier": "platinum"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.2": {
+    "team_key": "375.l.111279.t.2",
+    "team_id": "2",
+    "name": "Bzzzzznatch",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/2",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_1.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 3,
+    "waiver_priority": 5,
+    "faab_balance": "4",
+    "number_of_moves": 43,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "2",
+          "nickname": "Bzznatch",
+          "guid": "UP7PBD6EQZK45LRSL2NAET3V44",
+          "email": "bryantsze@yahoo.com",
+          "image_url": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
+          "felo_score": "709",
+          "felo_tier": "gold"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.1": {
+    "team_key": "375.l.111279.t.1",
+    "team_id": "1",
+    "name": "2012 easternAllstars",
+    "is_owned_by_current_login": 1,
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/1",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_8.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 5,
+    "waiver_priority": 7,
+    "faab_balance": "100",
+    "number_of_moves": 27,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "1",
+          "nickname": "Slims",
+          "guid": "GGBRSMOI6K3R3Z73FG4ZRMRBFM",
+          "is_commissioner": "1",
+          "is_current_login": "1",
+          "email": "slimsohn@hotmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4732/38238437590_bcba8f_64sq.jpg",
+          "felo_score": "665",
+          "felo_tier": "silver"
+        }
+      }
+    ]
+  },
+  "375.l.111279.t.6": {
+    "team_key": "375.l.111279.t.6",
+    "team_id": "6",
+    "name": "Tormund's Icy Boner",
+    "url": "https://basketball.fantasysports.yahoo.com/2017/nba/111279/6",
+    "team_logos": [
+      {
+        "team_logo": {
+          "size": "large",
+          "url": "https://s.yimg.com/cv/apiv2/default/nba/nba_3.png"
+        }
+      }
+    ],
+    "previous_season_team_rank": 10,
+    "waiver_priority": 10,
+    "faab_balance": "94",
+    "number_of_moves": 25,
+    "number_of_trades": 0,
+    "roster_adds": {
+      "coverage_type": "week",
+      "coverage_value": 24,
+      "value": "0"
+    },
+    "league_scoring_type": "head",
+    "has_draft_grade": 0,
+    "auction_budget_total": "200",
+    "auction_budget_spent": 200,
+    "managers": [
+      {
+        "manager": {
+          "manager_id": "6",
+          "nickname": "Johnny Blaze",
+          "guid": "D4PQ365UBJJZRDXFWQ2HFEBNC4",
+          "email": "johnleesmail@gmail.com",
+          "image_url": "https://s.yimg.com/ag/images/4589/27243398199_e53344_64sq.jpg",
+          "felo_score": "500",
+          "felo_tier": "bronze"
+        }
+      }
+    ]
+  }
+}

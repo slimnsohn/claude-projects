@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-08-21T23:06:15.969244",
+  "prices": {
+    "AAPL": 0.0,
+    "MSFT": 0.0,
+    "GOOGL": 0.0,
+    "AMZN": 0.0,
+    "TSLA": 0.0,
+    "VFIAX": 0.0,
+    "VOO": 0.0,
+    "VTI": 0.0
+  },
+  "tickers_count": 8,
+  "successful_lookups": 0
+}

@@ -1,0 +1,803 @@
+ALL KALSHI MARKETS - 100 TOTAL
+================================================================================
+
+MARKET   1: KXWTAMATCH-25AUG21RUZBOU-RUZ
+  Title:     Will Antonia Ruzic win the Ruzic vs Bouzkova match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-05T02:10:00Z
+--------------------------------------------------------------------------------
+MARKET   2: KXWTAMATCH-25AUG21RUZBOU-BOU
+  Title:     Will Marie Bouzkova win the Ruzic vs Bouzkova match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-05T02:10:00Z
+--------------------------------------------------------------------------------
+MARKET   3: KXSPOTIFYSONGRELEASETS-25B
+  Title:     Will Taylor Swift release a song this month?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-10-03T14:00:00Z
+--------------------------------------------------------------------------------
+MARKET   4: KXNETFLIXRANKMOVIE-25AUG25-TTAJS
+  Title:     Top Netflix movie on Aug 25, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-26T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET   5: KXSPOTIFYALBUMRELEASE-25
+  Title:     Will JAY-Z release an album this year?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-12-31T15:00:00Z
+--------------------------------------------------------------------------------
+MARKET   6: KXSPOTIFYSONG-25-JAY
+  Title:     Will JAY-Z release a song this yearE?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-12-31T15:00:00Z
+--------------------------------------------------------------------------------
+MARKET   7: KXSPOTIFYGLOBALD-25AUG22-YOU
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET   8: KXSPOTIFYGLOBALD-25AUG22-WHA
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET   9: KXSPOTIFYGLOBALD-25AUG22-SOD
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  10: KXSPOTIFYGLOBALD-25AUG22-ORD
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  11: KXSPOTIFYGLOBALD-25AUG22-LOV
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  12: KXSPOTIFYGLOBALD-25AUG22-LAP
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  13: KXSPOTIFYGLOBALD-25AUG22-JUM
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  14: KXSPOTIFYGLOBALD-25AUG22-HOW
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  15: KXSPOTIFYGLOBALD-25AUG22-GOL
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  16: KXSPOTIFYGLOBALD-25AUG22-FRE
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  17: KXSPOTIFYGLOBALD-25AUG22-DON
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  18: KXSPOTIFYGLOBALD-25AUG22-DIE
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  19: KXSPOTIFYGLOBALD-25AUG22-DAI
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  20: KXSPOTIFYGLOBALD-25AUG22-BIR
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  21: KXSPOTIFYGLOBALD-25AUG22-BAC
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  22: KXSPOTIFYD-25AUG22-WHAT
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  23: KXSPOTIFYD-25AUG22-UND
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  24: KXSPOTIFYD-25AUG22-THE
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  25: KXSPOTIFYD-25AUG22-TAK
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  26: KXSPOTIFYD-25AUG22-LOV
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  27: KXSPOTIFYD-25AUG22-FRE
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  28: KXSPOTIFYD-25AUG22-DRE
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  29: KXSPOTIFYD-25AUG22-DAI
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  30: KXSPOTIFYD-25AUG22-YOU
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  31: KXSPOTIFYD-25AUG22-WHA
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  32: KXSPOTIFYD-25AUG22-SOD
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  33: KXSPOTIFYD-25AUG22-ORD
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  34: KXSPOTIFYD-25AUG22-HOW
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  35: KXSPOTIFYD-25AUG22-GOL
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  36: KXSPOTIFYD-25AUG22-BAC
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  37: KXSPOTIFYARTISTD-25AUG22-UIC
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  38: KXSPOTIFYARTISTD-25AUG22-TRA
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  39: KXSPOTIFYARTISTD-25AUG22-TAT
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  40: KXSPOTIFYARTISTD-25AUG22-KAN
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  41: KXSPOTIFYARTISTD-25AUG22-FUT
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  42: KXSPOTIFYARTISTD-25AUG22-EJA
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  43: KXSPOTIFYARTISTD-25AUG22-ZAC
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  44: KXSPOTIFYARTISTD-25AUG22-TYL
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  45: KXSPOTIFYARTISTD-25AUG22-THE
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  46: KXSPOTIFYARTISTD-25AUG22-TAY
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  47: KXSPOTIFYARTISTD-25AUG22-MOR
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  48: KXSPOTIFYARTISTD-25AUG22-KPO
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  49: KXSPOTIFYARTISTD-25AUG22-KEN
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  50: KXSPOTIFYARTISTD-25AUG22-DRA
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  51: KXSPOTIFYARTISTD-25AUG22-BAD
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  52: KXSPOTIFY2D-25AUG22-YOU
+  Title:     Will the top Song on Aug 22, 2025 be Your Idol?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  53: KXSPOTIFY2D-25AUG22-WHAT
+  Title:     Will the top Song on Aug 22, 2025 be What I Want (feat. Tate McRae)?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  54: KXSPOTIFY2D-25AUG22-WHA
+  Title:     Will the top Song on Aug 22, 2025 be What It Sounds Like?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  55: KXSPOTIFY2D-25AUG22-UND
+  Title:     Will the top Song on Aug 22, 2025 be undressed?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  56: KXSPOTIFY2D-25AUG22-THE
+  Title:     Will the top Song on Aug 22, 2025 be The Subway?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  57: KXSPOTIFY2D-25AUG22-TAK
+  Title:     Will the top Song on Aug 22, 2025 be Takedown?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  58: KXSPOTIFY2D-25AUG22-SOD
+  Title:     Will the top Song on Aug 22, 2025 be Soda Pop?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  59: KXSPOTIFY2D-25AUG22-ORD
+  Title:     Will the top Song on Aug 22, 2025 be Ordinary?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  60: KXSPOTIFY2D-25AUG22-LOV
+  Title:     Will the top Song on Aug 22, 2025 be Love Me Not?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  61: KXSPOTIFY2D-25AUG22-HOW
+  Title:     Will the top Song on Aug 22, 2025 be How It’s Done?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  62: KXSPOTIFY2D-25AUG22-GOL
+  Title:     Will the top Song on Aug 22, 2025 be Golden?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  63: KXSPOTIFY2D-25AUG22-FRE
+  Title:     Will the top Song on Aug 22, 2025 be Free?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  64: KXSPOTIFY2D-25AUG22-DRE
+  Title:     Will the top Song on Aug 22, 2025 be Dreams - 2004 Remaster?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  65: KXSPOTIFY2D-25AUG22-DAI
+  Title:     Will the top Song on Aug 22, 2025 be DAISIES?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  66: KXSPOTIFY2D-25AUG22-BAC
+  Title:     Will the top Song on Aug 22, 2025 be back to friends?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    initialized
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  67: KXWTAMATCH-25AUG21NOSALE-NOS
+  Title:     Will Linda Noskova win the Noskova vs Alexandrova match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-05T01:00:00Z
+--------------------------------------------------------------------------------
+MARKET  68: KXWTAMATCH-25AUG21NOSALE-ALE
+  Title:     Will Ekaterina Alexandrova win the Noskova vs Alexandrova match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-05T01:00:00Z
+--------------------------------------------------------------------------------
+MARKET  69: KXNCAAF-26-MSU
+  Title:     Will Michigan St. win the College Football Playoff National Championship?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2028-01-19T15:00:00Z
+--------------------------------------------------------------------------------
+MARKET  70: KXWTAMATCH-25AUG21SAMCIR-SAM
+  Title:     Will Liudmila Samsonova win the Samsonova vs Cirstea match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T23:40:00Z
+--------------------------------------------------------------------------------
+MARKET  71: KXWTAMATCH-25AUG21SAMCIR-CIR
+  Title:     Will Sorana Cirstea win the Samsonova vs Cirstea match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T23:40:00Z
+--------------------------------------------------------------------------------
+MARKET  72: KXATPMATCH-25AUG21YUNVAN-YUN
+  Title:     Will Yunchaokete Bu win the Bu vs Van de Zandschulp match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T23:40:00Z
+--------------------------------------------------------------------------------
+MARKET  73: KXATPMATCH-25AUG21YUNVAN-VAN
+  Title:     Will Botic Van de Zandschulp win the Bu vs Van de Zandschulp match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T23:40:00Z
+--------------------------------------------------------------------------------
+MARKET  74: KXWTAMATCH-25AUG21PARSRA-SRA
+  Title:     Will Rebecca Sramkova win the Parks vs Sramkova match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T23:00:00Z
+--------------------------------------------------------------------------------
+MARKET  75: KXWTAMATCH-25AUG21PARSRA-PAR
+  Title:     Will Alycia Parks win the Parks vs Sramkova match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T23:00:00Z
+--------------------------------------------------------------------------------
+MARKET  76: KXATPMATCH-25AUG21MEDMPE-MPE
+  Title:     Will Giovanni Mpetshi Perricard win the Medjedovic vs Mpetshi Perricard match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T22:30:00Z
+--------------------------------------------------------------------------------
+MARKET  77: KXATPMATCH-25AUG21MEDMPE-MED
+  Title:     Will Hamad Medjedovic win the Medjedovic vs Mpetshi Perricard match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T22:30:00Z
+--------------------------------------------------------------------------------
+MARKET  78: KXWTAMATCH-25AUG21SHNMER-SHN
+  Title:     Will Diana Shnaider win the Shnaider vs Mertens match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T21:00:00Z
+--------------------------------------------------------------------------------
+MARKET  79: KXWTAMATCH-25AUG21SHNMER-MER
+  Title:     Will Elise Mertens win the Shnaider vs Mertens match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T21:00:00Z
+--------------------------------------------------------------------------------
+MARKET  80: KXATPMATCH-25AUG21MUNFUC-FUC
+  Title:     Will Marton Fucsovics win the Munar vs Fucsovics match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T20:00:00Z
+--------------------------------------------------------------------------------
+MARKET  81: KXATPMATCH-25AUG21MUNFUC-MUN
+  Title:     Will Jaume Munar win the Munar vs Fucsovics match?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-09-04T20:00:00Z
+--------------------------------------------------------------------------------
+MARKET  82: KXHIGHCHI-25AUG22-T82
+  Title:     Will the high temp in Chicago be >82° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  83: KXHIGHCHI-25AUG22-B81.5
+  Title:     Will the high temp in Chicago be 81-82° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  84: KXHIGHCHI-25AUG22-B79.5
+  Title:     Will the high temp in Chicago be 79-80° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  85: KXHIGHCHI-25AUG22-B77.5
+  Title:     Will the high temp in Chicago be 77-78° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  86: KXHIGHCHI-25AUG22-B75.5
+  Title:     Will the high temp in Chicago be 75-76° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  87: KXHIGHCHI-25AUG22-T75
+  Title:     Will the high temp in Chicago be <75° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  88: KXHIGHNY-25AUG22-T88
+  Title:     Will the **high temp in NYC** be >88° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  89: KXHIGHNY-25AUG22-B87.5
+  Title:     Will the **high temp in NYC** be 87-88° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  90: KXHIGHNY-25AUG22-B85.5
+  Title:     Will the **high temp in NYC** be 85-86° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  91: KXHIGHNY-25AUG22-T81
+  Title:     Will the **high temp in NYC** be <81° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  92: KXHIGHNY-25AUG22-B83.5
+  Title:     Will the **high temp in NYC** be 83-84° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  93: KXHIGHNY-25AUG22-B81.5
+  Title:     Will the **high temp in NYC** be 81-82° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------
+MARKET  94: KXHIGHAUS-25AUG22-T96
+  Title:     Will the **high temp in Austin** be >96° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  95: KXHIGHAUS-25AUG22-B95.5
+  Title:     Will the **high temp in Austin** be 95-96° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  96: KXHIGHAUS-25AUG22-T89
+  Title:     Will the **high temp in Austin** be <89° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  97: KXHIGHAUS-25AUG22-B93.5
+  Title:     Will the **high temp in Austin** be 93-94° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  98: KXHIGHAUS-25AUG22-B91.5
+  Title:     Will the **high temp in Austin** be 91-92° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET  99: KXHIGHAUS-25AUG22-B89.5
+  Title:     Will the **high temp in Austin** be 89-90° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T04:59:00Z
+--------------------------------------------------------------------------------
+MARKET 100: KXHIGHPHIL-25AUG22-T87
+  Title:     Will the **high temp in Philadelphia** be >87° on Aug 22, 2025?
+  Category:  ''
+  Yes Price: N/A
+  No Price:  N/A
+  Status:    active
+  Close:     2025-08-23T03:59:00Z
+--------------------------------------------------------------------------------

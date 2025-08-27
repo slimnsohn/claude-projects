@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Position Test</title>
+</head>
+<body>
+    <div>
+        <button onclick="testPositions()">Test Position Loading</button>
+        <div id="results"></div>
+    </div>
+    
+    <script>
+        // Load portfolio data
+        const portfolioData = {
+            "positions": {
+                "AAPL": [
+                    {"account_name": "Test Account", "shares": 100}
+                ],
+                "TSLA": [
+                    {"account_name": "Test Account", "shares": 50}
+                ]
+            }
+        };
+        
+        const currentPrices = {
+            "AAPL": 150.0,
+            "TSLA": 250.0
+        };
+        
+        function getTickerPrice(ticker) {
+            return currentPrices[ticker] || 1.0;
+        }
+        
+        function getOwnerFromAccount(accountName) {
+            return 'Test Owner';
+        }
+        
+        function getBrokerageFromAccount(accountName) {
+            return 'Test Brokerage';
+        }
+        
+        function testPositions() {
+            const allPositionsData = [];
+            
+            console.log('Testing position loading...');
+            console.log('Portfolio data:', Object.keys(portfolioData.positions).length, 'tickers');
+            
+            Object.entries(portfolioData.positions).forEach(([ticker, positions]) => {
+                const totalShares = positions.reduce((sum, p) => sum + p.shares, 0);
+                const totalValue = positions.reduce((sum, p) => sum + p.shares * getTickerPrice(ticker), 0);
+                
+                const owners = [...new Set(positions.map(p => getOwnerFromAccount(p.account_name)))];
+                const brokerages = [...new Set(positions.map(p => getBrokerageFromAccount(p.account_name)))];
+                
+                allPositionsData.push({
+                    ticker: ticker,
+                    shares: totalShares,
+                    value: totalValue,
+                    accounts: positions.length,
+                    owner: owners.join(', '),
+                    brokerage: brokerages.join(', ')
+                });
+            });
+            
+            console.log('Processed positions:', allPositionsData.length);
+            
+            const results = document.getElementById('results');
+            results.innerHTML = '<h3>Test Results:</h3>';
+            allPositionsData.forEach(pos => {
+                results.innerHTML += `<p>${pos.ticker}: ${pos.shares} shares, $${pos.value}</p>`;
+            });
+        }
+    </script>
+</body>
+</html>

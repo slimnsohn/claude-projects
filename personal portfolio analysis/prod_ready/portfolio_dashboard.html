@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            background: #2c3e50;
+            border-bottom: 1px solid #34495e;
+        }
+        .nav-item {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .nav-item:hover, .nav-item.active {
+            background: #34495e;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .section-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section-header:hover {
+            background: #e9ecef;
+        }
+        .section-content {
+            padding: 20px;
+            display: none;
+        }
+        .section-content.expanded {
+            display: block;
+        }
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .metric-label {
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        .expand-icon {
+            transition: transform 0.3s;
+        }
+        .expanded .expand-icon {
+            transform: rotate(90deg);
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .position-detail {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+        .sort-indicator {
+            font-size: 12px;
+            color: #999;
+            margin-left: 5px;
+        }
+        th {
+            cursor: pointer;
+            user-select: none;
+        }
+        th:hover {
+            background: #e9ecef;
+        }
+        .clickable-row {
+            cursor: pointer;
+        }
+        .clickable-row:hover {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Portfolio Dashboard</h1>
+            <p>Complete view of your investment portfolio</p>
+        </div>
+        
+        <div class="nav">
+            <div class="nav-item active" onclick="showPage('overview', this)">Overview</div>
+            <div class="nav-item" onclick="showPage('positions', this)">Position Search</div>
+            <div class="nav-item" onclick="showPage('rawdata', this)">Raw Data</div>
+        </div>
+
+        <div class="content">
+            <!-- Overview Page -->
+            <div id="overview" class="page active">
+                <!-- Account Type Summary -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Account Type Summary</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="metric-grid">
+                            <div class="metric-card">
+                                <div class="metric-value" id="retirement-total">$0</div>
+                                <div class="metric-label">Retirement Accounts</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="brokerage-total">$0</div>
+                                <div class="metric-label">Brokerage Accounts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tax Type Summary -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Tax Type Breakdown</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="metric-grid">
+                            <div class="metric-card">
+                                <div class="metric-value" id="pre-tax-total">$0</div>
+                                <div class="metric-label">Pre-Tax</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="roth-total">$0</div>
+                                <div class="metric-label">Roth</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="non-retirement-total">$0</div>
+                                <div class="metric-label">Non-Retirement</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asset Allocation -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Asset Allocation</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="metric-grid">
+                            <div class="metric-card">
+                                <div class="metric-value" id="equity-total">$0</div>
+                                <div class="metric-label">Equity</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="fixed-income-total">$0</div>
+                                <div class="metric-label">Fixed Income</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="other-total">$0</div>
+                                <div class="metric-label">Other</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="equity-ratio">0%</div>
+                                <div class="metric-label">Equity/Fixed Ratio</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Geographic Allocation -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Geographic Allocation</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content">
+                        <div class="metric-grid">
+                            <div class="metric-card">
+                                <div class="metric-value" id="domestic-equity-total">$0</div>
+                                <div class="metric-label">Domestic Equity</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="international-equity-total">$0</div>
+                                <div class="metric-label">International Equity</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="bonds-total">$0</div>
+                                <div class="metric-label">Bonds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sector Breakdown -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Sector Breakdown</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content">
+                        <table class="table" id="sector-table">
+                            <thead>
+                                <tr>
+                                    <th>Sector</th>
+                                    <th>Value</th>
+                                    <th>Weight</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Top Positions -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Top 10 Positions</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content">
+                        <table class="table" id="top-positions-table">
+                            <thead>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Shares</th>
+                                    <th>Market Value</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position Search Page -->
+            <div id="positions" class="page">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="ticker-search" placeholder="Search by ticker symbol (e.g., AAPL)" onkeyup="filterPositions()">
+                </div>
+                
+                <!-- Index Funds/ETFs Table -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Index Funds & ETFs</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content expanded">
+                        <div class="metric-container" style="margin-bottom: 15px;">
+                            <div class="metric-card">
+                                <div class="metric-value" id="index-funds-total">$0</div>
+                                <div class="metric-label">Total Index Funds Value</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="index-funds-count">0</div>
+                                <div class="metric-label">Index Fund Holdings</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="index-funds-percentage">0%</div>
+                                <div class="metric-label">% of Portfolio</div>
+                            </div>
+                        </div>
+                        <table class="table" id="index-funds-table">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortIndexFundsTable('ticker')">Ticker <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortIndexFundsTable('shares')">Total Shares <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortIndexFundsTable('value')">Market Value <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortIndexFundsTable('accounts')">Accounts <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortIndexFundsTable('owner')">Owner <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortIndexFundsTable('brokerage')">Brokerage <span class="sort-indicator">↕</span></th>
+                                </tr>
+                            </thead>
+                            <tbody id="index-funds-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Individual Stocks Table -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Individual Stocks</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content expanded">
+                        <div class="metric-container" style="margin-bottom: 15px;">
+                            <div class="metric-card">
+                                <div class="metric-value" id="stocks-total">$0</div>
+                                <div class="metric-label">Total Stocks Value</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="stocks-count">0</div>
+                                <div class="metric-label">Stock Holdings</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="stocks-percentage">0%</div>
+                                <div class="metric-label">% of Portfolio</div>
+                            </div>
+                        </div>
+                        <table class="table" id="stocks-table">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortStocksTable('ticker')">Ticker <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortStocksTable('shares')">Total Shares <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortStocksTable('value')">Market Value <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortStocksTable('accounts')">Accounts <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortStocksTable('owner')">Owner <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortStocksTable('brokerage')">Brokerage <span class="sort-indicator">↕</span></th>
+                                </tr>
+                            </thead>
+                            <tbody id="stocks-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Position Detail -->
+                <div id="position-detail-section" class="section" style="display: none;">
+                    <div class="section-header">
+                        <h3 id="position-detail-title">Position Detail</h3>
+                    </div>
+                    <div class="section-content expanded">
+                        <div id="position-detail-content"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Raw Data Page -->
+            <div id="rawdata" class="page">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="account-search" placeholder="Search by account name, owner, or brokerage" onkeyup="filterAccounts()">
+                </div>
+                
+                <!-- Account Summary -->
+                <div class="section">
+                    <div class="section-header" onclick="toggleSection(this)">
+                        <h3>Account Summary</h3>
+                        <span class="expand-icon">▶</span>
+                    </div>
+                    <div class="section-content expanded">
+                        <div class="metric-container" style="margin-bottom: 15px;">
+                            <div class="metric-card">
+                                <div class="metric-value" id="total-accounts">0</div>
+                                <div class="metric-label">Total Accounts</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="total-holdings">0</div>
+                                <div class="metric-label">Total Holdings</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value" id="total-balance">$0</div>
+                                <div class="metric-label">Total Balance</div>
+                            </div>
+                        </div>
+                        <table class="table" id="accounts-table">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortAccountsTable('account_id')">Account ID <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('account_name')">Account Name <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('owner')">Owner <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('brokerage')">Brokerage <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('account_type')">Account Type <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('tax_type')">Tax Type <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('holdings_count')">Holdings <span class="sort-indicator">↕</span></th>
+                                    <th onclick="sortAccountsTable('total_value')">Balance <span class="sort-indicator">↕</span></th>
+                                </tr>
+                            </thead>
+                            <tbody id="accounts-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Account Holdings Detail -->
+                <div id="account-detail-section" class="section" style="display: none;">
+                    <div class="section-header">
+                        <h3 id="account-detail-title">Account Holdings</h3>
+                    </div>
+                    <div class="section-content expanded">
+                        <div id="account-detail-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data - replace with actual data from your Python backend
+        const portfolioData = {
+        "accountTypes": {
+                "retirement": 1494321.0333400003,
+                "brokerage": 54469.27571
+        },
+        "taxTypes": {
+                "pre_tax": 1242937.5510900002,
+                "roth": 251383.48225,
+                "non_retirement": 54469.27571
+        },
+        "assetClasses": {
+                "equity": 1500894.5715700001,
+                "fixed_income": 47883.537480000006,
+                "other": 12.2
+        },
+        "equityRatio": 0.97,
+        "geography": {
+                "domestic_equity": 1546990.3090500003,
+                "international_equity": 0.0,
+                "bonds": 1800.0
+        },
+        "geographyWeights": {
+                "domestic_equity": 99.88,
+                "international_equity": 0.0,
+                "bonds": 0.12
+        },
+        "sectors": {
+                "Other": {
+                        "value": 1355300.8990500004,
+                        "weight": 87.51
+                },
+                "Technology": {
+                        "value": 89812.04000000001,
+                        "weight": 5.8
+                },
+                "Consumer Discretionary": {
+                        "value": 59183.979999999996,
+                        "weight": 3.82
+                },
+                "Communication Services": {
+                        "value": 13403.36,
+                        "weight": 0.87
+                },
+                "Consumer Staples": {
+                        "value": 31090.03,
+                        "weight": 2.01
+                }
+        },
+        "topPositions": [
+                {
+                        "ticker": "VFIAX",
+                        "total_shares": 532.056,
+                        "total_market_value": 314487.66048
+                },
+                {
+                        "ticker": "VOO",
+                        "total_shares": 624.0,
+                        "total_market_value": 280800.0
+                },
+                {
+                        "ticker": "VSMAX",
+                        "total_shares": 1025.836,
+                        "total_market_value": 120453.66312
+                },
+                {
+                        "ticker": "VFIFX",
+                        "total_shares": 1972.297,
+                        "total_market_value": 111316.44268
+                },
+                {
+                        "ticker": "VEMAX",
+                        "total_shares": 1650.063,
+                        "total_market_value": 70193.68002
+                },
+                {
+                        "ticker": "VGSLX",
+                        "total_shares": 478.728,
+                        "total_market_value": 61526.12256
+                },
+                {
+                        "ticker": "LLY",
+                        "total_shares": 80.0,
+                        "total_market_value": 56435.200000000004
+                },
+                {
+                        "ticker": "CMG",
+                        "total_shares": 1300.0,
+                        "total_market_value": 55991.0
+                },
+                {
+                        "ticker": "VHYAX",
+                        "total_shares": 1309.279,
+                        "total_market_value": 54321.98571
+                },
+                {
+                        "ticker": "AAPL",
+                        "total_shares": 220.0,
+                        "total_market_value": 49722.2
+                }
+        ],
+        "positions": {
+                "VOO": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 624.0,
+                                "market_value": 280800.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "VSORX": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 532.0,
+                                "market_value": 13300.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "FXNAX": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 180.0,
+                                "market_value": 1800.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "USO": [
+                        {
+                                "account_id": "400",
+                                "account_name": "Nalae Schwab Brokerage",
+                                "shares": 2.0,
+                                "market_value": 147.04,
+                                "account_type": "brokerage",
+                                "tax_type": "non_retirement"
+                        }
+                ],
+                "AAPL": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 140.0,
+                                "market_value": 31641.399999999998,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        },
+                        {
+                                "account_id": "454",
+                                "account_name": "Sammy Schwab Roth IRA",
+                                "shares": 40.0,
+                                "market_value": 9040.4,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        },
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 40.0,
+                                "market_value": 9040.4,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "AMZN": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 200.0,
+                                "market_value": 44762.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        },
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 20.0,
+                                "market_value": 4476.2,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "DIS": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 23.0,
+                                "market_value": 2691.92,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "GOOG": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 120.0,
+                                "market_value": 24022.8,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "GOOGL": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 80.0,
+                                "market_value": 15945.599999999999,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "NKE": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 3.0,
+                                "market_value": 228.78000000000003,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "SPY": [
+                        {
+                                "account_id": "423",
+                                "account_name": "Nalae Schwab Rollover IRA",
+                                "shares": 50.0,
+                                "market_value": 31905.5,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "BP": [
+                        {
+                                "account_id": "858",
+                                "account_name": "Nalae Schwab Roth IRA",
+                                "shares": 40.0,
+                                "market_value": 1355.2,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        },
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 125.0,
+                                "market_value": 4235.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "KO": [
+                        {
+                                "account_id": "858",
+                                "account_name": "Nalae Schwab Roth IRA",
+                                "shares": 93.0,
+                                "market_value": 6575.1,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        },
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 50.0,
+                                "market_value": 3535.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "MCD": [
+                        {
+                                "account_id": "858",
+                                "account_name": "Nalae Schwab Roth IRA",
+                                "shares": 6.0,
+                                "market_value": 1878.48,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "NFLX": [
+                        {
+                                "account_id": "858",
+                                "account_name": "Nalae Schwab Roth IRA",
+                                "shares": 4.0,
+                                "market_value": 4855.44,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "SBUX": [
+                        {
+                                "account_id": "858",
+                                "account_name": "Nalae Schwab Roth IRA",
+                                "shares": 7.0,
+                                "market_value": 626.57,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        },
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 6.0,
+                                "market_value": 537.0600000000001,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "CSEIX": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 890.898,
+                                "market_value": 14664.18108,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "FSSNX": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 526.02,
+                                "market_value": 14954.748599999999,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "FXAIX": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 187.249,
+                                "market_value": 41649.79507,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "RNWGX": [
+                        {
+                                "account_id": "719",
+                                "account_name": "Sammy Fidelity 401k",
+                                "shares": 87.188,
+                                "market_value": 7874.820159999999,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "AAL": [
+                        {
+                                "account_id": "454",
+                                "account_name": "Sammy Schwab Roth IRA",
+                                "shares": 175.0,
+                                "market_value": 2240.0,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "AMC": [
+                        {
+                                "account_id": "454",
+                                "account_name": "Sammy Schwab Roth IRA",
+                                "shares": 10.0,
+                                "market_value": 28.4,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "CMG": [
+                        {
+                                "account_id": "454",
+                                "account_name": "Sammy Schwab Roth IRA",
+                                "shares": 500.0,
+                                "market_value": 21535.0,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        },
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 800.0,
+                                "market_value": 34456.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "LVMUY": [
+                        {
+                                "account_id": "454",
+                                "account_name": "Sammy Schwab Roth IRA",
+                                "shares": 47.613,
+                                "market_value": 5472.162090000001,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "COST": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 15.0,
+                                "market_value": 14918.550000000001,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "LLY": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 80.0,
+                                "market_value": 56435.200000000004,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "META": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 12.0,
+                                "market_value": 8972.64,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "MSFT": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 30.0,
+                                "market_value": 15171.6,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "OLO": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 145.0,
+                                "market_value": 1483.3500000000001,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "PG": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 38.0,
+                                "market_value": 6061.379999999999,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "T": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 200.0,
+                                "market_value": 5856.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "TGT": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 30.0,
+                                "market_value": 2960.7,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "TSLA": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 30.0,
+                                "market_value": 9717.0,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "WBD": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 48.0,
+                                "market_value": 553.92,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "BTC": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 24.0,
+                                "market_value": 1214.8799999999999,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "GBTC": [
+                        {
+                                "account_id": "330",
+                                "account_name": "Sammy Schwab Rollover IRA",
+                                "shares": 120.0,
+                                "market_value": 10774.800000000001,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "VMFXX": [
+                        {
+                                "account_id": "615",
+                                "account_name": "Sammy Vanguard Brokerage",
+                                "shares": 0.25,
+                                "market_value": 0.25,
+                                "account_type": "brokerage",
+                                "tax_type": "non_retirement"
+                        },
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 3.92,
+                                "market_value": 3.92,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        },
+                        {
+                                "account_id": "142",
+                                "account_name": "Sammy SEP IRA",
+                                "shares": 7.85,
+                                "market_value": 7.85,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        },
+                        {
+                                "account_id": "821",
+                                "account_name": "Sammy Rollover Roth IRA",
+                                "shares": 0.18,
+                                "market_value": 0.18,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "VHYAX": [
+                        {
+                                "account_id": "615",
+                                "account_name": "Sammy Vanguard Brokerage",
+                                "shares": 1309.279,
+                                "market_value": 54321.98571,
+                                "account_type": "brokerage",
+                                "tax_type": "non_retirement"
+                        }
+                ],
+                "VFIAX": [
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 166.425,
+                                "market_value": 98370.48900000002,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        },
+                        {
+                                "account_id": "142",
+                                "account_name": "Sammy SEP IRA",
+                                "shares": 31.029,
+                                "market_value": 18340.621320000002,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        },
+                        {
+                                "account_id": "821",
+                                "account_name": "Sammy Rollover Roth IRA",
+                                "shares": 334.602,
+                                "market_value": 197776.55016,
+                                "account_type": "retirement",
+                                "tax_type": "roth"
+                        }
+                ],
+                "VBILX": [
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 4401.484,
+                                "market_value": 46083.537480000006,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "VEMAX": [
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 1650.063,
+                                "market_value": 70193.68002,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "VGSLX": [
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 478.728,
+                                "market_value": 61526.12256,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "VSMAX": [
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 1025.836,
+                                "market_value": 120453.66312,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ],
+                "VFIFX": [
+                        {
+                                "account_id": "763",
+                                "account_name": "Sammy Vanguard Rollover IRA",
+                                "shares": 1972.297,
+                                "market_value": 111316.44268,
+                                "account_type": "retirement",
+                                "tax_type": "pre_tax"
+                        }
+                ]
+        },
+        "owners": {
+                "Nalae": 462535.82999999996,
+                "Sammy": 1086254.4790500002
+        },
+        "brokerages": {
+                "Fidelity": 375043.54491,
+                "Schwab": 395351.47209,
+                "Vanguard": 778395.29205
+        },
+        "price_metadata": {
+                "timestamp": "2025-08-22T08:30:29.477182",
+                "successful_lookups": 44,
+                "total_tickers": 44,
+                "price_file": "C:\\Users\\sammy\\Desktop\\development\\git\\claude-projects\\personal portfolio analysis\\prod_ready\\current_prices.json"
+        }
+};
+
+        // Current market prices
+        const currentPrices = {
+        "META": 747.72,
+        "GOOGL": 199.32,
+        "VFIAX": 591.08,
+        "VHYAX": 41.49,
+        "NKE": 76.26,
+        "DIS": 117.04,
+        "WBD": 11.54,
+        "VOO": 450.0,
+        "AAPL": 226.01,
+        "MSFT": 505.72,
+        "BTC": 50.62,
+        "LVMUY": 114.93,
+        "RNWGX": 90.32,
+        "VMFXX": 1.0,
+        "VEMAX": 42.54,
+        "CSEIX": 16.46,
+        "VFIFX": 56.44,
+        "CMG": 43.07,
+        "FXNAX": 10.0,
+        "OLO": 10.23,
+        "SPY": 638.11,
+        "FXAIX": 222.43,
+        "USO": 73.52,
+        "NFLX": 1213.86,
+        "AMC": 2.84,
+        "GOOG": 200.19,
+        "COST": 994.57,
+        "SBUX": 89.51,
+        "AAL": 12.8,
+        "BP": 33.88,
+        "LLY": 705.44,
+        "KO": 70.7,
+        "FSSNX": 28.43,
+        "TSLA": 323.9,
+        "GBTC": 89.79,
+        "T": 29.28,
+        "AMZN": 223.81,
+        "PG": 159.51,
+        "TGT": 98.69,
+        "VSORX": 25.0,
+        "VSMAX": 117.42,
+        "VBILX": 10.47,
+        "VGSLX": 128.52,
+        "MCD": 313.08
+};
+
+        function getTickerPrice(ticker) {
+            // Return actual market price if available, otherwise default to $1
+            return currentPrices[ticker] || 1.0;
+        }
+
+
+        
+
+        function showPage(pageId, element) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            if (element) element.classList.add('active');
+            
+            // Reload data when specific pages are shown
+            if (pageId === 'positions') {
+                loadAllPositions();
+            } else if (pageId === 'rawdata') {
+                loadRawData();
+            }
+        }
+
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.expand-icon');
+            
+            content.classList.toggle('expanded');
+            header.classList.toggle('expanded');
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function loadOverviewData() {
+            // Account Types
+            document.getElementById('retirement-total').textContent = formatCurrency(portfolioData.accountTypes.retirement);
+            document.getElementById('brokerage-total').textContent = formatCurrency(portfolioData.accountTypes.brokerage);
+
+            // Tax Types
+            document.getElementById('pre-tax-total').textContent = formatCurrency(portfolioData.taxTypes.pre_tax);
+            document.getElementById('roth-total').textContent = formatCurrency(portfolioData.taxTypes.roth);
+            document.getElementById('non-retirement-total').textContent = formatCurrency(portfolioData.taxTypes.non_retirement);
+
+            // Asset Classes
+            document.getElementById('equity-total').textContent = formatCurrency(portfolioData.assetClasses.equity);
+            document.getElementById('fixed-income-total').textContent = formatCurrency(portfolioData.assetClasses.fixed_income);
+            document.getElementById('other-total').textContent = formatCurrency(portfolioData.assetClasses.other);
+            
+            const equityRatio = (portfolioData.assetClasses.equity / (portfolioData.assetClasses.equity + portfolioData.assetClasses.fixed_income) * 100).toFixed(1);
+            document.getElementById('equity-ratio').textContent = equityRatio + '%';
+
+            // Geography
+            document.getElementById('domestic-equity-total').textContent = formatCurrency(portfolioData.geography.domestic_equity);
+            document.getElementById('international-equity-total').textContent = formatCurrency(portfolioData.geography.international_equity);
+            document.getElementById('bonds-total').textContent = formatCurrency(portfolioData.geography.bonds);
+
+            // Sectors
+            const sectorTable = document.querySelector('#sector-table tbody');
+            sectorTable.innerHTML = '';
+            Object.entries(portfolioData.sectors).forEach(([sector, data]) => {
+                const row = sectorTable.insertRow();
+                row.innerHTML = `
+                    <td>${sector}</td>
+                    <td>${formatCurrency(data.value)}</td>
+                    <td>${data.weight}%</td>
+                `;
+            });
+
+            // Top Positions
+            const positionsTable = document.querySelector('#top-positions-table tbody');
+            positionsTable.innerHTML = '';
+            portfolioData.topPositions.forEach(position => {
+                const row = positionsTable.insertRow();
+                row.innerHTML = `
+                    <td>${position.ticker}</td>
+                    <td>${position.shares.toLocaleString()}</td>
+                    <td>${formatCurrency(position.market_value)}</td>
+                `;
+            });
+        }
+
+        // Global variables for sorting and filtering
+        let allPositionsData = [];
+        let indexFundsData = [];
+        let stocksData = [];
+        let currentSortColumn = '';
+        let currentSortDirection = 'asc';
+        
+        function isIndexFund(ticker) {
+            // Categorize tickers into index funds vs individual stocks
+            return (
+                ticker.startsWith('V') && ticker.endsWith('X') || // Vanguard funds
+                ticker.startsWith('F') && ticker.endsWith('X') || // Fidelity funds  
+                ['VOO', 'SPY'].includes(ticker) || // ETFs
+                ['CSEIX', 'RNWGX'].includes(ticker) || // Other mutual funds
+                ticker === 'USO' // Commodity ETF
+            );
+        }
+
+        function loadAllPositions() {
+            allPositionsData = [];
+            indexFundsData = [];
+            stocksData = [];
+            
+            console.log('Loading positions...', Object.keys(portfolioData.positions).length, 'tickers found');
+            
+            // Process all positions from portfolio data
+            Object.entries(portfolioData.positions).forEach(([ticker, positions]) => {
+                const totalShares = positions.reduce((sum, p) => sum + p.shares, 0);
+                const totalValue = positions.reduce((sum, p) => sum + p.shares * getTickerPrice(ticker), 0);
+                
+                // Get unique owners and brokerages
+                const owners = [...new Set(positions.map(p => getOwnerFromAccount(p.account_name)))];
+                const brokerages = [...new Set(positions.map(p => getBrokerageFromAccount(p.account_name)))];
+                
+                const positionData = {
+                    ticker: ticker,
+                    shares: totalShares,
+                    value: totalValue,
+                    accounts: positions.length,
+                    owner: owners.join(', '),
+                    brokerage: brokerages.join(', '),
+                    positions: positions
+                };
+                
+                allPositionsData.push(positionData);
+                
+                // Categorize into index funds vs stocks
+                if (isIndexFund(ticker)) {
+                    indexFundsData.push(positionData);
+                } else {
+                    stocksData.push(positionData);
+                }
+            });
+            
+            console.log('Processed', allPositionsData.length, 'total positions:', indexFundsData.length, 'index funds,', stocksData.length, 'stocks');
+            renderPositionsTable();
+        }
+
+        
+
+        function getOwnerFromAccount(accountName) {
+            if (accountName.toLowerCase().includes('sammy')) return 'Sammy';
+            if (accountName.toLowerCase().includes('nalae')) return 'Nalae';
+            return 'Unknown';
+        }
+
+        function getBrokerageFromAccount(accountName) {
+            // Special case mappings for accounts without brokerage in name
+            const specialAccounts = {
+                'Sammy SEP IRA': 'Vanguard',
+                'Sammy Rollover Roth IRA': 'Vanguard'
+            };
+            
+            // Check special cases first
+            if (specialAccounts[accountName]) {
+                return specialAccounts[accountName];
+            }
+            
+            // Then try to extract from account name
+            if (accountName.toLowerCase().includes('schwab')) return 'Schwab';
+            if (accountName.toLowerCase().includes('fidelity')) return 'Fidelity';
+            if (accountName.toLowerCase().includes('vanguard')) return 'Vanguard';
+            
+            return 'Unknown';
+        }
+
+        function renderPositionsTable() {
+            renderIndexFundsTable();
+            renderStocksTable();
+            updatePositionsSummary();
+        }
+        
+        function renderIndexFundsTable() {
+            const tbody = document.getElementById('index-funds-table-body');
+            const searchTerm = document.getElementById('ticker-search').value.toUpperCase();
+            
+            let filteredData = indexFundsData;
+            if (searchTerm) {
+                filteredData = indexFundsData.filter(pos => 
+                    pos.ticker.toUpperCase().includes(searchTerm)
+                );
+            }
+            
+            tbody.innerHTML = '';
+            
+            filteredData.forEach(position => {
+                const row = tbody.insertRow();
+                row.className = 'clickable-row';
+                row.onclick = () => showPositionDetail(position.ticker);
+                
+                row.innerHTML = `
+                    <td>${position.ticker}</td>
+                    <td>${position.shares.toLocaleString()}</td>
+                    <td>${formatCurrency(position.value)}</td>
+                    <td>${position.accounts}</td>
+                    <td>${position.owner}</td>
+                    <td>${position.brokerage}</td>
+                `;
+            });
+        }
+        
+        function renderStocksTable() {
+            const tbody = document.getElementById('stocks-table-body');
+            const searchTerm = document.getElementById('ticker-search').value.toUpperCase();
+            
+            let filteredData = stocksData;
+            if (searchTerm) {
+                filteredData = stocksData.filter(pos => 
+                    pos.ticker.toUpperCase().includes(searchTerm)
+                );
+            }
+            
+            tbody.innerHTML = '';
+            
+            filteredData.forEach(position => {
+                const row = tbody.insertRow();
+                row.className = 'clickable-row';
+                row.onclick = () => showPositionDetail(position.ticker);
+                
+                row.innerHTML = `
+                    <td>${position.ticker}</td>
+                    <td>${position.shares.toLocaleString()}</td>
+                    <td>${formatCurrency(position.value)}</td>
+                    <td>${position.accounts}</td>
+                    <td>${position.owner}</td>
+                    <td>${position.brokerage}</td>
+                `;
+            });
+        }
+        
+        function updatePositionsSummary() {
+            const indexTotal = indexFundsData.reduce((sum, pos) => sum + pos.value, 0);
+            const stocksTotal = stocksData.reduce((sum, pos) => sum + pos.value, 0);
+            const grandTotal = indexTotal + stocksTotal;
+            
+            // Update index funds summary
+            document.getElementById('index-funds-total').textContent = formatCurrency(indexTotal);
+            document.getElementById('index-funds-count').textContent = indexFundsData.length;
+            document.getElementById('index-funds-percentage').textContent = ((indexTotal / grandTotal) * 100).toFixed(1) + '%';
+            
+            // Update stocks summary
+            document.getElementById('stocks-total').textContent = formatCurrency(stocksTotal);
+            document.getElementById('stocks-count').textContent = stocksData.length;
+            document.getElementById('stocks-percentage').textContent = ((stocksTotal / grandTotal) * 100).toFixed(1) + '%';
+        }
+
+        function sortIndexFundsTable(column) {
+            if (currentSortColumn === column) {
+                currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSortColumn = column;
+                currentSortDirection = 'asc';
+            }
+            
+            indexFundsData.sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle numeric columns
+                if (column === 'shares' || column === 'value' || column === 'accounts') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (currentSortDirection === 'asc') {
+                    return aVal > bVal ? 1 : -1;
+                } else {
+                    return aVal < bVal ? 1 : -1;
+                }
+            });
+            
+            renderIndexFundsTable();
+        }
+        
+        function sortStocksTable(column) {
+            if (currentSortColumn === column) {
+                currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSortColumn = column;
+                currentSortDirection = 'asc';
+            }
+            
+            stocksData.sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle numeric columns
+                if (column === 'shares' || column === 'value' || column === 'accounts') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (currentSortDirection === 'asc') {
+                    return aVal > bVal ? 1 : -1;
+                } else {
+                    return aVal < bVal ? 1 : -1;
+                }
+            });
+            
+            renderStocksTable();
+        }
+
+
+        function filterPositions() {
+            renderPositionsTable();
+        }
+
+        function showPositionDetail(ticker) {
+            const position = portfolioData.positions[ticker];
+            if (!position) return;
+            
+            const detailSection = document.getElementById('position-detail-section');
+            const detailTitle = document.getElementById('position-detail-title');
+            const detailContent = document.getElementById('position-detail-content');
+            
+            const totalShares = position.reduce((sum, p) => sum + p.shares, 0);
+            const totalValue = position.reduce((sum, p) => sum + p.shares * getTickerPrice(ticker), 0);
+            
+            detailTitle.textContent = `${ticker} - Position Detail`;
+            
+            let html = `
+                <div class="position-detail">
+                    <h4>Summary</h4>
+                    <p><strong>Total Shares:</strong> ${totalShares.toLocaleString()}</p>
+                    <p><strong>Total Value:</strong> ${formatCurrency(totalValue)}</p>
+                    <p><strong>Price per Share:</strong> ${formatCurrency(getTickerPrice(ticker))}</p>
+                    
+                    <h4>Account Breakdown:</h4>
+            `;
+            
+            position.forEach(account => {
+                const accountValue = account.shares * getTickerPrice(ticker);
+                html += `
+                    <div style="margin: 10px 0; padding: 10px; background: white; border-radius: 4px; border: 1px solid #ddd;">
+                        <strong>${account.account_name}</strong><br>
+                        <small>${account.account_type} - ${account.tax_type}</small><br>
+                        Shares: ${account.shares.toLocaleString()} | Value: ${formatCurrency(accountValue)}
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            detailContent.innerHTML = html;
+            detailSection.style.display = 'block';
+        }
+
+        // Global variables for raw data
+        let accountsData = [];
+
+        function loadRawData() {
+            accountsData = [];
+            
+            // Process all positions to create account-level data
+            const accountMap = new Map();
+            
+            Object.entries(portfolioData.positions).forEach(([ticker, positions]) => {
+                positions.forEach(position => {
+                    const accountKey = position.account_id;
+                    
+                    if (!accountMap.has(accountKey)) {
+                        accountMap.set(accountKey, {
+                            account_id: position.account_id,
+                            account_name: position.account_name,
+                            account_type: position.account_type,
+                            tax_type: position.tax_type,
+                            owner: getOwnerFromAccount(position.account_name),
+                            brokerage: getBrokerageFromAccount(position.account_name),
+                            holdings: [],
+                            total_value: 0
+                        });
+                    }
+                    
+                    const account = accountMap.get(accountKey);
+                    const holdingValue = position.shares * getTickerPrice(ticker);
+                    
+                    account.holdings.push({
+                        ticker: ticker,
+                        shares: position.shares,
+                        price: getTickerPrice(ticker),
+                        value: holdingValue
+                    });
+                    
+                    account.total_value += holdingValue;
+                });
+            });
+            
+            accountsData = Array.from(accountMap.values());
+            accountsData.forEach(account => {
+                account.holdings_count = account.holdings.length;
+            });
+            
+            console.log('Loaded', accountsData.length, 'accounts for raw data view');
+            renderAccountsTable();
+        }
+
+        function renderAccountsTable() {
+            const tbody = document.getElementById('accounts-table-body');
+            const searchTerm = document.getElementById('account-search').value.toLowerCase();
+            
+            let filteredData = accountsData;
+            if (searchTerm) {
+                filteredData = accountsData.filter(account => 
+                    account.account_name.toLowerCase().includes(searchTerm) ||
+                    account.owner.toLowerCase().includes(searchTerm) ||
+                    account.brokerage.toLowerCase().includes(searchTerm) ||
+                    account.account_id.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            tbody.innerHTML = '';
+            
+            filteredData.forEach(account => {
+                const row = tbody.insertRow();
+                row.className = 'clickable-row';
+                row.onclick = () => showAccountDetail(account.account_id);
+                
+                row.innerHTML = `
+                    <td>${account.account_id}</td>
+                    <td>${account.account_name}</td>
+                    <td>${account.owner}</td>
+                    <td>${account.brokerage}</td>
+                    <td>${account.account_type}</td>
+                    <td>${account.tax_type}</td>
+                    <td>${account.holdings_count}</td>
+                    <td>${formatCurrency(account.total_value)}</td>
+                `;
+            });
+            
+            updateRawDataSummary(filteredData);
+        }
+
+        function updateRawDataSummary(filteredData = accountsData) {
+            const totalHoldings = filteredData.reduce((sum, account) => sum + account.holdings_count, 0);
+            const totalBalance = filteredData.reduce((sum, account) => sum + account.total_value, 0);
+            
+            document.getElementById('total-accounts').textContent = filteredData.length;
+            document.getElementById('total-holdings').textContent = totalHoldings;
+            document.getElementById('total-balance').textContent = formatCurrency(totalBalance);
+        }
+
+        function showAccountDetail(accountId) {
+            const account = accountsData.find(a => a.account_id === accountId);
+            if (!account) return;
+            
+            const detailSection = document.getElementById('account-detail-section');
+            const detailTitle = document.getElementById('account-detail-title');
+            const detailContent = document.getElementById('account-detail-content');
+            
+            detailTitle.textContent = `${account.account_name} - Holdings Detail`;
+            
+            let html = `
+                <div class="position-detail">
+                    <h4>Account Information</h4>
+                    <div class="metric-container">
+                        <div class="metric-card">
+                            <div class="metric-value">${account.account_id}</div>
+                            <div class="metric-label">Account ID</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">${account.owner}</div>
+                            <div class="metric-label">Owner</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">${account.brokerage}</div>
+                            <div class="metric-label">Brokerage</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">${account.account_type}</div>
+                            <div class="metric-label">Account Type</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">${account.tax_type}</div>
+                            <div class="metric-label">Tax Type</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">${formatCurrency(account.total_value)}</div>
+                            <div class="metric-label">Total Balance</div>
+                        </div>
+                    </div>
+                    
+                    <h4>Holdings (${account.holdings.length} positions)</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Ticker</th>
+                                <th>Shares</th>
+                                <th>Price</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+            
+            // Sort holdings by value descending
+            account.holdings.sort((a, b) => b.value - a.value);
+            
+            account.holdings.forEach(holding => {
+                html += `
+                    <tr>
+                        <td>${holding.ticker}</td>
+                        <td>${holding.shares.toLocaleString()}</td>
+                        <td>${formatCurrency(holding.price)}</td>
+                        <td>${formatCurrency(holding.value)}</td>
+                    </tr>
+                `;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            
+            detailContent.innerHTML = html;
+            detailSection.style.display = 'block';
+        }
+
+        function sortAccountsTable(column) {
+            if (currentSortColumn === column) {
+                currentSortDirection = currentSortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSortColumn = column;
+                currentSortDirection = 'asc';
+            }
+            
+            accountsData.sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+                
+                // Handle numeric columns
+                if (column === 'total_value' || column === 'holdings_count') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                }
+                
+                if (currentSortDirection === 'asc') {
+                    return aVal > bVal ? 1 : -1;
+                } else {
+                    return aVal < bVal ? 1 : -1;
+                }
+            });
+            
+            renderAccountsTable();
+        }
+
+        function filterAccounts() {
+            renderAccountsTable();
+        }
+
+        // Load data on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadOverviewData();
+            loadAllPositions();
+            loadRawData();
+        });
+    </script>
+</body>
+</html>

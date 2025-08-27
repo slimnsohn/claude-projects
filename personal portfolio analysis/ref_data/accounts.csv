@@ -1,0 +1,13 @@
+account_id,account_name,account_type,tax_type
+454,Sammy Schwab Roth IRA,retirement,roth
+872,Sammy Schwab Brokerage,brokerage,non_retirement
+330,Sammy Schwab Rollover IRA,retirement,pre_tax
+719,Sammy Fidelity 401k,retirement,pre_tax
+720,Nalae Fidelity 401k,retirement,pre_tax
+615,Sammy Vanguard Brokerage,brokerage,non_retirement
+763,Sammy Vanguard Rollover IRA,retirement,pre_tax
+821,Sammy Rollover Roth IRA,retirement,roth
+142,Sammy SEP IRA,retirement,pre_tax
+400,Nalae Schwab Brokerage,brokerage,non_retirement
+423,Nalae Schwab Rollover IRA,retirement,pre_tax
+858,Nalae Schwab Roth IRA,retirement,roth

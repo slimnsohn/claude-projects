@@ -258,6 +258,9 @@ class Fantasy2025Projector:
         # Engineer features for 2024
         data_2024 = self.engineer_features(data_2024)
         
+        # Add 2024 draft costs
+        data_2024 = self.add_draft_costs(data_2024)
+        
         # Prepare features
         X_2024 = data_2024[self.features].fillna(0)
         
@@ -290,6 +293,40 @@ class Fantasy2025Projector:
         print(f"Generated projections for {len(projections)} players")
         
         return projections
+    
+    def add_draft_costs(self, data):
+        """Add 2024 draft costs to the projection data."""
+        print("Adding 2024 draft costs...")
+        
+        # Load player data with draft history
+        try:
+            with open('html_reports/data/players.json', 'r', encoding='utf-8') as f:
+                players_data = json.load(f)
+            
+            # Create mapping of player names to 2024 draft costs
+            draft_costs = {}
+            
+            for player_id, player_info in players_data['players'].items():
+                player_name = player_info['player_name']
+                draft_history = player_info.get('yahoo_draft_history', [])
+                
+                # Find 2024 draft cost
+                for draft in draft_history:
+                    if draft.get('year') == 2024:
+                        draft_costs[player_name] = draft.get('draft_cost', 0)
+                        break
+            
+            # Add draft costs to data
+            data['draft_cost_2024'] = data['personName'].map(draft_costs).fillna(0)
+            
+            drafted_players = len([cost for cost in draft_costs.values() if cost > 0])
+            print(f"Found 2024 draft costs for {drafted_players} players")
+            
+        except Exception as e:
+            print(f"Warning: Could not load draft costs - {e}")
+            data['draft_cost_2024'] = 0
+        
+        return data
     
     def analyze_projection_categories(self, projections):
         """Analyze projections by player categories."""
@@ -609,6 +646,8 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
             </div>
 
             <div class="nav-links">
+                <a href="live_draft_tool.html" class="nav-link">🔴 Live Draft</a>
+                <a href="projections_explanation.html" class="nav-link">🔬 Model Explanation</a>
                 <a href="index.html" class="nav-link">🏠 Dashboard</a>
                 <a href="simple_working.html" class="nav-link">👥 Player Database</a>
                 <a href="owner_analysis.html" class="nav-link">📊 Owner Analysis</a>
@@ -659,6 +698,7 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
                             <th>2024 Value</th>
                             <th>2025 Projection</th>
                             <th>Improvement</th>
+                            <th>2024 Cost</th>
                             <th>Age</th>
                             <th>Experience</th>
                             <th>Key Strengths</th>
@@ -687,6 +727,9 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
         
         key_strengths = ', '.join(strengths[:3]) if strengths else 'Balanced'
         
+        draft_cost = player.get('draft_cost_2024', 0)
+        cost_display = f"${draft_cost:.0f}" if draft_cost > 0 else "-"
+        
         html_content += f'''
                         <tr>
                             <td><strong>{i}</strong></td>
@@ -694,6 +737,7 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
                             <td>{player['fantasy_value']:.0f}</td>
                             <td class="projection-value">{player['projected_2025_value']:.0f}</td>
                             <td class="improvement">+{improvement:.0f}</td>
+                            <td>{cost_display}</td>
                             <td>{age}</td>
                             <td>{exp}</td>
                             <td>{key_strengths}</td>
@@ -723,6 +767,7 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
                                 <th>Team</th>
                                 <th>2025 Projection</th>
                                 <th>2024 Actual</th>
+                                <th>2024 Cost</th>
                                 <th>Archetype</th>
                                 <th>Age</th>
                                 <th>Games</th>
@@ -736,6 +781,9 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
             rank = start_rank + i
             age = int(player['estimated_age'])
             
+            draft_cost = player.get('draft_cost_2024', 0)
+            cost_display = f"${draft_cost:.0f}" if draft_cost > 0 else "-"
+            
             html_content += f'''
                             <tr>
                                 <td><strong>{rank}</strong></td>
@@ -743,6 +791,7 @@ def create_html_report(projector, projections, breakouts, tiers, model_results, 
                                 <td>{player['teamTricode']}</td>
                                 <td class="projection-value">{player['projected_2025_value']:.0f}</td>
                                 <td>{player['fantasy_value']:.0f}</td>
+                                <td>{cost_display}</td>
                                 <td>{player['archetype']}</td>
                                 <td>{age}</td>
                                 <td>{player['games_played']:.0f}</td>

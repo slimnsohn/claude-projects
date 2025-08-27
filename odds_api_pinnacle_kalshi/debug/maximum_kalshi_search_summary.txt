@@ -1,0 +1,55 @@
+MAXIMUM KALSHI MARKET SEARCH RESULTS
+Timestamp: 2025-08-21T16:39:14.400383+00:00
+Total Markets Found: 500
+============================================================
+
+EXACT BASEBALL MATCHES: 0
+----------------------------------------
+
+POTENTIAL SPORTS (45-55% pricing): 15
+----------------------------------------
+KXNETFLIXRANKMOVIE-25AUG25-TTAJS: Top Netflix movie on Aug 25, 2025?
+  Prices: 0.0% / 45.0%
+
+KXWTAMATCH-25AUG21NOSALE-NOS: Will Linda Noskova win the Noskova vs Alexandrova match?
+  Prices: 46.0% / 52.0%
+
+KXWTAMATCH-25AUG21NOSALE-ALE: Will Ekaterina Alexandrova win the Noskova vs Alexandrova match?
+  Prices: 52.0% / 46.0%
+
+KXATPMATCH-25AUG21YUNVAN-YUN: Will Yunchaokete Bu win the Bu vs Van de Zandschulp match?
+  Prices: 50.0% / 48.0%
+
+KXATPMATCH-25AUG21YUNVAN-VAN: Will Botic Van de Zandschulp win the Bu vs Van de Zandschulp match?
+  Prices: 48.0% / 51.0%
+
+KXWTAMATCH-25AUG21PARSRA-SRA: Will Rebecca Sramkova win the Parks vs Sramkova match?
+  Prices: 49.0% / 50.0%
+
+KXWTAMATCH-25AUG21PARSRA-PAR: Will Alycia Parks win the Parks vs Sramkova match?
+  Prices: 49.0% / 49.0%
+
+KXATPMATCH-25AUG21MUNFUC-FUC: Will Marton Fucsovics win the Munar vs Fucsovics match?
+  Prices: 45.0% / 53.0%
+
+KXATPMATCH-25AUG21MUNFUC-MUN: Will Jaume Munar win the Munar vs Fucsovics match?
+  Prices: 53.0% / 45.0%
+
+KXHIGHNY-25AUG22-B83.5: Will the **high temp in NYC** be 83-84° on Aug 22, 2025?
+  Prices: 45.0% / 54.0%
+
+KXHIGHAUS-25AUG22-B91.5: Will the **high temp in Austin** be 91-92° on Aug 22, 2025?
+  Prices: 15.0% / 53.0%
+
+KXHIGHPHIL-25AUG22-B82.5: Will the **high temp in Philadelphia** be 82-83° on Aug 22, 2025?
+  Prices: 43.0% / 54.0%
+
+KXHIGHLAX-25AUG22-B82.5: Will the **high temp in LA** be 82-83° on Aug 22, 2025?
+  Prices: 20.0% / 48.0%
+
+KXHIGHMIA-25AUG22-B93.5: Will the **high temp in Miami** be 93-94° on Aug 22, 2025?
+  Prices: 25.0% / 53.0%
+
+KXHIGHDEN-25AUG22-B87.5: Will the **high temp in Denver** be 87-88° on Aug 22, 2025?
+  Prices: 18.0% / 48.0%
+

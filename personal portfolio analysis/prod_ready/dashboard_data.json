@@ -1,0 +1,654 @@
+{
+  "accountTypes": {
+    "retirement": 1494321.0333400003,
+    "brokerage": 54469.27571
+  },
+  "taxTypes": {
+    "pre_tax": 1242937.5510900002,
+    "roth": 251383.48225,
+    "non_retirement": 54469.27571
+  },
+  "assetClasses": {
+    "equity": 1500894.5715700001,
+    "fixed_income": 47883.537480000006,
+    "other": 12.2
+  },
+  "equityRatio": 0.97,
+  "geography": {
+    "domestic_equity": 1546990.3090500003,
+    "international_equity": 0.0,
+    "bonds": 1800.0
+  },
+  "geographyWeights": {
+    "domestic_equity": 99.88,
+    "international_equity": 0.0,
+    "bonds": 0.12
+  },
+  "sectors": {
+    "Other": {
+      "value": 1355300.8990500004,
+      "weight": 87.51
+    },
+    "Technology": {
+      "value": 89812.04000000001,
+      "weight": 5.8
+    },
+    "Consumer Discretionary": {
+      "value": 59183.979999999996,
+      "weight": 3.82
+    },
+    "Communication Services": {
+      "value": 13403.36,
+      "weight": 0.87
+    },
+    "Consumer Staples": {
+      "value": 31090.03,
+      "weight": 2.01
+    }
+  },
+  "topPositions": [
+    {
+      "ticker": "VFIAX",
+      "total_shares": 532.056,
+      "total_market_value": 314487.66048
+    },
+    {
+      "ticker": "VOO",
+      "total_shares": 624.0,
+      "total_market_value": 280800.0
+    },
+    {
+      "ticker": "VSMAX",
+      "total_shares": 1025.836,
+      "total_market_value": 120453.66312
+    },
+    {
+      "ticker": "VFIFX",
+      "total_shares": 1972.297,
+      "total_market_value": 111316.44268
+    },
+    {
+      "ticker": "VEMAX",
+      "total_shares": 1650.063,
+      "total_market_value": 70193.68002
+    },
+    {
+      "ticker": "VGSLX",
+      "total_shares": 478.728,
+      "total_market_value": 61526.12256
+    },
+    {
+      "ticker": "LLY",
+      "total_shares": 80.0,
+      "total_market_value": 56435.200000000004
+    },
+    {
+      "ticker": "CMG",
+      "total_shares": 1300.0,
+      "total_market_value": 55991.0
+    },
+    {
+      "ticker": "VHYAX",
+      "total_shares": 1309.279,
+      "total_market_value": 54321.98571
+    },
+    {
+      "ticker": "AAPL",
+      "total_shares": 220.0,
+      "total_market_value": 49722.2
+    }
+  ],
+  "positions": {
+    "VOO": [
+      {
+        "account_id": "720",
+        "account_name": "Nalae Fidelity 401k",
+        "shares": 624.0,
+        "market_value": 280800.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "VSORX": [
+      {
+        "account_id": "720",
+        "account_name": "Nalae Fidelity 401k",
+        "shares": 532.0,
+        "market_value": 13300.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "FXNAX": [
+      {
+        "account_id": "720",
+        "account_name": "Nalae Fidelity 401k",
+        "shares": 180.0,
+        "market_value": 1800.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "USO": [
+      {
+        "account_id": "400",
+        "account_name": "Nalae Schwab Brokerage",
+        "shares": 2.0,
+        "market_value": 147.04,
+        "account_type": "brokerage",
+        "tax_type": "non_retirement"
+      }
+    ],
+    "AAPL": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 140.0,
+        "market_value": 31641.399999999998,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      },
+      {
+        "account_id": "454",
+        "account_name": "Sammy Schwab Roth IRA",
+        "shares": 40.0,
+        "market_value": 9040.4,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      },
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 40.0,
+        "market_value": 9040.4,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "AMZN": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 200.0,
+        "market_value": 44762.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      },
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 20.0,
+        "market_value": 4476.2,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "DIS": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 23.0,
+        "market_value": 2691.92,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "GOOG": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 120.0,
+        "market_value": 24022.8,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "GOOGL": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 80.0,
+        "market_value": 15945.599999999999,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "NKE": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 3.0,
+        "market_value": 228.78000000000003,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "SPY": [
+      {
+        "account_id": "423",
+        "account_name": "Nalae Schwab Rollover IRA",
+        "shares": 50.0,
+        "market_value": 31905.5,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "BP": [
+      {
+        "account_id": "858",
+        "account_name": "Nalae Schwab Roth IRA",
+        "shares": 40.0,
+        "market_value": 1355.2,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      },
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 125.0,
+        "market_value": 4235.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "KO": [
+      {
+        "account_id": "858",
+        "account_name": "Nalae Schwab Roth IRA",
+        "shares": 93.0,
+        "market_value": 6575.1,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      },
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 50.0,
+        "market_value": 3535.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "MCD": [
+      {
+        "account_id": "858",
+        "account_name": "Nalae Schwab Roth IRA",
+        "shares": 6.0,
+        "market_value": 1878.48,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "NFLX": [
+      {
+        "account_id": "858",
+        "account_name": "Nalae Schwab Roth IRA",
+        "shares": 4.0,
+        "market_value": 4855.44,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "SBUX": [
+      {
+        "account_id": "858",
+        "account_name": "Nalae Schwab Roth IRA",
+        "shares": 7.0,
+        "market_value": 626.57,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      },
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 6.0,
+        "market_value": 537.0600000000001,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "CSEIX": [
+      {
+        "account_id": "719",
+        "account_name": "Sammy Fidelity 401k",
+        "shares": 890.898,
+        "market_value": 14664.18108,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "FSSNX": [
+      {
+        "account_id": "719",
+        "account_name": "Sammy Fidelity 401k",
+        "shares": 526.02,
+        "market_value": 14954.748599999999,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "FXAIX": [
+      {
+        "account_id": "719",
+        "account_name": "Sammy Fidelity 401k",
+        "shares": 187.249,
+        "market_value": 41649.79507,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "RNWGX": [
+      {
+        "account_id": "719",
+        "account_name": "Sammy Fidelity 401k",
+        "shares": 87.188,
+        "market_value": 7874.820159999999,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "AAL": [
+      {
+        "account_id": "454",
+        "account_name": "Sammy Schwab Roth IRA",
+        "shares": 175.0,
+        "market_value": 2240.0,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "AMC": [
+      {
+        "account_id": "454",
+        "account_name": "Sammy Schwab Roth IRA",
+        "shares": 10.0,
+        "market_value": 28.4,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "CMG": [
+      {
+        "account_id": "454",
+        "account_name": "Sammy Schwab Roth IRA",
+        "shares": 500.0,
+        "market_value": 21535.0,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      },
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 800.0,
+        "market_value": 34456.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "LVMUY": [
+      {
+        "account_id": "454",
+        "account_name": "Sammy Schwab Roth IRA",
+        "shares": 47.613,
+        "market_value": 5472.162090000001,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "COST": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 15.0,
+        "market_value": 14918.550000000001,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "LLY": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 80.0,
+        "market_value": 56435.200000000004,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "META": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 12.0,
+        "market_value": 8972.64,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "MSFT": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 30.0,
+        "market_value": 15171.6,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "OLO": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 145.0,
+        "market_value": 1483.3500000000001,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "PG": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 38.0,
+        "market_value": 6061.379999999999,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "T": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 200.0,
+        "market_value": 5856.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "TGT": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 30.0,
+        "market_value": 2960.7,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "TSLA": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 30.0,
+        "market_value": 9717.0,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "WBD": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 48.0,
+        "market_value": 553.92,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "BTC": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 24.0,
+        "market_value": 1214.8799999999999,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "GBTC": [
+      {
+        "account_id": "330",
+        "account_name": "Sammy Schwab Rollover IRA",
+        "shares": 120.0,
+        "market_value": 10774.800000000001,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "VMFXX": [
+      {
+        "account_id": "615",
+        "account_name": "Sammy Vanguard Brokerage",
+        "shares": 0.25,
+        "market_value": 0.25,
+        "account_type": "brokerage",
+        "tax_type": "non_retirement"
+      },
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 3.92,
+        "market_value": 3.92,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      },
+      {
+        "account_id": "142",
+        "account_name": "Sammy SEP IRA",
+        "shares": 7.85,
+        "market_value": 7.85,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      },
+      {
+        "account_id": "821",
+        "account_name": "Sammy Rollover Roth IRA",
+        "shares": 0.18,
+        "market_value": 0.18,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "VHYAX": [
+      {
+        "account_id": "615",
+        "account_name": "Sammy Vanguard Brokerage",
+        "shares": 1309.279,
+        "market_value": 54321.98571,
+        "account_type": "brokerage",
+        "tax_type": "non_retirement"
+      }
+    ],
+    "VFIAX": [
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 166.425,
+        "market_value": 98370.48900000002,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      },
+      {
+        "account_id": "142",
+        "account_name": "Sammy SEP IRA",
+        "shares": 31.029,
+        "market_value": 18340.621320000002,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      },
+      {
+        "account_id": "821",
+        "account_name": "Sammy Rollover Roth IRA",
+        "shares": 334.602,
+        "market_value": 197776.55016,
+        "account_type": "retirement",
+        "tax_type": "roth"
+      }
+    ],
+    "VBILX": [
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 4401.484,
+        "market_value": 46083.537480000006,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "VEMAX": [
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 1650.063,
+        "market_value": 70193.68002,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "VGSLX": [
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 478.728,
+        "market_value": 61526.12256,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "VSMAX": [
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 1025.836,
+        "market_value": 120453.66312,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ],
+    "VFIFX": [
+      {
+        "account_id": "763",
+        "account_name": "Sammy Vanguard Rollover IRA",
+        "shares": 1972.297,
+        "market_value": 111316.44268,
+        "account_type": "retirement",
+        "tax_type": "pre_tax"
+      }
+    ]
+  },
+  "owners": {
+    "Nalae": 462535.82999999996,
+    "Sammy": 1086254.4790500002
+  },
+  "brokerages": {
+    "Fidelity": 375043.54491,
+    "Schwab": 395351.47209,
+    "Vanguard": 778395.29205
+  },
+  "price_metadata": {
+    "timestamp": "2025-08-22T11:48:55.939529",
+    "successful_lookups": 44,
+    "total_tickers": 44,
+    "price_file": "C:\\Users\\sammy\\Desktop\\development\\git\\claude-projects\\personal portfolio analysis\\prod_ready\\current_prices.json"
+  }
+}

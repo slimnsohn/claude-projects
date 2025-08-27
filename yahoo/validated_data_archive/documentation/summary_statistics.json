@@ -1,0 +1,709 @@
+{
+  "data_overview": {
+    "total_records": 158,
+    "year_range": "2010-2024",
+    "seasons_count": 15,
+    "unique_teams": 50
+  },
+  "team_participation": {
+    "slimpickens": {
+      "years_played": [
+        2023,
+        2024
+      ],
+      "seasons_count": 2,
+      "first_year": 2023,
+      "last_year": 2024
+    },
+    "NZallBlacks": {
+      "years_played": [
+        2010,
+        2011,
+        2012
+      ],
+      "seasons_count": 3,
+      "first_year": 2010,
+      "last_year": 2012
+    },
+    "Shaqtin a Fool": {
+      "years_played": [
+        2013,
+        2014
+      ],
+      "seasons_count": 2,
+      "first_year": 2013,
+      "last_year": 2014
+    },
+    "Here4 the Deng Bang": {
+      "years_played": [
+        2011
+      ],
+      "seasons_count": 1,
+      "first_year": 2011,
+      "last_year": 2011
+    },
+    "RapscaliLion": {
+      "years_played": [
+        2013
+      ],
+      "seasons_count": 1,
+      "first_year": 2013,
+      "last_year": 2013
+    },
+    "browNfriends": {
+      "years_played": [
+        2013
+      ],
+      "seasons_count": 1,
+      "first_year": 2013,
+      "last_year": 2013
+    },
+    "Tormund's Icy Boner": {
+      "years_played": [
+        2017
+      ],
+      "seasons_count": 1,
+      "first_year": 2017,
+      "last_year": 2017
+    },
+    "Rex Ryan's Nightmare": {
+      "years_played": [
+        2011
+      ],
+      "seasons_count": 1,
+      "first_year": 2011,
+      "last_year": 2011
+    },
+    "Dirty South Asia": {
+      "years_played": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "seasons_count": 9,
+      "first_year": 2012,
+      "last_year": 2020
+    },
+    "#6": {
+      "years_played": [
+        2012
+      ],
+      "seasons_count": 1,
+      "first_year": 2012,
+      "last_year": 2012
+    },
+    "Suns Out Guns Out": {
+      "years_played": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "seasons_count": 4,
+      "first_year": 2020,
+      "last_year": 2023
+    },
+    "Wright Supremacy": {
+      "years_played": [
+        2011
+      ],
+      "seasons_count": 1,
+      "first_year": 2011,
+      "last_year": 2011
+    },
+    "Make it Drizzle": {
+      "years_played": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "seasons_count": 5,
+      "first_year": 2015,
+      "last_year": 2019
+    },
+    "hersheysquirt": {
+      "years_played": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 15,
+      "first_year": 2010,
+      "last_year": 2024
+    },
+    "White Chocolate": {
+      "years_played": [
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "seasons_count": 4,
+      "first_year": 2017,
+      "last_year": 2020
+    },
+    "curry cavaliers": {
+      "years_played": [
+        2018
+      ],
+      "seasons_count": 1,
+      "first_year": 2018,
+      "last_year": 2018
+    },
+    "House Lannister": {
+      "years_played": [
+        2013
+      ],
+      "seasons_count": 1,
+      "first_year": 2013,
+      "last_year": 2013
+    },
+    "2012 easternAllstars": {
+      "years_played": [
+        2016,
+        2017
+      ],
+      "seasons_count": 2,
+      "first_year": 2016,
+      "last_year": 2017
+    },
+    "Gimme The Hot Sauce": {
+      "years_played": [
+        2011
+      ],
+      "seasons_count": 1,
+      "first_year": 2011,
+      "last_year": 2011
+    },
+    "lawless": {
+      "years_played": [
+        2010,
+        2011
+      ],
+      "seasons_count": 2,
+      "first_year": 2010,
+      "last_year": 2011
+    },
+    "Too Many Cooks": {
+      "years_played": [
+        2014
+      ],
+      "seasons_count": 1,
+      "first_year": 2014,
+      "last_year": 2014
+    },
+    "dlo": {
+      "years_played": [
+        2010
+      ],
+      "seasons_count": 1,
+      "first_year": 2010,
+      "last_year": 2010
+    },
+    "The Krappers": {
+      "years_played": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 15,
+      "first_year": 2010,
+      "last_year": 2024
+    },
+    "Riggin for Wiggins": {
+      "years_played": [
+        2013
+      ],
+      "seasons_count": 1,
+      "first_year": 2013,
+      "last_year": 2013
+    },
+    "Showty Me": {
+      "years_played": [
+        2010,
+        2011
+      ],
+      "seasons_count": 2,
+      "first_year": 2010,
+      "last_year": 2011
+    },
+    "Get Schwifty": {
+      "years_played": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "seasons_count": 5,
+      "first_year": 2015,
+      "last_year": 2019
+    },
+    "Sarcastaballers": {
+      "years_played": [
+        2012
+      ],
+      "seasons_count": 1,
+      "first_year": 2012,
+      "last_year": 2012
+    },
+    "Chicago Lakers": {
+      "years_played": [
+        2012,
+        2013,
+        2014
+      ],
+      "seasons_count": 3,
+      "first_year": 2012,
+      "last_year": 2014
+    },
+    "Los Angeles Lakers": {
+      "years_played": [
+        2012
+      ],
+      "seasons_count": 1,
+      "first_year": 2012,
+      "last_year": 2012
+    },
+    "Flat Earth Society": {
+      "years_played": [
+        2024
+      ],
+      "seasons_count": 1,
+      "first_year": 2024,
+      "last_year": 2024
+    },
+    "joeJiggity": {
+      "years_played": [
+        2014
+      ],
+      "seasons_count": 1,
+      "first_year": 2014,
+      "last_year": 2014
+    },
+    "Bzzzzznatch": {
+      "years_played": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 9,
+      "first_year": 2016,
+      "last_year": 2024
+    },
+    "LetsBall": {
+      "years_played": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 13,
+      "first_year": 2012,
+      "last_year": 2024
+    },
+    "What what what's your fantasy": {
+      "years_played": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 4,
+      "first_year": 2021,
+      "last_year": 2024
+    },
+    "Silky J's": {
+      "years_played": [
+        2012
+      ],
+      "seasons_count": 1,
+      "first_year": 2012,
+      "last_year": 2012
+    },
+    "Mr. Wiggles": {
+      "years_played": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "seasons_count": 5,
+      "first_year": 2010,
+      "last_year": 2014
+    },
+    "jin's Team": {
+      "years_played": [
+        2017
+      ],
+      "seasons_count": 1,
+      "first_year": 2017,
+      "last_year": 2017
+    },
+    "KATmandu": {
+      "years_played": [
+        2020
+      ],
+      "seasons_count": 1,
+      "first_year": 2020,
+      "last_year": 2020
+    },
+    "Ja and Order": {
+      "years_played": [
+        2022
+      ],
+      "seasons_count": 1,
+      "first_year": 2022,
+      "last_year": 2022
+    },
+    "The First Order": {
+      "years_played": [
+        2015
+      ],
+      "seasons_count": 1,
+      "first_year": 2015,
+      "last_year": 2015
+    },
+    "forever Young": {
+      "years_played": [
+        2019
+      ],
+      "seasons_count": 1,
+      "first_year": 2019,
+      "last_year": 2019
+    },
+    "Lebrocalypse": {
+      "years_played": [
+        2010
+      ],
+      "seasons_count": 1,
+      "first_year": 2010,
+      "last_year": 2010
+    },
+    "Big Baller Brand": {
+      "years_played": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 4,
+      "first_year": 2021,
+      "last_year": 2024
+    },
+    "Chris Kaman HisPants": {
+      "years_played": [
+        2010,
+        2011
+      ],
+      "seasons_count": 2,
+      "first_year": 2010,
+      "last_year": 2011
+    },
+    "mike Lawwwwrrry": {
+      "years_played": [
+        2015
+      ],
+      "seasons_count": 1,
+      "first_year": 2015,
+      "last_year": 2015
+    },
+    "Team Hoof Hearted": {
+      "years_played": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 5,
+      "first_year": 2020,
+      "last_year": 2024
+    },
+    "Brow Shakalaka": {
+      "years_played": [
+        2021
+      ],
+      "seasons_count": 1,
+      "first_year": 2021,
+      "last_year": 2021
+    },
+    "Double Trouble": {
+      "years_played": [
+        2010
+      ],
+      "seasons_count": 1,
+      "first_year": 2010,
+      "last_year": 2010
+    },
+    "Johnny Blaze's Team": {
+      "years_played": [
+        2015,
+        2016
+      ],
+      "seasons_count": 2,
+      "first_year": 2015,
+      "last_year": 2016
+    },
+    "The Bandwagon": {
+      "years_played": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "seasons_count": 14,
+      "first_year": 2011,
+      "last_year": 2024
+    }
+  },
+  "teams_by_year": {
+    "2010": [
+      "Lebrocalypse",
+      "dlo",
+      "Mr. Wiggles",
+      "NZallBlacks",
+      "Chris Kaman HisPants",
+      "lawless",
+      "Showty Me",
+      "Double Trouble",
+      "hersheysquirt",
+      "The Krappers"
+    ],
+    "2011": [
+      "The Bandwagon",
+      "Mr. Wiggles",
+      "NZallBlacks",
+      "Showty Me",
+      "The Krappers",
+      "lawless",
+      "Gimme The Hot Sauce",
+      "Here4 the Deng Bang",
+      "Rex Ryan's Nightmare",
+      "Wright Supremacy",
+      "hersheysquirt",
+      "Chris Kaman HisPants"
+    ],
+    "2012": [
+      "Sarcastaballers",
+      "The Krappers",
+      "The Bandwagon",
+      "LetsBall",
+      "Chicago Lakers",
+      "Los Angeles Lakers",
+      "Dirty South Asia",
+      "#6",
+      "Mr. Wiggles",
+      "hersheysquirt",
+      "Silky J's",
+      "NZallBlacks"
+    ],
+    "2013": [
+      "Riggin for Wiggins",
+      "RapscaliLion",
+      "The Bandwagon",
+      "Dirty South Asia",
+      "browNfriends",
+      "Shaqtin a Fool",
+      "The Krappers",
+      "hersheysquirt",
+      "Mr. Wiggles",
+      "LetsBall",
+      "House Lannister",
+      "Chicago Lakers"
+    ],
+    "2014": [
+      "The Krappers",
+      "Dirty South Asia",
+      "Chicago Lakers",
+      "joeJiggity",
+      "Mr. Wiggles",
+      "hersheysquirt",
+      "Shaqtin a Fool",
+      "Too Many Cooks",
+      "The Bandwagon",
+      "LetsBall"
+    ],
+    "2015": [
+      "Get Schwifty",
+      "The Krappers",
+      "Dirty South Asia",
+      "mike Lawwwwrrry",
+      "Make it Drizzle",
+      "LetsBall",
+      "The First Order",
+      "The Bandwagon",
+      "hersheysquirt",
+      "Johnny Blaze's Team"
+    ],
+    "2016": [
+      "Make it Drizzle",
+      "hersheysquirt",
+      "Bzzzzznatch",
+      "LetsBall",
+      "2012 easternAllstars",
+      "The Krappers",
+      "Dirty South Asia",
+      "Get Schwifty",
+      "The Bandwagon",
+      "Johnny Blaze's Team"
+    ],
+    "2017": [
+      "The Krappers",
+      "The Bandwagon",
+      "Dirty South Asia",
+      "Get Schwifty",
+      "White Chocolate",
+      "hersheysquirt",
+      "LetsBall",
+      "jin's Team",
+      "Make it Drizzle",
+      "Bzzzzznatch",
+      "2012 easternAllstars",
+      "Tormund's Icy Boner"
+    ],
+    "2018": [
+      "LetsBall",
+      "hersheysquirt",
+      "The Bandwagon",
+      "The Krappers",
+      "Bzzzzznatch",
+      "Dirty South Asia",
+      "White Chocolate",
+      "Make it Drizzle",
+      "curry cavaliers",
+      "Get Schwifty"
+    ],
+    "2019": [
+      "forever Young",
+      "White Chocolate",
+      "The Bandwagon",
+      "hersheysquirt",
+      "LetsBall",
+      "Get Schwifty",
+      "The Krappers",
+      "Bzzzzznatch",
+      "Make it Drizzle",
+      "Dirty South Asia"
+    ],
+    "2020": [
+      "Team Hoof Hearted",
+      "The Krappers",
+      "hersheysquirt",
+      "LetsBall",
+      "KATmandu",
+      "Suns Out Guns Out",
+      "Dirty South Asia",
+      "White Chocolate",
+      "Bzzzzznatch",
+      "The Bandwagon"
+    ],
+    "2021": [
+      "Suns Out Guns Out",
+      "LetsBall",
+      "The Krappers",
+      "Bzzzzznatch",
+      "Team Hoof Hearted",
+      "Big Baller Brand",
+      "Brow Shakalaka",
+      "hersheysquirt",
+      "What what what's your fantasy",
+      "The Bandwagon"
+    ],
+    "2022": [
+      "The Krappers",
+      "LetsBall",
+      "Big Baller Brand",
+      "Suns Out Guns Out",
+      "hersheysquirt",
+      "Team Hoof Hearted",
+      "Ja and Order",
+      "The Bandwagon",
+      "Bzzzzznatch",
+      "What what what's your fantasy"
+    ],
+    "2023": [
+      "LetsBall",
+      "slimpickens",
+      "Big Baller Brand",
+      "What what what's your fantasy",
+      "Suns Out Guns Out",
+      "hersheysquirt",
+      "The Krappers",
+      "Bzzzzznatch",
+      "The Bandwagon",
+      "Team Hoof Hearted"
+    ],
+    "2024": [
+      "The Bandwagon",
+      "Flat Earth Society",
+      "LetsBall",
+      "Big Baller Brand",
+      "The Krappers",
+      "Bzzzzznatch",
+      "What what what's your fantasy",
+      "hersheysquirt",
+      "Team Hoof Hearted",
+      "slimpickens"
+    ]
+  },
+  "generation_date": "2025-08-21T12:08:01.063702"
+}

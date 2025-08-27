@@ -1,0 +1,16 @@
+I want a summary tool -- that can show me multiple views:
+
+retirement vs. brokerage
+
+within retirement, I want to see how much is in 401k/ira type vs non-taxed roth style.
+
+separately, I want a view that shows my equity vs. fixed income balance
+
+I also want a table view that shows my entire exposure in every position, if I have multiple accounts holding a position, I want to see the total nad then when click on the line, show the composition in each account
+
+I also want a view that sees the sector balance,  based on normal sectors
+
+I want to be able to say I own X shares of this or that stock.
+
+I want to know how my entire portfolio is balanced as far as domestic vs international vs bonds, looking at the actual composition of funds.
+

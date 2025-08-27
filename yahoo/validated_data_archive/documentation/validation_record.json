@@ -1,0 +1,23 @@
+{
+  "validation_date": "2025-08-21T12:08:01.061887",
+  "data_validated_by": "User",
+  "validation_status": "APPROVED",
+  "data_source": "Yahoo Fantasy API raw standings",
+  "mapping_correction": {
+    "original_mapping": "playoff_seed=playoff_seed, rank=regular_season_rank",
+    "corrected_mapping": "playoff_seed=regular_season_standing, rank=playoff_results"
+  },
+  "coverage": {
+    "years": "2010-2024",
+    "total_seasons": 15,
+    "total_team_records": 158
+  },
+  "data_quality": "Complete and validated",
+  "intended_use": "Draft projection vs actual results analysis",
+  "notes": [
+    "All regular season standings verified as correct",
+    "All playoff results verified as correct",
+    "Data mapping corrected from API response labels",
+    "Ready for historical projection analysis"
+  ]
+}

@@ -1,0 +1,15 @@
+book,teams,fav_team,dog_team,fav_odds,dog_odds,league,bet_type,game_time,game_date
+pinnacle,"['BOS', 'BAL']",BAL,BOS,-102,-109,mlb,ml,TUE_22:36,20250826
+pinnacle,"['ATL', 'MIA']",ATL,MIA,-112,101,mlb,ml,TUE_22:41,20250826
+pinnacle,"['TB', 'CLE']",CLE,TB,-118,107,mlb,ml,TUE_22:41,20250826
+pinnacle,"['WSH', 'NYY']",NYY,WSH,-171,154,mlb,ml,TUE_23:06,20250826
+pinnacle,"['MIN', 'TOR']",TOR,MIN,-165,149,mlb,ml,TUE_23:08,20250826
+pinnacle,"['PHI', 'NYM']",NYM,PHI,-105,-105,mlb,ml,TUE_23:11,20250826
+pinnacle,"['ARI', 'MIL']",MIL,ARI,-152,137,mlb,ml,TUE_23:41,20250826
+pinnacle,"['KC', 'CWS']",KC,CWS,-121,110,mlb,ml,TUE_23:41,20250826
+pinnacle,"['PIT', 'STL']",STL,PIT,-127,115,mlb,ml,TUE_23:46,20250826
+pinnacle,"['LAA', 'TEX']",TEX,LAA,-115,104,mlb,ml,WED_00:06,20250827
+pinnacle,"['COL', 'HOU']",HOU,COL,-325,277,mlb,ml,WED_00:11,20250827
+pinnacle,"['SD', 'SEA']",SEA,SD,-114,103,mlb,ml,WED_01:41,20250827
+pinnacle,"['CHC', 'SF']",CHC,SF,-133,120,mlb,ml,WED_01:46,20250827
+pinnacle,"['Cincinnati Reds', 'LAD']",LAD,Cincinnati Reds,-174,156,mlb,ml,WED_02:11,20250827

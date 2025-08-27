@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.player-stats-accordion {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 15px;
+    animation: slideDown 0.3s ease;
+}
+
+.stats-grid-accordion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.stat-item-accordion {
+    text-align: center;
+    padding: 8px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.stat-value-accordion {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.stat-label-accordion {
+    font-size: 0.75em;
+    color: #6c757d;
+    margin-top: 3px;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+        padding: 0 15px;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+        padding: 15px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        max-height: 200px;
+        padding: 15px;
+    }
+    to {
+        opacity: 0;
+        max-height: 0;
+        padding: 0 15px;
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.3s ease forwards;
+}
+
+.player-name {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Debug Accordion Test</h1>
+
+<button onclick="testFunction()" style="background: red; color: white; padding: 10px; margin: 10px;">Test JavaScript</button>
+
+<table border="1" style="border-collapse: collapse;">
+<tr>
+<th>Rank</th>
+<th>Player</th>
+<th>Team</th>
+<th>Projection</th>
+</tr>
+<tr>
+<td>1</td>
+<td class="player-name" onclick="togglePlayerStats(&quot;LeBron James&quot;, this)">LeBron James</td>
+<td>LAL</td>
+<td>700</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="player-name" onclick="togglePlayerStats(&quot;Kevin Durant&quot;, this)">Kevin Durant</td>
+<td>PHX</td>
+<td>695</td>
+</tr>
+</table>
+
+<script>
+function testFunction() {
+    alert('JavaScript is working!');
+}
+
+const playerStatsData = {
+    "LeBron James": {
+        "games_played": 71,
+        "team": "LAL",
+        "fg_pct": 0.540,
+        "ft_pct": 0.750,
+        "threepm_pg": 2.1,
+        "pts_pg": 25.7,
+        "reb_pg": 7.3,
+        "ast_pg": 8.3,
+        "stl_pg": 1.3,
+        "blk_pg": 0.5,
+        "to_pg": 3.5
+    },
+    "Kevin Durant": {
+        "games_played": 75,
+        "team": "PHX",
+        "fg_pct": 0.523,
+        "ft_pct": 0.856,
+        "threepm_pg": 1.8,
+        "pts_pg": 27.1,
+        "reb_pg": 6.6,
+        "ast_pg": 5.0,
+        "stl_pg": 0.9,
+        "blk_pg": 1.2,
+        "to_pg": 3.3
+    }
+};
+
+function togglePlayerStats(playerName, clickedCell) {
+    console.log('togglePlayerStats called with player:', playerName);
+    console.log('clickedCell:', clickedCell);
+    
+    const stats = playerStatsData[playerName];
+    console.log('Found stats for', playerName + ':', stats);
+    
+    if (!stats) {
+        console.error('No stats found for player:', playerName);
+        alert('No 2024 stats available for ' + playerName);
+        return;
+    }
+    
+    // Find the row that contains this cell
+    const row = clickedCell.closest('tr');
+    const existingAccordion = row.nextElementSibling;
+    
+    // If accordion exists, remove it
+    if (existingAccordion && existingAccordion.classList.contains('accordion-row')) {
+        existingAccordion.classList.add('slide-up');
+        setTimeout(() => {
+            existingAccordion.remove();
+        }, 300);
+        return;
+    }
+    
+    // Create new accordion row
+    const accordionRow = document.createElement('tr');
+    accordionRow.classList.add('accordion-row');
+    
+    // Count columns in the current row to span across all
+    const columnCount = row.children.length;
+    
+    accordionRow.innerHTML = `
+        <td colspan="${columnCount}">
+            <div class="player-stats-accordion">
+                <h4 style="margin-bottom: 10px; color: #495057;">${playerName} - 2024 Season Stats</h4>
+                <div class="stats-grid-accordion">
+                    <div class="stat-item-accordion">
+                        <div class="stat-value-accordion">${stats.games_played}</div>
+                        <div class="stat-label-accordion">Games</div>
+                    </div>
+                    <div class="stat-item-accordion">
+                        <div class="stat-value-accordion">${stats.team}</div>
+                        <div class="stat-label-accordion">Team</div>
+                    </div>
+                    <div class="stat-item-accordion">
+                        <div class="stat-value-accordion">${stats.pts_pg.toFixed(1)}</div>
+                        <div class="stat-label-accordion">PPG</div>
+                    </div>
+                    <div class="stat-item-accordion">
+                        <div class="stat-value-accordion">${stats.reb_pg.toFixed(1)}</div>
+                        <div class="stat-label-accordion">RPG</div>
+                    </div>
+                    <div class="stat-item-accordion">
+                        <div class="stat-value-accordion">${stats.ast_pg.toFixed(1)}</div>
+                        <div class="stat-label-accordion">APG</div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    `;
+    
+    // Insert the accordion row after the current row
+    row.parentNode.insertBefore(accordionRow, row.nextSibling);
+}
+</script>
+
+</body>
+</html>

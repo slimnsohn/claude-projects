@@ -48,3 +48,4 @@ claude-projects/
 - NEVER create files unless absolutely necessary for achieving your goal
 - ALWAYS prefer editing an existing file to creating a new one
 - NEVER proactively create documentation files unless explicitly requested
+- whenver you create a file or reference a script, give me the folder path so I can always know which folder it is in

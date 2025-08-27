@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Draft Assistant - 2025 Fantasy Basketball</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.4;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 20px;
+            height: calc(100vh - 20px);
+        }
+
+        .main-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 0 5px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .draft-form {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #28a745;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr auto;
+            gap: 10px;
+            align-items: end;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .add-btn {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            height: fit-content;
+        }
+
+        .add-btn:hover {
+            background: linear-gradient(135deg, #20c997, #17a2b8);
+        }
+
+        .team-overview {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .budget-info {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .budget-item {
+            text-align: center;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .budget-value {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .budget-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .roster-slot {
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .roster-slot.filled {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            border-style: solid;
+        }
+
+        .player-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .player-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .recommendations {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+            margin-bottom: 20px;
+        }
+
+        .recommendations h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .player-list {
+            flex: 1;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+
+        .player-item {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .player-item:hover {
+            background: #f8f9fa;
+            border-color: #667eea;
+        }
+
+        .player-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .player-header strong {
+            color: #333;
+        }
+
+        .player-projection {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .player-cost {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .player-details {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .category-bars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .category-item {
+            text-align: center;
+            padding: 8px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .category-name {
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .category-bar {
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .category-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #dc3545, #ffc107, #28a745);
+            transition: width 0.3s ease;
+        }
+
+        .remove-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        .filters {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .filter-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .filter-select {
+            padding: 8px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        .archetype-high { color: #28a745; }
+        .archetype-medium { color: #ffc107; }
+        .archetype-low { color: #dc3545; }
+
+        .urgent { 
+            background: #f8d7da !important; 
+            border-color: #dc3545 !important; 
+        }
+
+        .toggle-buttons {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .toggle-btn {
+            flex: 1;
+            padding: 8px 12px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .toggle-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .toggle-btn:hover {
+            background: #f8f9fa;
+        }
+
+        .toggle-btn.active:hover {
+            background: #5a6fd8;
+        }
+
+        .team-tier {
+            background: linear-gradient(135deg, #17a2b8, #20c997);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .team-tier.tier-elite {
+            background: linear-gradient(135deg, #28a745, #20c997);
+        }
+
+        .team-tier.tier-strong {
+            background: linear-gradient(135deg, #28a745, #20c997);
+        }
+
+        .team-tier.tier-good {
+            background: linear-gradient(135deg, #ffc107, #fd7e14);
+        }
+
+        .team-tier.tier-weak {
+            background: linear-gradient(135deg, #dc3545, #e83e8c);
+        }
+
+        .tier-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tier-description {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-panel">
+            <div class="header">
+                <h1>🔴 Live Draft Assistant</h1>
+                <p>Real-time team construction with 2025 projections</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="player_analysis.html" class="nav-link">📊 2025 Projections</a>
+                <a href="projections_explanation.html" class="nav-link">🔬 Model Explanation</a>
+                <a href="index.html" class="nav-link">🏠 Dashboard</a>
+            </div>
+
+            <div class="draft-form">
+                <h3>Add Your Pick</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="playerName">Player Name</label>
+                        <input type="text" id="playerName" placeholder="Start typing player name..." list="playerSuggestions">
+                        <datalist id="playerSuggestions"></datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="playerCost">Cost ($)</label>
+                        <input type="number" id="playerCost" placeholder="0" min="1" max="200">
+                    </div>
+                    <button class="add-btn" onclick="addPlayer()">Add Pick</button>
+                </div>
+            </div>
+
+            <div class="team-overview">
+                <h3>Your Team Status</h3>
+                <div class="budget-info">
+                    <div class="budget-item">
+                        <div class="budget-value" id="totalSpent">$0</div>
+                        <div class="budget-label">Spent</div>
+                    </div>
+                    <div class="budget-item">
+                        <div class="budget-value" id="remainingBudget">$200</div>
+                        <div class="budget-label">Remaining</div>
+                    </div>
+                    <div class="budget-item">
+                        <div class="budget-value" id="totalProjection">0</div>
+                        <div class="budget-label">Total Projection</div>
+                    </div>
+                    <div class="budget-item">
+                        <div class="budget-value" id="avgProjection">0</div>
+                        <div class="budget-label">Avg Projection</div>
+                    </div>
+                </div>
+
+                <div class="category-bars">
+                    <div class="category-item">
+                        <div class="category-name">Scoring</div>
+                        <div class="category-bar"><div class="category-fill" id="scoringBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">Rebounds</div>
+                        <div class="category-bar"><div class="category-fill" id="reboundsBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">Assists</div>
+                        <div class="category-bar"><div class="category-fill" id="assistsBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">Steals</div>
+                        <div class="category-bar"><div class="category-fill" id="stealsBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">Blocks</div>
+                        <div class="category-bar"><div class="category-fill" id="blocksBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">3-Pointers</div>
+                        <div class="category-bar"><div class="category-fill" id="threesBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">FG%</div>
+                        <div class="category-bar"><div class="category-fill" id="fgBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">FT%</div>
+                        <div class="category-bar"><div class="category-fill" id="ftBar" style="width: 0%"></div></div>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-name">Low TOs</div>
+                        <div class="category-bar"><div class="category-fill" id="toBar" style="width: 0%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roster-section">
+                <h3>Your Roster (15 players)</h3>
+                <div class="roster-grid" id="rosterGrid">
+                    <!-- Roster slots will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="team-tier" id="teamTier">
+                <div class="tier-title">Team Projection Tier</div>
+                <div class="tier-description">Add players to see your team strength</div>
+            </div>
+
+            <div class="recommendations">
+                <h3>🎯 Draft Recommendations</h3>
+                <p id="recommendationText">Add your first player to get started!</p>
+            </div>
+
+            <div class="toggle-buttons">
+                <div class="toggle-btn active" id="smartBtn" onclick="toggleRecommendationMode('smart')">Smart Picks</div>
+                <div class="toggle-btn" id="valueBtn" onclick="toggleRecommendationMode('value')">Value Picks</div>
+            </div>
+
+            <div class="filters">
+                <h4>Filter Targets</h4>
+                <div class="filter-row">
+                    <select class="filter-select" id="positionFilter" onchange="updateRecommendations()">
+                        <option value="">All Archetypes</option>
+                        <option value="Guard">Guards</option>
+                        <option value="Big Man">Big Men</option>
+                        <option value="Shooter">Shooters</option>
+                        <option value="Balanced">Balanced</option>
+                    </select>
+                    <select class="filter-select" id="priceFilter" onchange="updateRecommendations()">
+                        <option value="">All Prices</option>
+                        <option value="1-5">$1-5</option>
+                        <option value="6-15">$6-15</option>
+                        <option value="16-30">$16-30</option>
+                        <option value="31-50">$31-50</option>
+                        <option value="51-100">$51+</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="player-list" id="recommendationsList">
+                <!-- Recommendations will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let draftData = [{"name": "Kawhi Leonard", "team": "LAC", "projection": 719, "estimatedCost": 12, "archetype": "Shooter", "games": 68, "pts": 94, "reb": 83, "ast": 77, "stl": 99, "blk": 88, "threes": 83, "fg_pct": 81, "ft_pct": 92, "to": 20}, {"name": "Joel Embiid", "team": "PHI", "projection": 716, "estimatedCost": 47, "archetype": "Guard", "games": 39, "pts": 100, "reb": 98, "ast": 93, "stl": 90, "blk": 97, "threes": 63, "fg_pct": 82, "ft_pct": 92, "to": 1}, {"name": "Shai Gilgeous-Alexander", "team": "OKC", "projection": 709, "estimatedCost": 67, "archetype": "Guard", "games": 75, "pts": 99, "reb": 81, "ast": 95, "stl": 100, "blk": 89, "threes": 60, "fg_pct": 84, "ft_pct": 89, "to": 12}, {"name": "Kyrie Irving", "team": "DAL", "projection": 700, "estimatedCost": 31, "archetype": "Shooter", "games": 58, "pts": 96, "reb": 74, "ast": 90, "stl": 94, "blk": 64, "threes": 96, "fg_pct": 74, "ft_pct": 95, "to": 18}, {"name": "Kevin Durant", "team": "PHX", "projection": 696, "estimatedCost": 39, "archetype": "Shooter", "games": 75, "pts": 99, "reb": 87, "ast": 88, "stl": 76, "blk": 95, "threes": 86, "fg_pct": 81, "ft_pct": 82, "to": 3}, {"name": "Nikola Jokic", "team": "DEN", "projection": 690, "estimatedCost": 73, "archetype": "Guard", "games": 79, "pts": 97, "reb": 99, "ast": 99, "stl": 96, "blk": 88, "threes": 49, "fg_pct": 91, "ft_pct": 66, "to": 4}, {"name": "Luka Doncic", "team": "DAL", "projection": 683, "estimatedCost": 45, "archetype": "Shooter", "games": 70, "pts": 100, "reb": 96, "ast": 99, "stl": 98, "blk": 69, "threes": 100, "fg_pct": 69, "ft_pct": 52, "to": 0}, {"name": "Donovan Mitchell", "team": "CLE", "projection": 679, "estimatedCost": 40, "archetype": "Shooter", "games": 55, "pts": 98, "reb": 76, "ast": 94, "stl": 99, "blk": 69, "threes": 98, "fg_pct": 54, "ft_pct": 86, "to": 4}, {"name": "Paul George", "team": "LAC", "projection": 678, "estimatedCost": 29, "archetype": "Shooter", "games": 74, "pts": 93, "reb": 77, "ast": 76, "stl": 98, "blk": 65, "threes": 98, "fg_pct": 59, "ft_pct": 96, "to": 15}, {"name": "Derrick White", "team": "BOS", "projection": 675, "estimatedCost": 15, "archetype": "Shooter", "games": 73, "pts": 77, "reb": 64, "ast": 90, "stl": 83, "blk": 95, "threes": 93, "fg_pct": 53, "ft_pct": 94, "to": 26}, {"name": "Jayson Tatum", "team": "BOS", "projection": 671, "estimatedCost": 51, "archetype": "Shooter", "games": 74, "pts": 98, "reb": 92, "ast": 86, "stl": 83, "blk": 72, "threes": 97, "fg_pct": 59, "ft_pct": 75, "to": 8}, {"name": "Tyrese Haliburton", "team": "IND", "projection": 670, "estimatedCost": 50, "archetype": "Shooter", "games": 69, "pts": 89, "reb": 59, "ast": 100, "stl": 92, "blk": 81, "threes": 94, "fg_pct": 63, "ft_pct": 81, "to": 11}, {"name": "Lauri Markkanen", "team": "UTA", "projection": 667, "estimatedCost": 29, "archetype": "Shooter", "games": 55, "pts": 94, "reb": 92, "ast": 55, "stl": 75, "blk": 62, "threes": 97, "fg_pct": 65, "ft_pct": 94, "to": 32}, {"name": "Kristaps Porzingis", "team": "BOS", "projection": 658, "estimatedCost": 45, "archetype": "Shooter", "games": 57, "pts": 88, "reb": 89, "ast": 55, "stl": 58, "blk": 98, "threes": 80, "fg_pct": 80, "ft_pct": 84, "to": 25}, {"name": "Tobias Harris", "team": "PHI", "projection": 656, "estimatedCost": 5, "archetype": "Guard", "games": 70, "pts": 83, "reb": 86, "ast": 72, "stl": 82, "blk": 79, "threes": 61, "fg_pct": 69, "ft_pct": 90, "to": 34}, {"name": "Jamal Murray", "team": "DEN", "projection": 656, "estimatedCost": 10, "archetype": "Shooter", "games": 59, "pts": 91, "reb": 61, "ast": 96, "stl": 80, "blk": 79, "threes": 90, "fg_pct": 65, "ft_pct": 81, "to": 13}, {"name": "LeBron James", "team": "LAL", "projection": 656, "estimatedCost": 28, "archetype": "Shooter", "games": 71, "pts": 96, "reb": 90, "ast": 99, "stl": 94, "blk": 68, "threes": 84, "fg_pct": 86, "ft_pct": 37, "to": 1}, {"name": "Scottie Barnes", "team": "TOR", "projection": 655, "estimatedCost": 39, "archetype": "Guard", "games": 60, "pts": 88, "reb": 93, "ast": 94, "stl": 94, "blk": 97, "threes": 73, "fg_pct": 62, "ft_pct": 49, "to": 5}, {"name": "Desmond Bane", "team": "MEM", "projection": 652, "estimatedCost": 20, "archetype": "Shooter", "games": 42, "pts": 95, "reb": 68, "ast": 91, "stl": 84, "blk": 67, "threes": 98, "fg_pct": 55, "ft_pct": 88, "to": 6}, {"name": "Victor Wembanyama", "team": "SAS", "projection": 651, "estimatedCost": 80, "archetype": "Shooter", "games": 71, "pts": 91, "reb": 98, "ast": 80, "stl": 93, "blk": 100, "threes": 76, "fg_pct": 56, "ft_pct": 57, "to": 1}, {"name": "Anthony Davis", "team": "LAL", "projection": 651, "estimatedCost": 54, "archetype": "Guard", "games": 76, "pts": 96, "reb": 99, "ast": 76, "stl": 91, "blk": 99, "threes": 22, "fg_pct": 87, "ft_pct": 66, "to": 15}, {"name": "Devin Booker", "team": "PHX", "projection": 650, "estimatedCost": 35, "archetype": "Shooter", "games": 68, "pts": 98, "reb": 70, "ast": 97, "stl": 72, "blk": 55, "threes": 86, "fg_pct": 72, "ft_pct": 92, "to": 7}, {"name": "Anthony Edwards", "team": "MIN", "projection": 649, "estimatedCost": 54, "archetype": "Shooter", "games": 79, "pts": 97, "reb": 80, "ast": 89, "stl": 95, "blk": 68, "threes": 89, "fg_pct": 53, "ft_pct": 76, "to": 3}, {"name": "Grayson Allen", "team": "PHX", "projection": 648, "estimatedCost": 1, "archetype": "Shooter", "games": 75, "pts": 72, "reb": 59, "ast": 71, "stl": 76, "blk": 74, "threes": 93, "fg_pct": 75, "ft_pct": 90, "to": 38}, {"name": "Keegan Murray", "team": "SAC", "projection": 643, "estimatedCost": 2, "archetype": "Guard", "games": 77, "pts": 77, "reb": 80, "ast": 49, "stl": 84, "blk": 84, "threes": 88, "fg_pct": 47, "ft_pct": 74, "to": 59}, {"name": "Karl-Anthony Towns", "team": "MIN", "projection": 642, "estimatedCost": 36, "archetype": "Shooter", "games": 62, "pts": 91, "reb": 93, "ast": 71, "stl": 53, "blk": 79, "threes": 85, "fg_pct": 76, "ft_pct": 89, "to": 4}, {"name": "James Harden", "team": "LAC", "projection": 641, "estimatedCost": 35, "archetype": "Guard", "games": 72, "pts": 81, "reb": 76, "ast": 99, "stl": 86, "blk": 85, "threes": 92, "fg_pct": 24, "ft_pct": 90, "to": 7}, {"name": "Fred VanVleet", "team": "HOU", "projection": 641, "estimatedCost": 20, "archetype": "Guard", "games": 73, "pts": 84, "reb": 55, "ast": 98, "stl": 97, "blk": 86, "threes": 97, "fg_pct": 18, "ft_pct": 85, "to": 21}, {"name": "Tyrese Maxey", "team": "PHI", "projection": 638, "estimatedCost": 29, "archetype": "Guard", "games": 70, "pts": 97, "reb": 53, "ast": 95, "stl": 81, "blk": 61, "threes": 96, "fg_pct": 44, "ft_pct": 88, "to": 22}, {"name": "CJ McCollum", "team": "NOP", "projection": 637, "estimatedCost": 5, "archetype": "Shooter", "games": 66, "pts": 88, "reb": 66, "ast": 85, "stl": 78, "blk": 76, "threes": 99, "fg_pct": 50, "ft_pct": 72, "to": 22}, {"name": "Al Horford", "team": "BOS", "projection": 633, "estimatedCost": 1, "archetype": "Big Man", "games": 65, "pts": 49, "reb": 84, "ast": 64, "stl": 42, "blk": 91, "threes": 73, "fg_pct": 79, "ft_pct": 87, "to": 64}, {"name": "Jalen Williams", "team": "OKC", "projection": 631, "estimatedCost": 34, "archetype": "Guard", "games": 71, "pts": 86, "reb": 59, "ast": 84, "stl": 88, "blk": 78, "threes": 65, "fg_pct": 86, "ft_pct": 64, "to": 21}, {"name": "Herbert Jones", "team": "NOP", "projection": 628, "estimatedCost": 1, "archetype": "Guard", "games": 76, "pts": 63, "reb": 50, "ast": 65, "stl": 97, "blk": 87, "threes": 67, "fg_pct": 74, "ft_pct": 87, "to": 39}, {"name": "Jrue Holiday", "team": "BOS", "projection": 627, "estimatedCost": 3, "archetype": "Shooter", "games": 69, "pts": 69, "reb": 79, "ast": 85, "stl": 70, "blk": 84, "threes": 81, "fg_pct": 65, "ft_pct": 75, "to": 19}, {"name": "DeMar DeRozan", "team": "CHI", "projection": 623, "estimatedCost": 9, "archetype": "Guard", "games": 79, "pts": 95, "reb": 65, "ast": 90, "stl": 89, "blk": 72, "threes": 45, "fg_pct": 65, "ft_pct": 81, "to": 21}, {"name": "Miles Bridges", "team": "CHA", "projection": 623, "estimatedCost": 7, "archetype": "Shooter", "games": 69, "pts": 90, "reb": 90, "ast": 74, "stl": 79, "blk": 63, "threes": 87, "fg_pct": 54, "ft_pct": 70, "to": 16}, {"name": "Trey Murphy III", "team": "NOP", "projection": 618, "estimatedCost": 1, "archetype": "Guard", "games": 57, "pts": 76, "reb": 73, "ast": 58, "stl": 72, "blk": 64, "threes": 95, "fg_pct": 38, "ft_pct": 65, "to": 77}, {"name": "Jalen Johnson", "team": "ATL", "projection": 618, "estimatedCost": 26, "archetype": "Guard", "games": 56, "pts": 80, "reb": 94, "ast": 78, "stl": 91, "blk": 87, "threes": 60, "fg_pct": 79, "ft_pct": 31, "to": 18}, {"name": "Bradley Beal", "team": "PHX", "projection": 616, "estimatedCost": 5, "archetype": "Shooter", "games": 53, "pts": 85, "reb": 67, "ast": 87, "stl": 81, "blk": 66, "threes": 79, "fg_pct": 79, "ft_pct": 64, "to": 8}, {"name": "Jimmy Butler", "team": "MIA", "projection": 616, "estimatedCost": 35, "archetype": "Guard", "games": 60, "pts": 89, "reb": 78, "ast": 87, "stl": 95, "blk": 39, "threes": 47, "fg_pct": 75, "ft_pct": 84, "to": 22}, {"name": "Chet Holmgren", "team": "OKC", "projection": 613, "estimatedCost": 43, "archetype": "Big Man", "games": 82, "pts": 81, "reb": 91, "ast": 62, "stl": 49, "blk": 99, "threes": 69, "fg_pct": 82, "ft_pct": 56, "to": 24}, {"name": "Dejounte Murray", "team": "ATL", "projection": 612, "estimatedCost": 21, "archetype": "Shooter", "games": 78, "pts": 92, "reb": 78, "ast": 96, "stl": 98, "blk": 43, "threes": 91, "fg_pct": 50, "ft_pct": 56, "to": 7}, {"name": "Giannis Antetokounmpo", "team": "MIL", "projection": 612, "estimatedCost": 56, "archetype": "Guard", "games": 73, "pts": 99, "reb": 99, "ast": 96, "stl": 91, "blk": 93, "threes": 26, "fg_pct": 94, "ft_pct": 12, "to": 2}, {"name": "Stephen Curry", "team": "GSW", "projection": 609, "estimatedCost": 39, "archetype": "Guard", "games": 74, "pts": 97, "reb": 69, "ast": 89, "stl": 57, "blk": 52, "threes": 100, "fg_pct": 44, "ft_pct": 98, "to": 4}, {"name": "Terry Rozier", "team": "CHA, MIA", "projection": 609, "estimatedCost": 1, "archetype": "Guard", "games": 61, "pts": 88, "reb": 60, "ast": 92, "stl": 85, "blk": 48, "threes": 90, "fg_pct": 38, "ft_pct": 88, "to": 20}, {"name": "Jaren Jackson Jr.", "team": "MEM", "projection": 609, "estimatedCost": 15, "archetype": "Guard", "games": 66, "pts": 92, "reb": 81, "ast": 61, "stl": 92, "blk": 97, "threes": 75, "fg_pct": 39, "ft_pct": 62, "to": 9}, {"name": "De'Aaron Fox", "team": "SAC", "projection": 609, "estimatedCost": 30, "archetype": "Shooter", "games": 74, "pts": 98, "reb": 71, "ast": 93, "stl": 100, "blk": 56, "threes": 95, "fg_pct": 56, "ft_pct": 33, "to": 6}, {"name": "Michael Porter Jr.", "team": "DEN", "projection": 607, "estimatedCost": 4, "archetype": "Shooter", "games": 81, "pts": 82, "reb": 89, "ast": 43, "stl": 34, "blk": 78, "threes": 93, "fg_pct": 67, "ft_pct": 76, "to": 44}, {"name": "Nikola Vucevic", "team": "CHI", "projection": 606, "estimatedCost": 35, "archetype": "Guard", "games": 76, "pts": 85, "reb": 97, "ast": 74, "stl": 50, "blk": 85, "threes": 55, "fg_pct": 67, "ft_pct": 69, "to": 24}, {"name": "Franz Wagner", "team": "ORL", "projection": 605, "estimatedCost": 18, "archetype": "Guard", "games": 72, "pts": 87, "reb": 78, "ast": 79, "stl": 86, "blk": 53, "threes": 61, "fg_pct": 66, "ft_pct": 80, "to": 17}, {"name": "Jaylen Brown", "team": "BOS", "projection": 602, "estimatedCost": 11, "archetype": "Shooter", "games": 70, "pts": 94, "reb": 81, "ast": 77, "stl": 90, "blk": 68, "threes": 84, "fg_pct": 75, "ft_pct": 24, "to": 10}, {"name": "Damian Lillard", "team": "MIL", "projection": 597, "estimatedCost": 27, "archetype": "Guard", "games": 73, "pts": 95, "reb": 67, "ast": 97, "stl": 81, "blk": 34, "threes": 96, "fg_pct": 22, "ft_pct": 97, "to": 6}, {"name": "Brandon Ingram", "team": "NOP", "projection": 596, "estimatedCost": 3, "archetype": "Guard", "games": 64, "pts": 89, "reb": 75, "ast": 93, "stl": 62, "blk": 77, "threes": 62, "fg_pct": 72, "ft_pct": 59, "to": 8}, {"name": "Brook Lopez", "team": "MIL", "projection": 592, "estimatedCost": 4, "archetype": "Shooter", "games": 79, "pts": 69, "reb": 77, "ast": 47, "stl": 38, "blk": 99, "threes": 78, "fg_pct": 68, "ft_pct": 68, "to": 49}, {"name": "Cade Cunningham", "team": "DET", "projection": 591, "estimatedCost": 22, "archetype": "Guard", "games": 62, "pts": 93, "reb": 65, "ast": 98, "stl": 74, "blk": 49, "threes": 80, "fg_pct": 43, "ft_pct": 88, "to": 2}, {"name": "Devin Vassell", "team": "SAS", "projection": 591, "estimatedCost": 2, "archetype": "Shooter", "games": 68, "pts": 87, "reb": 56, "ast": 81, "stl": 86, "blk": 47, "threes": 89, "fg_pct": 61, "ft_pct": 59, "to": 24}, {"name": "Jalen Brunson", "team": "NYK", "projection": 590, "estimatedCost": 33, "archetype": "Shooter", "games": 77, "pts": 99, "reb": 51, "ast": 97, "stl": 75, "blk": 23, "threes": 94, "fg_pct": 64, "ft_pct": 78, "to": 9}, {"name": "Bogdan Bogdanovic", "team": "ATL", "projection": 590, "estimatedCost": 2, "archetype": "Guard", "games": 79, "pts": 82, "reb": 48, "ast": 72, "stl": 93, "blk": 46, "threes": 96, "fg_pct": 24, "ft_pct": 98, "to": 31}, {"name": "OG Anunoby", "team": "NYK, TOR", "projection": 589, "estimatedCost": 25, "archetype": "Shooter", "games": 50, "pts": 76, "reb": 63, "ast": 58, "stl": 96, "blk": 82, "threes": 82, "fg_pct": 71, "ft_pct": 39, "to": 23}, {"name": "Alex Caruso", "team": "CHI", "projection": 589, "estimatedCost": 1, "archetype": "Shooter", "games": 71, "pts": 57, "reb": 57, "ast": 76, "stl": 99, "blk": 91, "threes": 79, "fg_pct": 58, "ft_pct": 43, "to": 30}, {"name": "D'Angelo Russell", "team": "LAL", "projection": 589, "estimatedCost": 4, "archetype": "Guard", "games": 76, "pts": 84, "reb": 39, "ast": 95, "stl": 75, "blk": 62, "threes": 95, "fg_pct": 49, "ft_pct": 73, "to": 15}, {"name": "Bam Adebayo", "team": "MIA", "projection": 589, "estimatedCost": 12, "archetype": "Guard", "games": 71, "pts": 86, "reb": 97, "ast": 80, "stl": 89, "blk": 90, "threes": 15, "fg_pct": 80, "ft_pct": 40, "to": 11}, {"name": "Alperen Sengun", "team": "HOU", "projection": 588, "estimatedCost": 27, "archetype": "Guard", "games": 63, "pts": 90, "reb": 96, "ast": 87, "stl": 92, "blk": 82, "threes": 28, "fg_pct": 85, "ft_pct": 21, "to": 7}, {"name": "Khris Middleton", "team": "MIL", "projection": 585, "estimatedCost": 1, "archetype": "Guard", "games": 55, "pts": 77, "reb": 72, "ast": 90, "stl": 78, "blk": 38, "threes": 73, "fg_pct": 72, "ft_pct": 75, "to": 10}, {"name": "Austin Reaves", "team": "LAL", "projection": 583, "estimatedCost": 5, "archetype": "Shooter", "games": 82, "pts": 80, "reb": 65, "ast": 92, "stl": 64, "blk": 42, "threes": 78, "fg_pct": 68, "ft_pct": 81, "to": 13}, {"name": "Mike Conley", "team": "MIN", "projection": 581, "estimatedCost": 1, "archetype": "Guard", "games": 76, "pts": 65, "reb": 35, "ast": 93, "stl": 90, "blk": 31, "threes": 88, "fg_pct": 49, "ft_pct": 97, "to": 34}, {"name": "Evan Mobley", "team": "CLE", "projection": 579, "estimatedCost": 23, "archetype": "Guard", "games": 50, "pts": 79, "reb": 96, "ast": 73, "stl": 73, "blk": 96, "threes": 25, "fg_pct": 91, "ft_pct": 28, "to": 18}, {"name": "Deandre Ayton", "team": "POR", "projection": 579, "estimatedCost": 8, "archetype": "Guard", "games": 55, "pts": 82, "reb": 98, "ast": 48, "stl": 84, "blk": 84, "threes": 7, "fg_pct": 89, "ft_pct": 69, "to": 18}, {"name": "Jabari Smith Jr.", "team": "HOU", "projection": 578, "estimatedCost": 4, "archetype": "Big Man", "games": 76, "pts": 73, "reb": 92, "ast": 46, "stl": 52, "blk": 85, "threes": 77, "fg_pct": 47, "ft_pct": 63, "to": 43}, {"name": "Aaron Nesmith", "team": "IND", "projection": 578, "estimatedCost": 1, "archetype": "Shooter", "games": 72, "pts": 67, "reb": 56, "ast": 43, "stl": 74, "blk": 80, "threes": 80, "fg_pct": 73, "ft_pct": 49, "to": 55}, {"name": "Kentavious Caldwell-Pope", "team": "DEN", "projection": 577, "estimatedCost": 1, "archetype": "Guard", "games": 76, "pts": 57, "reb": 27, "ast": 62, "stl": 95, "blk": 70, "threes": 72, "fg_pct": 51, "ft_pct": 93, "to": 50}, {"name": "Domantas Sabonis", "team": "SAC", "projection": 572, "estimatedCost": 44, "archetype": "Guard", "games": 82, "pts": 86, "reb": 100, "ast": 98, "stl": 73, "blk": 73, "threes": 22, "fg_pct": 92, "ft_pct": 24, "to": 2}, {"name": "Mikal Bridges", "team": "BKN", "projection": 571, "estimatedCost": 11, "archetype": "Guard", "games": 82, "pts": 87, "reb": 70, "ast": 78, "stl": 82, "blk": 50, "threes": 93, "fg_pct": 31, "ft_pct": 64, "to": 16}, {"name": "Kyle Kuzma", "team": "WAS", "projection": 570, "estimatedCost": 2, "archetype": "Shooter", "games": 70, "pts": 92, "reb": 87, "ast": 82, "stl": 35, "blk": 82, "threes": 85, "fg_pct": 55, "ft_pct": 48, "to": 5}, {"name": "Tyus Jones", "team": "WAS", "projection": 568, "estimatedCost": 1, "archetype": "Guard", "games": 66, "pts": 67, "reb": 31, "ast": 98, "stl": 87, "blk": 38, "threes": 70, "fg_pct": 71, "ft_pct": 58, "to": 49}, {"name": "Brandon Miller", "team": "CHA", "projection": 567, "estimatedCost": 7, "archetype": "Guard", "games": 74, "pts": 83, "reb": 64, "ast": 61, "stl": 71, "blk": 71, "threes": 90, "fg_pct": 34, "ft_pct": 72, "to": 19}, {"name": "Paolo Banchero", "team": "ORL", "projection": 563, "estimatedCost": 22, "archetype": "Guard", "games": 80, "pts": 93, "reb": 88, "ast": 91, "stl": 71, "blk": 73, "threes": 67, "fg_pct": 48, "ft_pct": 30, "to": 3}, {"name": "Kelly Olynyk", "team": "TOR, UTA", "projection": 562, "estimatedCost": 25, "archetype": "Guard", "games": 78, "pts": 55, "reb": 77, "ast": 84, "stl": 79, "blk": 53, "threes": 38, "fg_pct": 86, "ft_pct": 75, "to": 16}, {"name": "Myles Turner", "team": "IND", "projection": 562, "estimatedCost": 14, "archetype": "Big Man", "games": 77, "pts": 83, "reb": 88, "ast": 36, "stl": 31, "blk": 98, "threes": 67, "fg_pct": 81, "ft_pct": 47, "to": 31}, {"name": "Buddy Hield", "team": "IND, PHI", "projection": 561, "estimatedCost": 2, "archetype": "Balanced", "games": 84, "pts": 67, "reb": 41, "ast": 68, "stl": 67, "blk": 65, "threes": 92, "fg_pct": 31, "ft_pct": 91, "to": 39}, {"name": "Draymond Green", "team": "GSW", "projection": 560, "estimatedCost": 1, "archetype": "Guard", "games": 55, "pts": 49, "reb": 90, "ast": 94, "stl": 82, "blk": 88, "threes": 44, "fg_pct": 74, "ft_pct": 31, "to": 9}, {"name": "Donte DiVincenzo", "team": "NYK", "projection": 560, "estimatedCost": 1, "archetype": "Guard", "games": 81, "pts": 79, "reb": 52, "ast": 66, "stl": 96, "blk": 59, "threes": 99, "fg_pct": 38, "ft_pct": 40, "to": 32}, {"name": "John Collins", "team": "UTA", "projection": 559, "estimatedCost": 2, "archetype": "Big Man", "games": 68, "pts": 77, "reb": 94, "ast": 29, "stl": 43, "blk": 89, "threes": 59, "fg_pct": 83, "ft_pct": 57, "to": 29}, {"name": "Zion Williamson", "team": "NOP", "projection": 559, "estimatedCost": 18, "archetype": "Guard", "games": 70, "pts": 94, "reb": 83, "ast": 88, "stl": 87, "blk": 80, "threes": 11, "fg_pct": 89, "ft_pct": 23, "to": 5}, {"name": "Jerami Grant", "team": "POR", "projection": 557, "estimatedCost": 1, "archetype": "Balanced", "games": 54, "pts": 90, "reb": 49, "ast": 68, "stl": 67, "blk": 77, "threes": 83, "fg_pct": 44, "ft_pct": 66, "to": 12}, {"name": "Trae Young", "team": "ATL", "projection": 557, "estimatedCost": 37, "archetype": "Guard", "games": 54, "pts": 96, "reb": 33, "ast": 100, "stl": 96, "blk": 28, "threes": 98, "fg_pct": 26, "ft_pct": 81, "to": 0}, {"name": "Pascal Siakam", "team": "IND, TOR", "projection": 554, "estimatedCost": 19, "archetype": "Guard", "games": 80, "pts": 91, "reb": 89, "ast": 83, "stl": 62, "blk": 44, "threes": 49, "fg_pct": 84, "ft_pct": 32, "to": 20}, {"name": "De'Anthony Melton", "team": "PHI", "projection": 554, "estimatedCost": 25, "archetype": "Guard", "games": 38, "pts": 63, "reb": 53, "ast": 71, "stl": 98, "blk": 57, "threes": 82, "fg_pct": 6, "ft_pct": 76, "to": 47}, {"name": "Bobby Portis", "team": "MIL", "projection": 553, "estimatedCost": 1, "archetype": "Balanced", "games": 82, "pts": 73, "reb": 91, "ast": 34, "stl": 67, "blk": 56, "threes": 56, "fg_pct": 78, "ft_pct": 54, "to": 45}, {"name": "Coby White", "team": "CHI", "projection": 552, "estimatedCost": 6, "archetype": "Guard", "games": 79, "pts": 86, "reb": 70, "ast": 89, "stl": 51, "blk": 32, "threes": 92, "fg_pct": 42, "ft_pct": 77, "to": 14}, {"name": "Jalen Suggs", "team": "ORL", "projection": 551, "estimatedCost": 1, "archetype": "Shooter", "games": 75, "pts": 69, "reb": 39, "ast": 67, "stl": 97, "blk": 77, "threes": 82, "fg_pct": 59, "ft_pct": 41, "to": 20}, {"name": "Klay Thompson", "team": "GSW", "projection": 551, "estimatedCost": 2, "archetype": "Balanced", "games": 77, "pts": 84, "reb": 45, "ast": 60, "stl": 49, "blk": 60, "threes": 99, "fg_pct": 28, "ft_pct": 98, "to": 27}, {"name": "Isaiah Hartenstein", "team": "NYK", "projection": 551, "estimatedCost": 2, "archetype": "Guard", "games": 75, "pts": 44, "reb": 93, "ast": 63, "stl": 90, "blk": 94, "threes": 6, "fg_pct": 97, "ft_pct": 25, "to": 38}, {"name": "Vince Williams Jr.", "team": "MEM", "projection": 550, "estimatedCost": 15, "archetype": "Guard", "games": 52, "pts": 57, "reb": 82, "ast": 74, "stl": 74, "blk": 78, "threes": 68, "fg_pct": 40, "ft_pct": 58, "to": 19}, {"name": "Jarrett Allen", "team": "CLE", "projection": 548, "estimatedCost": 9, "archetype": "Big Man", "games": 77, "pts": 81, "reb": 97, "ast": 67, "stl": 53, "blk": 92, "threes": 3, "fg_pct": 96, "ft_pct": 35, "to": 25}, {"name": "Ayo Dosunmu", "team": "CHI", "projection": 548, "estimatedCost": 15, "archetype": "Guard", "games": 76, "pts": 67, "reb": 34, "ast": 72, "stl": 72, "blk": 62, "threes": 69, "fg_pct": 76, "ft_pct": 63, "to": 33}, {"name": "Naz Reid", "team": "MIN", "projection": 548, "estimatedCost": 5, "archetype": "Shooter", "games": 81, "pts": 71, "reb": 77, "ast": 36, "stl": 61, "blk": 89, "threes": 84, "fg_pct": 63, "ft_pct": 33, "to": 33}, {"name": "Deni Avdija", "team": "WAS", "projection": 547, "estimatedCost": 1, "archetype": "Guard", "games": 75, "pts": 76, "reb": 90, "ast": 79, "stl": 62, "blk": 64, "threes": 54, "fg_pct": 77, "ft_pct": 34, "to": 13}, {"name": "Josh Giddey", "team": "OKC", "projection": 544, "estimatedCost": 14, "archetype": "Guard", "games": 80, "pts": 69, "reb": 85, "ast": 85, "stl": 50, "blk": 70, "threes": 48, "fg_pct": 62, "ft_pct": 61, "to": 14}, {"name": "Max Strus", "team": "CLE", "projection": 541, "estimatedCost": 15, "archetype": "Guard", "games": 70, "pts": 68, "reb": 73, "ast": 81, "stl": 76, "blk": 55, "threes": 89, "fg_pct": 20, "ft_pct": 56, "to": 23}, {"name": "Kelly Oubre Jr.", "team": "PHI", "projection": 540, "estimatedCost": 15, "archetype": "Guard", "games": 68, "pts": 78, "reb": 74, "ast": 42, "stl": 89, "blk": 81, "threes": 66, "fg_pct": 35, "ft_pct": 37, "to": 37}, {"name": "Tyler Herro", "team": "MIA", "projection": 538, "estimatedCost": 3, "archetype": "Guard", "games": 42, "pts": 90, "reb": 78, "ast": 84, "stl": 56, "blk": 4, "threes": 97, "fg_pct": 35, "ft_pct": 82, "to": 12}, {"name": "Onyeka Okongwu", "team": "ATL", "projection": 537, "estimatedCost": 1, "archetype": "Big Man", "games": 55, "pts": 58, "reb": 87, "ast": 38, "stl": 28, "blk": 93, "threes": 23, "fg_pct": 94, "ft_pct": 56, "to": 60}, {"name": "Luguentz Dort", "team": "OKC", "projection": 536, "estimatedCost": 15, "archetype": "Guard", "games": 79, "pts": 61, "reb": 51, "ast": 41, "stl": 73, "blk": 74, "threes": 81, "fg_pct": 33, "ft_pct": 71, "to": 52}, {"name": "Cameron Johnson", "team": "BKN", "projection": 535, "estimatedCost": 1, "archetype": "Balanced", "games": 58, "pts": 71, "reb": 66, "ast": 61, "stl": 68, "blk": 36, "threes": 89, "fg_pct": 40, "ft_pct": 53, "to": 51}, {"name": "Jordan Poole", "team": "WAS", "projection": 535, "estimatedCost": 2, "archetype": "Guard", "games": 78, "pts": 84, "reb": 32, "ast": 83, "stl": 88, "blk": 45, "threes": 88, "fg_pct": 16, "ft_pct": 90, "to": 10}, {"name": "Keldon Johnson", "team": "SAS", "projection": 535, "estimatedCost": 1, "archetype": "Balanced", "games": 69, "pts": 79, "reb": 80, "ast": 69, "stl": 58, "blk": 40, "threes": 77, "fg_pct": 47, "ft_pct": 55, "to": 29}, {"name": "Jusuf Nurkic", "team": "PHX", "projection": 535, "estimatedCost": 2, "archetype": "Guard", "games": 76, "pts": 62, "reb": 98, "ast": 80, "stl": 86, "blk": 93, "threes": 17, "fg_pct": 78, "ft_pct": 11, "to": 11}, {"name": "Caris LeVert", "team": "CLE", "projection": 534, "estimatedCost": 15, "archetype": "Guard", "games": 68, "pts": 74, "reb": 62, "ast": 88, "stl": 88, "blk": 65, "threes": 69, "fg_pct": 21, "ft_pct": 45, "to": 21}, {"name": "Collin Sexton", "team": "UTA", "projection": 534, "estimatedCost": 1, "archetype": "Guard", "games": 78, "pts": 85, "reb": 29, "ast": 86, "stl": 63, "blk": 32, "threes": 71, "fg_pct": 69, "ft_pct": 84, "to": 14}, {"name": "Jalen Green", "team": "HOU", "projection": 534, "estimatedCost": 2, "archetype": "Guard", "games": 82, "pts": 87, "reb": 76, "ast": 77, "stl": 64, "blk": 47, "threes": 90, "fg_pct": 22, "ft_pct": 60, "to": 10}, {"name": "Daniel Gafford", "team": "DAL, WAS", "projection": 534, "estimatedCost": 1, "archetype": "Big Man", "games": 74, "pts": 62, "reb": 91, "ast": 45, "stl": 69, "blk": 98, "threes": 3, "fg_pct": 100, "ft_pct": 15, "to": 49}, {"name": "Julius Randle", "team": "NYK", "projection": 533, "estimatedCost": 6, "archetype": "Guard", "games": 46, "pts": 95, "reb": 95, "ast": 87, "stl": 37, "blk": 36, "threes": 72, "fg_pct": 61, "ft_pct": 49, "to": 1}, {"name": "P.J. Washington", "team": "CHA, DAL", "projection": 532, "estimatedCost": 1, "archetype": "Guard", "games": 73, "pts": 70, "reb": 82, "ast": 53, "stl": 81, "blk": 86, "threes": 76, "fg_pct": 31, "ft_pct": 18, "to": 35}, {"name": "Tre Jones", "team": "SAS", "projection": 529, "estimatedCost": 1, "archetype": "Guard", "games": 77, "pts": 56, "reb": 54, "ast": 95, "stl": 83, "blk": 13, "threes": 42, "fg_pct": 77, "ft_pct": 82, "to": 27}, {"name": "Aaron Gordon", "team": "DEN", "projection": 529, "estimatedCost": 1, "archetype": "Guard", "games": 73, "pts": 73, "reb": 85, "ast": 77, "stl": 61, "blk": 75, "threes": 29, "fg_pct": 87, "ft_pct": 12, "to": 30}, {"name": "Jonas Valanciunas", "team": "NOP", "projection": 528, "estimatedCost": 15, "archetype": "Big Man", "games": 82, "pts": 68, "reb": 95, "ast": 57, "stl": 23, "blk": 87, "threes": 26, "fg_pct": 88, "ft_pct": 51, "to": 33}, {"name": "Immanuel Quickley", "team": "NYK, TOR", "projection": 528, "estimatedCost": 12, "archetype": "Guard", "games": 68, "pts": 82, "reb": 56, "ast": 86, "stl": 57, "blk": 19, "threes": 91, "fg_pct": 29, "ft_pct": 81, "to": 27}, {"name": "Malik Monk", "team": "SAC", "projection": 527, "estimatedCost": 1, "archetype": "Guard", "games": 72, "pts": 78, "reb": 36, "ast": 89, "stl": 46, "blk": 69, "threes": 83, "fg_pct": 38, "ft_pct": 73, "to": 15}, {"name": "Darius Garland", "team": "CLE", "projection": 527, "estimatedCost": 6, "archetype": "Guard", "games": 57, "pts": 85, "reb": 30, "ast": 96, "stl": 95, "blk": 15, "threes": 87, "fg_pct": 40, "ft_pct": 76, "to": 3}, {"name": "Obi Toppin", "team": "IND", "projection": 522, "estimatedCost": 15, "archetype": "Balanced", "games": 82, "pts": 59, "reb": 58, "ast": 45, "stl": 40, "blk": 67, "threes": 58, "fg_pct": 90, "ft_pct": 46, "to": 58}, {"name": "Jalen Duren", "team": "DET", "projection": 522, "estimatedCost": 14, "archetype": "Big Man", "games": 61, "pts": 73, "reb": 99, "ast": 62, "stl": 37, "blk": 85, "threes": 3, "fg_pct": 96, "ft_pct": 54, "to": 14}, {"name": "Amen Thompson", "team": "HOU", "projection": 519, "estimatedCost": 1, "archetype": "Guard", "games": 62, "pts": 54, "reb": 86, "ast": 65, "stl": 94, "blk": 75, "threes": 13, "fg_pct": 84, "ft_pct": 19, "to": 29}, {"name": "Malcolm Brogdon", "team": "POR", "projection": 518, "estimatedCost": 1, "archetype": "Guard", "games": 39, "pts": 80, "reb": 55, "ast": 91, "stl": 53, "blk": 28, "threes": 84, "fg_pct": 34, "ft_pct": 67, "to": 26}, {"name": "Shaedon Sharpe", "team": "POR", "projection": 518, "estimatedCost": 15, "archetype": "Guard", "games": 32, "pts": 80, "reb": 74, "ast": 70, "stl": 69, "blk": 52, "threes": 78, "fg_pct": 14, "ft_pct": 70, "to": 11}, {"name": "Luke Kornet", "team": "BOS", "projection": 516, "estimatedCost": 15, "archetype": "Balanced", "games": 63, "pts": 25, "reb": 62, "ast": 25, "stl": 20, "blk": 91, "threes": 7, "fg_pct": 99, "ft_pct": 96, "to": 92}, {"name": "Saddiq Bey", "team": "ATL", "projection": 516, "estimatedCost": 15, "archetype": "Balanced", "games": 63, "pts": 72, "reb": 86, "ast": 41, "stl": 65, "blk": 24, "threes": 76, "fg_pct": 18, "ft_pct": 77, "to": 57}, {"name": "Rui Hachimura", "team": "LAL", "projection": 514, "estimatedCost": 1, "archetype": "Balanced", "games": 68, "pts": 72, "reb": 66, "ast": 31, "stl": 44, "blk": 51, "threes": 65, "fg_pct": 85, "ft_pct": 34, "to": 68}, {"name": "Sam Hauser", "team": "BOS", "projection": 514, "estimatedCost": 15, "archetype": "Balanced", "games": 79, "pts": 51, "reb": 49, "ast": 23, "stl": 31, "blk": 45, "threes": 91, "fg_pct": 40, "ft_pct": 94, "to": 90}, {"name": "De'Andre Hunter", "team": "ATL", "projection": 513, "estimatedCost": 1, "archetype": "Shooter", "games": 57, "pts": 79, "reb": 58, "ast": 44, "stl": 55, "blk": 39, "threes": 83, "fg_pct": 50, "ft_pct": 78, "to": 29}, {"name": "Duncan Robinson", "team": "MIA", "projection": 513, "estimatedCost": 15, "archetype": "Balanced", "games": 68, "pts": 70, "reb": 28, "ast": 68, "stl": 52, "blk": 33, "threes": 94, "fg_pct": 44, "ft_pct": 93, "to": 32}, {"name": "Chris Paul", "team": "GSW", "projection": 513, "estimatedCost": 1, "archetype": "Guard", "games": 58, "pts": 52, "reb": 58, "ast": 97, "stl": 92, "blk": 9, "threes": 62, "fg_pct": 35, "ft_pct": 72, "to": 35}, {"name": "Jaime Jaquez Jr.", "team": "MIA", "projection": 512, "estimatedCost": 15, "archetype": "Guard", "games": 75, "pts": 66, "reb": 55, "ast": 65, "stl": 85, "blk": 37, "threes": 43, "fg_pct": 71, "ft_pct": 63, "to": 28}, {"name": "Cam Thomas", "team": "BKN", "projection": 511, "estimatedCost": 10, "archetype": "Balanced", "games": 66, "pts": 92, "reb": 44, "ast": 70, "stl": 52, "blk": 33, "threes": 85, "fg_pct": 36, "ft_pct": 82, "to": 17}, {"name": "Jonathan Kuminga", "team": "GSW", "projection": 510, "estimatedCost": 2, "archetype": "Big Man", "games": 74, "pts": 81, "reb": 72, "ast": 58, "stl": 59, "blk": 64, "threes": 35, "fg_pct": 82, "ft_pct": 36, "to": 23}, {"name": "RJ Barrett", "team": "NYK, TOR", "projection": 510, "estimatedCost": 1, "archetype": "Guard", "games": 58, "pts": 89, "reb": 80, "ast": 73, "stl": 36, "blk": 52, "threes": 68, "fg_pct": 73, "ft_pct": 27, "to": 12}, {"name": "Wendell Carter Jr.", "team": "ORL", "projection": 509, "estimatedCost": 1, "archetype": "Big Man", "games": 55, "pts": 62, "reb": 88, "ast": 50, "stl": 48, "blk": 66, "threes": 54, "fg_pct": 81, "ft_pct": 22, "to": 38}, {"name": "Paul Reed", "team": "PHI", "projection": 509, "estimatedCost": 15, "archetype": "Big Man", "games": 82, "pts": 42, "reb": 83, "ast": 37, "stl": 65, "blk": 92, "threes": 16, "fg_pct": 86, "ft_pct": 28, "to": 60}, {"name": "Kyle Lowry", "team": "MIA, PHI", "projection": 509, "estimatedCost": 15, "archetype": "Guard", "games": 60, "pts": 46, "reb": 43, "ast": 82, "stl": 81, "blk": 49, "threes": 71, "fg_pct": 28, "ft_pct": 78, "to": 31}, {"name": "Nic Claxton", "team": "BKN", "projection": 507, "estimatedCost": 5, "archetype": "Big Man", "games": 71, "pts": 66, "reb": 96, "ast": 56, "stl": 49, "blk": 98, "threes": 7, "fg_pct": 96, "ft_pct": 4, "to": 35}, {"name": "Patrick Williams", "team": "CHI", "projection": 507, "estimatedCost": 15, "archetype": "Guard", "games": 43, "pts": 56, "reb": 57, "ast": 44, "stl": 78, "blk": 84, "threes": 63, "fg_pct": 38, "ft_pct": 53, "to": 35}, {"name": "Bruce Brown", "team": "IND, TOR", "projection": 507, "estimatedCost": 15, "archetype": "Balanced", "games": 67, "pts": 61, "reb": 64, "ast": 69, "stl": 70, "blk": 35, "threes": 39, "fg_pct": 63, "ft_pct": 70, "to": 37}, {"name": "Isaiah Stewart", "team": "DET", "projection": 506, "estimatedCost": 15, "archetype": "Big Man", "games": 46, "pts": 62, "reb": 87, "ast": 46, "stl": 20, "blk": 87, "threes": 65, "fg_pct": 69, "ft_pct": 39, "to": 30}, {"name": "Anfernee Simons", "team": "POR", "projection": 505, "estimatedCost": 3, "archetype": "Guard", "games": 46, "pts": 93, "reb": 51, "ast": 92, "stl": 31, "blk": 11, "threes": 99, "fg_pct": 26, "ft_pct": 97, "to": 5}, {"name": "Larry Nance Jr.", "team": "NOP", "projection": 504, "estimatedCost": 15, "archetype": "Guard", "games": 61, "pts": 30, "reb": 74, "ast": 52, "stl": 82, "blk": 44, "threes": 25, "fg_pct": 90, "ft_pct": 46, "to": 61}, {"name": "Santi Aldama", "team": "MEM", "projection": 504, "estimatedCost": 15, "archetype": "Big Man", "games": 61, "pts": 60, "reb": 82, "ast": 59, "stl": 55, "blk": 89, "threes": 74, "fg_pct": 30, "ft_pct": 9, "to": 45}, {"name": "Simone Fontecchio", "team": "DET, UTA", "projection": 504, "estimatedCost": 15, "archetype": "Shooter", "games": 66, "pts": 60, "reb": 54, "ast": 44, "stl": 51, "blk": 48, "threes": 82, "fg_pct": 51, "ft_pct": 67, "to": 47}, {"name": "Jakob Poeltl", "team": "TOR", "projection": 503, "estimatedCost": 2, "archetype": "Big Man", "games": 50, "pts": 64, "reb": 94, "ast": 64, "stl": 54, "blk": 97, "threes": 3, "fg_pct": 97, "ft_pct": 4, "to": 26}, {"name": "Josh Hart", "team": "NYK", "projection": 502, "estimatedCost": 4, "archetype": "Guard", "games": 81, "pts": 54, "reb": 93, "ast": 81, "stl": 77, "blk": 39, "threes": 46, "fg_pct": 29, "ft_pct": 55, "to": 28}, {"name": "John Konchar", "team": "MEM", "projection": 502, "estimatedCost": 15, "archetype": "Guard", "games": 55, "pts": 16, "reb": 72, "ast": 55, "stl": 78, "blk": 90, "threes": 34, "fg_pct": 22, "ft_pct": 78, "to": 59}, {"name": "Jeremy Sochan", "team": "SAS", "projection": 502, "estimatedCost": 15, "archetype": "Guard", "games": 74, "pts": 65, "reb": 85, "ast": 74, "stl": 67, "blk": 69, "threes": 44, "fg_pct": 33, "ft_pct": 47, "to": 17}, {"name": "Josh Richardson", "team": "MIA", "projection": 501, "estimatedCost": 15, "archetype": "Balanced", "games": 43, "pts": 56, "reb": 34, "ast": 63, "stl": 39, "blk": 45, "threes": 68, "fg_pct": 39, "ft_pct": 99, "to": 59}, {"name": "Rudy Gobert", "team": "MIN", "projection": 499, "estimatedCost": 13, "archetype": "Big Man", "games": 76, "pts": 74, "reb": 100, "ast": 38, "stl": 52, "blk": 99, "threes": 3, "fg_pct": 98, "ft_pct": 10, "to": 26}, {"name": "Eric Gordon", "team": "PHX", "projection": 499, "estimatedCost": 8, "archetype": "Guard", "games": 68, "pts": 63, "reb": 15, "ast": 56, "stl": 80, "blk": 59, "threes": 86, "fg_pct": 38, "ft_pct": 57, "to": 46}, {"name": "Kevin Huerter", "team": "SAC", "projection": 498, "estimatedCost": 8, "archetype": "Balanced", "games": 64, "pts": 58, "reb": 49, "ast": 64, "stl": 55, "blk": 49, "threes": 80, "fg_pct": 38, "ft_pct": 45, "to": 60}, {"name": "Cason Wallace", "team": "OKC", "projection": 497, "estimatedCost": 8, "archetype": "Guard", "games": 82, "pts": 37, "reb": 24, "ast": 42, "stl": 78, "blk": 60, "threes": 55, "fg_pct": 72, "ft_pct": 51, "to": 80}, {"name": "Dennis Schroder", "team": "BKN, TOR", "projection": 495, "estimatedCost": 8, "archetype": "Guard", "games": 80, "pts": 75, "reb": 37, "ast": 94, "stl": 62, "blk": 29, "threes": 74, "fg_pct": 30, "ft_pct": 76, "to": 17}, {"name": "Cole Anthony", "team": "ORL", "projection": 494, "estimatedCost": 8, "archetype": "Balanced", "games": 81, "pts": 65, "reb": 57, "ast": 70, "stl": 63, "blk": 61, "threes": 52, "fg_pct": 30, "ft_pct": 71, "to": 25}, {"name": "Taylor Hendricks", "team": "UTA", "projection": 493, "estimatedCost": 1, "archetype": "Big Man", "games": 40, "pts": 42, "reb": 71, "ast": 15, "stl": 54, "blk": 83, "threes": 62, "fg_pct": 44, "ft_pct": 56, "to": 69}, {"name": "Jonathan Isaac", "team": "ORL", "projection": 493, "estimatedCost": 8, "archetype": "Balanced", "games": 58, "pts": 36, "reb": 69, "ast": 6, "stl": 59, "blk": 95, "threes": 35, "fg_pct": 78, "ft_pct": 29, "to": 85}, {"name": "Norman Powell", "team": "LAC", "projection": 492, "estimatedCost": 1, "archetype": "Shooter", "games": 76, "pts": 74, "reb": 28, "ast": 26, "stl": 40, "blk": 40, "threes": 86, "fg_pct": 68, "ft_pct": 74, "to": 57}, {"name": "Ausar Thompson", "team": "DET", "projection": 492, "estimatedCost": 1, "archetype": "Guard", "games": 63, "pts": 51, "reb": 85, "ast": 53, "stl": 87, "blk": 90, "threes": 19, "fg_pct": 66, "ft_pct": 7, "to": 34}, {"name": "Zach Collins", "team": "SAS", "projection": 489, "estimatedCost": 8, "archetype": "Big Man", "games": 69, "pts": 64, "reb": 79, "ast": 68, "stl": 30, "blk": 83, "threes": 42, "fg_pct": 67, "ft_pct": 39, "to": 16}, {"name": "Andrew Wiggins", "team": "GSW", "projection": 488, "estimatedCost": 8, "archetype": "Balanced", "games": 71, "pts": 71, "reb": 69, "ast": 49, "stl": 44, "blk": 72, "threes": 60, "fg_pct": 46, "ft_pct": 38, "to": 39}, {"name": "Gary Trent Jr.", "team": "TOR", "projection": 487, "estimatedCost": 1, "archetype": "Guard", "games": 71, "pts": 72, "reb": 29, "ast": 49, "stl": 87, "blk": 18, "threes": 91, "fg_pct": 23, "ft_pct": 47, "to": 70}, {"name": "Clint Capela", "team": "ATL", "projection": 486, "estimatedCost": 1, "archetype": "Big Man", "games": 73, "pts": 65, "reb": 97, "ast": 34, "stl": 43, "blk": 96, "threes": 3, "fg_pct": 90, "ft_pct": 10, "to": 48}, {"name": "Ivica Zubac", "team": "LAC", "projection": 486, "estimatedCost": 2, "archetype": "Big Man", "games": 68, "pts": 66, "reb": 95, "ast": 39, "stl": 16, "blk": 96, "threes": 3, "fg_pct": 97, "ft_pct": 30, "to": 44}, {"name": "Nicolas Batum", "team": "LAC, PHI", "projection": 483, "estimatedCost": 8, "archetype": "Balanced", "games": 60, "pts": 26, "reb": 62, "ast": 58, "stl": 64, "blk": 77, "threes": 56, "fg_pct": 46, "ft_pct": 27, "to": 70}, {"name": "Grant Williams", "team": "CHA, DAL", "projection": 483, "estimatedCost": 8, "archetype": "Balanced", "games": 76, "pts": 59, "reb": 63, "ast": 60, "stl": 41, "blk": 67, "threes": 72, "fg_pct": 49, "ft_pct": 41, "to": 30}, {"name": "Dorian Finney-Smith", "team": "BKN", "projection": 480, "estimatedCost": 8, "archetype": "Big Man", "games": 68, "pts": 49, "reb": 71, "ast": 45, "stl": 66, "blk": 71, "threes": 74, "fg_pct": 21, "ft_pct": 28, "to": 57}, {"name": "Isaac Okoro", "team": "CLE", "projection": 480, "estimatedCost": 8, "archetype": "Balanced", "games": 69, "pts": 53, "reb": 37, "ast": 53, "stl": 66, "blk": 65, "threes": 56, "fg_pct": 71, "ft_pct": 17, "to": 62}, {"name": "Terance Mann", "team": "LAC", "projection": 480, "estimatedCost": 8, "archetype": "Balanced", "games": 75, "pts": 50, "reb": 46, "ast": 46, "stl": 40, "blk": 27, "threes": 45, "fg_pct": 80, "ft_pct": 74, "to": 73}, {"name": "Jaden McDaniels", "team": "MIN", "projection": 477, "estimatedCost": 8, "archetype": "Balanced", "games": 72, "pts": 60, "reb": 40, "ast": 41, "stl": 69, "blk": 73, "threes": 55, "fg_pct": 71, "ft_pct": 29, "to": 41}, {"name": "Royce O'Neale", "team": "BKN, PHX", "projection": 477, "estimatedCost": 8, "archetype": "Big Man", "games": 79, "pts": 44, "reb": 72, "ast": 67, "stl": 60, "blk": 70, "threes": 81, "fg_pct": 11, "ft_pct": 19, "to": 53}, {"name": "Isaiah Joe", "team": "OKC", "projection": 477, "estimatedCost": 8, "archetype": "Balanced", "games": 78, "pts": 47, "reb": 25, "ast": 34, "stl": 43, "blk": 39, "threes": 79, "fg_pct": 49, "ft_pct": 86, "to": 75}, {"name": "Caleb Martin", "team": "MIA", "projection": 475, "estimatedCost": 8, "archetype": "Balanced", "games": 64, "pts": 56, "reb": 68, "ast": 59, "stl": 57, "blk": 60, "threes": 59, "fg_pct": 27, "ft_pct": 49, "to": 41}, {"name": "Dillon Brooks", "team": "HOU", "projection": 472, "estimatedCost": 8, "archetype": "Guard", "games": 72, "pts": 70, "reb": 47, "ast": 48, "stl": 71, "blk": 17, "threes": 78, "fg_pct": 24, "ft_pct": 78, "to": 40}, {"name": "Jalen Smith", "team": "IND", "projection": 472, "estimatedCost": 8, "archetype": "Big Man", "games": 61, "pts": 55, "reb": 81, "ast": 23, "stl": 12, "blk": 76, "threes": 47, "fg_pct": 92, "ft_pct": 21, "to": 65}, {"name": "Harrison Barnes", "team": "SAC", "projection": 472, "estimatedCost": 8, "archetype": "Shooter", "games": 82, "pts": 68, "reb": 38, "ast": 32, "stl": 51, "blk": 18, "threes": 77, "fg_pct": 62, "ft_pct": 59, "to": 67}, {"name": "Jaden Ivey", "team": "DET", "projection": 472, "estimatedCost": 1, "archetype": "Guard", "games": 77, "pts": 78, "reb": 48, "ast": 79, "stl": 58, "blk": 68, "threes": 70, "fg_pct": 25, "ft_pct": 36, "to": 9}, {"name": "Marvin Bagley III", "team": "DET, WAS", "projection": 472, "estimatedCost": 8, "archetype": "Big Man", "games": 50, "pts": 66, "reb": 84, "ast": 28, "stl": 23, "blk": 79, "threes": 14, "fg_pct": 92, "ft_pct": 44, "to": 43}, {"name": "Mitchell Robinson", "team": "NYK", "projection": 471, "estimatedCost": 8, "archetype": "Guard", "games": 31, "pts": 28, "reb": 94, "ast": 8, "stl": 91, "blk": 94, "threes": 3, "fg_pct": 90, "ft_pct": 1, "to": 61}, {"name": "Dereck Lively II", "team": "DAL", "projection": 470, "estimatedCost": 2, "archetype": "Big Man", "games": 55, "pts": 50, "reb": 88, "ast": 27, "stl": 50, "blk": 96, "threes": 3, "fg_pct": 100, "ft_pct": 3, "to": 54}, {"name": "Payton Pritchard", "team": "BOS", "projection": 470, "estimatedCost": 8, "archetype": "Shooter", "games": 82, "pts": 54, "reb": 43, "ast": 75, "stl": 29, "blk": 5, "threes": 75, "fg_pct": 58, "ft_pct": 68, "to": 64}, {"name": "Luke Kennard", "team": "MEM", "projection": 470, "estimatedCost": 8, "archetype": "Guard", "games": 39, "pts": 62, "reb": 35, "ast": 76, "stl": 33, "blk": 2, "threes": 94, "fg_pct": 42, "ft_pct": 93, "to": 32}, {"name": "Nickeil Alexander-Walker", "team": "MIN", "projection": 469, "estimatedCost": 8, "archetype": "Balanced", "games": 82, "pts": 45, "reb": 19, "ast": 63, "stl": 61, "blk": 67, "threes": 70, "fg_pct": 33, "ft_pct": 58, "to": 53}, {"name": "Chimezie Metu", "team": "DET, PHX", "projection": 468, "estimatedCost": 8, "archetype": "Balanced", "games": 51, "pts": 34, "reb": 55, "ast": 19, "stl": 68, "blk": 44, "threes": 29, "fg_pct": 76, "ft_pct": 95, "to": 48}, {"name": "Russell Westbrook", "team": "LAC", "projection": 468, "estimatedCost": 8, "archetype": "Guard", "games": 68, "pts": 64, "reb": 74, "ast": 84, "stl": 88, "blk": 47, "threes": 32, "fg_pct": 47, "ft_pct": 20, "to": 13}, {"name": "Jordan Clarkson", "team": "UTA", "projection": 462, "estimatedCost": 8, "archetype": "Guard", "games": 55, "pts": 83, "reb": 47, "ast": 88, "stl": 48, "blk": 11, "threes": 72, "fg_pct": 16, "ft_pct": 91, "to": 6}, {"name": "Bennedict Mathurin", "team": "IND", "projection": 460, "estimatedCost": 8, "archetype": "Balanced", "games": 59, "pts": 75, "reb": 59, "ast": 55, "stl": 44, "blk": 33, "threes": 63, "fg_pct": 40, "ft_pct": 68, "to": 23}, {"name": "Miles McBride", "team": "NYK", "projection": 459, "estimatedCost": 8, "archetype": "Balanced", "games": 68, "pts": 48, "reb": 8, "ast": 49, "stl": 57, "blk": 9, "threes": 70, "fg_pct": 45, "ft_pct": 85, "to": 88}, {"name": "Brandin Podziemski", "team": "GSW", "projection": 459, "estimatedCost": 1, "archetype": "Guard", "games": 74, "pts": 53, "reb": 82, "ast": 78, "stl": 66, "blk": 26, "threes": 56, "fg_pct": 47, "ft_pct": 10, "to": 43}, {"name": "T.J. McConnell", "team": "IND", "projection": 459, "estimatedCost": 8, "archetype": "Guard", "games": 71, "pts": 58, "reb": 31, "ast": 92, "stl": 83, "blk": 11, "threes": 16, "fg_pct": 87, "ft_pct": 54, "to": 27}, {"name": "Jake LaRavia", "team": "MEM", "projection": 457, "estimatedCost": 8, "archetype": "Balanced", "games": 35, "pts": 61, "reb": 52, "ast": 48, "stl": 67, "blk": 48, "threes": 67, "fg_pct": 7, "ft_pct": 71, "to": 36}, {"name": "Toumani Camara", "team": "POR", "projection": 457, "estimatedCost": 8, "archetype": "Guard", "games": 70, "pts": 43, "reb": 73, "ast": 33, "stl": 79, "blk": 61, "threes": 41, "fg_pct": 44, "ft_pct": 41, "to": 42}, {"name": "Nick Richards", "team": "CHA", "projection": 457, "estimatedCost": 8, "archetype": "Big Man", "games": 67, "pts": 54, "reb": 92, "ast": 15, "stl": 21, "blk": 94, "threes": 3, "fg_pct": 99, "ft_pct": 33, "to": 46}, {"name": "GG Jackson", "team": "MEM", "projection": 456, "estimatedCost": 8, "archetype": "Balanced", "games": 48, "pts": 76, "reb": 61, "ast": 33, "stl": 42, "blk": 65, "threes": 85, "fg_pct": 24, "ft_pct": 39, "to": 33}, {"name": "Malik Beasley", "team": "MIL", "projection": 454, "estimatedCost": 8, "archetype": "Balanced", "games": 79, "pts": 64, "reb": 53, "ast": 39, "stl": 60, "blk": 12, "threes": 95, "fg_pct": 38, "ft_pct": 27, "to": 68}, {"name": "Matisse Thybulle", "team": "POR", "projection": 454, "estimatedCost": 8, "archetype": "Guard", "games": 65, "pts": 27, "reb": 21, "ast": 40, "stl": 99, "blk": 83, "threes": 57, "fg_pct": 11, "ft_pct": 42, "to": 74}, {"name": "Tre Mann", "team": "CHA, OKC", "projection": 454, "estimatedCost": 8, "archetype": "Guard", "games": 41, "pts": 53, "reb": 52, "ast": 81, "stl": 93, "blk": 5, "threes": 52, "fg_pct": 50, "ft_pct": 44, "to": 24}, {"name": "Dario Saric", "team": "GSW", "projection": 452, "estimatedCost": 8, "archetype": "Balanced", "games": 64, "pts": 45, "reb": 68, "ast": 59, "stl": 29, "blk": 21, "threes": 53, "fg_pct": 57, "ft_pct": 79, "to": 40}, {"name": "Moritz Wagner", "team": "ORL", "projection": 451, "estimatedCost": 8, "archetype": "Balanced", "games": 80, "pts": 61, "reb": 67, "ast": 32, "stl": 30, "blk": 37, "threes": 27, "fg_pct": 93, "ft_pct": 64, "to": 41}, {"name": "Tim Hardaway Jr.", "team": "DAL", "projection": 451, "estimatedCost": 8, "archetype": "Balanced", "games": 79, "pts": 75, "reb": 42, "ast": 51, "stl": 35, "blk": 6, "threes": 92, "fg_pct": 12, "ft_pct": 80, "to": 56}, {"name": "Precious Achiuwa", "team": "NYK, TOR", "projection": 450, "estimatedCost": 8, "archetype": "Big Man", "games": 74, "pts": 43, "reb": 86, "ast": 37, "stl": 46, "blk": 90, "threes": 20, "fg_pct": 76, "ft_pct": 9, "to": 45}, {"name": "Bilal Coulibaly", "team": "WAS", "projection": 450, "estimatedCost": 8, "archetype": "Guard", "games": 63, "pts": 48, "reb": 60, "ast": 51, "stl": 74, "blk": 83, "threes": 47, "fg_pct": 30, "ft_pct": 23, "to": 33}, {"name": "Derrick Jones Jr.", "team": "DAL", "projection": 450, "estimatedCost": 4, "archetype": "Balanced", "games": 76, "pts": 49, "reb": 45, "ast": 21, "stl": 54, "blk": 80, "threes": 50, "fg_pct": 66, "ft_pct": 26, "to": 58}, {"name": "Spencer Dinwiddie", "team": "BKN, LAL", "projection": 448, "estimatedCost": 4, "archetype": "Guard", "games": 76, "pts": 60, "reb": 31, "ast": 85, "stl": 51, "blk": 40, "threes": 71, "fg_pct": 8, "ft_pct": 60, "to": 42}, {"name": "Taurean Prince", "team": "LAL", "projection": 447, "estimatedCost": 4, "archetype": "Balanced", "games": 78, "pts": 51, "reb": 36, "ast": 44, "stl": 60, "blk": 60, "threes": 76, "fg_pct": 36, "ft_pct": 32, "to": 52}, {"name": "Keon Ellis", "team": "SAC", "projection": 446, "estimatedCost": 4, "archetype": "Guard", "games": 57, "pts": 27, "reb": 22, "ast": 42, "stl": 72, "blk": 66, "threes": 57, "fg_pct": 53, "ft_pct": 35, "to": 72}, {"name": "Trayce Jackson-Davis", "team": "GSW", "projection": 445, "estimatedCost": 1, "archetype": "Big Man", "games": 67, "pts": 46, "reb": 76, "ast": 32, "stl": 26, "blk": 94, "threes": 3, "fg_pct": 99, "ft_pct": 5, "to": 65}, {"name": "Isaiah Jackson", "team": "IND", "projection": 445, "estimatedCost": 4, "archetype": "Balanced", "games": 58, "pts": 35, "reb": 61, "ast": 17, "stl": 42, "blk": 92, "threes": 3, "fg_pct": 98, "ft_pct": 28, "to": 69}, {"name": "Walker Kessler", "team": "UTA", "projection": 445, "estimatedCost": 3, "archetype": "Big Man", "games": 64, "pts": 46, "reb": 91, "ast": 19, "stl": 27, "blk": 100, "threes": 10, "fg_pct": 97, "ft_pct": 7, "to": 47}, {"name": "Kyle Anderson", "team": "MIN", "projection": 444, "estimatedCost": 4, "archetype": "Guard", "games": 79, "pts": 33, "reb": 48, "ast": 82, "stl": 73, "blk": 74, "threes": 13, "fg_pct": 51, "ft_pct": 26, "to": 44}, {"name": "Corey Kispert", "team": "WAS", "projection": 444, "estimatedCost": 4, "archetype": "Shooter", "games": 80, "pts": 71, "reb": 33, "ast": 54, "stl": 34, "blk": 27, "threes": 87, "fg_pct": 68, "ft_pct": 30, "to": 39}, {"name": "Talen Horton-Tucker", "team": "UTA", "projection": 444, "estimatedCost": 4, "archetype": "Guard", "games": 51, "pts": 57, "reb": 27, "ast": 75, "stl": 70, "blk": 51, "threes": 54, "fg_pct": 10, "ft_pct": 62, "to": 37}, {"name": "Andrew Nembhard", "team": "IND", "projection": 443, "estimatedCost": 4, "archetype": "Guard", "games": 68, "pts": 52, "reb": 20, "ast": 82, "stl": 77, "blk": 7, "threes": 44, "fg_pct": 74, "ft_pct": 60, "to": 27}, {"name": "Andre Drummond", "team": "CHI", "projection": 443, "estimatedCost": 1, "archetype": "Guard", "games": 79, "pts": 48, "reb": 95, "ast": 5, "stl": 77, "blk": 75, "threes": 3, "fg_pct": 87, "ft_pct": 7, "to": 48}, {"name": "Dyson Daniels", "team": "NOP", "projection": 443, "estimatedCost": 4, "archetype": "Guard", "games": 61, "pts": 30, "reb": 57, "ast": 66, "stl": 97, "blk": 55, "threes": 34, "fg_pct": 42, "ft_pct": 11, "to": 52}, {"name": "Kevin Love", "team": "MIA", "projection": 443, "estimatedCost": 4, "archetype": "Balanced", "games": 55, "pts": 50, "reb": 84, "ast": 57, "stl": 16, "blk": 25, "threes": 68, "fg_pct": 34, "ft_pct": 52, "to": 56}, {"name": "Dean Wade", "team": "CLE", "projection": 438, "estimatedCost": 4, "archetype": "Balanced", "games": 54, "pts": 26, "reb": 60, "ast": 14, "stl": 59, "blk": 61, "threes": 66, "fg_pct": 17, "ft_pct": 46, "to": 90}, {"name": "Goga Bitadze", "team": "ORL", "projection": 437, "estimatedCost": 4, "archetype": "Big Man", "games": 62, "pts": 23, "reb": 71, "ast": 35, "stl": 33, "blk": 95, "threes": 9, "fg_pct": 94, "ft_pct": 12, "to": 66}, {"name": "Duop Reath", "team": "POR", "projection": 436, "estimatedCost": 4, "archetype": "Balanced", "games": 68, "pts": 52, "reb": 53, "ast": 21, "stl": 30, "blk": 71, "threes": 61, "fg_pct": 53, "ft_pct": 35, "to": 63}, {"name": "Julian Champagnie", "team": "SAS", "projection": 436, "estimatedCost": 4, "archetype": "Balanced", "games": 74, "pts": 37, "reb": 33, "ast": 40, "stl": 49, "blk": 71, "threes": 63, "fg_pct": 15, "ft_pct": 65, "to": 63}, {"name": "Daniel Theis", "team": "IND, LAC", "projection": 436, "estimatedCost": 4, "archetype": "Balanced", "games": 60, "pts": 32, "reb": 60, "ast": 22, "stl": 17, "blk": 88, "threes": 24, "fg_pct": 83, "ft_pct": 43, "to": 67}, {"name": "Kris Dunn", "team": "UTA", "projection": 435, "estimatedCost": 4, "archetype": "Guard", "games": 66, "pts": 27, "reb": 35, "ast": 80, "stl": 85, "blk": 57, "threes": 32, "fg_pct": 59, "ft_pct": 20, "to": 42}, {"name": "Georges Niang", "team": "CLE", "projection": 435, "estimatedCost": 4, "archetype": "Balanced", "games": 82, "pts": 53, "reb": 46, "ast": 31, "stl": 20, "blk": 30, "threes": 77, "fg_pct": 43, "ft_pct": 80, "to": 56}, {"name": "Gordon Hayward", "team": "CHA, OKC", "projection": 435, "estimatedCost": 4, "archetype": "Guard", "games": 51, "pts": 55, "reb": 50, "ast": 71, "stl": 62, "blk": 35, "threes": 36, "fg_pct": 55, "ft_pct": 35, "to": 36}, {"name": "Scoot Henderson", "team": "POR", "projection": 433, "estimatedCost": 1, "archetype": "Guard", "games": 62, "pts": 74, "reb": 40, "ast": 91, "stl": 61, "blk": 28, "threes": 64, "fg_pct": 6, "ft_pct": 67, "to": 2}, {"name": "Naji Marshall", "team": "NOP", "projection": 432, "estimatedCost": 4, "archetype": "Balanced", "games": 66, "pts": 40, "reb": 52, "ast": 54, "stl": 59, "blk": 25, "threes": 43, "fg_pct": 55, "ft_pct": 55, "to": 50}, {"name": "Patrick Beverley", "team": "MIL, PHI", "projection": 430, "estimatedCost": 4, "archetype": "Balanced", "games": 73, "pts": 31, "reb": 45, "ast": 69, "stl": 43, "blk": 58, "threes": 42, "fg_pct": 19, "ft_pct": 69, "to": 55}, {"name": "Aaron Wiggins", "team": "OKC", "projection": 429, "estimatedCost": 4, "archetype": "Balanced", "games": 78, "pts": 39, "reb": 27, "ast": 28, "stl": 56, "blk": 33, "threes": 40, "fg_pct": 88, "ft_pct": 53, "to": 66}, {"name": "Thomas Bryant", "team": "MIA", "projection": 429, "estimatedCost": 4, "archetype": "Balanced", "games": 38, "pts": 29, "reb": 53, "ast": 9, "stl": 10, "blk": 57, "threes": 12, "fg_pct": 91, "ft_pct": 89, "to": 80}, {"name": "Amir Coffey", "team": "LAC", "projection": 428, "estimatedCost": 4, "archetype": "Balanced", "games": 70, "pts": 35, "reb": 21, "ast": 27, "stl": 42, "blk": 27, "threes": 47, "fg_pct": 61, "ft_pct": 84, "to": 85}, {"name": "Gary Harris", "team": "ORL", "projection": 427, "estimatedCost": 4, "archetype": "Guard", "games": 54, "pts": 38, "reb": 13, "ast": 47, "stl": 75, "blk": 36, "threes": 64, "fg_pct": 35, "ft_pct": 41, "to": 78}, {"name": "Nikola Jovic", "team": "MIA", "projection": 425, "estimatedCost": 4, "archetype": "Balanced", "games": 46, "pts": 43, "reb": 63, "ast": 54, "stl": 37, "blk": 42, "threes": 64, "fg_pct": 45, "ft_pct": 23, "to": 53}, {"name": "Sam Merrill", "team": "CLE", "projection": 425, "estimatedCost": 4, "archetype": "Balanced", "games": 61, "pts": 45, "reb": 18, "ast": 51, "stl": 16, "blk": 4, "threes": 88, "fg_pct": 12, "ft_pct": 98, "to": 93}, {"name": "Josh Green", "team": "DAL", "projection": 424, "estimatedCost": 4, "archetype": "Balanced", "games": 57, "pts": 47, "reb": 43, "ast": 60, "stl": 66, "blk": 21, "threes": 59, "fg_pct": 64, "ft_pct": 19, "to": 46}, {"name": "Moses Moody", "team": "GSW", "projection": 423, "estimatedCost": 4, "archetype": "Balanced", "games": 66, "pts": 46, "reb": 37, "ast": 17, "stl": 48, "blk": 50, "threes": 51, "fg_pct": 54, "ft_pct": 51, "to": 70}, {"name": "Cam Whitmore", "team": "HOU", "projection": 422, "estimatedCost": 4, "archetype": "Balanced", "games": 47, "pts": 68, "reb": 56, "ast": 11, "stl": 48, "blk": 50, "threes": 73, "fg_pct": 47, "ft_pct": 17, "to": 51}, {"name": "Haywood Highsmith", "team": "MIA", "projection": 421, "estimatedCost": 4, "archetype": "Balanced", "games": 66, "pts": 31, "reb": 41, "ast": 24, "stl": 64, "blk": 60, "threes": 53, "fg_pct": 56, "ft_pct": 10, "to": 82}, {"name": "Markelle Fultz", "team": "ORL", "projection": 420, "estimatedCost": 4, "archetype": "Guard", "games": 43, "pts": 44, "reb": 42, "ast": 67, "stl": 80, "blk": 49, "threes": 11, "fg_pct": 61, "ft_pct": 22, "to": 43}, {"name": "Delon Wright", "team": "MIA, WAS", "projection": 420, "estimatedCost": 4, "archetype": "Guard", "games": 47, "pts": 19, "reb": 16, "ast": 64, "stl": 89, "blk": 32, "threes": 29, "fg_pct": 9, "ft_pct": 69, "to": 93}, {"name": "Jabari Walker", "team": "POR", "projection": 419, "estimatedCost": 4, "archetype": "Balanced", "games": 72, "pts": 51, "reb": 89, "ast": 21, "stl": 42, "blk": 43, "threes": 30, "fg_pct": 51, "ft_pct": 40, "to": 53}, {"name": "Drew Eubanks", "team": "PHX", "projection": 419, "estimatedCost": 4, "archetype": "Balanced", "games": 75, "pts": 23, "reb": 65, "ast": 16, "stl": 19, "blk": 86, "threes": 9, "fg_pct": 93, "ft_pct": 47, "to": 61}, {"name": "Jared Butler", "team": "WAS", "projection": 419, "estimatedCost": 4, "archetype": "Guard", "games": 40, "pts": 32, "reb": 8, "ast": 72, "stl": 56, "blk": 27, "threes": 31, "fg_pct": 70, "ft_pct": 85, "to": 38}, {"name": "Day'Ron Sharpe", "team": "BKN", "projection": 417, "estimatedCost": 4, "archetype": "Big Man", "games": 61, "pts": 36, "reb": 84, "ast": 40, "stl": 22, "blk": 82, "threes": 10, "fg_pct": 90, "ft_pct": 8, "to": 44}, {"name": "Bol Bol", "team": "PHX", "projection": 417, "estimatedCost": 4, "archetype": "Balanced", "games": 42, "pts": 25, "reb": 44, "ast": 2, "stl": 7, "blk": 74, "threes": 28, "fg_pct": 95, "ft_pct": 53, "to": 87}, {"name": "Marcus Sasser", "team": "DET", "projection": 416, "estimatedCost": 4, "archetype": "Guard", "games": 71, "pts": 47, "reb": 14, "ast": 73, "stl": 45, "blk": 23, "threes": 60, "fg_pct": 24, "ft_pct": 91, "to": 37}, {"name": "Christian Braun", "team": "DEN", "projection": 413, "estimatedCost": 4, "archetype": "Balanced", "games": 82, "pts": 42, "reb": 54, "ast": 47, "stl": 32, "blk": 58, "threes": 38, "fg_pct": 51, "ft_pct": 22, "to": 69}, {"name": "Xavier Tillman", "team": "BOS, MEM", "projection": 413, "estimatedCost": 4, "archetype": "Guard", "games": 54, "pts": 24, "reb": 58, "ast": 41, "stl": 79, "blk": 86, "threes": 21, "fg_pct": 29, "ft_pct": 1, "to": 73}, {"name": "Jock Landale", "team": "HOU", "projection": 412, "estimatedCost": 4, "archetype": "Balanced", "games": 56, "pts": 21, "reb": 39, "ast": 30, "stl": 18, "blk": 73, "threes": 14, "fg_pct": 80, "ft_pct": 58, "to": 79}, {"name": "Davis Bertans", "team": "CHA, OKC", "projection": 409, "estimatedCost": 4, "archetype": "Balanced", "games": 43, "pts": 36, "reb": 7, "ast": 15, "stl": 45, "blk": 38, "threes": 74, "fg_pct": 9, "ft_pct": 96, "to": 89}, {"name": "Chris Boucher", "team": "TOR", "projection": 409, "estimatedCost": 4, "archetype": "Balanced", "games": 50, "pts": 33, "reb": 62, "ast": 4, "stl": 12, "blk": 64, "threes": 32, "fg_pct": 77, "ft_pct": 47, "to": 79}, {"name": "Kevon Looney", "team": "GSW", "projection": 407, "estimatedCost": 4, "archetype": "Balanced", "games": 74, "pts": 20, "reb": 82, "ast": 52, "stl": 21, "blk": 53, "threes": 3, "fg_pct": 93, "ft_pct": 16, "to": 68}, {"name": "Jordan Goodwin", "team": "MEM, PHX", "projection": 407, "estimatedCost": 4, "archetype": "Balanced", "games": 57, "pts": 33, "reb": 69, "ast": 66, "stl": 68, "blk": 45, "threes": 36, "fg_pct": 3, "ft_pct": 36, "to": 51}, {"name": "Dante Exum", "team": "DAL", "projection": 406, "estimatedCost": 4, "archetype": "Balanced", "games": 55, "pts": 44, "reb": 31, "ast": 69, "stl": 23, "blk": 8, "threes": 45, "fg_pct": 83, "ft_pct": 49, "to": 54}, {"name": "Dalano Banton", "team": "BOS, POR", "projection": 406, "estimatedCost": 4, "archetype": "Balanced", "games": 54, "pts": 59, "reb": 45, "ast": 61, "stl": 45, "blk": 51, "threes": 51, "fg_pct": 14, "ft_pct": 50, "to": 31}, {"name": "Alec Burks", "team": "DET, NYK", "projection": 405, "estimatedCost": 4, "archetype": "Balanced", "games": 66, "pts": 59, "reb": 24, "ast": 38, "stl": 26, "blk": 25, "threes": 79, "fg_pct": 3, "ft_pct": 88, "to": 65}, {"name": "Gary Payton II", "team": "GSW", "projection": 404, "estimatedCost": 4, "archetype": "Guard", "games": 44, "pts": 28, "reb": 29, "ast": 27, "stl": 70, "blk": 55, "threes": 26, "fg_pct": 88, "ft_pct": 8, "to": 74}, {"name": "Cameron Payne", "team": "MIL, PHI", "projection": 404, "estimatedCost": 4, "archetype": "Balanced", "games": 78, "pts": 42, "reb": 9, "ast": 65, "stl": 36, "blk": 18, "threes": 62, "fg_pct": 28, "ft_pct": 86, "to": 58}, {"name": "Jose Alvarado", "team": "NOP", "projection": 404, "estimatedCost": 4, "archetype": "Guard", "games": 56, "pts": 40, "reb": 25, "ast": 56, "stl": 85, "blk": 37, "threes": 64, "fg_pct": 16, "ft_pct": 15, "to": 66}, {"name": "Dennis Smith Jr.", "team": "BKN", "projection": 404, "estimatedCost": 4, "archetype": "Guard", "games": 56, "pts": 34, "reb": 36, "ast": 78, "stl": 93, "blk": 29, "threes": 30, "fg_pct": 30, "ft_pct": 34, "to": 40}, {"name": "Jacob Gilyard", "team": "BKN, MEM", "projection": 404, "estimatedCost": 4, "archetype": "Guard", "games": 41, "pts": 15, "reb": 3, "ast": 73, "stl": 64, "blk": 14, "threes": 58, "fg_pct": 12, "ft_pct": 99, "to": 64}, {"name": "Bojan Bogdanovic", "team": "DET, NYK", "projection": 404, "estimatedCost": 4, "archetype": "Balanced", "games": 57, "pts": 78, "reb": 30, "ast": 50, "stl": 35, "blk": 7, "threes": 87, "fg_pct": 47, "ft_pct": 51, "to": 19}, {"name": "Lamar Stevens", "team": "BOS, MEM", "projection": 402, "estimatedCost": 4, "archetype": "Balanced", "games": 38, "pts": 41, "reb": 46, "ast": 13, "stl": 45, "blk": 72, "threes": 20, "fg_pct": 44, "ft_pct": 49, "to": 73}, {"name": "Kevin Knox II", "team": "DET", "projection": 401, "estimatedCost": 4, "archetype": "Balanced", "games": 31, "pts": 41, "reb": 27, "ast": 13, "stl": 25, "blk": 31, "threes": 47, "fg_pct": 54, "ft_pct": 96, "to": 66}, {"name": "Torrey Craig", "team": "CHI", "projection": 400, "estimatedCost": 4, "archetype": "Balanced", "games": 53, "pts": 30, "reb": 61, "ast": 28, "stl": 40, "blk": 54, "threes": 52, "fg_pct": 26, "ft_pct": 37, "to": 75}, {"name": "Keyonte George", "team": "UTA", "projection": 400, "estimatedCost": 1, "archetype": "Guard", "games": 75, "pts": 70, "reb": 34, "ast": 83, "stl": 29, "blk": 8, "threes": 81, "fg_pct": 8, "ft_pct": 79, "to": 8}];
+        let myTeam = [];
+        let remainingBudget = 200;
+        let draftedPlayers = new Set(); // Track all drafted players (yours + others)
+        let recommendationMode = 'smart'; // 'smart' or 'value'
+
+        // Initialize the application
+        function initializeApp() {
+            generateRosterSlots();
+            populatePlayerSuggestions();
+            updateRecommendations();
+            updateTeamStats();
+            updateTeamTier();
+        }
+
+        // Toggle between recommendation modes
+        function toggleRecommendationMode(mode) {
+            recommendationMode = mode;
+            
+            // Update button states
+            document.getElementById('smartBtn').classList.remove('active');
+            document.getElementById('valueBtn').classList.remove('active');
+            document.getElementById(mode + 'Btn').classList.add('active');
+            
+            // Update recommendations
+            updateRecommendations();
+        }
+
+        // Generate roster slots
+        function generateRosterSlots() {
+            const rosterGrid = document.getElementById('rosterGrid');
+            rosterGrid.innerHTML = '';
+            
+            for (let i = 0; i < 15; i++) {
+                const slot = document.createElement('div');
+                slot.className = 'roster-slot';
+                slot.id = `slot-${i}`;
+                slot.innerHTML = `<div>Slot ${i + 1}</div><div class="player-info">Empty</div>`;
+                rosterGrid.appendChild(slot);
+            }
+        }
+
+        // Populate player name suggestions
+        function populatePlayerSuggestions() {
+            const datalist = document.getElementById('playerSuggestions');
+            draftData.forEach(player => {
+                const option = document.createElement('option');
+                option.value = player.name;
+                option.textContent = `${player.name} - ${player.team} (Proj: ${player.projection})`;
+                datalist.appendChild(option);
+            });
+        }
+
+        // Add player to team
+        function addPlayer() {
+            const playerName = document.getElementById('playerName').value.trim();
+            const playerCost = parseInt(document.getElementById('playerCost').value) || 0;
+            
+            if (!playerName || playerCost <= 0) {
+                alert('Please enter both player name and cost');
+                return;
+            }
+            
+            if (myTeam.length >= 15) {
+                alert('Your roster is full!');
+                return;
+            }
+            
+            if (playerCost > remainingBudget) {
+                alert(`Not enough budget! Remaining: $${remainingBudget}`);
+                return;
+            }
+            
+            // Find player in draft data
+            const playerData = draftData.find(p => 
+                p.name.toLowerCase() === playerName.toLowerCase()
+            );
+            
+            if (!playerData) {
+                // Allow manual entry for players not in our data
+                const manualPlayer = {
+                    name: playerName,
+                    team: 'N/A',
+                    projection: 300, // Default projection
+                    estimatedCost: playerCost,
+                    archetype: 'Unknown',
+                    pts: 50, reb: 50, ast: 50, stl: 50, blk: 50,
+                    threes: 50, fg_pct: 50, ft_pct: 50, to: 50
+                };
+                myTeam.push({ ...manualPlayer, actualCost: playerCost });
+            } else {
+                myTeam.push({ ...playerData, actualCost: playerCost });
+            }
+            
+            remainingBudget -= playerCost;
+            
+            // Clear form
+            document.getElementById('playerName').value = '';
+            document.getElementById('playerCost').value = '';
+            
+            // Update UI
+            updateRoster();
+            updateTeamStats();
+            updateTeamTier();
+            updateRecommendations();
+        }
+
+        // Update roster display
+        function updateRoster() {
+            myTeam.forEach((player, index) => {
+                const slot = document.getElementById(`slot-${index}`);
+                slot.className = 'roster-slot filled';
+                slot.innerHTML = `
+                    <div class="player-name">${player.name}</div>
+                    <div class="player-info">
+                        ${player.team} - $${player.actualCost} - Proj: ${player.projection}
+                        <button class="remove-btn" onclick="removePlayer(${index})">Remove</button>
+                    </div>
+                `;
+            });
+        }
+
+        // Remove player from team
+        function removePlayer(index) {
+            const player = myTeam[index];
+            remainingBudget += player.actualCost;
+            myTeam.splice(index, 1);
+            
+            // Reset all slots and repopulate
+            generateRosterSlots();
+            updateRoster();
+            updateTeamStats();
+            updateTeamTier();
+            updateRecommendations();
+        }
+
+        // Update team statistics
+        function updateTeamStats() {
+            const totalSpent = 200 - remainingBudget;
+            const totalProjection = myTeam.reduce((sum, p) => sum + p.projection, 0);
+            const avgProjection = myTeam.length > 0 ? totalProjection / myTeam.length : 0;
+            
+            document.getElementById('totalSpent').textContent = `$${totalSpent}`;
+            document.getElementById('remainingBudget').textContent = `$${remainingBudget}`;
+            document.getElementById('totalProjection').textContent = totalProjection.toFixed(0);
+            document.getElementById('avgProjection').textContent = avgProjection.toFixed(0);
+            
+            // Update category bars
+            updateCategoryBars();
+        }
+
+        // Update category strength bars
+        function updateCategoryBars() {
+            if (myTeam.length === 0) {
+                const categories = ['scoring', 'rebounds', 'assists', 'steals', 'blocks', 'threes', 'fg', 'ft', 'to'];
+                categories.forEach(cat => {
+                    document.getElementById(`${cat}Bar`).style.width = '0%';
+                });
+                return;
+            }
+            
+            // Calculate team averages in each category
+            const teamStats = {
+                scoring: myTeam.reduce((sum, p) => sum + p.pts, 0) / myTeam.length,
+                rebounds: myTeam.reduce((sum, p) => sum + p.reb, 0) / myTeam.length,
+                assists: myTeam.reduce((sum, p) => sum + p.ast, 0) / myTeam.length,
+                steals: myTeam.reduce((sum, p) => sum + p.stl, 0) / myTeam.length,
+                blocks: myTeam.reduce((sum, p) => sum + p.blk, 0) / myTeam.length,
+                threes: myTeam.reduce((sum, p) => sum + p.threes, 0) / myTeam.length,
+                fg: myTeam.reduce((sum, p) => sum + p.fg_pct, 0) / myTeam.length,
+                ft: myTeam.reduce((sum, p) => sum + p.ft_pct, 0) / myTeam.length,
+                to: myTeam.reduce((sum, p) => sum + (100 - p.to), 0) / myTeam.length
+            };
+            
+            // Update bars (percentile based, 50 = average)
+            Object.keys(teamStats).forEach(category => {
+                const percentage = Math.min(100, Math.max(0, teamStats[category]));
+                document.getElementById(`${category}Bar`).style.width = `${percentage}%`;
+            });
+        }
+
+        // Update team tier based on total projection
+        function updateTeamTier() {
+            const totalProjection = myTeam.reduce((sum, p) => sum + p.projection, 0);
+            const remainingSlots = 15 - myTeam.length;
+            const projectedTotal = totalProjection + (remainingSlots * 400); // Assume 400 avg for remaining slots
+            
+            const tierElement = document.getElementById('teamTier');
+            let tierClass = '';
+            let tierTitle = '';
+            let tierDescription = '';
+            
+            // Define tiers based on projected final total
+            if (projectedTotal >= 7500) {
+                tierClass = 'tier-elite';
+                tierTitle = 'Elite Championship Tier';
+                tierDescription = `Total: ${totalProjection} | Projected Final: ${projectedTotal} | Top 2 finish expected`;
+            } else if (projectedTotal >= 7000) {
+                tierClass = 'tier-strong';
+                tierTitle = 'Strong Playoff Tier';
+                tierDescription = `Total: ${totalProjection} | Projected Final: ${projectedTotal} | Top 4 finish likely`;
+            } else if (projectedTotal >= 6500) {
+                tierClass = 'tier-good';
+                tierTitle = 'Solid Team Tier';
+                tierDescription = `Total: ${totalProjection} | Projected Final: ${projectedTotal} | Playoff contender`;
+            } else {
+                tierClass = 'tier-weak';
+                tierTitle = 'Needs Improvement';
+                tierDescription = `Total: ${totalProjection} | Projected Final: ${projectedTotal} | Focus on high-value picks`;
+            }
+            
+            tierElement.className = `team-tier ${tierClass}`;
+            tierElement.innerHTML = `
+                <div class="tier-title">${tierTitle}</div>
+                <div class="tier-description">${tierDescription}</div>
+            `;
+        }
+
+        // Update recommendations based on team needs
+        function updateRecommendations() {
+            const availablePlayers = draftData.filter(player => 
+                !myTeam.some(teamPlayer => teamPlayer.name === player.name) &&
+                player.estimatedCost <= remainingBudget
+            );
+            
+            // Apply filters
+            const positionFilter = document.getElementById('positionFilter').value;
+            const priceFilter = document.getElementById('priceFilter').value;
+            
+            let filteredPlayers = availablePlayers;
+            
+            if (positionFilter) {
+                filteredPlayers = filteredPlayers.filter(p => p.archetype === positionFilter);
+            }
+            
+            if (priceFilter) {
+                const [min, max] = priceFilter.split('-').map(Number);
+                filteredPlayers = filteredPlayers.filter(p => {
+                    if (max) return p.estimatedCost >= min && p.estimatedCost <= max;
+                    return p.estimatedCost >= min;
+                });
+            }
+            
+            // Sort based on recommendation mode
+            if (recommendationMode === 'value') {
+                // Value mode: Sort by value per dollar
+                filteredPlayers.forEach(player => {
+                    player.valuePerDollar = player.projection / player.estimatedCost;
+                });
+                filteredPlayers.sort((a, b) => b.valuePerDollar - a.valuePerDollar);
+            } else {
+                // Smart mode: Sort by team fit + projection
+                filteredPlayers.forEach(player => {
+                    player.smartScore = calculateSmartScore(player);
+                });
+                filteredPlayers.sort((a, b) => b.smartScore - a.smartScore);
+            }
+            
+            // Generate recommendation text
+            const needsAnalysis = analyzeTeamNeeds();
+            document.getElementById('recommendationText').textContent = needsAnalysis;
+            
+            // Display top recommendations
+            displayRecommendations(filteredPlayers.slice(0, 20));
+        }
+
+        // Calculate smart score based on team fit and projection
+        function calculateSmartScore(player) {
+            let score = player.projection; // Base score
+            
+            if (myTeam.length === 0) {
+                // First pick: Prioritize high projection
+                return score;
+            }
+            
+            // Calculate team category averages
+            const teamStats = {
+                pts: myTeam.reduce((sum, p) => sum + p.pts, 0) / myTeam.length,
+                reb: myTeam.reduce((sum, p) => sum + p.reb, 0) / myTeam.length,
+                ast: myTeam.reduce((sum, p) => sum + p.ast, 0) / myTeam.length,
+                stl: myTeam.reduce((sum, p) => sum + p.stl, 0) / myTeam.length,
+                blk: myTeam.reduce((sum, p) => sum + p.blk, 0) / myTeam.length,
+                threes: myTeam.reduce((sum, p) => sum + p.threes, 0) / myTeam.length,
+                fg_pct: myTeam.reduce((sum, p) => sum + p.fg_pct, 0) / myTeam.length,
+                ft_pct: myTeam.reduce((sum, p) => sum + p.ft_pct, 0) / myTeam.length
+            };
+            
+            // Identify weakest categories (below 45th percentile)
+            const weakCategories = [];
+            Object.keys(teamStats).forEach(cat => {
+                if (teamStats[cat] < 45) {
+                    weakCategories.push(cat);
+                }
+            });
+            
+            // Boost score if player helps weak categories
+            weakCategories.forEach(cat => {
+                if (player[cat] > 60) { // Player is strong in this category
+                    score += (player[cat] - 50) * 2; // Bonus for addressing weakness
+                }
+            });
+            
+            // Budget consideration
+            const remainingSlots = 15 - myTeam.length;
+            const avgBudgetPerSlot = remainingBudget / remainingSlots;
+            
+            if (player.estimatedCost > avgBudgetPerSlot * 1.5) {
+                // Expensive relative to remaining budget
+                score *= 0.9;
+            } else if (player.estimatedCost < avgBudgetPerSlot * 0.5) {
+                // Cheap relative to budget - good value
+                score *= 1.1;
+            }
+            
+            return score;
+        }
+
+        // Analyze what the team needs most
+        function analyzeTeamNeeds() {
+            if (myTeam.length === 0) {
+                return "Start with a high-projection player to anchor your team!";
+            }
+            
+            const remainingSlots = 15 - myTeam.length;
+            const avgBudgetPerSlot = remainingBudget / remainingSlots;
+            
+            if (myTeam.length >= 13) {
+                return `Final picks! Focus on filling category weaknesses with $${avgBudgetPerSlot.toFixed(0)} average budget.`;
+            }
+            
+            if (remainingBudget < 20 && remainingSlots > 5) {
+                return "Budget is tight! Look for high-value players under $5.";
+            }
+            
+            if (avgBudgetPerSlot > 25) {
+                return `Good budget remaining! Can afford premium players (~$${avgBudgetPerSlot.toFixed(0)} per slot).`;
+            }
+            
+            // Analyze category needs
+            if (myTeam.length >= 3) {
+                const teamStats = {
+                    rebounds: myTeam.reduce((sum, p) => sum + p.reb, 0) / myTeam.length,
+                    assists: myTeam.reduce((sum, p) => sum + p.ast, 0) / myTeam.length,
+                    blocks: myTeam.reduce((sum, p) => sum + p.blk, 0) / myTeam.length,
+                    steals: myTeam.reduce((sum, p) => sum + p.stl, 0) / myTeam.length
+                };
+                
+                const weakest = Object.entries(teamStats).sort((a, b) => a[1] - b[1])[0];
+                return `Consider strengthening ${weakest[0]} (current strength: ${weakest[1].toFixed(0)}/100).`;
+            }
+            
+            return `${remainingSlots} slots remaining. Budget: $${avgBudgetPerSlot.toFixed(0)} per player average.`;
+        }
+
+        // Display recommendation list
+        function displayRecommendations(players) {
+            const container = document.getElementById('recommendationsList');
+            container.innerHTML = '';
+            
+            players.forEach(player => {
+                const playerDiv = document.createElement('div');
+                playerDiv.className = 'player-item';
+                playerDiv.onclick = () => {
+                    document.getElementById('playerName').value = player.name;
+                    document.getElementById('playerCost').value = player.estimatedCost;
+                };
+                
+                const valueDisplay = recommendationMode === 'value' ? 
+                    ` • Value: ${(player.projection / player.estimatedCost).toFixed(1)}` : '';
+                
+                playerDiv.innerHTML = `
+                    <div class="player-header">
+                        <strong>${player.name}</strong>
+                        <span class="player-projection">${player.projection}</span>
+                    </div>
+                    <div class="player-details">
+                        ${player.team} • ${player.archetype} • <span class="player-cost">$${player.estimatedCost}</span>${valueDisplay}
+                    </div>
+                `;
+                
+                container.appendChild(playerDiv);
+            });
+        }
+
+        // Initialize app when page loads
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    </script>
+</body>
+</html>

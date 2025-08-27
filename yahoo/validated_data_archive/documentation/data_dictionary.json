@@ -1,0 +1,25 @@
+{
+  "file_descriptions": {
+    "corrected_standings_flat_data.json": "Complete standings data in JSON format",
+    "corrected_standings_flat_data.csv": "Complete standings data in CSV format",
+    "sign_off_on_owner_standings.html": "Validation page used for user approval"
+  },
+  "field_definitions": {
+    "year": "Season year (2010-2024)",
+    "team_name": "Fantasy team name",
+    "regular_season_standing": "Final regular season league position (1=first place)",
+    "playoff_result": "Tournament outcome position (1=champion)",
+    "wins": "Regular season wins",
+    "losses": "Regular season losses",
+    "ties": "Regular season ties",
+    "win_percentage": "Regular season win percentage",
+    "games_back": "Games behind first place team",
+    "team_key": "Yahoo API team identifier"
+  },
+  "analysis_ready_for": [
+    "Draft projection accuracy analysis",
+    "Strategy effectiveness measurement",
+    "Historical performance correlation",
+    "Championship prediction modeling"
+  ]
+}

@@ -1,0 +1,68 @@
+COMPLETE KALSHI MARKET SEARCH
+Timestamp: 2025-08-21T16:40:18.330787+00:00
+Total Markets: 20000
+Potential A's @ Minnesota Games: 111
+============================================================
+
+TOP POTENTIAL MATCHES:
+----------------------------------------
+Score 28: KXMLBGAME-25AUG21ATHMIN-MIN
+  A's at Minnesota Winner?
+  Prices: 48.0% / 51.0%
+  Reasons: Oakland/A's, Minnesota/Twins, 53%/47% pattern (48.0%/51.0%), vs/at pattern, game language
+  Status: active
+
+Score 28: KXMLBGAME-25AUG21ATHMIN-ATH
+  A's at Minnesota Winner?
+  Prices: 51.0% / 48.0%
+  Reasons: Oakland/A's, Minnesota/Twins, 53%/47% pattern (51.0%/48.0%), vs/at pattern, game language
+  Status: active
+
+Score 13: KXWNBAGAME-25AUG22MININD-MIN
+  Minnesota vs Indiana Winner?
+  Prices: 26.0% / 14.0%
+  Reasons: Minnesota/Twins, vs/at pattern, game language
+  Status: active
+
+Score 13: KXWNBAGAME-25AUG22MININD-IND
+  Minnesota vs Indiana Winner?
+  Prices: 14.0% / 26.0%
+  Reasons: Minnesota/Twins, vs/at pattern, game language
+  Status: active
+
+Score 12: KXNCAAFTOTAL-25AUG30ODUIND-56
+  Old Dominion at Indiana: Spread Total Points?
+  Prices: 0.0% / 100.0%
+  Reasons: Minnesota/Twins, vs/at pattern
+  Status: active
+
+Score 12: KXNCAAFTOTAL-25AUG30ODUIND-55
+  Old Dominion at Indiana: Spread Total Points?
+  Prices: 0.0% / 100.0%
+  Reasons: Minnesota/Twins, vs/at pattern
+  Status: active
+
+Score 12: KXNCAAFTOTAL-25AUG30ODUIND-54
+  Old Dominion at Indiana: Spread Total Points?
+  Prices: 47.0% / 47.0%
+  Reasons: Minnesota/Twins, vs/at pattern
+  Status: active
+
+Score 12: KXNCAAFTOTAL-25AUG30ODUIND-53
+  Old Dominion at Indiana: Spread Total Points?
+  Prices: 0.0% / 100.0%
+  Reasons: Minnesota/Twins, vs/at pattern
+  Status: active
+
+Score 12: KXNCAAFTOTAL-25AUG30ODUIND-52
+  Old Dominion at Indiana: Spread Total Points?
+  Prices: 0.0% / 100.0%
+  Reasons: Minnesota/Twins, vs/at pattern
+  Status: active
+
+Score 12: KXNCAAFTOTAL-25AUG28BUFFMINN-46
+  Buffalo at Minnesota: Spread Total Points?
+  Prices: 0.0% / 0.0%
+  Reasons: Minnesota/Twins, vs/at pattern
+  Status: active
+

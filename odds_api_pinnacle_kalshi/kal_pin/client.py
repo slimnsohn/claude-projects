@@ -137,9 +137,139 @@ class CombinedClient:
         return combined
     
     def _create_teams_key(self, team1: str, team2: str) -> str:
-        """Create a consistent key for team matching"""
-        teams = sorted([team1.strip(), team2.strip()])
+        """Create a consistent key for team matching using normalized team names"""
+        # Normalize team names using the same logic as individual clients
+        norm_team1 = self._normalize_team_name(team1.strip())
+        norm_team2 = self._normalize_team_name(team2.strip())
+        teams = sorted([norm_team1, norm_team2])
         return f"{teams[0]}_{teams[1]}"
+    
+    def _normalize_team_name(self, team_name: str) -> str:
+        """Normalize team names to consistent format - uses same logic as individual clients"""
+        # Use the same NCAAF mappings as in the individual clients
+        team_map = {
+            # From both Pinnacle and Kalshi normalizations
+            'Ohio Bobcats': 'Ohio', 'Ohio': 'Ohio',
+            'Rutgers Scarlet Knights': 'Rutgers', 'Rutgers': 'Rutgers',
+            'Boise State Broncos': 'Boise St.', 'Boise State': 'Boise St.', 'Boise St.': 'Boise St.',
+            'South Florida Bulls': 'South Florida', 'South Florida': 'South Florida',
+            'Wyoming Cowboys': 'Wyoming', 'Wyoming': 'Wyoming',
+            'Akron Zips': 'Akron', 'Akron': 'Akron',
+            'East Carolina Pirates': 'East Carolina', 'East Carolina': 'East Carolina',
+            'NC State Wolfpack': 'North Carolina St.', 'North Carolina St.': 'North Carolina St.',
+            'UCF Knights': 'UCF', 'UCF': 'UCF',
+            'Jacksonville State Gamecocks': 'Jacksonville St.', 'Jacksonville State': 'Jacksonville St.', 'Jacksonville St.': 'Jacksonville St.',
+            
+            # Additional comprehensive mappings
+            'Purdue Boilermakers': 'Purdue', 'Purdue': 'Purdue',
+            'Ball State Cardinals': 'Ball St.', 'Ball St.': 'Ball St.',
+            'Ohio State Buckeyes': 'Ohio St.', 'Ohio St.': 'Ohio St.',
+            'Texas Longhorns': 'TEX', 'TEX': 'TEX',
+            'Tennessee Volunteers': 'TEN', 'TEN': 'TEN',
+            'Syracuse Orange': 'Syracuse', 'Syracuse': 'Syracuse',
+            'Kentucky Wildcats': 'Kentucky', 'Kentucky': 'Kentucky',
+            'Toledo Rockets': 'Toledo', 'Toledo': 'Toledo',
+            'Indiana Hoosiers': 'Indiana', 'Indiana': 'Indiana',
+            'Old Dominion Monarchs': 'Old Dominion', 'Old Dominion': 'Old Dominion',
+            'Alabama Crimson Tide': 'Alabama', 'Alabama': 'Alabama',
+            'Florida State Seminoles': 'Florida St.', 'Florida St.': 'Florida St.',
+            'Temple Owls': 'Temple', 'Temple': 'Temple',
+            'UMass Minutemen': 'UMass', 'UMass': 'UMass',
+            'Virginia Cavaliers': 'Virginia', 'Virginia': 'Virginia',
+            'Coastal Carolina Chanticleers': 'Coastal Carolina', 'Coastal Carolina': 'Coastal Carolina',
+            'Clemson Tigers': 'Clemson', 'Clemson': 'Clemson',
+            'LSU Tigers': 'LSU', 'LSU': 'LSU',
+            'Utah State Aggies': 'Utah St.', 'Utah St.': 'Utah St.',
+            'UTEP Miners': 'UTEP', 'UTEP': 'UTEP',
+            'Georgia Tech Yellow Jackets': 'Georgia Tech', 'Georgia Tech': 'Georgia Tech',
+            'Colorado Buffaloes': 'COL', 'COL': 'COL',
+            'Auburn Tigers': 'Auburn', 'Auburn': 'Auburn',
+            'Baylor Bears': 'Baylor', 'Baylor': 'Baylor',
+            'UNLV Rebels': 'UNLV', 'UNLV': 'UNLV',
+            'Sam Houston State Bearkats': 'Sam Houston', 'Sam Houston': 'Sam Houston',
+            'San Jose State Spartans': 'San Jose St.', 'San Jose St.': 'San Jose St.',
+            'Central Michigan Chippewas': 'Central Michigan', 'Central Michigan': 'Central Michigan',
+            'Maryland Terrapins': 'Maryland', 'Maryland': 'Maryland',
+            'Florida Atlantic Owls': 'Florida Atlantic', 'Florida Atlantic': 'Florida Atlantic',
+            'Mississippi State Bulldogs': 'Mississippi St.', 'Mississippi St.': 'Mississippi St.',
+            'Southern Mississippi Golden Eagles': 'Southern Miss', 'Southern Miss': 'Southern Miss',
+            'Tulane Green Wave': 'Tulane', 'Tulane': 'Tulane',
+            'Northwestern Wildcats': 'Northwestern', 'Northwestern': 'Northwestern',
+            
+            # Missing teams for Aug 31 and other dates
+            'Notre Dame Fighting Irish': 'Notre Dame', 'Notre Dame': 'Notre Dame',
+            'Miami Hurricanes': 'Miami (FL)', 'Miami (FL)': 'Miami (FL)',
+            'South Carolina Gamecocks': 'South Carolina', 'South Carolina': 'South Carolina', 
+            'Virginia Tech Hokies': 'Virginia Tech', 'Virginia Tech': 'Virginia Tech',
+            
+            # Additional comprehensive NCAAF mappings
+            'Texas State Bobcats': 'Texas St.', 'Texas St.': 'Texas St.',
+            'Eastern Michigan Eagles': 'Eastern Michigan', 'Eastern Michigan': 'Eastern Michigan',
+            'Louisiana Ragin Cajuns': 'Louisiana', 'Louisiana': 'Louisiana',
+            'Rice Owls': 'Rice', 'Rice': 'Rice',
+            'Texas A&M Aggies': 'Texas A&M', 'Texas A&M': 'Texas A&M',
+            'UTSA Roadrunners': 'UTSA', 'UTSA': 'UTSA',
+            'Georgia Southern Eagles': 'Georgia Southern', 'Georgia Southern': 'Georgia Southern',
+            'Fresno State Bulldogs': 'Fresno St.', 'Fresno St.': 'Fresno St.',
+            'Arizona Wildcats': 'ARI', 'ARI': 'ARI',
+            'Hawaii Rainbow Warriors': 'Hawai\'i', 'Hawai\'i': 'Hawai\'i',
+            'Oregon State Beavers': 'Oregon St.', 'Oregon St.': 'Oregon St.',
+            'California Golden Bears': 'California', 'California': 'California',
+            'Washington Huskies': 'WAS', 'WAS': 'WAS',
+            'Colorado State Rams': 'Colorado St.', 'Colorado St.': 'Colorado St.',
+            'Utah Utes': 'Utah', 'Utah': 'Utah',
+            'UCLA Bruins': 'UCLA', 'UCLA': 'UCLA',
+            
+            # More comprehensive coverage for other potential matches
+            'Michigan Wolverines': 'Michigan', 'Michigan': 'Michigan',
+            'Michigan State Spartans': 'Michigan St.', 'Michigan St.': 'Michigan St.',
+            'Western Michigan Broncos': 'Western Michigan', 'Western Michigan': 'Western Michigan',
+            'Wisconsin Badgers': 'Wisconsin', 'Wisconsin': 'Wisconsin',
+            'Miami (OH) RedHawks': 'Miami (OH)', 'Miami (OH)': 'Miami (OH)',
+            'Minnesota Golden Gophers': 'MIN', 'MIN': 'MIN',
+            'Buffalo Bulls': 'BUF', 'BUF': 'BUF',
+            'Wake Forest Demon Deacons': 'Wake Forest', 'Wake Forest': 'Wake Forest',
+            'Kennesaw State Owls': 'Kennesaw St.', 'Kennesaw St.': 'Kennesaw St.',
+            'Nebraska Cornhuskers': 'Nebraska', 'Nebraska': 'Nebraska',
+            'Cincinnati Bearcats': 'CIN', 'CIN': 'CIN',
+            'Appalachian State Mountaineers': 'Appalachian St.', 'Appalachian St.': 'Appalachian St.',
+            'Charlotte 49ers': 'Charlotte', 'Charlotte': 'Charlotte'
+        }
+        
+        return team_map.get(team_name, team_name)
+    
+    def _format_game_display(self, matchup: str, pinnacle_fav: int, pinnacle_dog: int, kalshi_fav: int, kalshi_dog: int, game_date: str, pinnacle_time: str = None, kalshi_time: str = None) -> str:
+        """Format a game in the same style as the main display"""
+        # Extract team names from matchup
+        teams = matchup.split(' vs ')
+        if len(teams) != 2:
+            return f"Error formatting: {matchup}"
+        
+        favorite, dog = teams[0], teams[1]
+        
+        # Calculate implied percentages
+        def calc_percentage(odds):
+            if odds < 0:
+                return int(abs(odds) / (abs(odds) + 100) * 100)
+            else:
+                return int(100 / (odds + 100) * 100)
+        
+        pin_fav_pct = calc_percentage(pinnacle_fav)
+        pin_dog_pct = calc_percentage(pinnacle_dog)
+        kal_fav_pct = calc_percentage(kalshi_fav)
+        kal_dog_pct = calc_percentage(kalshi_dog)
+        
+        # Use provided times or fall back to date
+        pin_display_time = pinnacle_time if pinnacle_time else game_date
+        kal_display_time = kalshi_time if kalshi_time else game_date
+        
+        # Format the display
+        result = f"{favorite} vs {dog}\n"
+        result += f"------------------------------------------------------------\n"
+        result += f"Pinnacle:  {favorite:>8}  {pinnacle_fav:+4d} ({pin_fav_pct}¢)  |  {dog:<12}  {pinnacle_dog:+4d} ({pin_dog_pct}¢)  |  {pin_display_time}\n"
+        result += f"Kalshi:    {favorite:>8}  {kalshi_fav:+4d} ({kal_fav_pct}¢)  |  {dog:<12}  {kalshi_dog:+4d} ({kal_dog_pct}¢)  |  {kal_display_time} (active)"
+        
+        return result
     
     def _odds_to_cents(self, american_odds: int) -> int:
         """Convert American odds to Kalshi cents (0-100) accounting for fees"""
@@ -245,7 +375,9 @@ class CombinedClient:
             'kalshi_only': len([g for g in games if g['kalshi'] and not g['pinnacle']]),
             'both_platforms': len([g for g in games if g['pinnacle'] and g['kalshi']]),
             'potential_edges': 0,
-            'edge_games': []
+            'edge_games': [],
+            'crossed_opportunities': 0,
+            'crossed_games': []
         }
         
         # Find games with potential arbitrage opportunities
@@ -296,9 +428,68 @@ class CombinedClient:
                         
                         stats['edge_games'].append(edge_game)
                         stats['potential_edges'] += 1
+                
+                # Check for crossed opportunities (arbitrage)
+                # When you can bet opposite sides on different platforms for guaranteed profit
+                # This happens when: best_team_a_odds + best_team_b_odds > 0 (in American odds)
+                
+                # Convert to positive odds for easier calculation
+                def to_positive_odds(american_odds):
+                    if american_odds < 0:
+                        return 100 / (abs(american_odds) / 100)
+                    else:
+                        return american_odds
+                
+                # Find best odds for each team across platforms
+                fav_best_odds = max(pin_fav, kal_fav) if pin_fav < 0 and kal_fav < 0 else min(abs(pin_fav), abs(kal_fav))
+                dog_best_odds = max(pin_dog, kal_dog)
+                
+                # For crossed opportunity, we want:
+                # Team A on Platform X + Team B on Platform Y to have positive expected value
+                # This is rare but possible when platforms have significantly different odds
+                
+                # Check all combinations
+                combinations = [
+                    ("Pinnacle", game['favorite'], pin_fav, "Kalshi", game['dog'], kal_dog),
+                    ("Pinnacle", game['dog'], pin_dog, "Kalshi", game['favorite'], kal_fav),
+                    ("Kalshi", game['favorite'], kal_fav, "Pinnacle", game['dog'], pin_dog),
+                    ("Kalshi", game['dog'], kal_dog, "Pinnacle", game['favorite'], pin_fav)
+                ]
+                
+                for plat1, team1, odds1, plat2, team2, odds2 in combinations:
+                    # Convert to implied probabilities
+                    if odds1 < 0:
+                        prob1 = abs(odds1) / (abs(odds1) + 100)
+                    else:
+                        prob1 = 100 / (odds1 + 100)
+                    
+                    if odds2 < 0:
+                        prob2 = abs(odds2) / (abs(odds2) + 100)
+                    else:
+                        prob2 = 100 / (odds2 + 100)
+                    
+                    total_implied_prob = prob1 + prob2
+                    
+                    # Crossed opportunity exists when total implied probability < 1 (or < 0.98 accounting for fees)
+                    if total_implied_prob < 0.98:
+                        profit_margin = (1 - total_implied_prob) * 100
+                        
+                        crossed_game = {
+                            'matchup': f"{game['favorite']} vs {game['dog']}",
+                            'game_date': game['game_date'],
+                            'bet1': f"{plat1} {team1} {odds1:+d}",
+                            'bet2': f"{plat2} {team2} {odds2:+d}",
+                            'profit_margin': profit_margin,
+                            'total_prob': total_implied_prob
+                        }
+                        
+                        stats['crossed_games'].append(crossed_game)
+                        stats['crossed_opportunities'] += 1
+                        break  # Only count each game once
         
-        # Sort edge games by difference size
+        # Sort games by profit margin
         stats['edge_games'].sort(key=lambda x: x['edge_diff'], reverse=True)
+        stats['crossed_games'].sort(key=lambda x: x['profit_margin'], reverse=True)
         
         return stats
 
@@ -333,15 +524,38 @@ def view_combined_games(league='mlb', remove_live_games=True, require_both_platf
         print(f"Kalshi Only: {stats['kalshi_only']}")
         print(f"Both Platforms: {stats['both_platforms']}")
         print(f"Potential Edges: {stats['potential_edges']}")
+        print(f"Crossed Opportunities: {stats['crossed_opportunities']}")
         
         # Show detailed edge information
         if stats['potential_edges'] > 0:
             print()
             print("EDGE OPPORTUNITIES:")
+            print("=" * 120)
             for i, edge in enumerate(stats['edge_games'], 1):
-                print(f"{i}. {edge['matchup']} ({edge['game_date']})")
-                print(f"   Best: {edge['better_side']} ({edge['edge_info']}) - {edge['edge_diff']} point edge")
-                print(f"   Full odds: Pinnacle {edge['pinnacle_fav']:+d}/{edge['pinnacle_dog']:+d} | Kalshi {edge['kalshi_fav']:+d}/{edge['kalshi_dog']:+d}")
+                print(f"\n>> {i}. {edge['better_side']} - {edge['edge_diff']} point edge")
+                print("=" * 120)
+                formatted_display = client._format_game_display(
+                    edge['matchup'], 
+                    edge['pinnacle_fav'], 
+                    edge['pinnacle_dog'],
+                    edge['kalshi_fav'], 
+                    edge['kalshi_dog'],
+                    edge['game_date']
+                )
+                print(formatted_display)
+                print()
+        
+        # Show crossed opportunities (arbitrage)
+        if stats['crossed_opportunities'] > 0:
+            print()
+            print("CROSSED OPPORTUNITIES (ARBITRAGE):")
+            for i, crossed in enumerate(stats['crossed_games'], 1):
+                print(f"{i}. {crossed['matchup']} ({crossed['game_date']})")
+                print(f"   Bet: {crossed['bet1']} AND {crossed['bet2']}")
+                print(f"   Guaranteed profit: {crossed['profit_margin']:.2f}% (Total prob: {crossed['total_prob']:.3f})")
+        elif stats['both_platforms'] > 0:
+            print()
+            print("CROSSED OPPORTUNITIES: None found (normal - these are rare)")
         
         print(f"{'='*120}")
         

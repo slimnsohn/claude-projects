@@ -8,6 +8,7 @@ import os
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
 import pandas as pd
+import pytz
 
 class KalshiClient:
     """Simple client for fetching Kalshi market data"""
@@ -440,7 +441,10 @@ class KalshiClient:
                                     close_dt.hour, close_dt.minute, close_dt.second, 
                                     tzinfo=timezone.utc
                                 )
-                                formatted_time = game_datetime.strftime('%Y-%m-%d %H:%M UTC')
+                                # Convert to CST
+                                cst = pytz.timezone('US/Central')
+                                cst_datetime = game_datetime.astimezone(cst)
+                                formatted_time = cst_datetime.strftime('%Y-%m-%d %H:%M CST')
                                 game_date = game_datetime.strftime('%Y-%m-%d')
                                 ticker_date_parsed = True
                                 return formatted_time, game_datetime, game_date
@@ -460,7 +464,10 @@ class KalshiClient:
         if close_time and not ticker_date_parsed:
             try:
                 game_datetime = datetime.fromisoformat(close_time.replace('Z', '+00:00'))
-                formatted_time = game_datetime.strftime('%Y-%m-%d %H:%M UTC')
+                # Convert to CST
+                cst = pytz.timezone('US/Central')
+                cst_datetime = game_datetime.astimezone(cst)
+                formatted_time = cst_datetime.strftime('%Y-%m-%d %H:%M CST')
                 game_date = game_datetime.strftime('%Y-%m-%d')
                 print(f"WARNING: Using close_time year which may be incorrect: {formatted_time}")
                 return formatted_time, game_datetime, game_date
@@ -553,7 +560,78 @@ class KalshiClient:
             'North Carolina St.': 'North Carolina St.',
             'UCF': 'UCF', 'UCF Knights': 'UCF',
             'Jacksonville State': 'Jacksonville St.', 'Jacksonville State Gamecocks': 'Jacksonville St.',
-            'Jacksonville St.': 'Jacksonville St.'
+            'Jacksonville St.': 'Jacksonville St.',
+            
+            # Additional NCAAF Teams for comprehensive matching
+            'Purdue': 'Purdue', 'Purdue Boilermakers': 'Purdue',
+            'Ball St.': 'Ball St.', 'Ball State Cardinals': 'Ball St.',
+            'Ohio St.': 'Ohio St.', 'Ohio State Buckeyes': 'Ohio St.',
+            'TEX': 'TEX', 'Texas Longhorns': 'TEX',
+            'TEN': 'TEN', 'Tennessee Volunteers': 'TEN',
+            'Syracuse': 'Syracuse', 'Syracuse Orange': 'Syracuse',
+            'Kentucky': 'Kentucky', 'Kentucky Wildcats': 'Kentucky',
+            'Toledo': 'Toledo', 'Toledo Rockets': 'Toledo',
+            'Indiana': 'Indiana', 'Indiana Hoosiers': 'Indiana',
+            'Old Dominion': 'Old Dominion', 'Old Dominion Monarchs': 'Old Dominion',
+            'Alabama': 'Alabama', 'Alabama Crimson Tide': 'Alabama',
+            'Florida St.': 'Florida St.', 'Florida State Seminoles': 'Florida St.',
+            'Temple': 'Temple', 'Temple Owls': 'Temple',
+            'UMass': 'UMass', 'UMass Minutemen': 'UMass',
+            'Virginia': 'Virginia', 'Virginia Cavaliers': 'Virginia',
+            'Coastal Carolina': 'Coastal Carolina', 'Coastal Carolina Chanticleers': 'Coastal Carolina',
+            'Clemson': 'Clemson', 'Clemson Tigers': 'Clemson',
+            'LSU': 'LSU', 'LSU Tigers': 'LSU',
+            'Utah St.': 'Utah St.', 'Utah State Aggies': 'Utah St.',
+            'UTEP': 'UTEP', 'UTEP Miners': 'UTEP',
+            'Georgia Tech': 'Georgia Tech', 'Georgia Tech Yellow Jackets': 'Georgia Tech',
+            'COL': 'COL', 'Colorado Buffaloes': 'COL',
+            'Auburn': 'Auburn', 'Auburn Tigers': 'Auburn',
+            'Baylor': 'Baylor', 'Baylor Bears': 'Baylor',
+            'UNLV': 'UNLV', 'UNLV Rebels': 'UNLV',
+            'Sam Houston': 'Sam Houston', 'Sam Houston State Bearkats': 'Sam Houston',
+            'San Jose St.': 'San Jose St.', 'San Jose State Spartans': 'San Jose St.',
+            'Central Michigan': 'Central Michigan', 'Central Michigan Chippewas': 'Central Michigan',
+            'Maryland': 'Maryland', 'Maryland Terrapins': 'Maryland',
+            'Florida Atlantic': 'Florida Atlantic', 'Florida Atlantic Owls': 'Florida Atlantic',
+            'Mississippi St.': 'Mississippi St.', 'Mississippi State Bulldogs': 'Mississippi St.',
+            'Southern Miss': 'Southern Miss', 'Southern Mississippi Golden Eagles': 'Southern Miss',
+            'Tulane': 'Tulane', 'Tulane Green Wave': 'Tulane',
+            'Northwestern': 'Northwestern', 'Northwestern Wildcats': 'Northwestern',
+            
+            # Comprehensive NCAAF team mappings for all dates
+            'Notre Dame': 'Notre Dame', 'Notre Dame Fighting Irish': 'Notre Dame',
+            'Miami (FL)': 'Miami (FL)', 'Miami Hurricanes': 'Miami (FL)',
+            'South Carolina': 'South Carolina', 'South Carolina Gamecocks': 'South Carolina',
+            'Virginia Tech': 'Virginia Tech', 'Virginia Tech Hokies': 'Virginia Tech',
+            'Texas St.': 'Texas St.', 'Texas State Bobcats': 'Texas St.',
+            'Eastern Michigan': 'Eastern Michigan', 'Eastern Michigan Eagles': 'Eastern Michigan',
+            'Louisiana': 'Louisiana', 'Louisiana Ragin Cajuns': 'Louisiana',
+            'Rice': 'Rice', 'Rice Owls': 'Rice',
+            'Texas A&M': 'Texas A&M', 'Texas A&M Aggies': 'Texas A&M',
+            'UTSA': 'UTSA', 'UTSA Roadrunners': 'UTSA',
+            'Georgia Southern': 'Georgia Southern', 'Georgia Southern Eagles': 'Georgia Southern',
+            'Fresno St.': 'Fresno St.', 'Fresno State Bulldogs': 'Fresno St.',
+            'ARI': 'ARI', 'Arizona Wildcats': 'ARI',
+            'Hawai\'i': 'Hawai\'i', 'Hawaii Rainbow Warriors': 'Hawai\'i',
+            'Oregon St.': 'Oregon St.', 'Oregon State Beavers': 'Oregon St.',
+            'California': 'California', 'California Golden Bears': 'California',
+            'WAS': 'WAS', 'Washington Huskies': 'WAS',
+            'Colorado St.': 'Colorado St.', 'Colorado State Rams': 'Colorado St.',
+            'Utah': 'Utah', 'Utah Utes': 'Utah',
+            'UCLA': 'UCLA', 'UCLA Bruins': 'UCLA',
+            'Michigan': 'Michigan', 'Michigan Wolverines': 'Michigan',
+            'Michigan St.': 'Michigan St.', 'Michigan State Spartans': 'Michigan St.',
+            'Western Michigan': 'Western Michigan', 'Western Michigan Broncos': 'Western Michigan',
+            'Wisconsin': 'Wisconsin', 'Wisconsin Badgers': 'Wisconsin',
+            'Miami (OH)': 'Miami (OH)', 'Miami (OH) RedHawks': 'Miami (OH)',
+            'MIN': 'MIN', 'Minnesota Golden Gophers': 'MIN',
+            'BUF': 'BUF', 'Buffalo Bulls': 'BUF',
+            'Wake Forest': 'Wake Forest', 'Wake Forest Demon Deacons': 'Wake Forest',
+            'Kennesaw St.': 'Kennesaw St.', 'Kennesaw State Owls': 'Kennesaw St.',
+            'Nebraska': 'Nebraska', 'Nebraska Cornhuskers': 'Nebraska',
+            'CIN': 'CIN', 'Cincinnati Bearcats': 'CIN',
+            'Appalachian St.': 'Appalachian St.', 'Appalachian State Mountaineers': 'Appalachian St.',
+            'Charlotte': 'Charlotte', 'Charlotte 49ers': 'Charlotte'
         }
         
         return team_map.get(team_name, team_name)

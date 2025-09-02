@@ -8,6 +8,7 @@ import os
 from datetime import datetime, timezone, timedelta
 from typing import List, Dict, Optional
 import pandas as pd
+import pytz
 
 class PinnacleClient:
     """Simple client for fetching Pinnacle odds data"""
@@ -144,7 +145,7 @@ class PinnacleClient:
                     'dog': dog_team,
                     'fav_odds': favorite_odds,
                     'dog_odds': dog_odds,
-                    'game_time': game_time.strftime('%Y-%m-%d %H:%M UTC'),
+                    'game_time': game_time.astimezone(pytz.timezone('US/Central')).strftime('%Y-%m-%d %H:%M CST'),
                     'game_date': game_time.strftime('%Y-%m-%d'),
                     'source': 'pinnacle',
                     'raw_commence_time': game['commence_time'],
@@ -236,7 +237,78 @@ class PinnacleClient:
             'East Carolina Pirates': 'East Carolina',
             'NC State Wolfpack': 'North Carolina St.',
             'UCF Knights': 'UCF',
-            'Jacksonville State Gamecocks': 'Jacksonville St.'
+            'Jacksonville State Gamecocks': 'Jacksonville St.',
+            
+            # Additional NCAAF Teams for 2025-08-30 matches
+            'Purdue Boilermakers': 'Purdue',
+            'Ball State Cardinals': 'Ball St.',
+            'Ohio State Buckeyes': 'Ohio St.',
+            'Texas Longhorns': 'TEX',
+            'Tennessee Volunteers': 'TEN', 
+            'Syracuse Orange': 'Syracuse',
+            'Kentucky Wildcats': 'Kentucky',
+            'Toledo Rockets': 'Toledo',
+            'Indiana Hoosiers': 'Indiana',
+            'Old Dominion Monarchs': 'Old Dominion',
+            'Alabama Crimson Tide': 'Alabama',
+            'Florida State Seminoles': 'Florida St.',
+            'Temple Owls': 'Temple',
+            'UMass Minutemen': 'UMass',
+            'Virginia Cavaliers': 'Virginia',
+            'Coastal Carolina Chanticleers': 'Coastal Carolina',
+            'Clemson Tigers': 'Clemson',
+            'LSU Tigers': 'LSU',
+            'Utah State Aggies': 'Utah St.',
+            'UTEP Miners': 'UTEP',
+            'Georgia Tech Yellow Jackets': 'Georgia Tech',
+            'Colorado Buffaloes': 'COL',
+            'Auburn Tigers': 'Auburn',
+            'Baylor Bears': 'Baylor',
+            'UNLV Rebels': 'UNLV',
+            'Sam Houston State Bearkats': 'Sam Houston',
+            'San Jose State Spartans': 'San Jose St.',
+            'Central Michigan Chippewas': 'Central Michigan',
+            'Maryland Terrapins': 'Maryland',
+            'Florida Atlantic Owls': 'Florida Atlantic',
+            'Mississippi State Bulldogs': 'Mississippi St.',
+            'Southern Mississippi Golden Eagles': 'Southern Miss',
+            'Tulane Green Wave': 'Tulane',
+            'Northwestern Wildcats': 'Northwestern',
+            
+            # Comprehensive NCAAF team mappings for all dates
+            'Notre Dame Fighting Irish': 'Notre Dame',
+            'Miami Hurricanes': 'Miami (FL)',
+            'South Carolina Gamecocks': 'South Carolina',
+            'Virginia Tech Hokies': 'Virginia Tech',
+            'Texas State Bobcats': 'Texas St.',
+            'Eastern Michigan Eagles': 'Eastern Michigan',
+            'Louisiana Ragin Cajuns': 'Louisiana',
+            'Rice Owls': 'Rice',
+            'Texas A&M Aggies': 'Texas A&M',
+            'UTSA Roadrunners': 'UTSA',
+            'Georgia Southern Eagles': 'Georgia Southern',
+            'Fresno State Bulldogs': 'Fresno St.',
+            'Arizona Wildcats': 'ARI',
+            'Hawaii Rainbow Warriors': 'Hawai\'i',
+            'Oregon State Beavers': 'Oregon St.',
+            'California Golden Bears': 'California',
+            'Washington Huskies': 'WAS',
+            'Colorado State Rams': 'Colorado St.',
+            'Utah Utes': 'Utah',
+            'UCLA Bruins': 'UCLA',
+            'Michigan Wolverines': 'Michigan',
+            'Michigan State Spartans': 'Michigan St.',
+            'Western Michigan Broncos': 'Western Michigan',
+            'Wisconsin Badgers': 'Wisconsin',
+            'Miami (OH) RedHawks': 'Miami (OH)',
+            'Minnesota Golden Gophers': 'MIN',
+            'Buffalo Bulls': 'BUF',
+            'Wake Forest Demon Deacons': 'Wake Forest',
+            'Kennesaw State Owls': 'Kennesaw St.',
+            'Nebraska Cornhuskers': 'Nebraska',
+            'Cincinnati Bearcats': 'CIN',
+            'Appalachian State Mountaineers': 'Appalachian St.',
+            'Charlotte 49ers': 'Charlotte'
         }
         
         return team_map.get(team_name, team_name)

@@ -1,0 +1,19 @@
+book,teams,fav_team,dog_team,fav_odds,dog_odds,league,bet_type,game_time,game_date
+pinnacle,"['DAL', 'PHI']",PHI,DAL,-293,253,nfl,ml,FRI_00:21,20250905
+pinnacle,"['KC', 'LAC']",KC,LAC,-170,152,nfl,ml,SAT_00:01,20250906
+pinnacle,"['TB', 'ATL']",TB,ATL,-127,115,nfl,ml,SUN_17:00,20250907
+pinnacle,"['CAR', 'JAX']",JAX,CAR,-153,138,nfl,ml,SUN_17:00,20250907
+pinnacle,"['NYG', 'WAS']",WAS,NYG,-265,231,nfl,ml,SUN_17:00,20250907
+pinnacle,"['ARI', 'NO']",ARI,NO,-259,226,nfl,ml,SUN_17:01,20250907
+pinnacle,"['CIN', 'CLE']",CIN,CLE,-251,219,nfl,ml,SUN_17:01,20250907
+pinnacle,"['MIA', 'IND']",IND,MIA,-127,115,nfl,ml,SUN_17:01,20250907
+pinnacle,"['LV', 'NE']",NE,LV,-152,137,nfl,ml,SUN_17:01,20250907
+pinnacle,"['PIT', 'NYJ']",PIT,NYJ,-151,136,nfl,ml,SUN_17:01,20250907
+pinnacle,"['TEN', 'DEN']",DEN,TEN,-369,310,nfl,ml,SUN_20:06,20250907
+pinnacle,"['SF', 'SEA']",SF,SEA,-135,122,nfl,ml,SUN_20:06,20250907
+pinnacle,"['DET', 'GB']",GB,DET,-123,111,nfl,ml,SUN_20:26,20250907
+pinnacle,"['HOU', 'LAR']",LAR,HOU,-140,126,nfl,ml,SUN_20:26,20250907
+pinnacle,"['BAL', 'BUF']",BUF,BAL,-119,108,nfl,ml,MON_00:21,20250908
+pinnacle,"['MIN', 'CHI']",MIN,CHI,-120,109,nfl,ml,TUE_00:16,20250909
+kalshi,"['Los Angeles C', 'Las Vegas']",Los Angeles C,Las Vegas,-143,156,nfl,ml,MON_19:00,20250915
+kalshi,"['Los Angeles C', 'Las Vegas']",Los Angeles C,Las Vegas,-143,150,nfl,ml,MON_19:00,20250915

@@ -1,0 +1,1391 @@
+{
+  "teams": {
+    "BUF": {
+      "name": "Buffalo Bills",
+      "city": "Buffalo",
+      "state": "NY",
+      "nickname": "Bills",
+      "abbreviations": [
+        "BUF",
+        "BUFF"
+      ],
+      "alternative_names": [
+        "Buffalo Bills",
+        "Bills",
+        "Buffalo"
+      ],
+      "conference": "AFC",
+      "division": "East",
+      "colors": [
+        "navy",
+        "red",
+        "white"
+      ],
+      "stadium": "Highmark Stadium"
+    },
+    "MIA": {
+      "name": "Miami Dolphins",
+      "city": "Miami",
+      "state": "FL",
+      "nickname": "Dolphins",
+      "abbreviations": [
+        "MIA",
+        "MIAMI"
+      ],
+      "alternative_names": [
+        "Miami Dolphins",
+        "Dolphins",
+        "Miami",
+        "Fins"
+      ],
+      "conference": "AFC",
+      "division": "East",
+      "colors": [
+        "aqua",
+        "orange",
+        "white"
+      ],
+      "stadium": "Hard Rock Stadium"
+    },
+    "NE": {
+      "name": "New England Patriots",
+      "city": "Foxborough",
+      "state": "MA",
+      "nickname": "Patriots",
+      "abbreviations": [
+        "NE",
+        "NWE",
+        "PAT",
+        "PATS"
+      ],
+      "alternative_names": [
+        "New England Patriots",
+        "Patriots",
+        "New England",
+        "Pats"
+      ],
+      "conference": "AFC",
+      "division": "East",
+      "colors": [
+        "navy",
+        "red",
+        "silver"
+      ],
+      "stadium": "Gillette Stadium"
+    },
+    "NYJ": {
+      "name": "New York Jets",
+      "city": "East Rutherford",
+      "state": "NJ",
+      "nickname": "Jets",
+      "abbreviations": [
+        "NYJ",
+        "JETS",
+        "NY"
+      ],
+      "alternative_names": [
+        "New York Jets",
+        "Jets",
+        "NY Jets",
+        "N.Y. Jets"
+      ],
+      "conference": "AFC",
+      "division": "East",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "stadium": "MetLife Stadium"
+    },
+    "BAL": {
+      "name": "Baltimore Ravens",
+      "city": "Baltimore",
+      "state": "MD",
+      "nickname": "Ravens",
+      "abbreviations": [
+        "BAL",
+        "BALT"
+      ],
+      "alternative_names": [
+        "Baltimore Ravens",
+        "Ravens",
+        "Baltimore"
+      ],
+      "conference": "AFC",
+      "division": "North",
+      "colors": [
+        "purple",
+        "black",
+        "gold"
+      ],
+      "stadium": "M&T Bank Stadium"
+    },
+    "CIN": {
+      "name": "Cincinnati Bengals",
+      "city": "Cincinnati",
+      "state": "OH",
+      "nickname": "Bengals",
+      "abbreviations": [
+        "CIN",
+        "CINC"
+      ],
+      "alternative_names": [
+        "Cincinnati Bengals",
+        "Bengals",
+        "Cincinnati"
+      ],
+      "conference": "AFC",
+      "division": "North",
+      "colors": [
+        "orange",
+        "black",
+        "white"
+      ],
+      "stadium": "Paycor Stadium"
+    },
+    "CLE": {
+      "name": "Cleveland Browns",
+      "city": "Cleveland",
+      "state": "OH",
+      "nickname": "Browns",
+      "abbreviations": [
+        "CLE",
+        "CLEV"
+      ],
+      "alternative_names": [
+        "Cleveland Browns",
+        "Browns",
+        "Cleveland"
+      ],
+      "conference": "AFC",
+      "division": "North",
+      "colors": [
+        "brown",
+        "orange",
+        "white"
+      ],
+      "stadium": "FirstEnergy Stadium"
+    },
+    "PIT": {
+      "name": "Pittsburgh Steelers",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "nickname": "Steelers",
+      "abbreviations": [
+        "PIT",
+        "PITT"
+      ],
+      "alternative_names": [
+        "Pittsburgh Steelers",
+        "Steelers",
+        "Pittsburgh"
+      ],
+      "conference": "AFC",
+      "division": "North",
+      "colors": [
+        "black",
+        "gold"
+      ],
+      "stadium": "Acrisure Stadium"
+    },
+    "HOU": {
+      "name": "Houston Texans",
+      "city": "Houston",
+      "state": "TX",
+      "nickname": "Texans",
+      "abbreviations": [
+        "HOU",
+        "HOUS",
+        "HTX"
+      ],
+      "alternative_names": [
+        "Houston Texans",
+        "Texans",
+        "Houston"
+      ],
+      "conference": "AFC",
+      "division": "South",
+      "colors": [
+        "navy",
+        "red",
+        "white"
+      ],
+      "stadium": "NRG Stadium"
+    },
+    "IND": {
+      "name": "Indianapolis Colts",
+      "city": "Indianapolis",
+      "state": "IN",
+      "nickname": "Colts",
+      "abbreviations": [
+        "IND",
+        "INDY"
+      ],
+      "alternative_names": [
+        "Indianapolis Colts",
+        "Colts",
+        "Indianapolis",
+        "Indy"
+      ],
+      "conference": "AFC",
+      "division": "South",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "stadium": "Lucas Oil Stadium"
+    },
+    "JAX": {
+      "name": "Jacksonville Jaguars",
+      "city": "Jacksonville",
+      "state": "FL",
+      "nickname": "Jaguars",
+      "abbreviations": [
+        "JAX",
+        "JAC",
+        "JAGS"
+      ],
+      "alternative_names": [
+        "Jacksonville Jaguars",
+        "Jaguars",
+        "Jacksonville",
+        "Jags"
+      ],
+      "conference": "AFC",
+      "division": "South",
+      "colors": [
+        "teal",
+        "gold",
+        "black"
+      ],
+      "stadium": "TIAA Bank Field"
+    },
+    "TEN": {
+      "name": "Tennessee Titans",
+      "city": "Nashville",
+      "state": "TN",
+      "nickname": "Titans",
+      "abbreviations": [
+        "TEN",
+        "TENN"
+      ],
+      "alternative_names": [
+        "Tennessee Titans",
+        "Titans",
+        "Tennessee"
+      ],
+      "conference": "AFC",
+      "division": "South",
+      "colors": [
+        "navy",
+        "red",
+        "silver"
+      ],
+      "stadium": "Nissan Stadium"
+    },
+    "DEN": {
+      "name": "Denver Broncos",
+      "city": "Denver",
+      "state": "CO",
+      "nickname": "Broncos",
+      "abbreviations": [
+        "DEN",
+        "DENV"
+      ],
+      "alternative_names": [
+        "Denver Broncos",
+        "Broncos",
+        "Denver"
+      ],
+      "conference": "AFC",
+      "division": "West",
+      "colors": [
+        "orange",
+        "navy",
+        "white"
+      ],
+      "stadium": "Empower Field at Mile High"
+    },
+    "KC": {
+      "name": "Kansas City Chiefs",
+      "city": "Kansas City",
+      "state": "MO",
+      "nickname": "Chiefs",
+      "abbreviations": [
+        "KC",
+        "KAN",
+        "CHIEF"
+      ],
+      "alternative_names": [
+        "Kansas City Chiefs",
+        "Chiefs",
+        "Kansas City",
+        "KC Chiefs"
+      ],
+      "conference": "AFC",
+      "division": "West",
+      "colors": [
+        "red",
+        "gold",
+        "white"
+      ],
+      "stadium": "Arrowhead Stadium"
+    },
+    "LV": {
+      "name": "Las Vegas Raiders",
+      "city": "Las Vegas",
+      "state": "NV",
+      "nickname": "Raiders",
+      "abbreviations": [
+        "LV",
+        "LAS",
+        "RAID",
+        "OAK"
+      ],
+      "alternative_names": [
+        "Las Vegas Raiders",
+        "Raiders",
+        "Las Vegas",
+        "LV Raiders",
+        "Oakland Raiders"
+      ],
+      "conference": "AFC",
+      "division": "West",
+      "colors": [
+        "silver",
+        "black"
+      ],
+      "stadium": "Allegiant Stadium"
+    },
+    "LAC": {
+      "name": "Los Angeles Chargers",
+      "city": "Los Angeles",
+      "state": "CA",
+      "nickname": "Chargers",
+      "abbreviations": [
+        "LAC",
+        "CHAR",
+        "SD"
+      ],
+      "alternative_names": [
+        "Los Angeles Chargers",
+        "Chargers",
+        "Los Angeles",
+        "LA Chargers",
+        "San Diego Chargers"
+      ],
+      "conference": "AFC",
+      "division": "West",
+      "colors": [
+        "powder blue",
+        "gold",
+        "white"
+      ],
+      "stadium": "SoFi Stadium"
+    },
+    "DAL": {
+      "name": "Dallas Cowboys",
+      "city": "Dallas",
+      "state": "TX",
+      "nickname": "Cowboys",
+      "abbreviations": [
+        "DAL",
+        "DALL"
+      ],
+      "alternative_names": [
+        "Dallas Cowboys",
+        "Cowboys",
+        "Dallas"
+      ],
+      "conference": "NFC",
+      "division": "East",
+      "colors": [
+        "navy",
+        "silver",
+        "white"
+      ],
+      "stadium": "AT&T Stadium"
+    },
+    "NYG": {
+      "name": "New York Giants",
+      "city": "East Rutherford",
+      "state": "NJ",
+      "nickname": "Giants",
+      "abbreviations": [
+        "NYG",
+        "GIANT",
+        "NY"
+      ],
+      "alternative_names": [
+        "New York Giants",
+        "Giants",
+        "NY Giants",
+        "N.Y. Giants"
+      ],
+      "conference": "NFC",
+      "division": "East",
+      "colors": [
+        "blue",
+        "red",
+        "white"
+      ],
+      "stadium": "MetLife Stadium"
+    },
+    "PHI": {
+      "name": "Philadelphia Eagles",
+      "city": "Philadelphia",
+      "state": "PA",
+      "nickname": "Eagles",
+      "abbreviations": [
+        "PHI",
+        "PHIL"
+      ],
+      "alternative_names": [
+        "Philadelphia Eagles",
+        "Eagles",
+        "Philadelphia",
+        "Philly"
+      ],
+      "conference": "NFC",
+      "division": "East",
+      "colors": [
+        "midnight green",
+        "silver",
+        "black"
+      ],
+      "stadium": "Lincoln Financial Field"
+    },
+    "WAS": {
+      "name": "Washington Commanders",
+      "city": "Washington",
+      "state": "DC",
+      "nickname": "Commanders",
+      "abbreviations": [
+        "WAS",
+        "WASH",
+        "WSH"
+      ],
+      "alternative_names": [
+        "Washington Commanders",
+        "Commanders",
+        "Washington",
+        "Washington Football Team",
+        "WFT"
+      ],
+      "conference": "NFC",
+      "division": "East",
+      "colors": [
+        "burgundy",
+        "gold"
+      ],
+      "stadium": "FedExField"
+    },
+    "CHI": {
+      "name": "Chicago Bears",
+      "city": "Chicago",
+      "state": "IL",
+      "nickname": "Bears",
+      "abbreviations": [
+        "CHI",
+        "CHIC"
+      ],
+      "alternative_names": [
+        "Chicago Bears",
+        "Bears",
+        "Chicago"
+      ],
+      "conference": "NFC",
+      "division": "North",
+      "colors": [
+        "navy",
+        "orange",
+        "white"
+      ],
+      "stadium": "Soldier Field"
+    },
+    "DET": {
+      "name": "Detroit Lions",
+      "city": "Detroit",
+      "state": "MI",
+      "nickname": "Lions",
+      "abbreviations": [
+        "DET",
+        "DETR"
+      ],
+      "alternative_names": [
+        "Detroit Lions",
+        "Lions",
+        "Detroit"
+      ],
+      "conference": "NFC",
+      "division": "North",
+      "colors": [
+        "honolulu blue",
+        "silver",
+        "white"
+      ],
+      "stadium": "Ford Field"
+    },
+    "GB": {
+      "name": "Green Bay Packers",
+      "city": "Green Bay",
+      "state": "WI",
+      "nickname": "Packers",
+      "abbreviations": [
+        "GB",
+        "GBP",
+        "PACK"
+      ],
+      "alternative_names": [
+        "Green Bay Packers",
+        "Packers",
+        "Green Bay"
+      ],
+      "conference": "NFC",
+      "division": "North",
+      "colors": [
+        "green",
+        "gold"
+      ],
+      "stadium": "Lambeau Field"
+    },
+    "MIN": {
+      "name": "Minnesota Vikings",
+      "city": "Minneapolis",
+      "state": "MN",
+      "nickname": "Vikings",
+      "abbreviations": [
+        "MIN",
+        "MINN"
+      ],
+      "alternative_names": [
+        "Minnesota Vikings",
+        "Vikings",
+        "Minnesota"
+      ],
+      "conference": "NFC",
+      "division": "North",
+      "colors": [
+        "purple",
+        "gold",
+        "white"
+      ],
+      "stadium": "U.S. Bank Stadium"
+    },
+    "ATL": {
+      "name": "Atlanta Falcons",
+      "city": "Atlanta",
+      "state": "GA",
+      "nickname": "Falcons",
+      "abbreviations": [
+        "ATL",
+        "ATLA"
+      ],
+      "alternative_names": [
+        "Atlanta Falcons",
+        "Falcons",
+        "Atlanta"
+      ],
+      "conference": "NFC",
+      "division": "South",
+      "colors": [
+        "red",
+        "black",
+        "silver"
+      ],
+      "stadium": "Mercedes-Benz Stadium"
+    },
+    "CAR": {
+      "name": "Carolina Panthers",
+      "city": "Charlotte",
+      "state": "NC",
+      "nickname": "Panthers",
+      "abbreviations": [
+        "CAR",
+        "CARO"
+      ],
+      "alternative_names": [
+        "Carolina Panthers",
+        "Panthers",
+        "Carolina"
+      ],
+      "conference": "NFC",
+      "division": "South",
+      "colors": [
+        "black",
+        "panther blue",
+        "silver"
+      ],
+      "stadium": "Bank of America Stadium"
+    },
+    "NO": {
+      "name": "New Orleans Saints",
+      "city": "New Orleans",
+      "state": "LA",
+      "nickname": "Saints",
+      "abbreviations": [
+        "NO",
+        "NOS",
+        "NOLA"
+      ],
+      "alternative_names": [
+        "New Orleans Saints",
+        "Saints",
+        "New Orleans"
+      ],
+      "conference": "NFC",
+      "division": "South",
+      "colors": [
+        "black",
+        "gold"
+      ],
+      "stadium": "Caesars Superdome"
+    },
+    "TB": {
+      "name": "Tampa Bay Buccaneers",
+      "city": "Tampa",
+      "state": "FL",
+      "nickname": "Buccaneers",
+      "abbreviations": [
+        "TB",
+        "TAM",
+        "BUCS"
+      ],
+      "alternative_names": [
+        "Tampa Bay Buccaneers",
+        "Buccaneers",
+        "Tampa Bay",
+        "Bucs",
+        "Tampa"
+      ],
+      "conference": "NFC",
+      "division": "South",
+      "colors": [
+        "red",
+        "orange",
+        "black"
+      ],
+      "stadium": "Raymond James Stadium"
+    },
+    "ARI": {
+      "name": "Arizona Cardinals",
+      "city": "Glendale",
+      "state": "AZ",
+      "nickname": "Cardinals",
+      "abbreviations": [
+        "ARI",
+        "ARIZ",
+        "CARD"
+      ],
+      "alternative_names": [
+        "Arizona Cardinals",
+        "Cardinals",
+        "Arizona"
+      ],
+      "conference": "NFC",
+      "division": "West",
+      "colors": [
+        "red",
+        "black",
+        "white"
+      ],
+      "stadium": "State Farm Stadium"
+    },
+    "LAR": {
+      "name": "Los Angeles Rams",
+      "city": "Los Angeles",
+      "state": "CA",
+      "nickname": "Rams",
+      "abbreviations": [
+        "LAR",
+        "RAMS",
+        "STL"
+      ],
+      "alternative_names": [
+        "Los Angeles Rams",
+        "Rams",
+        "Los Angeles",
+        "LA Rams",
+        "St. Louis Rams"
+      ],
+      "conference": "NFC",
+      "division": "West",
+      "colors": [
+        "ram royal",
+        "sol",
+        "bone"
+      ],
+      "stadium": "SoFi Stadium"
+    },
+    "SF": {
+      "name": "San Francisco 49ers",
+      "city": "Santa Clara",
+      "state": "CA",
+      "nickname": "49ers",
+      "abbreviations": [
+        "SF",
+        "SFO",
+        "49ER"
+      ],
+      "alternative_names": [
+        "San Francisco 49ers",
+        "49ers",
+        "San Francisco",
+        "Niners",
+        "SF 49ers"
+      ],
+      "conference": "NFC",
+      "division": "West",
+      "colors": [
+        "red",
+        "gold"
+      ],
+      "stadium": "Levi's Stadium"
+    },
+    "SEA": {
+      "name": "Seattle Seahawks",
+      "city": "Seattle",
+      "state": "WA",
+      "nickname": "Seahawks",
+      "abbreviations": [
+        "SEA",
+        "SEAT"
+      ],
+      "alternative_names": [
+        "Seattle Seahawks",
+        "Seahawks",
+        "Seattle",
+        "Hawks"
+      ],
+      "conference": "NFC",
+      "division": "West",
+      "colors": [
+        "college navy",
+        "action green",
+        "wolf grey"
+      ],
+      "stadium": "Lumen Field"
+    }
+  },
+  "reverse_lookup": {
+    "BUFF": "BUF",
+    "BUF": "BUF",
+    "BILLS": "BUF",
+    "Bills": "BUF",
+    "BUFFALO BILLS": "BUF",
+    "Buffalo Bills": "BUF",
+    "BUFFALO": "BUF",
+    "Buffalo": "BUF",
+    "MIAMI": "MIA",
+    "Miami": "MIA",
+    "MIAMI DOLPHINS": "MIA",
+    "Miami Dolphins": "MIA",
+    "MIA": "MIA",
+    "DOLPHINS": "MIA",
+    "Dolphins": "MIA",
+    "FINS": "MIA",
+    "Fins": "MIA",
+    "PATS": "NE",
+    "Pats": "NE",
+    "FOXBOROUGH PATRIOTS": "NE",
+    "Foxborough Patriots": "NE",
+    "NEW ENGLAND": "NE",
+    "New England": "NE",
+    "NE": "NE",
+    "PATRIOTS": "NE",
+    "Patriots": "NE",
+    "FOXBOROUGH": "NE",
+    "Foxborough": "NE",
+    "PAT": "NE",
+    "NEW ENGLAND PATRIOTS": "NE",
+    "New England Patriots": "NE",
+    "NWE": "NE",
+    "NY": "NYG",
+    "NEW YORK JETS": "NYJ",
+    "New York Jets": "NYJ",
+    "NY JETS": "NYJ",
+    "NY Jets": "NYJ",
+    "EAST RUTHERFORD": "NYG",
+    "East Rutherford": "NYG",
+    "NYJ": "NYJ",
+    "N.Y. JETS": "NYJ",
+    "N.Y. Jets": "NYJ",
+    "JETS": "NYJ",
+    "Jets": "NYJ",
+    "EAST RUTHERFORD JETS": "NYJ",
+    "East Rutherford Jets": "NYJ",
+    "BALTIMORE RAVENS": "BAL",
+    "Baltimore Ravens": "BAL",
+    "RAVENS": "BAL",
+    "Ravens": "BAL",
+    "BALTIMORE": "BAL",
+    "Baltimore": "BAL",
+    "BALT": "BAL",
+    "BAL": "BAL",
+    "CINCINNATI": "CIN",
+    "Cincinnati": "CIN",
+    "CINC": "CIN",
+    "CIN": "CIN",
+    "CINCINNATI BENGALS": "CIN",
+    "Cincinnati Bengals": "CIN",
+    "BENGALS": "CIN",
+    "Bengals": "CIN",
+    "CLEVELAND BROWNS": "CLE",
+    "Cleveland Browns": "CLE",
+    "CLEVELAND": "CLE",
+    "Cleveland": "CLE",
+    "BROWNS": "CLE",
+    "Browns": "CLE",
+    "CLEV": "CLE",
+    "CLE": "CLE",
+    "PITTSBURGH STEELERS": "PIT",
+    "Pittsburgh Steelers": "PIT",
+    "PITT": "PIT",
+    "STEELERS": "PIT",
+    "Steelers": "PIT",
+    "PIT": "PIT",
+    "PITTSBURGH": "PIT",
+    "Pittsburgh": "PIT",
+    "TEXANS": "HOU",
+    "Texans": "HOU",
+    "HOUSTON TEXANS": "HOU",
+    "Houston Texans": "HOU",
+    "HOUSTON": "HOU",
+    "Houston": "HOU",
+    "HTX": "HOU",
+    "HOU": "HOU",
+    "HOUS": "HOU",
+    "INDY": "IND",
+    "INDIANAPOLIS COLTS": "IND",
+    "Indianapolis Colts": "IND",
+    "IND": "IND",
+    "COLTS": "IND",
+    "Colts": "IND",
+    "Indy": "IND",
+    "INDIANAPOLIS": "IND",
+    "Indianapolis": "IND",
+    "JACKSONVILLE": "JAX",
+    "Jacksonville": "JAX",
+    "JACKSONVILLE JAGUARS": "JAX",
+    "Jacksonville Jaguars": "JAX",
+    "JAGUARS": "JAX",
+    "Jaguars": "JAX",
+    "JAGS": "JAX",
+    "JAX": "JAX",
+    "Jags": "JAX",
+    "JAC": "JAX",
+    "TEN": "TEN",
+    "TENN": "TEN",
+    "TENNESSEE": "TEN",
+    "Tennessee": "TEN",
+    "NASHVILLE TITANS": "TEN",
+    "Nashville Titans": "TEN",
+    "TITANS": "TEN",
+    "Titans": "TEN",
+    "TENNESSEE TITANS": "TEN",
+    "Tennessee Titans": "TEN",
+    "NASHVILLE": "TEN",
+    "Nashville": "TEN",
+    "DENVER": "DEN",
+    "Denver": "DEN",
+    "DENVER BRONCOS": "DEN",
+    "Denver Broncos": "DEN",
+    "BRONCOS": "DEN",
+    "Broncos": "DEN",
+    "DENV": "DEN",
+    "DEN": "DEN",
+    "CHIEFS": "KC",
+    "Chiefs": "KC",
+    "KANSAS CITY": "KC",
+    "Kansas City": "KC",
+    "KC": "KC",
+    "CHIEF": "KC",
+    "KAN": "KC",
+    "KC CHIEFS": "KC",
+    "KC Chiefs": "KC",
+    "KANSAS CITY CHIEFS": "KC",
+    "Kansas City Chiefs": "KC",
+    "LAS VEGAS": "LV",
+    "Las Vegas": "LV",
+    "LAS VEGAS RAIDERS": "LV",
+    "Las Vegas Raiders": "LV",
+    "LV RAIDERS": "LV",
+    "LV Raiders": "LV",
+    "LAS": "LV",
+    "RAID": "LV",
+    "LV": "LV",
+    "OAKLAND RAIDERS": "LV",
+    "Oakland Raiders": "LV",
+    "RAIDERS": "LV",
+    "Raiders": "LV",
+    "OAK": "LV",
+    "LOS ANGELES": "LAR",
+    "Los Angeles": "LAR",
+    "SAN DIEGO CHARGERS": "LAC",
+    "San Diego Chargers": "LAC",
+    "CHARGERS": "LAC",
+    "Chargers": "LAC",
+    "SD": "LAC",
+    "CHAR": "LAC",
+    "LAC": "LAC",
+    "LA CHARGERS": "LAC",
+    "LA Chargers": "LAC",
+    "LOS ANGELES CHARGERS": "LAC",
+    "Los Angeles Chargers": "LAC",
+    "COWBOYS": "DAL",
+    "Cowboys": "DAL",
+    "DALL": "DAL",
+    "DALLAS COWBOYS": "DAL",
+    "Dallas Cowboys": "DAL",
+    "DALLAS": "DAL",
+    "Dallas": "DAL",
+    "DAL": "DAL",
+    "NEW YORK GIANTS": "NYG",
+    "New York Giants": "NYG",
+    "GIANT": "NYG",
+    "NYG": "NYG",
+    "N.Y. GIANTS": "NYG",
+    "N.Y. Giants": "NYG",
+    "GIANTS": "NYG",
+    "Giants": "NYG",
+    "EAST RUTHERFORD GIANTS": "NYG",
+    "East Rutherford Giants": "NYG",
+    "NY GIANTS": "NYG",
+    "NY Giants": "NYG",
+    "PHI": "PHI",
+    "PHILADELPHIA": "PHI",
+    "Philadelphia": "PHI",
+    "EAGLES": "PHI",
+    "Eagles": "PHI",
+    "PHILADELPHIA EAGLES": "PHI",
+    "Philadelphia Eagles": "PHI",
+    "PHIL": "PHI",
+    "PHILLY": "PHI",
+    "Philly": "PHI",
+    "WASHINGTON": "WAS",
+    "Washington": "WAS",
+    "WFT": "WAS",
+    "WAS": "WAS",
+    "WASH": "WAS",
+    "WASHINGTON COMMANDERS": "WAS",
+    "Washington Commanders": "WAS",
+    "COMMANDERS": "WAS",
+    "Commanders": "WAS",
+    "WASHINGTON FOOTBALL TEAM": "WAS",
+    "Washington Football Team": "WAS",
+    "WSH": "WAS",
+    "CHI": "CHI",
+    "BEARS": "CHI",
+    "Bears": "CHI",
+    "CHIC": "CHI",
+    "CHICAGO BEARS": "CHI",
+    "Chicago Bears": "CHI",
+    "CHICAGO": "CHI",
+    "Chicago": "CHI",
+    "DETROIT LIONS": "DET",
+    "Detroit Lions": "DET",
+    "DET": "DET",
+    "DETROIT": "DET",
+    "Detroit": "DET",
+    "DETR": "DET",
+    "LIONS": "DET",
+    "Lions": "DET",
+    "GREEN BAY": "GB",
+    "Green Bay": "GB",
+    "GB": "GB",
+    "GBP": "GB",
+    "PACK": "GB",
+    "GREEN BAY PACKERS": "GB",
+    "Green Bay Packers": "GB",
+    "PACKERS": "GB",
+    "Packers": "GB",
+    "MINNESOTA VIKINGS": "MIN",
+    "Minnesota Vikings": "MIN",
+    "MINN": "MIN",
+    "MINNESOTA": "MIN",
+    "Minnesota": "MIN",
+    "MINNEAPOLIS": "MIN",
+    "Minneapolis": "MIN",
+    "MINNEAPOLIS VIKINGS": "MIN",
+    "Minneapolis Vikings": "MIN",
+    "VIKINGS": "MIN",
+    "Vikings": "MIN",
+    "MIN": "MIN",
+    "FALCONS": "ATL",
+    "Falcons": "ATL",
+    "ATLANTA FALCONS": "ATL",
+    "Atlanta Falcons": "ATL",
+    "ATLA": "ATL",
+    "ATLANTA": "ATL",
+    "Atlanta": "ATL",
+    "ATL": "ATL",
+    "CAROLINA": "CAR",
+    "Carolina": "CAR",
+    "CHARLOTTE PANTHERS": "CAR",
+    "Charlotte Panthers": "CAR",
+    "CHARLOTTE": "CAR",
+    "Charlotte": "CAR",
+    "CARO": "CAR",
+    "PANTHERS": "CAR",
+    "Panthers": "CAR",
+    "CAR": "CAR",
+    "CAROLINA PANTHERS": "CAR",
+    "Carolina Panthers": "CAR",
+    "NOS": "NO",
+    "NEW ORLEANS": "NO",
+    "New Orleans": "NO",
+    "NEW ORLEANS SAINTS": "NO",
+    "New Orleans Saints": "NO",
+    "NO": "NO",
+    "NOLA": "NO",
+    "SAINTS": "NO",
+    "Saints": "NO",
+    "TAMPA BAY BUCCANEERS": "TB",
+    "Tampa Bay Buccaneers": "TB",
+    "BUCS": "TB",
+    "TAMPA BUCCANEERS": "TB",
+    "Tampa Buccaneers": "TB",
+    "Bucs": "TB",
+    "TAMPA": "TB",
+    "Tampa": "TB",
+    "BUCCANEERS": "TB",
+    "Buccaneers": "TB",
+    "TAM": "TB",
+    "TAMPA BAY": "TB",
+    "Tampa Bay": "TB",
+    "TB": "TB",
+    "CARD": "ARI",
+    "ARIZONA CARDINALS": "ARI",
+    "Arizona Cardinals": "ARI",
+    "ARIZ": "ARI",
+    "CARDINALS": "ARI",
+    "Cardinals": "ARI",
+    "GLENDALE CARDINALS": "ARI",
+    "Glendale Cardinals": "ARI",
+    "ARIZONA": "ARI",
+    "Arizona": "ARI",
+    "ARI": "ARI",
+    "GLENDALE": "ARI",
+    "Glendale": "ARI",
+    "LAR": "LAR",
+    "LA RAMS": "LAR",
+    "LA Rams": "LAR",
+    "STL": "LAR",
+    "LOS ANGELES RAMS": "LAR",
+    "Los Angeles Rams": "LAR",
+    "RAMS": "LAR",
+    "ST. LOUIS RAMS": "LAR",
+    "St. Louis Rams": "LAR",
+    "Rams": "LAR",
+    "SAN FRANCISCO": "SF",
+    "San Francisco": "SF",
+    "SFO": "SF",
+    "SF": "SF",
+    "SF 49ERS": "SF",
+    "SF 49ers": "SF",
+    "SAN FRANCISCO 49ERS": "SF",
+    "San Francisco 49ers": "SF",
+    "SANTA CLARA 49ERS": "SF",
+    "Santa Clara 49ers": "SF",
+    "49ERS": "SF",
+    "49ers": "SF",
+    "49ER": "SF",
+    "NINERS": "SF",
+    "Niners": "SF",
+    "SANTA CLARA": "SF",
+    "Santa Clara": "SF",
+    "SEATTLE": "SEA",
+    "Seattle": "SEA",
+    "SEA": "SEA",
+    "SEAHAWKS": "SEA",
+    "Seahawks": "SEA",
+    "SEATTLE SEAHAWKS": "SEA",
+    "Seattle Seahawks": "SEA",
+    "SEAT": "SEA",
+    "HAWKS": "SEA",
+    "Hawks": "SEA"
+  },
+  "variations": {
+    "BUF": [
+      "BUFF",
+      "BUF",
+      "Bills",
+      "Buffalo Bills",
+      "Buffalo"
+    ],
+    "MIA": [
+      "Miami",
+      "Miami Dolphins",
+      "MIA",
+      "Dolphins",
+      "MIAMI",
+      "Fins"
+    ],
+    "NE": [
+      "Pats",
+      "Foxborough Patriots",
+      "New England",
+      "NE",
+      "Patriots",
+      "Foxborough",
+      "PAT",
+      "PATS",
+      "New England Patriots",
+      "NWE"
+    ],
+    "NYJ": [
+      "NY",
+      "New York Jets",
+      "NY Jets",
+      "East Rutherford",
+      "NYJ",
+      "N.Y. Jets",
+      "JETS",
+      "Jets",
+      "East Rutherford Jets"
+    ],
+    "BAL": [
+      "Baltimore Ravens",
+      "Ravens",
+      "Baltimore",
+      "BALT",
+      "BAL"
+    ],
+    "CIN": [
+      "Cincinnati",
+      "CINC",
+      "CIN",
+      "Cincinnati Bengals",
+      "Bengals"
+    ],
+    "CLE": [
+      "Cleveland Browns",
+      "Cleveland",
+      "Browns",
+      "CLEV",
+      "CLE"
+    ],
+    "PIT": [
+      "Pittsburgh Steelers",
+      "PITT",
+      "Steelers",
+      "PIT",
+      "Pittsburgh"
+    ],
+    "HOU": [
+      "Texans",
+      "Houston Texans",
+      "Houston",
+      "HTX",
+      "HOU",
+      "HOUS"
+    ],
+    "IND": [
+      "INDY",
+      "Indianapolis Colts",
+      "IND",
+      "Colts",
+      "Indy",
+      "Indianapolis"
+    ],
+    "JAX": [
+      "Jacksonville",
+      "Jacksonville Jaguars",
+      "Jaguars",
+      "JAGS",
+      "JAX",
+      "Jags",
+      "JAC"
+    ],
+    "TEN": [
+      "TEN",
+      "TENN",
+      "Tennessee",
+      "Nashville Titans",
+      "Titans",
+      "Tennessee Titans",
+      "Nashville"
+    ],
+    "DEN": [
+      "Denver",
+      "Denver Broncos",
+      "Broncos",
+      "DENV",
+      "DEN"
+    ],
+    "KC": [
+      "Chiefs",
+      "Kansas City",
+      "KC",
+      "CHIEF",
+      "KAN",
+      "KC Chiefs",
+      "Kansas City Chiefs"
+    ],
+    "LV": [
+      "Las Vegas",
+      "Las Vegas Raiders",
+      "LV Raiders",
+      "LAS",
+      "RAID",
+      "LV",
+      "Oakland Raiders",
+      "Raiders",
+      "OAK"
+    ],
+    "LAC": [
+      "Los Angeles",
+      "San Diego Chargers",
+      "Chargers",
+      "SD",
+      "CHAR",
+      "LAC",
+      "LA Chargers",
+      "Los Angeles Chargers"
+    ],
+    "DAL": [
+      "Cowboys",
+      "DALL",
+      "Dallas Cowboys",
+      "Dallas",
+      "DAL"
+    ],
+    "NYG": [
+      "New York Giants",
+      "NY",
+      "GIANT",
+      "NYG",
+      "East Rutherford",
+      "N.Y. Giants",
+      "Giants",
+      "East Rutherford Giants",
+      "NY Giants"
+    ],
+    "PHI": [
+      "PHI",
+      "Philadelphia",
+      "Eagles",
+      "Philadelphia Eagles",
+      "PHIL",
+      "Philly"
+    ],
+    "WAS": [
+      "Washington",
+      "WFT",
+      "WAS",
+      "WASH",
+      "Washington Commanders",
+      "Commanders",
+      "Washington Football Team",
+      "WSH"
+    ],
+    "CHI": [
+      "CHI",
+      "Bears",
+      "CHIC",
+      "Chicago Bears",
+      "Chicago"
+    ],
+    "DET": [
+      "Detroit Lions",
+      "DET",
+      "Detroit",
+      "DETR",
+      "Lions"
+    ],
+    "GB": [
+      "Green Bay",
+      "GB",
+      "GBP",
+      "PACK",
+      "Green Bay Packers",
+      "Packers"
+    ],
+    "MIN": [
+      "Minnesota Vikings",
+      "MINN",
+      "Minnesota",
+      "Minneapolis",
+      "Minneapolis Vikings",
+      "Vikings",
+      "MIN"
+    ],
+    "ATL": [
+      "Falcons",
+      "Atlanta Falcons",
+      "ATLA",
+      "Atlanta",
+      "ATL"
+    ],
+    "CAR": [
+      "Carolina",
+      "Charlotte Panthers",
+      "Charlotte",
+      "CARO",
+      "Panthers",
+      "CAR",
+      "Carolina Panthers"
+    ],
+    "NO": [
+      "NOS",
+      "New Orleans",
+      "New Orleans Saints",
+      "NO",
+      "NOLA",
+      "Saints"
+    ],
+    "TB": [
+      "Tampa Bay Buccaneers",
+      "BUCS",
+      "Tampa Buccaneers",
+      "Bucs",
+      "Tampa",
+      "Buccaneers",
+      "TAM",
+      "Tampa Bay",
+      "TB"
+    ],
+    "ARI": [
+      "CARD",
+      "Arizona Cardinals",
+      "ARIZ",
+      "Cardinals",
+      "Glendale Cardinals",
+      "Arizona",
+      "ARI",
+      "Glendale"
+    ],
+    "LAR": [
+      "Los Angeles",
+      "LAR",
+      "LA Rams",
+      "STL",
+      "Los Angeles Rams",
+      "RAMS",
+      "St. Louis Rams",
+      "Rams"
+    ],
+    "SF": [
+      "San Francisco",
+      "SFO",
+      "SF",
+      "SF 49ers",
+      "San Francisco 49ers",
+      "Santa Clara 49ers",
+      "49ers",
+      "49ER",
+      "Niners",
+      "Santa Clara"
+    ],
+    "SEA": [
+      "Seattle",
+      "SEA",
+      "Seahawks",
+      "Seattle Seahawks",
+      "SEAT",
+      "Hawks"
+    ]
+  },
+  "generated_at": "2025-08-29T09:50:31.006352",
+  "season": "2024-2025"
+}

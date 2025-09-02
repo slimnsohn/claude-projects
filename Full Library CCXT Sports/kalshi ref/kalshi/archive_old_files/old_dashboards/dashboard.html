@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalshi Trading Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #3498db;
+        }
+
+        .card.positive {
+            border-left-color: #27ae60;
+        }
+
+        .card.negative {
+            border-left-color: #e74c3c;
+        }
+
+        .card h3 {
+            color: #7f8c8d;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .card .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .filters {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .filters h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        select, button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: #34495e;
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .profit {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .loss {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .status-open {
+            background: #f39c12;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .status-closed {
+            background: #95a5a6;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #7f8c8d;
+        }
+
+        .tabs {
+            display: flex;
+            background: #ecf0f1;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab.active {
+            background: white;
+            font-weight: 600;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kalshi Trading Dashboard</h1>
+            <p id="last-updated">Loading...</p>
+        </div>
+
+        <div class="overview-grid">
+            <div class="card">
+                <h3>Current Cash</h3>
+                <div class="value" id="current-cash">$0.00</div>
+            </div>
+            <div class="card">
+                <h3>Cash in Positions</h3>
+                <div class="value" id="cash-in-positions">$0.00</div>
+            </div>
+            <div class="card">
+                <h3>Total Account Value</h3>
+                <div class="value" id="total-value">$0.00</div>
+            </div>
+            <div class="card">
+                <h3>Net P&L</h3>
+                <div class="value" id="net-pnl">$0.00</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <label>Sport:</label>
+                <select id="sport-filter">
+                    <option value="all">All Sports</option>
+                </select>
+                <label>Status:</label>
+                <select id="status-filter">
+                    <option value="all">All Statuses</option>
+                    <option value="open">Open Only</option>
+                    <option value="closed">Closed Only</option>
+                </select>
+                <button onclick="applyFilters()">Apply Filters</button>
+                <button onclick="resetFilters()">Reset</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">Open Positions</div>
+            <div class="section-content">
+                <div id="open-positions-loading" class="loading">Loading open positions...</div>
+                <div id="open-positions-content" style="display: none;">
+                    <table id="open-positions-table">
+                        <thead>
+                            <tr>
+                                <th>Market</th>
+                                <th>Sport</th>
+                                <th>Total Cost</th>
+                                <th>Current Value</th>
+                                <th>Unrealized P&L</th>
+                                <th>Trades</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">Trading History</div>
+            <div class="section-content">
+                <div class="tabs">
+                    <div class="tab active" onclick="showTab('individual-trades')">Individual Trades</div>
+                    <div class="tab" onclick="showTab('event-summary')">Event Summary</div>
+                </div>
+
+                <div id="individual-trades" class="tab-content active">
+                    <div id="trades-loading" class="loading">Loading trade history...</div>
+                    <div id="trades-content" style="display: none;">
+                        <table id="trades-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Market</th>
+                                    <th>Sport</th>
+                                    <th>Action</th>
+                                    <th>Side</th>
+                                    <th>Count</th>
+                                    <th>Price</th>
+                                    <th>Cost</th>
+                                    <th>Status</th>
+                                    <th>Result</th>
+                                    <th>P&L</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="event-summary" class="tab-content">
+                    <div id="events-loading" class="loading">Loading event summary...</div>
+                    <div id="events-content" style="display: none;">
+                        <table id="events-table">
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+                                    <th>Sport</th>
+                                    <th>Total Cost</th>
+                                    <th>Total Payout</th>
+                                    <th>Net P&L</th>
+                                    <th>Status</th>
+                                    <th>Result</th>
+                                    <th>Trades</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allData = {};
+        let filteredData = {};
+
+        // Initialize dashboard
+        async function initDashboard() {
+            try {
+                const response = await fetch('data/fills_with_resolutions_current.json');
+                allData = await response.json();
+                
+                document.getElementById('last-updated').textContent = 
+                    `Last updated: ${new Date(allData.retrieved_at).toLocaleString()}`;
+                
+                processData();
+                populateFilters();
+                updateOverview();
+                updateOpenPositions();
+                updateTradesHistory();
+                updateEventSummary();
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('last-updated').textContent = 'Error loading data';
+            }
+        }
+
+        function processData() {
+            filteredData = { ...allData };
+        }
+
+        function populateFilters() {
+            const sports = new Set();
+            
+            allData.fills.forEach(fill => {
+                const sport = extractSport(fill.ticker);
+                if (sport) sports.add(sport);
+            });
+            
+            const sportFilter = document.getElementById('sport-filter');
+            sports.forEach(sport => {
+                const option = document.createElement('option');
+                option.value = sport;
+                option.textContent = sport.toUpperCase();
+                sportFilter.appendChild(option);
+            });
+        }
+
+        function extractSport(ticker) {
+            // Extract sport from ticker (e.g., "KXWTAMATCH-25AUG17STAANN-STA" -> "WTA")
+            if (ticker.includes('WTA')) return 'wta';
+            if (ticker.includes('UFC')) return 'ufc';
+            if (ticker.includes('NFL')) return 'nfl';
+            if (ticker.includes('NBA')) return 'nba';
+            if (ticker.includes('MLB')) return 'mlb';
+            if (ticker.includes('PRES')) return 'politics';
+            if (ticker.includes('ECON')) return 'economics';
+            return 'other';
+        }
+
+        function updateOverview() {
+            const currentCash = 9818.85; // From your latest balance
+            let cashInPositions = 0;
+            let netPnL = 0;
+            
+            // Group by event to calculate positions and P&L
+            const events = {};
+            
+            filteredData.fills.forEach(fill => {
+                const ticker = fill.ticker;
+                if (!events[ticker]) {
+                    events[ticker] = {
+                        totalCost: 0,
+                        totalPayout: 0,
+                        status: fill.market_status,
+                        result: fill.market_result
+                    };
+                }
+                
+                const event = events[ticker];
+                const side = fill.side || 'yes';
+                const action = fill.action || 'buy';
+                const count = fill.count || 0;
+                const price = side === 'yes' ? fill.yes_price / 100 : fill.no_price / 100;
+                const cost = count * price;
+                
+                if (action === 'buy') {
+                    event.totalCost += cost;
+                } else {
+                    event.totalCost -= cost;
+                }
+                
+                // Calculate payout for resolved events
+                const isResolved = ['closed', 'finalized', 'settled'].includes(event.status?.toLowerCase());
+                if (isResolved) {
+                    let payoutRate = 0.5; // Default for ties
+                    if (event.result === 'yes') {
+                        payoutRate = side === 'yes' ? 1.0 : 0.0;
+                    } else if (event.result === 'no') {
+                        payoutRate = side === 'yes' ? 0.0 : 1.0;
+                    }
+                    
+                    const payout = count * payoutRate;
+                    if (action === 'buy') {
+                        event.totalPayout += payout;
+                    } else {
+                        event.totalPayout -= payout;
+                    }
+                }
+            });
+            
+            // Calculate totals
+            Object.values(events).forEach(event => {
+                const isOpen = !['closed', 'finalized', 'settled'].includes(event.status?.toLowerCase());
+                if (isOpen) {
+                    cashInPositions += event.totalCost;
+                } else {
+                    netPnL += event.totalPayout - event.totalCost;
+                }
+            });
+            
+            const totalValue = currentCash + cashInPositions;
+            
+            document.getElementById('current-cash').textContent = `$${currentCash.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            document.getElementById('cash-in-positions').textContent = `$${cashInPositions.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            document.getElementById('total-value').textContent = `$${totalValue.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            document.getElementById('net-pnl').textContent = `$${netPnL.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            
+            // Update card colors
+            const pnlCard = document.getElementById('net-pnl').parentElement;
+            pnlCard.className = `card ${netPnL >= 0 ? 'positive' : 'negative'}`;
+        }
+
+        function updateOpenPositions() {
+            const tbody = document.querySelector('#open-positions-table tbody');
+            tbody.innerHTML = '';
+            
+            const openEvents = {};
+            
+            filteredData.fills.forEach(fill => {
+                const isOpen = !['closed', 'finalized', 'settled'].includes(fill.market_status?.toLowerCase());
+                if (!isOpen) return;
+                
+                const ticker = fill.ticker;
+                if (!openEvents[ticker]) {
+                    openEvents[ticker] = {
+                        ticker,
+                        sport: extractSport(ticker),
+                        totalCost: 0,
+                        trades: 0
+                    };
+                }
+                
+                const event = openEvents[ticker];
+                const side = fill.side || 'yes';
+                const action = fill.action || 'buy';
+                const count = fill.count || 0;
+                const price = side === 'yes' ? fill.yes_price / 100 : fill.no_price / 100;
+                const cost = count * price;
+                
+                if (action === 'buy') {
+                    event.totalCost += cost;
+                } else {
+                    event.totalCost -= cost;
+                }
+                event.trades++;
+            });
+            
+            Object.values(openEvents).forEach(event => {
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td>${event.ticker}</td>
+                    <td>${event.sport.toUpperCase()}</td>
+                    <td>$${event.totalCost.toFixed(2)}</td>
+                    <td>$${event.totalCost.toFixed(2)}</td>
+                    <td class="profit">$0.00</td>
+                    <td>${event.trades}</td>
+                `;
+            });
+            
+            document.getElementById('open-positions-loading').style.display = 'none';
+            document.getElementById('open-positions-content').style.display = 'block';
+        }
+
+        function updateTradesHistory() {
+            const tbody = document.querySelector('#trades-table tbody');
+            tbody.innerHTML = '';
+            
+            filteredData.fills.forEach(fill => {
+                const side = fill.side || 'yes';
+                const action = fill.action || 'buy';
+                const count = fill.count || 0;
+                const price = side === 'yes' ? fill.yes_price / 100 : fill.no_price / 100;
+                const cost = count * price;
+                
+                const isResolved = ['closed', 'finalized', 'settled'].includes(fill.market_status?.toLowerCase());
+                let pnl = '';
+                
+                if (isResolved) {
+                    let payoutRate = 0.5;
+                    if (fill.market_result === 'yes') {
+                        payoutRate = side === 'yes' ? 1.0 : 0.0;
+                    } else if (fill.market_result === 'no') {
+                        payoutRate = side === 'yes' ? 0.0 : 1.0;
+                    }
+                    
+                    const payout = count * payoutRate;
+                    const tradePnL = action === 'buy' ? payout - cost : cost - payout;
+                    pnl = `$${tradePnL.toFixed(2)}`;
+                }
+                
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td>${new Date(fill.created_time).toLocaleDateString()}</td>
+                    <td>${fill.ticker}</td>
+                    <td>${extractSport(fill.ticker).toUpperCase()}</td>
+                    <td>${action.toUpperCase()}</td>
+                    <td>${side.toUpperCase()}</td>
+                    <td>${count}</td>
+                    <td>${(price * 100).toFixed(0)}¢</td>
+                    <td>$${cost.toFixed(2)}</td>
+                    <td><span class="status-${isResolved ? 'closed' : 'open'}">${fill.market_status}</span></td>
+                    <td>${fill.market_result || (isResolved ? 'TIE' : '-')}</td>
+                    <td class="${pnl.startsWith('-') ? 'loss' : 'profit'}">${pnl || '-'}</td>
+                `;
+            });
+            
+            document.getElementById('trades-loading').style.display = 'none';
+            document.getElementById('trades-content').style.display = 'block';
+        }
+
+        function updateEventSummary() {
+            const tbody = document.querySelector('#events-table tbody');
+            tbody.innerHTML = '';
+            
+            const events = {};
+            
+            filteredData.fills.forEach(fill => {
+                const ticker = fill.ticker;
+                if (!events[ticker]) {
+                    events[ticker] = {
+                        ticker,
+                        sport: extractSport(ticker),
+                        totalCost: 0,
+                        totalPayout: 0,
+                        trades: 0,
+                        status: fill.market_status,
+                        result: fill.market_result
+                    };
+                }
+                
+                const event = events[ticker];
+                const side = fill.side || 'yes';
+                const action = fill.action || 'buy';
+                const count = fill.count || 0;
+                const price = side === 'yes' ? fill.yes_price / 100 : fill.no_price / 100;
+                const cost = count * price;
+                
+                if (action === 'buy') {
+                    event.totalCost += cost;
+                } else {
+                    event.totalCost -= cost;
+                }
+                
+                const isResolved = ['closed', 'finalized', 'settled'].includes(event.status?.toLowerCase());
+                if (isResolved) {
+                    let payoutRate = 0.5;
+                    if (event.result === 'yes') {
+                        payoutRate = side === 'yes' ? 1.0 : 0.0;
+                    } else if (event.result === 'no') {
+                        payoutRate = side === 'yes' ? 0.0 : 1.0;
+                    }
+                    
+                    const payout = count * payoutRate;
+                    if (action === 'buy') {
+                        event.totalPayout += payout;
+                    } else {
+                        event.totalPayout -= payout;
+                    }
+                }
+                
+                event.trades++;
+            });
+            
+            Object.values(events).forEach(event => {
+                const netPnL = event.totalPayout - event.totalCost;
+                const isResolved = ['closed', 'finalized', 'settled'].includes(event.status?.toLowerCase());
+                
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td>${event.ticker}</td>
+                    <td>${event.sport.toUpperCase()}</td>
+                    <td>$${event.totalCost.toFixed(2)}</td>
+                    <td>$${event.totalPayout.toFixed(2)}</td>
+                    <td class="${netPnL >= 0 ? 'profit' : 'loss'}">$${netPnL.toFixed(2)}</td>
+                    <td><span class="status-${isResolved ? 'closed' : 'open'}">${event.status}</span></td>
+                    <td>${event.result || (isResolved ? 'TIE' : '-')}</td>
+                    <td>${event.trades}</td>
+                `;
+            });
+            
+            document.getElementById('events-loading').style.display = 'none';
+            document.getElementById('events-content').style.display = 'block';
+        }
+
+        function showTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        function applyFilters() {
+            const sportFilter = document.getElementById('sport-filter').value;
+            const statusFilter = document.getElementById('status-filter').value;
+            
+            filteredData.fills = allData.fills.filter(fill => {
+                const sport = extractSport(fill.ticker);
+                const isResolved = ['closed', 'finalized', 'settled'].includes(fill.market_status?.toLowerCase());
+                
+                const sportMatch = sportFilter === 'all' || sport === sportFilter;
+                const statusMatch = statusFilter === 'all' || 
+                    (statusFilter === 'open' && !isResolved) ||
+                    (statusFilter === 'closed' && isResolved);
+                
+                return sportMatch && statusMatch;
+            });
+            
+            updateOverview();
+            updateOpenPositions();
+            updateTradesHistory();
+            updateEventSummary();
+        }
+
+        function resetFilters() {
+            document.getElementById('sport-filter').value = 'all';
+            document.getElementById('status-filter').value = 'all';
+            filteredData = { ...allData };
+            
+            updateOverview();
+            updateOpenPositions();
+            updateTradesHistory();
+            updateEventSummary();
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initDashboard);
+    </script>
+</body>
+</html>

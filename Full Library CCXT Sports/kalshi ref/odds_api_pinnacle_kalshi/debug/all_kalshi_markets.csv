@@ -1,0 +1,101 @@
+Index,Ticker,Title,Category,YesPrice,NoPrice,Status,CloseTime
+1,"KXWTAMATCH-25AUG21RUZBOU-RUZ","Will Antonia Ruzic win the Ruzic vs Bouzkova match?","",,,active,2025-09-05T02:10:00Z
+2,"KXWTAMATCH-25AUG21RUZBOU-BOU","Will Marie Bouzkova win the Ruzic vs Bouzkova match?","",,,active,2025-09-05T02:10:00Z
+3,"KXSPOTIFYSONGRELEASETS-25B","Will Taylor Swift release a song this month?","",,,active,2025-10-03T14:00:00Z
+4,"KXNETFLIXRANKMOVIE-25AUG25-TTAJS","Top Netflix movie on Aug 25, 2025?","",,,active,2025-08-26T03:59:00Z
+5,"KXSPOTIFYALBUMRELEASE-25","Will JAY-Z release an album this year?","",,,active,2025-12-31T15:00:00Z
+6,"KXSPOTIFYSONG-25-JAY","Will JAY-Z release a song this yearE?","",,,active,2025-12-31T15:00:00Z
+7,"KXSPOTIFYGLOBALD-25AUG22-YOU","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+8,"KXSPOTIFYGLOBALD-25AUG22-WHA","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+9,"KXSPOTIFYGLOBALD-25AUG22-SOD","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+10,"KXSPOTIFYGLOBALD-25AUG22-ORD","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+11,"KXSPOTIFYGLOBALD-25AUG22-LOV","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+12,"KXSPOTIFYGLOBALD-25AUG22-LAP","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+13,"KXSPOTIFYGLOBALD-25AUG22-JUM","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+14,"KXSPOTIFYGLOBALD-25AUG22-HOW","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+15,"KXSPOTIFYGLOBALD-25AUG22-GOL","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+16,"KXSPOTIFYGLOBALD-25AUG22-FRE","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+17,"KXSPOTIFYGLOBALD-25AUG22-DON","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+18,"KXSPOTIFYGLOBALD-25AUG22-DIE","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+19,"KXSPOTIFYGLOBALD-25AUG22-DAI","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+20,"KXSPOTIFYGLOBALD-25AUG22-BIR","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+21,"KXSPOTIFYGLOBALD-25AUG22-BAC","Top Global Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+22,"KXSPOTIFYD-25AUG22-WHAT","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+23,"KXSPOTIFYD-25AUG22-UND","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+24,"KXSPOTIFYD-25AUG22-THE","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+25,"KXSPOTIFYD-25AUG22-TAK","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+26,"KXSPOTIFYD-25AUG22-LOV","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+27,"KXSPOTIFYD-25AUG22-FRE","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+28,"KXSPOTIFYD-25AUG22-DRE","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+29,"KXSPOTIFYD-25AUG22-DAI","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+30,"KXSPOTIFYD-25AUG22-YOU","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+31,"KXSPOTIFYD-25AUG22-WHA","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+32,"KXSPOTIFYD-25AUG22-SOD","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+33,"KXSPOTIFYD-25AUG22-ORD","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+34,"KXSPOTIFYD-25AUG22-HOW","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+35,"KXSPOTIFYD-25AUG22-GOL","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+36,"KXSPOTIFYD-25AUG22-BAC","Top USA Song on Spotify on Aug 22, 2025?","",,,initialized,2025-08-23T03:59:00Z
+37,"KXSPOTIFYARTISTD-25AUG22-UIC","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+38,"KXSPOTIFYARTISTD-25AUG22-TRA","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+39,"KXSPOTIFYARTISTD-25AUG22-TAT","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+40,"KXSPOTIFYARTISTD-25AUG22-KAN","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+41,"KXSPOTIFYARTISTD-25AUG22-FUT","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+42,"KXSPOTIFYARTISTD-25AUG22-EJA","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+43,"KXSPOTIFYARTISTD-25AUG22-ZAC","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+44,"KXSPOTIFYARTISTD-25AUG22-TYL","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+45,"KXSPOTIFYARTISTD-25AUG22-THE","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+46,"KXSPOTIFYARTISTD-25AUG22-TAY","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+47,"KXSPOTIFYARTISTD-25AUG22-MOR","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+48,"KXSPOTIFYARTISTD-25AUG22-KPO","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+49,"KXSPOTIFYARTISTD-25AUG22-KEN","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+50,"KXSPOTIFYARTISTD-25AUG22-DRA","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+51,"KXSPOTIFYARTISTD-25AUG22-BAD","Top USA Artist on Spotify on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+52,"KXSPOTIFY2D-25AUG22-YOU","Will the top Song on Aug 22, 2025 be Your Idol?","",,,initialized,2025-08-23T03:59:00Z
+53,"KXSPOTIFY2D-25AUG22-WHAT","Will the top Song on Aug 22, 2025 be What I Want (feat. Tate McRae)?","",,,initialized,2025-08-23T03:59:00Z
+54,"KXSPOTIFY2D-25AUG22-WHA","Will the top Song on Aug 22, 2025 be What It Sounds Like?","",,,initialized,2025-08-23T03:59:00Z
+55,"KXSPOTIFY2D-25AUG22-UND","Will the top Song on Aug 22, 2025 be undressed?","",,,initialized,2025-08-23T03:59:00Z
+56,"KXSPOTIFY2D-25AUG22-THE","Will the top Song on Aug 22, 2025 be The Subway?","",,,initialized,2025-08-23T03:59:00Z
+57,"KXSPOTIFY2D-25AUG22-TAK","Will the top Song on Aug 22, 2025 be Takedown?","",,,initialized,2025-08-23T03:59:00Z
+58,"KXSPOTIFY2D-25AUG22-SOD","Will the top Song on Aug 22, 2025 be Soda Pop?","",,,initialized,2025-08-23T03:59:00Z
+59,"KXSPOTIFY2D-25AUG22-ORD","Will the top Song on Aug 22, 2025 be Ordinary?","",,,initialized,2025-08-23T03:59:00Z
+60,"KXSPOTIFY2D-25AUG22-LOV","Will the top Song on Aug 22, 2025 be Love Me Not?","",,,initialized,2025-08-23T03:59:00Z
+61,"KXSPOTIFY2D-25AUG22-HOW","Will the top Song on Aug 22, 2025 be How It’s Done?","",,,initialized,2025-08-23T03:59:00Z
+62,"KXSPOTIFY2D-25AUG22-GOL","Will the top Song on Aug 22, 2025 be Golden?","",,,initialized,2025-08-23T03:59:00Z
+63,"KXSPOTIFY2D-25AUG22-FRE","Will the top Song on Aug 22, 2025 be Free?","",,,initialized,2025-08-23T03:59:00Z
+64,"KXSPOTIFY2D-25AUG22-DRE","Will the top Song on Aug 22, 2025 be Dreams - 2004 Remaster?","",,,initialized,2025-08-23T03:59:00Z
+65,"KXSPOTIFY2D-25AUG22-DAI","Will the top Song on Aug 22, 2025 be DAISIES?","",,,initialized,2025-08-23T03:59:00Z
+66,"KXSPOTIFY2D-25AUG22-BAC","Will the top Song on Aug 22, 2025 be back to friends?","",,,initialized,2025-08-23T03:59:00Z
+67,"KXWTAMATCH-25AUG21NOSALE-NOS","Will Linda Noskova win the Noskova vs Alexandrova match?","",,,active,2025-09-05T01:00:00Z
+68,"KXWTAMATCH-25AUG21NOSALE-ALE","Will Ekaterina Alexandrova win the Noskova vs Alexandrova match?","",,,active,2025-09-05T01:00:00Z
+69,"KXNCAAF-26-MSU","Will Michigan St. win the College Football Playoff National Championship?","",,,active,2028-01-19T15:00:00Z
+70,"KXWTAMATCH-25AUG21SAMCIR-SAM","Will Liudmila Samsonova win the Samsonova vs Cirstea match?","",,,active,2025-09-04T23:40:00Z
+71,"KXWTAMATCH-25AUG21SAMCIR-CIR","Will Sorana Cirstea win the Samsonova vs Cirstea match?","",,,active,2025-09-04T23:40:00Z
+72,"KXATPMATCH-25AUG21YUNVAN-YUN","Will Yunchaokete Bu win the Bu vs Van de Zandschulp match?","",,,active,2025-09-04T23:40:00Z
+73,"KXATPMATCH-25AUG21YUNVAN-VAN","Will Botic Van de Zandschulp win the Bu vs Van de Zandschulp match?","",,,active,2025-09-04T23:40:00Z
+74,"KXWTAMATCH-25AUG21PARSRA-SRA","Will Rebecca Sramkova win the Parks vs Sramkova match?","",,,active,2025-09-04T23:00:00Z
+75,"KXWTAMATCH-25AUG21PARSRA-PAR","Will Alycia Parks win the Parks vs Sramkova match?","",,,active,2025-09-04T23:00:00Z
+76,"KXATPMATCH-25AUG21MEDMPE-MPE","Will Giovanni Mpetshi Perricard win the Medjedovic vs Mpetshi Perricard match?","",,,active,2025-09-04T22:30:00Z
+77,"KXATPMATCH-25AUG21MEDMPE-MED","Will Hamad Medjedovic win the Medjedovic vs Mpetshi Perricard match?","",,,active,2025-09-04T22:30:00Z
+78,"KXWTAMATCH-25AUG21SHNMER-SHN","Will Diana Shnaider win the Shnaider vs Mertens match?","",,,active,2025-09-04T21:00:00Z
+79,"KXWTAMATCH-25AUG21SHNMER-MER","Will Elise Mertens win the Shnaider vs Mertens match?","",,,active,2025-09-04T21:00:00Z
+80,"KXATPMATCH-25AUG21MUNFUC-FUC","Will Marton Fucsovics win the Munar vs Fucsovics match?","",,,active,2025-09-04T20:00:00Z
+81,"KXATPMATCH-25AUG21MUNFUC-MUN","Will Jaume Munar win the Munar vs Fucsovics match?","",,,active,2025-09-04T20:00:00Z
+82,"KXHIGHCHI-25AUG22-T82","Will the high temp in Chicago be >82° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+83,"KXHIGHCHI-25AUG22-B81.5","Will the high temp in Chicago be 81-82° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+84,"KXHIGHCHI-25AUG22-B79.5","Will the high temp in Chicago be 79-80° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+85,"KXHIGHCHI-25AUG22-B77.5","Will the high temp in Chicago be 77-78° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+86,"KXHIGHCHI-25AUG22-B75.5","Will the high temp in Chicago be 75-76° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+87,"KXHIGHCHI-25AUG22-T75","Will the high temp in Chicago be <75° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+88,"KXHIGHNY-25AUG22-T88","Will the **high temp in NYC** be >88° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+89,"KXHIGHNY-25AUG22-B87.5","Will the **high temp in NYC** be 87-88° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+90,"KXHIGHNY-25AUG22-B85.5","Will the **high temp in NYC** be 85-86° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+91,"KXHIGHNY-25AUG22-T81","Will the **high temp in NYC** be <81° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+92,"KXHIGHNY-25AUG22-B83.5","Will the **high temp in NYC** be 83-84° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+93,"KXHIGHNY-25AUG22-B81.5","Will the **high temp in NYC** be 81-82° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z
+94,"KXHIGHAUS-25AUG22-T96","Will the **high temp in Austin** be >96° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+95,"KXHIGHAUS-25AUG22-B95.5","Will the **high temp in Austin** be 95-96° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+96,"KXHIGHAUS-25AUG22-T89","Will the **high temp in Austin** be <89° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+97,"KXHIGHAUS-25AUG22-B93.5","Will the **high temp in Austin** be 93-94° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+98,"KXHIGHAUS-25AUG22-B91.5","Will the **high temp in Austin** be 91-92° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+99,"KXHIGHAUS-25AUG22-B89.5","Will the **high temp in Austin** be 89-90° on Aug 22, 2025?","",,,active,2025-08-23T04:59:00Z
+100,"KXHIGHPHIL-25AUG22-T87","Will the **high temp in Philadelphia** be >87° on Aug 22, 2025?","",,,active,2025-08-23T03:59:00Z

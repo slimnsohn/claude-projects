@@ -1,0 +1,7 @@
+requests>=2.32.0
+python-dotenv>=1.0.0
+pandas>=2.0.0
+kalshi-python>=1.0.0
+cryptography>=45.0.0
+pyopenssl>=25.0.0
+urllib3>=2.0.0

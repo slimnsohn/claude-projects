@@ -1,0 +1,54 @@
+"""
+All Kalshi Markets with Actual Prices (Bid/Ask Data)
+Generated to help find the A's @ Minnesota game mentioned
+"""
+
+import json
+
+# Load the market data
+with open('all_kalshi_markets.json', 'r') as f:
+    data = json.load(f)
+
+print(f"ALL KALSHI MARKETS WITH PRICING DATA")
+print(f"Total Markets: {len(data['markets'])}")
+print(f"Timestamp: {data['timestamp']}")
+print("=" * 100)
+
+for i, market in enumerate(data['markets'], 1):
+    ticker = market.get('ticker', 'NO_TICKER')
+    title = market.get('title', 'NO_TITLE')
+    
+    # Get pricing data
+    yes_bid = market.get('yes_bid', 0)
+    yes_ask = market.get('yes_ask', 0)
+    no_bid = market.get('no_bid', 0)
+    no_ask = market.get('no_ask', 0)
+    
+    # Calculate percentages (prices are in cents, so divide by 100 for %)
+    yes_bid_pct = yes_bid / 100 if yes_bid else 0
+    yes_ask_pct = yes_ask / 100 if yes_ask else 0
+    no_bid_pct = no_bid / 100 if no_bid else 0
+    no_ask_pct = no_ask / 100 if no_ask else 0
+    
+    # Calculate mid prices for comparison
+    yes_mid = (yes_bid_pct + yes_ask_pct) / 2 if yes_bid_pct and yes_ask_pct else 0
+    no_mid = (no_bid_pct + no_ask_pct) / 2 if no_bid_pct and no_ask_pct else 0
+    
+    status = market.get('status', 'unknown')
+    close_time = market.get('close_time', 'unknown')
+    
+    print(f"\nMARKET {i:3d}: {ticker}")
+    print(f"  Title: {title}")
+    print(f"  Status: {status}")
+    print(f"  Close: {close_time}")
+    print(f"  YES: Bid {yes_bid_pct:.1%} | Ask {yes_ask_pct:.1%} | Mid {yes_mid:.1%}")
+    print(f"  NO:  Bid {no_bid_pct:.1%} | Ask {no_ask_pct:.1%} | Mid {no_mid:.1%}")
+    
+    # Flag any markets that might match the 53%/47% Oakland/Minnesota description
+    if (40 <= yes_mid*100 <= 60) or (40 <= no_mid*100 <= 60):
+        print(f"  *** POTENTIAL MATCH: Close to 47%/53% split ***")
+    
+    print("-" * 100)
+
+print(f"\nSearching for markets with ~53% Oakland / ~47% Minnesota pattern...")
+print("Looking for any markets with roughly 53%/47% or 47%/53% pricing...")

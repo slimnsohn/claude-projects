@@ -1,0 +1,1205 @@
+COMPREHENSIVE KALSHI MARKETS - 200 TOTAL
+Source: https://api.elections.kalshi.com/trade-api/v2
+Timestamp: 2025-08-21T16:38:23.733145+00:00
+================================================================================
+
+MARKET    1: KXSPOTIFYSONGSJEALOUSTYPE-25AUG29-25
+  Title:     Jealous Type streams by Aug 29, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET    2: KXSPOTIFYSONGSJEALOUSTYPE-25AUG29-20
+  Title:     Jealous Type streams by Aug 29, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET    3: KXSPOTIFYSONGSJEALOUSTYPE-25AUG29-15
+  Title:     Jealous Type streams by Aug 29, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET    4: KXSPOTIFYSONGSJEALOUSTYPE-25AUG29-10
+  Title:     Jealous Type streams by Aug 29, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET    5: KXSPOTIFYSONGSJEALOUSTYPE-25AUG29-5
+  Title:     Jealous Type streams by Aug 29, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET    6: KXWTAMATCH-25AUG21RUZBOU-RUZ
+  Title:     Will Antonia Ruzic win the Ruzic vs Bouzkova match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=5.0%, No=57.0%
+--------------------------------------------------------------------------------
+MARKET    7: KXWTAMATCH-25AUG21RUZBOU-BOU
+  Title:     Will Marie Bouzkova win the Ruzic vs Bouzkova match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=5.0%, No=21.0%
+--------------------------------------------------------------------------------
+MARKET    8: KXSPOTIFYSONGRELEASETS-25B
+  Title:     Will Taylor Swift release a song this month?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=22.0%, No=70.0%
+--------------------------------------------------------------------------------
+MARKET    9: KXNETFLIXRANKMOVIE-25AUG25-TTAJS
+  Title:     Top Netflix movie on Aug 25, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=45.0%
+--------------------------------------------------------------------------------
+MARKET   10: KXSPOTIFYALBUMRELEASE-25
+  Title:     Will JAY-Z release an album this year?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=4.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET   11: KXSPOTIFYSONG-25-JAY
+  Title:     Will JAY-Z release a song this yearE?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=19.0%, No=71.0%
+--------------------------------------------------------------------------------
+MARKET   12: KXSPOTIFYGLOBALD-25AUG22-YOU
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   13: KXSPOTIFYGLOBALD-25AUG22-WHA
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   14: KXSPOTIFYGLOBALD-25AUG22-SOD
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   15: KXSPOTIFYGLOBALD-25AUG22-ORD
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   16: KXSPOTIFYGLOBALD-25AUG22-LOV
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   17: KXSPOTIFYGLOBALD-25AUG22-LAP
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   18: KXSPOTIFYGLOBALD-25AUG22-JUM
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   19: KXSPOTIFYGLOBALD-25AUG22-HOW
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   20: KXSPOTIFYGLOBALD-25AUG22-GOL
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   21: KXSPOTIFYGLOBALD-25AUG22-FRE
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   22: KXSPOTIFYGLOBALD-25AUG22-DON
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   23: KXSPOTIFYGLOBALD-25AUG22-DIE
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   24: KXSPOTIFYGLOBALD-25AUG22-DAI
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   25: KXSPOTIFYGLOBALD-25AUG22-BIR
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   26: KXSPOTIFYGLOBALD-25AUG22-BAC
+  Title:     Top Global Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   27: KXSPOTIFYD-25AUG22-WHAT
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   28: KXSPOTIFYD-25AUG22-UND
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   29: KXSPOTIFYD-25AUG22-THE
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   30: KXSPOTIFYD-25AUG22-TAK
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   31: KXSPOTIFYD-25AUG22-LOV
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   32: KXSPOTIFYD-25AUG22-FRE
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   33: KXSPOTIFYD-25AUG22-DRE
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   34: KXSPOTIFYD-25AUG22-DAI
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   35: KXSPOTIFYD-25AUG22-YOU
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   36: KXSPOTIFYD-25AUG22-WHA
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   37: KXSPOTIFYD-25AUG22-SOD
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   38: KXSPOTIFYD-25AUG22-ORD
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   39: KXSPOTIFYD-25AUG22-HOW
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   40: KXSPOTIFYD-25AUG22-GOL
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   41: KXSPOTIFYD-25AUG22-BAC
+  Title:     Top USA Song on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   42: KXSPOTIFYARTISTD-25AUG22-UIC
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   43: KXSPOTIFYARTISTD-25AUG22-TRA
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   44: KXSPOTIFYARTISTD-25AUG22-TAT
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   45: KXSPOTIFYARTISTD-25AUG22-KAN
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   46: KXSPOTIFYARTISTD-25AUG22-FUT
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   47: KXSPOTIFYARTISTD-25AUG22-EJA
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   48: KXSPOTIFYARTISTD-25AUG22-ZAC
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   49: KXSPOTIFYARTISTD-25AUG22-TYL
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   50: KXSPOTIFYARTISTD-25AUG22-THE
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   51: KXSPOTIFYARTISTD-25AUG22-TAY
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   52: KXSPOTIFYARTISTD-25AUG22-MOR
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   53: KXSPOTIFYARTISTD-25AUG22-KPO
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   54: KXSPOTIFYARTISTD-25AUG22-KEN
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   55: KXSPOTIFYARTISTD-25AUG22-DRA
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   56: KXSPOTIFYARTISTD-25AUG22-BAD
+  Title:     Top USA Artist on Spotify on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   57: KXSPOTIFY2D-25AUG22-YOU
+  Title:     Will the top Song on Aug 22, 2025 be Your Idol?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   58: KXSPOTIFY2D-25AUG22-WHAT
+  Title:     Will the top Song on Aug 22, 2025 be What I Want (feat. Tate McRae)?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   59: KXSPOTIFY2D-25AUG22-WHA
+  Title:     Will the top Song on Aug 22, 2025 be What It Sounds Like?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   60: KXSPOTIFY2D-25AUG22-UND
+  Title:     Will the top Song on Aug 22, 2025 be undressed?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   61: KXSPOTIFY2D-25AUG22-THE
+  Title:     Will the top Song on Aug 22, 2025 be The Subway?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   62: KXSPOTIFY2D-25AUG22-TAK
+  Title:     Will the top Song on Aug 22, 2025 be Takedown?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   63: KXSPOTIFY2D-25AUG22-SOD
+  Title:     Will the top Song on Aug 22, 2025 be Soda Pop?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   64: KXSPOTIFY2D-25AUG22-ORD
+  Title:     Will the top Song on Aug 22, 2025 be Ordinary?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   65: KXSPOTIFY2D-25AUG22-LOV
+  Title:     Will the top Song on Aug 22, 2025 be Love Me Not?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   66: KXSPOTIFY2D-25AUG22-HOW
+  Title:     Will the top Song on Aug 22, 2025 be How It’s Done?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   67: KXSPOTIFY2D-25AUG22-GOL
+  Title:     Will the top Song on Aug 22, 2025 be Golden?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   68: KXSPOTIFY2D-25AUG22-FRE
+  Title:     Will the top Song on Aug 22, 2025 be Free?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   69: KXSPOTIFY2D-25AUG22-DRE
+  Title:     Will the top Song on Aug 22, 2025 be Dreams - 2004 Remaster?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   70: KXSPOTIFY2D-25AUG22-DAI
+  Title:     Will the top Song on Aug 22, 2025 be DAISIES?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   71: KXSPOTIFY2D-25AUG22-BAC
+  Title:     Will the top Song on Aug 22, 2025 be back to friends?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET   72: KXWTAMATCH-25AUG21NOSALE-NOS
+  Title:     Will Linda Noskova win the Noskova vs Alexandrova match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=46.0%, No=52.0%
+--------------------------------------------------------------------------------
+MARKET   73: KXWTAMATCH-25AUG21NOSALE-ALE
+  Title:     Will Ekaterina Alexandrova win the Noskova vs Alexandrova match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=52.0%, No=46.0%
+--------------------------------------------------------------------------------
+MARKET   74: KXNCAAF-26-MSU
+  Title:     Will Michigan St. win the College Football Playoff National Championship?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=99.0%
+--------------------------------------------------------------------------------
+MARKET   75: KXWTAMATCH-25AUG21SAMCIR-SAM
+  Title:     Will Liudmila Samsonova win the Samsonova vs Cirstea match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=60.0%, No=38.0%
+--------------------------------------------------------------------------------
+MARKET   76: KXWTAMATCH-25AUG21SAMCIR-CIR
+  Title:     Will Sorana Cirstea win the Samsonova vs Cirstea match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=37.0%, No=61.0%
+--------------------------------------------------------------------------------
+MARKET   77: KXATPMATCH-25AUG21YUNVAN-YUN
+  Title:     Will Yunchaokete Bu win the Bu vs Van de Zandschulp match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=50.0%, No=48.0%
+--------------------------------------------------------------------------------
+MARKET   78: KXATPMATCH-25AUG21YUNVAN-VAN
+  Title:     Will Botic Van de Zandschulp win the Bu vs Van de Zandschulp match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=48.0%, No=51.0%
+--------------------------------------------------------------------------------
+MARKET   79: KXWTAMATCH-25AUG21PARSRA-SRA
+  Title:     Will Rebecca Sramkova win the Parks vs Sramkova match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=49.0%, No=49.0%
+--------------------------------------------------------------------------------
+MARKET   80: KXWTAMATCH-25AUG21PARSRA-PAR
+  Title:     Will Alycia Parks win the Parks vs Sramkova match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=49.0%, No=49.0%
+--------------------------------------------------------------------------------
+MARKET   81: KXATPMATCH-25AUG21MEDMPE-MPE
+  Title:     Will Giovanni Mpetshi Perricard win the Medjedovic vs Mpetshi Perricard match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=33.0%, No=65.0%
+--------------------------------------------------------------------------------
+MARKET   82: KXATPMATCH-25AUG21MEDMPE-MED
+  Title:     Will Hamad Medjedovic win the Medjedovic vs Mpetshi Perricard match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=64.0%, No=35.0%
+--------------------------------------------------------------------------------
+MARKET   83: KXWTAMATCH-25AUG21SHNMER-SHN
+  Title:     Will Diana Shnaider win the Shnaider vs Mertens match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=41.0%, No=58.0%
+--------------------------------------------------------------------------------
+MARKET   84: KXWTAMATCH-25AUG21SHNMER-MER
+  Title:     Will Elise Mertens win the Shnaider vs Mertens match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=58.0%, No=41.0%
+--------------------------------------------------------------------------------
+MARKET   85: KXATPMATCH-25AUG21MUNFUC-FUC
+  Title:     Will Marton Fucsovics win the Munar vs Fucsovics match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=45.0%, No=53.0%
+--------------------------------------------------------------------------------
+MARKET   86: KXATPMATCH-25AUG21MUNFUC-MUN
+  Title:     Will Jaume Munar win the Munar vs Fucsovics match?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=53.0%, No=45.0%
+--------------------------------------------------------------------------------
+MARKET   87: KXHIGHCHI-25AUG22-T82
+  Title:     Will the high temp in Chicago be >82° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=1.0%, No=84.0%
+--------------------------------------------------------------------------------
+MARKET   88: KXHIGHCHI-25AUG22-B81.5
+  Title:     Will the high temp in Chicago be 81-82° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=10.0%, No=80.0%
+--------------------------------------------------------------------------------
+MARKET   89: KXHIGHCHI-25AUG22-B79.5
+  Title:     Will the high temp in Chicago be 79-80° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=40.0%, No=58.0%
+--------------------------------------------------------------------------------
+MARKET   90: KXHIGHCHI-25AUG22-B77.5
+  Title:     Will the high temp in Chicago be 77-78° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=6.0%, No=67.0%
+--------------------------------------------------------------------------------
+MARKET   91: KXHIGHCHI-25AUG22-B75.5
+  Title:     Will the high temp in Chicago be 75-76° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=87.0%
+--------------------------------------------------------------------------------
+MARKET   92: KXHIGHCHI-25AUG22-T75
+  Title:     Will the high temp in Chicago be <75° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=88.0%
+--------------------------------------------------------------------------------
+MARKET   93: KXHIGHNY-25AUG22-T88
+  Title:     Will the **high temp in NYC** be >88° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET   94: KXHIGHNY-25AUG22-B87.5
+  Title:     Will the **high temp in NYC** be 87-88° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET   95: KXHIGHNY-25AUG22-B85.5
+  Title:     Will the **high temp in NYC** be 85-86° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=6.0%, No=67.0%
+--------------------------------------------------------------------------------
+MARKET   96: KXHIGHNY-25AUG22-T81
+  Title:     Will the **high temp in NYC** be <81° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET   97: KXHIGHNY-25AUG22-B83.5
+  Title:     Will the **high temp in NYC** be 83-84° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=45.0%, No=54.0%
+--------------------------------------------------------------------------------
+MARKET   98: KXHIGHNY-25AUG22-B81.5
+  Title:     Will the **high temp in NYC** be 81-82° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=15.0%, No=60.0%
+--------------------------------------------------------------------------------
+MARKET   99: KXHIGHAUS-25AUG22-T96
+  Title:     Will the **high temp in Austin** be >96° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=90.0%
+--------------------------------------------------------------------------------
+MARKET  100: KXHIGHAUS-25AUG22-B95.5
+  Title:     Will the **high temp in Austin** be 95-96° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=9.0%, No=77.0%
+--------------------------------------------------------------------------------
+MARKET  101: KXHIGHAUS-25AUG22-T89
+  Title:     Will the **high temp in Austin** be <89° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET  102: KXHIGHAUS-25AUG22-B93.5
+  Title:     Will the **high temp in Austin** be 93-94° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=41.0%, No=58.0%
+--------------------------------------------------------------------------------
+MARKET  103: KXHIGHAUS-25AUG22-B91.5
+  Title:     Will the **high temp in Austin** be 91-92° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=15.0%, No=53.0%
+--------------------------------------------------------------------------------
+MARKET  104: KXHIGHAUS-25AUG22-B89.5
+  Title:     Will the **high temp in Austin** be 89-90° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=1.0%, No=84.0%
+--------------------------------------------------------------------------------
+MARKET  105: KXHIGHPHIL-25AUG22-T87
+  Title:     Will the **high temp in Philadelphia** be >87° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET  106: KXHIGHPHIL-25AUG22-T80
+  Title:     Will the **high temp in Philadelphia** be <80° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET  107: KXHIGHPHIL-25AUG22-B86.5
+  Title:     Will the **high temp in Philadelphia** be 86-87° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=5.0%, No=72.0%
+--------------------------------------------------------------------------------
+MARKET  108: KXHIGHPHIL-25AUG22-B84.5
+  Title:     Will the **high temp in Philadelphia** be 84-85° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=15.0%, No=64.0%
+--------------------------------------------------------------------------------
+MARKET  109: KXHIGHPHIL-25AUG22-B82.5
+  Title:     Will the **high temp in Philadelphia** be 82-83° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=43.0%, No=54.0%
+--------------------------------------------------------------------------------
+MARKET  110: KXHIGHPHIL-25AUG22-B80.5
+  Title:     Will the **high temp in Philadelphia** be 80-81° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=83.0%
+--------------------------------------------------------------------------------
+MARKET  111: KXHIGHLAX-25AUG22-T87
+  Title:     Will the **high temp in LA** be >87° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=0.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET  112: KXHIGHLAX-25AUG22-B86.5
+  Title:     Will the **high temp in LA** be 86-87° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=3.0%, No=85.0%
+--------------------------------------------------------------------------------
+MARKET  113: KXHIGHLAX-25AUG22-B84.5
+  Title:     Will the **high temp in LA** be 84-85° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=8.0%, No=65.0%
+--------------------------------------------------------------------------------
+MARKET  114: KXHIGHLAX-25AUG22-B82.5
+  Title:     Will the **high temp in LA** be 82-83° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=20.0%, No=48.0%
+--------------------------------------------------------------------------------
+MARKET  115: KXHIGHLAX-25AUG22-B80.5
+  Title:     Will the **high temp in LA** be 80-81° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=6.0%, No=75.0%
+--------------------------------------------------------------------------------
+MARKET  116: KXHIGHLAX-25AUG22-T80
+  Title:     Will the **high temp in LA** be <80° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=85.0%
+--------------------------------------------------------------------------------
+MARKET  117: KXHIGHMIA-25AUG22-T96
+  Title:     Will the **high temp in Miami** be >96° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET  118: KXHIGHMIA-25AUG22-T89
+  Title:     Will the **high temp in Miami** be <89° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=86.0%
+--------------------------------------------------------------------------------
+MARKET  119: KXHIGHMIA-25AUG22-B95.5
+  Title:     Will the **high temp in Miami** be 95-96° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=6.0%, No=81.0%
+--------------------------------------------------------------------------------
+MARKET  120: KXHIGHMIA-25AUG22-B93.5
+  Title:     Will the **high temp in Miami** be 93-94° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=25.0%, No=53.0%
+--------------------------------------------------------------------------------
+MARKET  121: KXHIGHMIA-25AUG22-B91.5
+  Title:     Will the **high temp in Miami** be 91-92° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=40.0%, No=58.0%
+--------------------------------------------------------------------------------
+MARKET  122: KXHIGHMIA-25AUG22-B89.5
+  Title:     Will the **high temp in Miami** be 89-90° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=2.0%, No=80.0%
+--------------------------------------------------------------------------------
+MARKET  123: KXHIGHDEN-25AUG22-T90
+  Title:     Will the **high temp in Denver** be >90° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=3.0%, No=90.0%
+--------------------------------------------------------------------------------
+MARKET  124: KXHIGHDEN-25AUG22-B89.5
+  Title:     Will the **high temp in Denver** be 89-90° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=10.0%, No=81.0%
+--------------------------------------------------------------------------------
+MARKET  125: KXHIGHDEN-25AUG22-B87.5
+  Title:     Will the **high temp in Denver** be 87-88° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=18.0%, No=48.0%
+--------------------------------------------------------------------------------
+MARKET  126: KXHIGHDEN-25AUG22-B85.5
+  Title:     Will the **high temp in Denver** be 85-86° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=30.0%, No=67.0%
+--------------------------------------------------------------------------------
+MARKET  127: KXHIGHDEN-25AUG22-B83.5
+  Title:     Will the **high temp in Denver** be 83-84° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=15.0%, No=83.0%
+--------------------------------------------------------------------------------
+MARKET  128: KXHIGHDEN-25AUG22-T83
+  Title:     Will the **high temp in Denver** be <83° on Aug 22, 2025?
+  Category:  ''
+  Status:    active
+  Prices:    Yes=8.0%, No=91.0%
+--------------------------------------------------------------------------------
+MARKET  129: KXWTI-25AUG22-T69.99
+  Title:     Will the WTI front-month settle oil price  be >69.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  130: KXWTI-25AUG22-B69.5
+  Title:     Will the WTI front-month settle oil price  be Between 69 and 69.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  131: KXWTI-25AUG22-B68.5
+  Title:     Will the WTI front-month settle oil price  be Between 68 and 68.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  132: KXWTI-25AUG22-B67.5
+  Title:     Will the WTI front-month settle oil price  be Between 67 and 67.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  133: KXWTI-25AUG22-B66.5
+  Title:     Will the WTI front-month settle oil price  be Between 66 and 66.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  134: KXWTI-25AUG22-B65.5
+  Title:     Will the WTI front-month settle oil price  be Between 65 and 65.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  135: KXWTI-25AUG22-B64.5
+  Title:     Will the WTI front-month settle oil price  be Between 64 and 64.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  136: KXWTI-25AUG22-B63.5
+  Title:     Will the WTI front-month settle oil price  be Between 63 and 63.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  137: KXWTI-25AUG22-B62.5
+  Title:     Will the WTI front-month settle oil price  be Between 62 and 62.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  138: KXWTI-25AUG22-B61.5
+  Title:     Will the WTI front-month settle oil price  be Between 61 and 61.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  139: KXWTI-25AUG22-B60.5
+  Title:     Will the WTI front-month settle oil price  be Between 60 and 60.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  140: KXWTI-25AUG22-B59.5
+  Title:     Will the WTI front-month settle oil price  be Between 59 and 59.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  141: KXWTI-25AUG22-B58.5
+  Title:     Will the WTI front-month settle oil price  be Between 58 and 58.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  142: KXWTI-25AUG22-B57.5
+  Title:     Will the WTI front-month settle oil price  be Between 57 and 57.99 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  143: KXWTI-25AUG22-T57
+  Title:     Will the WTI front-month settle oil price  be <57 on Aug 22, 2025??
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  144: KXETHD-25AUG2300-T4989.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  145: KXETHD-25AUG2300-T4969.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  146: KXETHD-25AUG2300-T4949.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  147: KXETHD-25AUG2300-T4929.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  148: KXETHD-25AUG2300-T4909.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  149: KXETHD-25AUG2300-T4889.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  150: KXETHD-25AUG2300-T4869.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  151: KXETHD-25AUG2300-T4849.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  152: KXETHD-25AUG2300-T4829.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  153: KXETHD-25AUG2300-T4809.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  154: KXETHD-25AUG2300-T4789.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  155: KXETHD-25AUG2300-T4769.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  156: KXETHD-25AUG2300-T4749.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  157: KXETHD-25AUG2300-T4729.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  158: KXETHD-25AUG2300-T4709.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  159: KXETHD-25AUG2300-T4689.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  160: KXETHD-25AUG2300-T4669.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  161: KXETHD-25AUG2300-T4649.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  162: KXETHD-25AUG2300-T4629.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  163: KXETHD-25AUG2300-T4609.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  164: KXETHD-25AUG2300-T4589.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  165: KXETHD-25AUG2300-T4569.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  166: KXETHD-25AUG2300-T4549.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  167: KXETHD-25AUG2300-T4529.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  168: KXETHD-25AUG2300-T4509.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  169: KXETHD-25AUG2300-T4489.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  170: KXETHD-25AUG2300-T4469.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  171: KXETHD-25AUG2300-T4449.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  172: KXETHD-25AUG2300-T4429.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  173: KXETHD-25AUG2300-T4409.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  174: KXETHD-25AUG2300-T4389.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  175: KXETHD-25AUG2300-T4369.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  176: KXETHD-25AUG2300-T4349.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  177: KXETHD-25AUG2300-T4329.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  178: KXETHD-25AUG2300-T4309.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  179: KXETHD-25AUG2300-T4289.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  180: KXETHD-25AUG2300-T4269.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  181: KXETHD-25AUG2300-T4249.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  182: KXETHD-25AUG2300-T4229.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  183: KXETHD-25AUG2300-T4209.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  184: KXETHD-25AUG2300-T4189.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  185: KXETHD-25AUG2300-T4169.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  186: KXETHD-25AUG2300-T4149.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  187: KXETHD-25AUG2300-T4129.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  188: KXETHD-25AUG2300-T4109.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  189: KXETHD-25AUG2300-T4089.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  190: KXETHD-25AUG2300-T4069.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  191: KXETHD-25AUG2300-T4049.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  192: KXETHD-25AUG2300-T4029.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  193: KXETHD-25AUG2300-T4009.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  194: KXETHD-25AUG2300-T3989.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  195: KXETHD-25AUG2300-T3969.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  196: KXETHD-25AUG2300-T3949.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  197: KXETHD-25AUG2300-T3929.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  198: KXETHD-25AUG2300-T3909.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  199: KXETHD-25AUG2300-T3889.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------
+MARKET  200: KXETHD-25AUG2300-T3869.99
+  Title:     Ethereum price at Aug 23, 2025 at 12am EDT?
+  Category:  ''
+  Status:    initialized
+  Prices:    Yes=0.0%, No=100.0%
+--------------------------------------------------------------------------------

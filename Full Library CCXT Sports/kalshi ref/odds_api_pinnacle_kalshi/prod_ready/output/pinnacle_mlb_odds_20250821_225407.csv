@@ -1,0 +1,13 @@
+Book,Game,Game_Time,Away_Team,Home_Team,Away_Odds_American,Home_Odds_American,Away_Odds_Decimal,Home_Odds_Decimal,Away_Implied_Prob,Home_Implied_Prob,Game_ID,Source
+Pinnacle,COL @ PIT,"Aug 22, 22:41",COL,PIT,163,-182,2.63,1.549,38.0%,64.5%,pinnacle_094e7f4486ae7981acdedad23d13b178,pinnacle
+Pinnacle,WSH @ PHI,"Aug 22, 22:46",WSH,PHI,148,-165,2.48,1.606,40.3%,62.3%,pinnacle_44580bb593e9f1fa0e44ca74f2a35c07,pinnacle
+Pinnacle,HOU @ BAL,"Aug 22, 23:06",HOU,BAL,-104,-106,1.962,1.943,51.0%,51.5%,pinnacle_f490eb1d24d58ba964d4c6a4fc90bbac,pinnacle
+Pinnacle,BOS @ NYY,"Aug 22, 23:06",BOS,NYY,149,-166,2.49,1.602,40.2%,62.4%,pinnacle_84f779b1fa7b3c03a01a0a174ef7c6ca,pinnacle
+Pinnacle,KC @ DET,"Aug 22, 23:11",KC,DET,142,-158,2.42,1.633,41.3%,61.2%,pinnacle_32debfeaa61e4c0c2570cd01efe1a673,pinnacle
+Pinnacle,NYM @ ATL,"Aug 22, 23:16",NYM,ATL,-108,-102,1.926,1.98,51.9%,50.5%,pinnacle_9adeeb79718ffb29c2cbb68d2af9e65b,pinnacle
+Pinnacle,STL @ TB,"Aug 22, 23:36",STL,TB,118,-131,2.18,1.763,45.9%,56.7%,pinnacle_c01b4f8b6fe8092e306043882feef91c,pinnacle
+Pinnacle,MIN @ CWS,"Aug 22, 23:41",MIN,CWS,-130,118,1.769,2.18,56.5%,45.9%,pinnacle_0ab0adb49fff35e98bd347eac1c88389,pinnacle
+Pinnacle,CLE @ TEX,"Aug 23, 00:06",CLE,TEX,149,-166,2.49,1.602,40.2%,62.4%,pinnacle_1d2c5d37582570fefb9b412bbe0e6149,pinnacle
+Pinnacle,SF @ MIL,"Aug 23, 00:11",SF,MIL,145,-162,2.45,1.617,40.8%,61.8%,pinnacle_ad6a0e6f06b0762014b4b3baa4b41dda,pinnacle
+Pinnacle,Cincinnati Reds @ ARI,"Aug 23, 01:41",Cincinnati Reds,ARI,120,-133,2.2,1.752,45.5%,57.1%,pinnacle_dd277b8fceeef5db2c0a624ea7a9c369,pinnacle
+Pinnacle,LAD @ SD,"Aug 23, 01:41",LAD,SD,-117,106,1.855,2.06,53.9%,48.5%,pinnacle_64b177195ed9da98f1f70c31d51ccdd6,pinnacle

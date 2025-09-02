@@ -1,0 +1,118 @@
+{
+  "season": "2024",
+  "games": [
+    {
+      "game_id": "2024_week1_kc_bal",
+      "week": 1,
+      "season": 2024,
+      "game_date": "2024-09-05T20:20:00",
+      "home_team": "KC",
+      "away_team": "BAL",
+      "game_time": "20:20",
+      "status": "scheduled",
+      "tv_network": "NBC",
+      "is_playoff": false,
+      "is_prime_time": true,
+      "venue": "Arrowhead Stadium"
+    },
+    {
+      "game_id": "2024_week1_gb_phi",
+      "week": 1,
+      "season": 2024,
+      "game_date": "2024-09-06T20:15:00",
+      "home_team": "PHI",
+      "away_team": "GB",
+      "game_time": "20:15",
+      "status": "scheduled",
+      "tv_network": "NBC",
+      "is_playoff": false,
+      "is_prime_time": true,
+      "venue": "Lincoln Financial Field"
+    },
+    {
+      "game_id": "2024_week2_dal_no",
+      "week": 2,
+      "season": 2024,
+      "game_date": "2024-09-15T13:00:00",
+      "home_team": "NO",
+      "away_team": "DAL",
+      "game_time": "13:00",
+      "status": "scheduled",
+      "tv_network": "FOX",
+      "is_playoff": false,
+      "is_prime_time": false,
+      "venue": "Caesars Superdome"
+    },
+    {
+      "game_id": "2024_week2_pit_den",
+      "week": 2,
+      "season": 2024,
+      "game_date": "2024-09-15T16:25:00",
+      "home_team": "DEN",
+      "away_team": "PIT",
+      "game_time": "16:25",
+      "status": "scheduled",
+      "tv_network": "CBS",
+      "is_playoff": false,
+      "is_prime_time": false,
+      "venue": "Empower Field at Mile High"
+    }
+  ],
+  "key_dates": {
+    "season_start": "2024-09-05",
+    "season_end": "2025-01-05",
+    "playoff_start": "2025-01-11",
+    "conference_championships": "2025-01-26",
+    "super_bowl": "2025-02-09",
+    "draft": "2024-04-25",
+    "regular_season_weeks": 18,
+    "games_per_team": 17
+  },
+  "season_2025_preview": {
+    "season_start": "2025-09-04",
+    "season_end": "2026-01-04",
+    "playoff_start": "2026-01-10",
+    "super_bowl": "2026-02-08",
+    "super_bowl_location": "Levi's Stadium, Santa Clara, CA",
+    "schedule_release": "2025-05-14",
+    "international_games": 8,
+    "kickoff_game": "PHI vs DAL"
+  },
+  "generated_at": "2025-08-29T09:52:25.450154",
+  "team_schedules": {
+    "KC": [
+      "2024_week1_kc_bal"
+    ],
+    "BAL": [
+      "2024_week1_kc_bal"
+    ],
+    "PHI": [
+      "2024_week1_gb_phi"
+    ],
+    "GB": [
+      "2024_week1_gb_phi"
+    ],
+    "NO": [
+      "2024_week2_dal_no"
+    ],
+    "DAL": [
+      "2024_week2_dal_no"
+    ],
+    "DEN": [
+      "2024_week2_pit_den"
+    ],
+    "PIT": [
+      "2024_week2_pit_den"
+    ]
+  },
+  "week_schedules": {
+    "1": [
+      "2024_week1_kc_bal",
+      "2024_week1_gb_phi"
+    ],
+    "2": [
+      "2024_week2_dal_no",
+      "2024_week2_pit_den"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+# Exclude all sensitive configuration files
+secrets.json
+*.key
+*.pem
+api_keys.txt
+credentials.*
+*.env

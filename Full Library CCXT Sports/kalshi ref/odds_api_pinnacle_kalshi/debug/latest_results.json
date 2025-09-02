@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-08-26T03:55:06.064734+00:00",
+  "status": "completed",
+  "pinnacle_data": {
+    "success": true,
+    "games_count": 16,
+    "raw_games_count": 272,
+    "fetch_timestamp": "2025-08-26T03:55:06.254208+00:00"
+  },
+  "kalshi_data": {
+    "success": true,
+    "games_count": 2,
+    "data_source": "real",
+    "fetch_timestamp": "2025-08-26T03:55:06.450098+00:00"
+  },
+  "aligned_games": [],
+  "opportunities": [],
+  "summary": {
+    "sport_analyzed": "NFL",
+    "total_pinnacle_games": 16,
+    "total_kalshi_games": 2,
+    "successfully_aligned": 0,
+    "opportunities_found": 0,
+    "best_opportunity_edge": 0,
+    "analysis_duration_seconds": 0.4,
+    "system_config": {
+      "pinnacle_api_key_file": "C:\\Users\\sammy\\Desktop\\development\\git\\claude-projects\\odds_api_pinnacle_kalshi\\keys\\odds_api_key.txt",
+      "kalshi_credentials_file": "C:\\Users\\sammy\\Desktop\\development\\git\\claude-projects\\odds_api_pinnacle_kalshi\\keys\\kalshi_credentials.txt",
+      "use_only_real_kalshi_data": true,
+      "min_time_buffer_minutes": 15,
+      "exclude_live_games": true,
+      "max_opportunities_to_report": 10,
+      "save_results_to_file": true,
+      "results_file_path": "C:\\Users\\sammy\\Desktop\\development\\git\\claude-projects\\odds_api_pinnacle_kalshi\\debug\\latest_results.json"
+    }
+  },
+  "errors": []
+}

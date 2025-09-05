@@ -187,7 +187,7 @@ class KalshiClient:
                 return None
             
             # Get odds from market prices
-            home_odds, away_odds = self._extract_odds_from_markets(markets, game_info)
+            home_odds, away_odds, home_cents, away_cents = self._extract_odds_from_markets(markets, game_info)
             
             # Get game time (try to extract from ticker or use close_time)
             game_time_str, game_datetime, game_date = self._extract_game_time(markets[0])
@@ -204,13 +204,17 @@ class KalshiClient:
             if home_odds < away_odds:
                 favorite_team = game_info['home_team']
                 favorite_odds = home_odds
+                favorite_cents = home_cents
                 dog_team = game_info['away_team']
                 dog_odds = away_odds
+                dog_cents = away_cents
             else:
                 favorite_team = game_info['away_team']
                 favorite_odds = away_odds
+                favorite_cents = away_cents
                 dog_team = game_info['home_team']
                 dog_odds = home_odds
+                dog_cents = home_cents
 
             return {
                 'league': league.upper(),
@@ -218,6 +222,8 @@ class KalshiClient:
                 'dog': dog_team,
                 'fav_odds': favorite_odds,
                 'dog_odds': dog_odds,
+                'fav_cents': favorite_cents,
+                'dog_cents': dog_cents,
                 'game_time': game_time_str,
                 'game_date': game_date,
                 'source': 'kalshi',
@@ -304,6 +310,14 @@ class KalshiClient:
                 'AKRON': 'Akron',
                 'UCF': 'UCF',
                 'JSU': 'Jacksonville State',
+                'WSU': 'Washington St.',
+                'SDSU': 'San Diego St.',
+                'WASH': 'Washington',
+                'UW': 'Washington',
+                'ASU': 'Arizona St.',
+                'MSST': 'Mississippi St.',
+                'UCLA': 'UCLA',
+                'UNLV': 'UNLV',
                 # Add more as needed
             }
             
@@ -335,64 +349,80 @@ class KalshiClient:
             return None
     
     def _extract_odds_from_markets(self, markets: List[Dict], game_info: Dict) -> tuple:
-        """Extract odds from market prices"""
+        """Extract odds from market ask prices (actual crossable prices)"""
         home_odds = None
         away_odds = None
+        home_cents = None
+        away_cents = None
         
         for market in markets:
-            # Get the last price (most recent)
-            last_price = market.get('last_price', 50)  # Default to 50 cents (even odds)
+            # Use yes_ask (the price you pay to buy YES shares)
+            # This is the actual crossable price, not last_price
+            yes_ask_price = market.get('yes_ask', 50)  # Default to 50 cents (even odds)
             
-            # Convert Kalshi cents to American odds
-            american_odds = self._kalshi_cents_to_american(last_price)
+            # Convert Kalshi cents to American odds using ask price
+            american_odds = self._kalshi_cents_to_american(yes_ask_price)
             
-            # Determine which team this market is for
+            # Determine which team this market is for by ticker suffix
             ticker = market.get('ticker', '')
-            title = market.get('title', '')
             
-            if game_info['home_team'] in ticker or game_info['home_team'] in title:
-                home_odds = american_odds
-            elif game_info['away_team'] in ticker or game_info['away_team'] in title:
-                away_odds = american_odds
+            # Extract the team code from ticker suffix (e.g., -WSU, -SDSU)
+            if '-' in ticker:
+                team_code = ticker.split('-')[-1]  # Get last part after final dash
+                
+                # Map team codes back to full team names using our college_teams mapping
+                college_teams = {
+                    'OHIO': 'Ohio', 'RUTG': 'Rutgers', 'RUTGERS': 'Rutgers',
+                    'BSU': 'Boise State', 'BOISE': 'Boise State',
+                    'USF': 'South Florida', 'SOUTHFLA': 'South Florida',
+                    'MIAMI': 'Miami (OH)', 'MIAMIOH': 'Miami (OH)',
+                    'NCSTATE': 'NC State', 'ECU': 'East Carolina',
+                    'WYOMING': 'Wyoming', 'AKRON': 'Akron',
+                    'UCF': 'UCF', 'JSU': 'Jacksonville State',
+                    'WSU': 'Washington St.', 'SDSU': 'San Diego St.',
+                    'WASH': 'Washington', 'UW': 'Washington',
+                    'ASU': 'Arizona St.', 'MSST': 'Mississippi St.',
+                    'UCLA': 'UCLA', 'UNLV': 'UNLV',
+                }
+                
+                if team_code in college_teams:
+                    team_name = self._normalize_team_name(college_teams[team_code])
+                    
+                    if team_name == game_info['home_team']:
+                        home_odds = american_odds
+                        home_cents = yes_ask_price
+                    elif team_name == game_info['away_team']:
+                        away_odds = american_odds
+                        away_cents = yes_ask_price
         
-        # If we couldn't match, assign based on order
+        # If we couldn't match, assign based on order using ask prices
         if home_odds is None or away_odds is None:
             if len(markets) >= 2:
-                home_odds = self._kalshi_cents_to_american(markets[0].get('last_price', 50))
-                away_odds = self._kalshi_cents_to_american(markets[1].get('last_price', 50))
+                if home_odds is None:
+                    home_cents = markets[0].get('yes_ask', 50)
+                    home_odds = self._kalshi_cents_to_american(home_cents)
+                if away_odds is None:
+                    away_cents = markets[1].get('yes_ask', 50)
+                    away_odds = self._kalshi_cents_to_american(away_cents)
         
-        return home_odds, away_odds
+        return home_odds, away_odds, home_cents, away_cents
     
     def _kalshi_cents_to_american(self, cents: int) -> int:
-        """Convert Kalshi cents (0-100) to American odds accounting for fees"""
+        """Convert Kalshi ask price cents (1-99) to American odds using the correct formula"""
+        # Use the correct Kalshi converter
+        from kalshi_converter.converter import kalshi_cents_to_american_odds
+        
+        # Ensure cents is in valid range
         if cents <= 0:
             cents = 1
         elif cents >= 100:
             cents = 99
         
-        # Kalshi pricing: You pay cents, win (100-cents) if correct
-        # For American odds, we need to account for fees in the effective payout
+        # Get the string result and convert to int
+        odds_str = kalshi_cents_to_american_odds(cents)
         
-        # Estimate average fee impact (~1.5% for mid-range probabilities, lower for extremes)
-        price_decimal = cents / 100.0
-        
-        # Fee approximation based on Kalshi's structure and your examples:
-        # Calibrated to match: 32¢->+198, 47¢->+109, 84¢->-561
-        
-        if price_decimal >= 0.5:
-            # For favorites (>=50¢): Calibrated for 84¢ -> -561
-            fee_adjustment = 0.06 + (price_decimal - 0.5) * 0.12
-            win_amount = (100 - cents) * (1 - fee_adjustment)
-            if win_amount <= 0:
-                win_amount = 1
-            american_odds = -int((cents / win_amount) * 100)
-        else:
-            # For underdogs (<50¢): Calibrated for 32¢->+198, 47¢->+109  
-            fee_adjustment = 0.025 + price_decimal * 0.025
-            win_amount = (100 - cents) * (1 - fee_adjustment)
-            american_odds = int((win_amount / cents) * 100)
-        
-        return american_odds
+        # Convert string like "-113" or "+108" to int
+        return int(odds_str)
     
     def _extract_game_time(self, market: Dict) -> tuple:
         """Extract game time from market data, return (formatted_string, datetime_obj, game_date)"""

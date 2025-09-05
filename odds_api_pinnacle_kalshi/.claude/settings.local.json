@@ -1,31 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)",
       "Bash(python:*)",
-      "Bash(cp:*)",
-      "Bash(grep:*)",
-      "WebFetch(domain:the-odds-api.com)",
-      "Bash(timeout:*)",
-      "Bash(move main_system.py core )",
-      "Bash(move data_aligner.py core )",
-      "Bash(move pinnacle_client.py core )",
-      "Bash(move kalshi_client.py core )",
-      "Bash(move odds_converter.py core )",
-      "Bash(move:*)",
-      "Bash(move timestamp_utils.py utils )",
-      "Bash(move test_*.py tests )",
-      "Bash(move debug_*.py tests )",
-      "Bash(move dump_odds_data.py utils )",
-      "Bash(move quick_odds_dump.py utils)",
-      "Bash(mv:*)",
-      "Bash(touch:*)",
-      "WebFetch(domain:kalshi.com)",
-      "Bash(ping:*)",
-      "WebFetch(domain:trading-api.readme.io)",
-      "WebFetch(domain:docs.kalshi.com)",
+      "Bash(pip install:*)",
       "WebSearch",
-      "WebFetch(domain:help.kalshi.com)"
+      "WebFetch(domain:docs.polymarket.com)",
+      "WebFetch(domain:polymarket.com)",
+      "WebFetch(domain:kalshi.com)"
     ],
     "deny": [],
     "ask": []

@@ -29,7 +29,7 @@ class CombinedClient:
             remove_live_games: Filter out live/started games
             
         Returns:
-            List of combined game data with both Kalshi and Pinnacle odds
+            List of combined game data with Kalshi and Pinnacle odds
         """
         print(f"Fetching {league.upper()} games from both platforms...")
         
@@ -45,7 +45,7 @@ class CombinedClient:
         return combined_games
     
     def _match_games(self, pinnacle_games: List[Dict], kalshi_games: List[Dict]) -> List[Dict]:
-        """Match games between platforms by team names AND dates with strict date enforcement"""
+        """Match games between both platforms by team names AND dates with strict date enforcement"""
         combined = []
         all_games = {}
         
@@ -233,7 +233,112 @@ class CombinedClient:
             'Nebraska Cornhuskers': 'Nebraska', 'Nebraska': 'Nebraska',
             'Cincinnati Bearcats': 'CIN', 'CIN': 'CIN',
             'Appalachian State Mountaineers': 'Appalachian St.', 'Appalachian St.': 'Appalachian St.',
-            'Charlotte 49ers': 'Charlotte', 'Charlotte': 'Charlotte'
+            'Charlotte 49ers': 'Charlotte', 'Charlotte': 'Charlotte',
+            
+            # Additional NCAAF mappings for current games
+            'Arkansas Razorbacks': 'Arkansas', 'Arkansas': 'Arkansas',
+            'Arkansas State Red Wolves': 'Arkansas St.', 'Arkansas St.': 'Arkansas St.',
+            'Oklahoma State Cowboys': 'Oklahoma St.', 'Oklahoma St.': 'Oklahoma St.',
+            'Oklahoma Sooners': 'Oklahoma', 'Oklahoma': 'Oklahoma',
+            'Oregon Ducks': 'Oregon', 'Oregon': 'Oregon',
+            'Georgia Tech Yellow Jackets': 'Georgia Tech', 'Georgia Tech': 'Georgia Tech',
+            'Gardner-Webb Bulldogs': 'Gardner-Webb', 'Gardner-Webb': 'Gardner-Webb',
+            'North Carolina A&T Aggies': 'North Carolina A&T', 'North Carolina A&T': 'North Carolina A&T',
+            'UCF Knights': 'UCF', 'UCF': 'UCF',
+            'Colorado Buffaloes': 'COL', 'COL': 'COL',
+            'Delaware Blue Hens': 'Delaware', 'Delaware': 'Delaware',
+            'Minnesota Golden Gophers': 'MIN', 'MIN': 'MIN',
+            'Northwestern State Demons': 'Northwestern St.', 'Northwestern St.': 'Northwestern St.',
+            'Central Michigan Chippewas': 'Central Michigan', 'Central Michigan': 'Central Michigan',
+            'Pittsburgh Panthers': 'PIT', 'PIT': 'PIT',
+            'California Golden Bears': 'California', 'California': 'California',
+            'Texas Southern Tigers': 'Texas Southern', 'Texas Southern': 'Texas Southern',
+            'Appalachian State Mountaineers': 'Appalachian St.', 'Appalachian St.': 'Appalachian St.',
+            'Lindenwood Lions': 'Lindenwood', 'Lindenwood': 'Lindenwood',
+            'Navy Midshipmen': 'Navy', 'Navy': 'Navy',
+            'UAB Blazers': 'UAB', 'UAB': 'UAB',
+            'Bowling Green Falcons': 'Bowling Green', 'Bowling Green': 'Bowling Green',
+            'Cincinnati Bearcats': 'CIN', 'CIN': 'CIN',
+            'Wake Forest Demon Deacons': 'Wake Forest', 'Wake Forest': 'Wake Forest',
+            'Western Carolina Catamounts': 'Western Carolina', 'Western Carolina': 'Western Carolina',
+            'BYU Cougars': 'BYU', 'BYU': 'BYU',
+            'Stanford Cardinal': 'Stanford', 'Stanford': 'Stanford',
+            'Purdue Boilermakers': 'Purdue', 'Purdue': 'Purdue',
+            'Southern Illinois Salukis': 'Southern Illinois', 'Southern Illinois': 'Southern Illinois',
+            'Colorado State Rams': 'Colorado St.', 'Colorado St.': 'Colorado St.',
+            'Northern Colorado Bears': 'Northern Colorado', 'Northern Colorado': 'Northern Colorado',
+            'McNeese Cowboys': 'McNeese', 'McNeese': 'McNeese',
+            'Louisiana Ragin\' Cajuns': 'Louisiana', 'Louisiana': 'Louisiana',
+            'Army Black Knights': 'Army', 'Army': 'Army',
+            'Kansas State Wildcats': 'Kansas St.', 'Kansas St.': 'Kansas St.',
+            'Campbell Camels': 'Campbell', 'Campbell': 'Campbell',
+            'East Carolina Pirates': 'East Carolina', 'East Carolina': 'East Carolina',
+            'Florida Gators': 'Florida', 'Florida': 'Florida',
+            'South Florida Bulls': 'South Florida', 'South Florida': 'South Florida',
+            'Howard Bison': 'Howard', 'Howard': 'Howard',
+            'Temple Owls': 'Temple', 'Temple': 'Temple',
+            'Miami (OH) RedHawks': 'Miami (OH)', 'Miami (OH)': 'Miami (OH)',
+            'Rutgers Scarlet Knights': 'Rutgers', 'Rutgers': 'Rutgers',
+            'Buffalo Bulls': 'BUF', 'BUF': 'BUF',
+            'St. Francis (PA) Red Flash': 'St. Francis (PA)', 'St. Francis (PA)': 'St. Francis (PA)',
+            'Coastal Carolina Chanticleers': 'Coastal Carolina', 'Coastal Carolina': 'Coastal Carolina',
+            'Charleston Southern Buccaneers': 'Charleston Southern', 'Charleston Southern': 'Charleston Southern',
+            'Wisconsin Badgers': 'Wisconsin', 'Wisconsin': 'Wisconsin',
+            'Middle Tennessee Blue Raiders': 'Middle Tennessee', 'Middle Tennessee': 'Middle Tennessee',
+            'Houston Cougars': 'Houston', 'Houston': 'Houston',
+            'Rice Owls': 'Rice', 'Rice': 'Rice',
+            'Memphis Tigers': 'Memphis', 'Memphis': 'Memphis',
+            'Georgia State Panthers': 'Georgia St.', 'Georgia St.': 'Georgia St.',
+            'North Carolina Tar Heels': 'North Carolina', 'North Carolina': 'North Carolina',
+            'Marshall Thundering Herd': 'Marshall', 'Marshall': 'Marshall',
+            'Missouri State Bears': 'Missouri St.', 'Missouri St.': 'Missouri St.',
+            'Tulane Green Wave': 'Tulane', 'Tulane': 'Tulane',
+            'South Alabama Jaguars': 'South Alabama', 'South Alabama': 'South Alabama',
+            'Ole Miss Rebels': 'Ole Miss', 'Ole Miss': 'Ole Miss',
+            'Kentucky Wildcats': 'Kentucky', 'Kentucky': 'Kentucky',
+            'North Texas Mean Green': 'North Texas', 'North Texas': 'North Texas',
+            'Western Michigan Broncos': 'Western Michigan', 'Western Michigan': 'Western Michigan',
+            'Toledo Rockets': 'Toledo', 'Toledo': 'Toledo',
+            'Western Kentucky Hilltoppers': 'Western Kentucky', 'Western Kentucky': 'Western Kentucky',
+            'Syracuse Orange': 'Syracuse', 'Syracuse': 'Syracuse',
+            'UConn Huskies': 'UConn', 'UConn': 'UConn',
+            'Liberty Flames': 'Liberty', 'Liberty': 'Liberty',
+            'Jacksonville State Gamecocks': 'Jacksonville St.', 'Jacksonville St.': 'Jacksonville St.',
+            'Missouri Tigers': 'Missouri', 'Missouri': 'Missouri',
+            'Kansas Jayhawks': 'Kansas', 'Kansas': 'Kansas',
+            'Arizona State Sun Devils': 'Arizona St.', 'Arizona St.': 'Arizona St.',
+            'Mississippi State Bulldogs': 'Mississippi St.', 'Mississippi St.': 'Mississippi St.',
+            'Michigan Wolverines': 'Michigan', 'Michigan': 'Michigan',
+            'Michigan State Spartans': 'Michigan St.', 'Michigan St.': 'Michigan St.',
+            'Boston College Eagles': 'Boston College', 'Boston College': 'Boston College',
+            'UTSA Roadrunners': 'UTSA', 'UTSA': 'UTSA',
+            'Texas State Bobcats': 'Texas St.', 'Texas St.': 'Texas St.',
+            'West Virginia Mountaineers': 'West Virginia', 'West Virginia': 'West Virginia',
+            'Ohio Bobcats': 'Ohio', 'Ohio': 'Ohio',
+            'Iowa State Cyclones': 'Iowa St.', 'Iowa St.': 'Iowa St.',
+            'Iowa Hawkeyes': 'Iowa', 'Iowa': 'Iowa',
+            'Illinois Fighting Illini': 'Illinois', 'Illinois': 'Illinois',
+            'Duke Blue Devils': 'Duke', 'Duke': 'Duke',
+            'Oregon State Beavers': 'Oregon St.', 'Oregon St.': 'Oregon St.',
+            'Fresno State Bulldogs': 'Fresno St.', 'Fresno St.': 'Fresno St.',
+            'NC State Wolfpack': 'North Carolina St.', 'North Carolina St.': 'North Carolina St.',
+            'Virginia Cavaliers': 'Virginia', 'Virginia': 'Virginia',
+            'SMU Mustangs': 'SMU', 'SMU': 'SMU',
+            'Baylor Bears': 'Baylor', 'Baylor': 'Baylor',
+            'Virginia Tech Hokies': 'Virginia Tech', 'Virginia Tech': 'Virginia Tech',
+            'Vanderbilt Commodores': 'Vanderbilt', 'Vanderbilt': 'Vanderbilt',
+            'Hawaii Rainbow Warriors': 'Hawai\'i', 'Hawai\'i': 'Hawai\'i',
+            'Sam Houston Bearkats': 'Sam Houston', 'Sam Houston': 'Sam Houston',
+            'Tulsa Golden Hurricane': 'Tulsa', 'Tulsa': 'Tulsa',
+            'New Mexico State Aggies': 'New Mexico St.', 'New Mexico St.': 'New Mexico St.',
+            'UCLA Bruins': 'UCLA', 'UCLA': 'UCLA',
+            'UNLV Rebels': 'UNLV', 'UNLV': 'UNLV',
+            'Washington State Cougars': 'Washington St.', 'Washington St.': 'Washington St.',
+            'San Diego State Aztecs': 'San Diego St.', 'San Diego St.': 'San Diego St.',
+            'Maryland Terrapins': 'Maryland', 'Maryland': 'Maryland',
+            'Northern Illinois Huskies': 'Northern Illinois', 'Northern Illinois': 'Northern Illinois',
+            'Louisville Cardinals': 'Louisville', 'Louisville': 'Louisville',
+            'James Madison Dukes': 'James Madison', 'James Madison': 'James Madison'
         }
         
         return team_map.get(team_name, team_name)
@@ -346,13 +451,14 @@ class CombinedClient:
                     kal_time = kal_game['game_time'].split(' ')[1] if ' ' in kal_game['game_time'] else kal_game['game_time']
                     kal_status = kal_game.get('status', 'unknown')
                     
-                    # Calculate cents for Kalshi odds
-                    kal_fav_cents = self._odds_to_cents(kal_fav_odds)
-                    kal_dog_cents = self._odds_to_cents(kal_dog_odds)
+                    # Use original cents from Kalshi if available, otherwise calculate
+                    kal_fav_cents = kal_game.get('fav_cents', self._odds_to_cents(kal_fav_odds))
+                    kal_dog_cents = kal_game.get('dog_cents', self._odds_to_cents(kal_dog_odds))
                     
                     print(f"Kalshi:    {favorite:>8} {kal_fav_odds:>6} ({kal_fav_cents}¢)  |  {dog:<8} {kal_dog_odds:>6} ({kal_dog_cents}¢)  |  {kal_time} ({kal_status})")
                 else:
                     print(f"Kalshi:    {'N/A':>8} {'N/A':>6} {'':>6}  |  {'N/A':<8} {'N/A':>6} {'':>6}  |  N/A")
+                
                 
                 # Calculate potential edge if both available
                 if game['pinnacle'] and game['kalshi']:
@@ -393,26 +499,41 @@ class CombinedClient:
                     dog_diff = abs(pin_dog - kal_dog)
                     max_diff = max(fav_diff, dog_diff)
                     
-                    if max_diff > 15:  # 15+ point difference is meaningful edge
-                        # Determine which side has better odds where
-                        if fav_diff > dog_diff:
-                            # Favorite has bigger difference
-                            if pin_fav > kal_fav:  # Pinnacle favorite odds are worse (higher negative)
-                                better_side = f"Kalshi {game['favorite']}"
-                                edge_info = f"{pin_fav:+d} vs {kal_fav:+d}"
-                            else:  # Kalshi favorite odds are worse
-                                better_side = f"Pinnacle {game['favorite']}"
-                                edge_info = f"{kal_fav:+d} vs {pin_fav:+d}"
+                    # Only show edges where Kalshi has better odds than Pinnacle
+                    kalshi_fav_better = False
+                    kalshi_dog_better = False
+                    edge_diff = 0
+                    better_side = ""
+                    edge_info = ""
+                    opposite_side_close = False
+                    
+                    # Check if Kalshi favorite odds are better (less negative = better for favorite)
+                    if fav_diff > 15 and pin_fav < kal_fav:  # Pinnacle more negative = worse for bettor
+                        # Check if the opposite side odds are within 20 points
+                        # Compare Pinnacle dog to Kalshi favorite (the arbitrage pair)
+                        opposite_diff = abs(pin_dog - abs(kal_fav))
+                        if opposite_diff <= 20:
+                            kalshi_fav_better = True
                             edge_diff = fav_diff
-                        else:
-                            # Dog has bigger difference  
-                            if pin_dog < kal_dog:  # Pinnacle dog odds are worse (lower positive)
+                            better_side = f"Kalshi {game['favorite']}"
+                            edge_info = f"{pin_fav:+d} vs {kal_fav:+d}"
+                            opposite_side_close = True
+                    
+                    # Check if Kalshi dog odds are better (more positive = better for dog)
+                    if dog_diff > 15 and kal_dog > pin_dog:  # Kalshi more positive = better for bettor
+                        # Check if the opposite side odds are within 20 points
+                        # Compare Pinnacle favorite to Kalshi dog (the arbitrage pair)
+                        opposite_diff = abs(abs(pin_fav) - kal_dog)
+                        if opposite_diff <= 20:
+                            if not kalshi_dog_better or dog_diff > fav_diff:  # Take the bigger edge
+                                kalshi_dog_better = True
+                                edge_diff = dog_diff
                                 better_side = f"Kalshi {game['dog']}"
                                 edge_info = f"{pin_dog:+d} vs {kal_dog:+d}"
-                            else:  # Kalshi dog odds are worse
-                                better_side = f"Pinnacle {game['dog']}"
-                                edge_info = f"{kal_dog:+d} vs {pin_dog:+d}"
-                            edge_diff = dog_diff
+                                opposite_side_close = True
+                    
+                    # Only add to edge opportunities if Kalshi has better odds AND opposite side is close
+                    if (kalshi_fav_better or kalshi_dog_better) and opposite_side_close:
                         
                         edge_game = {
                             'matchup': f"{game['favorite']} vs {game['dog']}",

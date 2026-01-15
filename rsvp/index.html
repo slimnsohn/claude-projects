@@ -275,7 +275,7 @@
   
   <!-- Input View -->
   <div class="input-view" id="inputView">
-    <textarea class="text-input" id="textInput" placeholder="Paste article text here..."></textarea>
+    <textarea class="text-input" id="textInput" placeholder="Paste article text or URL here..."></textarea>
     <button class="start-btn" id="startBtn">Start Reading</button>
   </div>
   
@@ -391,13 +391,103 @@
       }
       
       startReading() {
-        const text = this.textInput.value.trim();
-        if (!text) return;
+        const input = this.textInput.value.trim();
+        if (!input) return;
         
+        // Check if input is a URL
+        if (input.match(/^https?:\/\//i)) {
+          this.fetchUrl(input);
+        } else {
+          this.loadText(input);
+        }
+      }
+      
+      async fetchUrl(url) {
+        this.startBtn.disabled = true;
+        this.startBtn.textContent = 'Fetching...';
+        
+        try {
+          // Use a CORS proxy to fetch the URL
+          const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
+          const response = await fetch(proxyUrl);
+          
+          if (!response.ok) {
+            throw new Error('Failed to fetch URL');
+          }
+          
+          const html = await response.text();
+          const text = this.extractText(html);
+          
+          if (text.length < 50) {
+            throw new Error('Could not extract article text');
+          }
+          
+          this.loadText(text);
+        } catch (error) {
+          alert('Error: ' + error.message + '\n\nTry copying the article text instead.');
+        } finally {
+          this.startBtn.disabled = false;
+          this.startBtn.textContent = 'Start Reading';
+        }
+      }
+      
+      extractText(html) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        
+        // Remove junk
+        const removeSelectors = [
+          'script', 'style', 'noscript', 'nav', 'header', 'footer', 
+          'aside', 'iframe', 'form', 'button', '[role="navigation"]',
+          '[role="banner"]', '[role="contentinfo"]', '.nav', '.menu',
+          '.sidebar', '.comments', '.advertisement', '.ad', '#comments',
+          '[class*="sidebar"]', '[class*="footer"]', '[class*="header"]',
+          '[class*="nav"]', '[class*="menu"]', '[class*="comment"]',
+          '[class*="social"]', '[class*="share"]', '[class*="related"]',
+          '[class*="recommend"]', '[class*="promo"]', '[class*="ad-"]'
+        ];
+        
+        removeSelectors.forEach(selector => {
+          try {
+            doc.querySelectorAll(selector).forEach(el => el.remove());
+          } catch (e) {}
+        });
+        
+        // Find main content
+        const contentSelectors = [
+          'article', '[role="main"]', 'main', '.post-content',
+          '.entry-content', '.article-content', '.article-body',
+          '.story-body', '.content', '#content', '.post', '.article'
+        ];
+        
+        let contentElement = null;
+        for (const selector of contentSelectors) {
+          try {
+            contentElement = doc.querySelector(selector);
+            if (contentElement && contentElement.textContent.trim().length > 200) {
+              break;
+            }
+          } catch (e) {}
+        }
+        
+        if (!contentElement || contentElement.textContent.trim().length < 200) {
+          contentElement = doc.body;
+        }
+        
+        let text = contentElement ? contentElement.textContent : '';
+        text = text.replace(/\s+/g, ' ').trim();
+        
+        return text;
+      }
+      
+      loadText(text) {
         this.words = text.split(/\s+/).filter(w => w.length > 0);
         this.currentIndex = 0;
         
-        if (this.words.length === 0) return;
+        if (this.words.length === 0) {
+          alert('No readable content found');
+          return;
+        }
         
         this.showReaderView();
         this.showWord(this.words[0]);
